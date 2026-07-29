@@ -1,20 +1,12 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-import requests
-import numpy as np
-import os
+import difflib
 
 app = FastAPI(title="MontirPintar API Lite")
 
-# Minta Vercel mengambilkan token dari brankas rahasia
-HF_TOKEN = os.environ.get("HF_TOKEN")
-
-# URL API Hugging Face yang benar menggunakan format /models/
-API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-
-# Database Kasus Bengkel
+# Database Kasus Bengkel (Lengkap & Siap Saji)
 data_bengkel = [
-    # ==============================
+     # ==============================
     # KATEGORI: MOBIL - KAKI-KAKI & KEMUDI (STEERING)
     # ==============================
     {"id": "MBL_KK_01", "kategori_kendaraan": "Mobil_Kaki", "gejala_masalah": "Setir atau stir mobil terasa berat saat dibelokkan, kemudi kaku, dan ada bunyi dengung keras saat belok mentok.", "penyebab_utama": "Minyak power steering (hidrolik) habis/bocor, atau motor EPS bermasalah.", "solusi_perbaikan": "Cek kebocoran seal rack steer hidrolik. Jika tipe Elektrik (EPS), perbaiki modul/motor EPS.", "estimasi_biaya": "Rp 500.000 - Rp 3.500.000"},
@@ -96,57 +88,57 @@ data_bengkel = [
     {"id": "MTR_KL_03", "kategori_kendaraan": "Motor_Kelistrikan", "gejala_masalah": "Motor mati mendadak di jalan atau lampu merah, tombol stater ditekan cuma bunyi cetek-cetek, dinamo starter diam tidak mau muter, dan klakson nyala redup.", "penyebab_utama": "Aki drop, atau Bendik Starter (Relay Starter) sudah konslet/mati/kotor dalamnya.", "solusi_perbaikan": "Cek tegangan aki. Jika aki sehat normal (12V), masalah fix ada di Bendik Starter. Ganti bendik baru.", "estimasi_biaya": "Rp 60.000 - Rp 150.000"},
 ]
 
-headers = {"Authorization": f"Bearer {HF_TOKEN}"}
-GLOBAL_EMBEDDINGS = None
-
-def get_embedding(text_list):
-    response = requests.post(API_URL, headers=headers, json={"inputs": text_list})
-    if response.status_code == 200:
-        return np.array(response.json())
-    else:
-        raise Exception(f"Gagal memanggil HF API: {response.text}")
-
-def cos_sim(a, b):
-    return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
-
 class KeluhanInput(BaseModel):
     keluhan: str
 
 @app.get("/")
 def home():
-    return {"status": "aktif", "pesan": "Server MontirPintar siap melayani!"}
+    return {"status": "aktif", "pesan": "Server MontirPintar siap melayani tanpa Hugging Face!"}
 
 @app.post("/diagnosa")
 def diagnosa_ai(data: KeluhanInput):
-    global GLOBAL_EMBEDDINGS
     try:
-        if GLOBAL_EMBEDDINGS is None:
-            gejala_list = [item["gejala_masalah"] for item in data_bengkel]
-            GLOBAL_EMBEDDINGS = get_embedding(gejala_list)
-
-        input_embedding = get_embedding([data.keluhan])[0]
+        user_text = data.keluhan.lower()
+        best_match = None
+        highest_score = 0.0
         
-        best_match_idx = -1
-        best_score = -1.0
-        
-        for i, db_emb in enumerate(GLOBAL_EMBEDDINGS):
-            score = cos_sim(input_embedding, db_emb)
-            if score > best_score:
-                best_score = score
-                best_match_idx = i
+        # Algoritma pencocokan teks pintar (Smart String Matching)
+        for item in data_bengkel:
+            gejala_db = item["gejala_masalah"].lower()
+            
+            # Hitung kecocokan menggunakan SequenceMatcher
+            similarity = difflib.SequenceMatcher(None, user_text, gejala_db).ratio()
+            
+            # Hitung kecocokan kata kunci (Keyword overlap)
+            user_words = set(user_text.split())
+            db_words = set(gejala_db.split())
+            common_words = user_words.intersection(db_words)
+            keyword_score = len(common_words) / max(len(user_words), 1)
+            
+            # Gabungkan skor
+            total_score = (similarity * 0.3) + (keyword_score * 0.7)
+            
+            if total_score > highest_score:
+                highest_score = total_score
+                best_match = item
                 
-        if best_score > 0.4:
-            hasil = data_bengkel[best_match_idx]
+        # Jika ditemukan kecocokan yang wajar
+        if highest_score > 0.10 and best_match:
             return {
                 "status": "success",
-                # 🛠️ DISESUAIKAN DENGAN KEY DIATAS ("penyebab_utama" & "solusi_perbaikan")
-                "diagnosa_ai": hasil["penyebab_utama"],
-                "solusi": hasil["solusi_perbaikan"],
-                "estimasi_biaya": hasil["estimasi_biaya"],
-                "akurasi": round(float(best_score) * 100, 2)
+                "diagnosa_ai": best_match["penyebab_utama"],
+                "solusi": best_match["solusi_perbaikan"],
+                "estimasi_biaya": best_match["estimasi_biaya"],
+                "akurasi": round(float(highest_score) * 100, 2)
             }
         else:
-            return {"status": "error", "pesan": "Keluhan belum dikenali."}
+            return {
+                "status": "success",
+                "diagnosa_ai": "Kerusakan belum teridentifikasi secara spesifik dalam database.",
+                "solusi": "Silakan bawa kendaraan Anda ke bengkel terdekat untuk pengecekan manual oleh mekanik.",
+                "estimasi_biaya": "Estimasi bervariasi",
+                "akurasi": 0.0
+            }
             
     except Exception as e:
         return {"status": "error", "pesan": str(e)}
