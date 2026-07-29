@@ -156,24 +156,26 @@ def diagnosa_ai(data: KeluhanInput):
 
 @app.post("/lapor_error")
 def lapor_error(data: ErrorReportInput):
-    """
-    Sistem Feedback: Menangkap laporan jika AI salah mendiagnosa,
-    mencatatnya ke logs Vercel, dan meneruskannya ke Telegram Bot (jika dikonfigurasi).
-    """
     try:
         logger.warning(f"⚠️ LAPORAN ERROR DARI USER -> Keluhan: {data.keluhan} | Diagnosa Salah: {data.diagnosa_ai}")
         
-        # Kirim notifikasi otomatis ke Telegram (Opsional)
         bot_token = os.environ.get("8739496643:AAFRM2JtXrPe2s5DRwTPM-sceC6ctah2Jsg")
         chat_id = os.environ.get("8875393494")
         
+        # 🔍 CETAK STATUS TOKEN KE LOG VERCEL
+        logger.warning(f"DEBUG TOKEN -> Bot Token Ada?: {bool(bot_token)} | Chat ID Ada?: {bool(chat_id)}")
+        
         if bot_token and chat_id:
-            text = f"🚨 *LAPORAN DIAGNOSA MELESET*\n\nKeluhan: {data.keluhan}\nDiagnosa AI: {data.diagnosa_ai}"
+            text = f"🚨 LAPORAN DIAGNOSA MELESET\n\nKeluhan: {data.keluhan}\nDiagnosa AI: {data.diagnosa_ai}"
             telegram_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-            requests.post(telegram_url, json={"chat_id": chat_id, "text": text, "parse_mode": "Markdown"}, timeout=3)
-            logger.info("Notifikasi error berhasil dikirim ke Telegram.")
+            
+            response = requests.post(telegram_url, json={"chat_id": chat_id, "text": text}, timeout=3)
+            logger.info(f"Respon Telegram API: {response.status_code} - {response.text}")
+        else:
+            logger.error("❌ GAGAL KIRIM TELEGRAM: Token atau Chat ID kosong di Environment Variables!")
             
         return {"status": "success", "pesan": "Terima kasih, laporan Anda telah masuk ke sistem evaluasi."}
     except Exception as e:
         logger.error(f"Gagal memproses lapor_error: {str(e)}")
         return {"status": "error", "pesan": str(e)}
+
