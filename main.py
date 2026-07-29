@@ -160,8 +160,8 @@ def lapor_error(data: ErrorReportInput):
         logger.warning(f"⚠️ LAPORAN DARI USER -> Keluhan: {data.keluhan} | Diagnosa Salah: {data.diagnosa_ai}")
         
         # ⚠️ TES HARDCODE: Masukkan langsung string token Anda di sini
-        bot_token = "8739496643:AAFRM2JtXrPe2s5DRwTPM-sceC6ctah2Jsg" 
-        chat_id = "8875393494" # Ganti dengan angka Chat ID Anda
+        bot_token = os.environ.get("8739496643:AAFRM2JtXrPe2s5DRwTPM-sceC6ctah2Jsg") 
+        chat_id = os.environ.get("8875393494")
         
         text = f"🚨 LAPORAN DIAGNOSA MELESET\n\nKeluhan: {data.keluhan}\nDiagnosa AI: {data.diagnosa_ai}"
         telegram_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
