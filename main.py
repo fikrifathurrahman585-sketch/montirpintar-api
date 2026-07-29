@@ -8,7 +8,9 @@ app = FastAPI(title="MontirPintar API Lite")
 
 # Minta Vercel mengambilkan token dari brankas rahasia
 HF_TOKEN = os.environ.get("HF_TOKEN")
-API_URL = "https://api-inference.huggingface.co/pipeline/feature-extraction/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+
+# URL API Hugging Face yang benar menggunakan format /models/
+API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
 # Database Kasus Bengkel
 data_bengkel = [
@@ -92,12 +94,9 @@ data_bengkel = [
     {"id": "MTR_KL_01", "kategori_kendaraan": "Motor_Kelistrikan", "gejala_masalah": "Tombol stater ditekan cuma bunyi cetek-cetek, dinamo starter diam tidak mau muter menghidupkan mesin.", "penyebab_utama": "Aki drop, atau Bendik Starter (Relay Starter) sudah konslet/mati/kotor dalamnya.", "solusi_perbaikan": "Cek tegangan aki. Jika aki sehat normal (12V), masalah fix ada di Bendik Starter. Ganti bendik baru.", "estimasi_biaya": "Rp 60.000 - Rp 150.000"},
     {"id": "MTR_KL_02", "kategori_kendaraan": "Motor_Kelistrikan", "gejala_masalah": "Aki motor selalu tekor dan ngedrop terus meskipun aki tersebut baru saja diganti dengan yang baru.", "penyebab_utama": "Kiprok (Regulator/Rectifier) mati, atau spul motor gosong/putus sehingga tidak ada arus pengisian ke aki.", "solusi_perbaikan": "Cek voltase aki saat mesin digas, jika angka tidak naik ke 13.5V - 14V berarti pengisian mati. Ganti kiprok/spul.", "estimasi_biaya": "Rp 150.000 - Rp 400.000"},
     {"id": "MTR_KL_03", "kategori_kendaraan": "Motor_Kelistrikan", "gejala_masalah": "Motor mati mendadak di jalan atau lampu merah, tombol stater ditekan cuma bunyi cetek-cetek, dinamo starter diam tidak mau muter, dan klakson nyala redup.", "penyebab_utama": "Aki drop, atau Bendik Starter (Relay Starter) sudah konslet/mati/kotor dalamnya.", "solusi_perbaikan": "Cek tegangan aki. Jika aki sehat normal (12V), masalah fix ada di Bendik Starter. Ganti bendik baru.", "estimasi_biaya": "Rp 60.000 - Rp 150.000"},
-
 ]
 
 headers = {"Authorization": f"Bearer {HF_TOKEN}"}
-
-# Variabel Global untuk menyimpan memori AI agar tidak memanggil HF berulang kali
 GLOBAL_EMBEDDINGS = None
 
 def get_embedding(text_list):
@@ -121,15 +120,12 @@ def home():
 def diagnosa_ai(data: KeluhanInput):
     global GLOBAL_EMBEDDINGS
     try:
-        # LAZY LOADING: Minta data ke HF hanya saat ada user yang bertanya
         if GLOBAL_EMBEDDINGS is None:
             gejala_list = [item["gejala_masalah"] for item in data_bengkel]
             GLOBAL_EMBEDDINGS = get_embedding(gejala_list)
 
-        # Dapatkan vektor dari keluhan user
         input_embedding = get_embedding([data.keluhan])[0]
         
-        # Hitung kecocokan
         best_match_idx = -1
         best_score = -1.0
         
@@ -143,8 +139,9 @@ def diagnosa_ai(data: KeluhanInput):
             hasil = data_bengkel[best_match_idx]
             return {
                 "status": "success",
-                "diagnosa_ai": hasil["diagnosa_ai"],
-                "solusi": hasil["solusi"],
+                # 🛠️ DISESUAIKAN DENGAN KEY DIATAS ("penyebab_utama" & "solusi_perbaikan")
+                "diagnosa_ai": hasil["penyebab_utama"],
+                "solusi": hasil["solusi_perbaikan"],
                 "estimasi_biaya": hasil["estimasi_biaya"],
                 "akurasi": round(float(best_score) * 100, 2)
             }
@@ -154,7 +151,6 @@ def diagnosa_ai(data: KeluhanInput):
     except Exception as e:
         return {"status": "error", "pesan": str(e)}
 
-# Endpoint Telegram untuk Laporan Error (Optional)
 @app.post("/lapor_error")
 def lapor_error(data: dict):
     return {"status": "success"}
