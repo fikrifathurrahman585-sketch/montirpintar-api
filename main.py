@@ -1,12 +1,19 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import difflib
+import logging
+import os
+import requests
 
-app = FastAPI(title="MontirPintar API Lite")
+# Konfigurasi Logging Server
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("MontirPintarAPI")
 
-# Database Kasus Bengkel (Lengkap & Siap Saji)
+app = FastAPI(title="MontirPintar API Enterprise")
+
+# Database Kasus Bengkel (Dapat terus diperluas hingga ribuan kasus)
 data_bengkel = [
-     # ==============================
+    # ==============================
     # KATEGORI: MOBIL - KAKI-KAKI & KEMUDI (STEERING)
     # ==============================
     {"id": "MBL_KK_01", "kategori_kendaraan": "Mobil_Kaki", "gejala_masalah": "Setir atau stir mobil terasa berat saat dibelokkan, kemudi kaku, dan ada bunyi dengung keras saat belok mentok.", "penyebab_utama": "Minyak power steering (hidrolik) habis/bocor, atau motor EPS bermasalah.", "solusi_perbaikan": "Cek kebocoran seal rack steer hidrolik. Jika tipe Elektrik (EPS), perbaiki modul/motor EPS.", "estimasi_biaya": "Rp 500.000 - Rp 3.500.000"},
@@ -91,39 +98,41 @@ data_bengkel = [
 class KeluhanInput(BaseModel):
     keluhan: str
 
+class ErrorReportInput(BaseModel):
+    keluhan: str
+    diagnosa_ai: str
+
 @app.get("/")
 def home():
-    return {"status": "aktif", "pesan": "Server MontirPintar siap melayani tanpa Hugging Face!"}
+    logger.info("Health check endpoint diakses.")
+    return {"status": "aktif", "pesan": "Server Enterprise MontirPintar Berjalan Optimal!"}
 
 @app.post("/diagnosa")
 def diagnosa_ai(data: KeluhanInput):
     try:
         user_text = data.keluhan.lower()
+        logger.info(f"Menerima keluhan diagnosa: {user_text}")
+        
         best_match = None
         highest_score = 0.0
         
-        # Algoritma pencocokan teks pintar (Smart String Matching)
         for item in data_bengkel:
             gejala_db = item["gejala_masalah"].lower()
-            
-            # Hitung kecocokan menggunakan SequenceMatcher
             similarity = difflib.SequenceMatcher(None, user_text, gejala_db).ratio()
             
-            # Hitung kecocokan kata kunci (Keyword overlap)
             user_words = set(user_text.split())
             db_words = set(gejala_db.split())
             common_words = user_words.intersection(db_words)
             keyword_score = len(common_words) / max(len(user_words), 1)
             
-            # Gabungkan skor
             total_score = (similarity * 0.3) + (keyword_score * 0.7)
             
             if total_score > highest_score:
                 highest_score = total_score
                 best_match = item
                 
-        # Jika ditemukan kecocokan yang wajar
         if highest_score > 0.10 and best_match:
+            logger.info(f"Diagnosa ditemukan dengan akurasi: {highest_score * 100}%")
             return {
                 "status": "success",
                 "diagnosa_ai": best_match["penyebab_utama"],
@@ -132,6 +141,7 @@ def diagnosa_ai(data: KeluhanInput):
                 "akurasi": round(float(highest_score) * 100, 2)
             }
         else:
+            logger.warning("Keluhan pengguna tidak dikenali dalam database.")
             return {
                 "status": "success",
                 "diagnosa_ai": "Kerusakan belum teridentifikasi secara spesifik dalam database.",
@@ -141,8 +151,29 @@ def diagnosa_ai(data: KeluhanInput):
             }
             
     except Exception as e:
-        return {"status": "error", "pesan": str(e)}
+        logger.error(f"Error pada endpoint /diagnosa: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/lapor_error")
-def lapor_error(data: dict):
-    return {"status": "success"}
+def lapor_error(data: ErrorReportInput):
+    """
+    Sistem Feedback: Menangkap laporan jika AI salah mendiagnosa,
+    mencatatnya ke logs Vercel, dan meneruskannya ke Telegram Bot (jika dikonfigurasi).
+    """
+    try:
+        logger.warning(f"⚠️ LAPORAN ERROR DARI USER -> Keluhan: {data.keluhan} | Diagnosa Salah: {data.diagnosa_ai}")
+        
+        # Kirim notifikasi otomatis ke Telegram (Opsional)
+        bot_token = os.environ.get("8739496643:AAFRM2JtXrPe2s5DRwTPM-sceC6ctah2Jsg")
+        chat_id = os.environ.get("8875393494")
+        
+        if bot_token and chat_id:
+            text = f"🚨 *LAPORAN DIAGNOSA MELESET*\n\nKeluhan: {data.keluhan}\nDiagnosa AI: {data.diagnosa_ai}"
+            telegram_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+            requests.post(telegram_url, json={"chat_id": chat_id, "text": text, "parse_mode": "Markdown"}, timeout=3)
+            logger.info("Notifikasi error berhasil dikirim ke Telegram.")
+            
+        return {"status": "success", "pesan": "Terima kasih, laporan Anda telah masuk ke sistem evaluasi."}
+    except Exception as e:
+        logger.error(f"Gagal memproses lapor_error: {str(e)}")
+        return {"status": "error", "pesan": str(e)}
