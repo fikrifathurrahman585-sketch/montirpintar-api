@@ -179,3 +179,4 @@ def lapor_error(data: ErrorReportInput):
         logger.error(f"Gagal memproses lapor_error: {str(e)}")
         return {"status": "error", "pesan": str(e)}
 
+# Update untuk memaksa Vercel membaca token baru
