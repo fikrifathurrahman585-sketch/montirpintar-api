@@ -157,22 +157,17 @@ def diagnosa_ai(data: KeluhanInput):
 @app.post("/lapor_error")
 def lapor_error(data: ErrorReportInput):
     try:
-        logger.warning(f"⚠️ LAPORAN ERROR DARI USER -> Keluhan: {data.keluhan} | Diagnosa Salah: {data.diagnosa_ai}")
+        logger.warning(f"⚠️ LAPORAN DARI USER -> Keluhan: {data.keluhan} | Diagnosa Salah: {data.diagnosa_ai}")
         
-        bot_token = os.environ.get("8739496643:AAFRM2JtXrPe2s5DRwTPM-sceC6ctah2Jsg")
-        chat_id = os.environ.get("8875393494")
+        # ⚠️ TES HARDCODE: Masukkan langsung string token Anda di sini
+        bot_token = "8739496643:AAFRM2JtXrPe2s5DRwTPM-sceC6ctah2Jsg" 
+        chat_id = "8875393494" # Ganti dengan angka Chat ID Anda
         
-        # 🔍 CETAK STATUS TOKEN KE LOG VERCEL
-        logger.warning(f"DEBUG TOKEN -> Bot Token Ada?: {bool(bot_token)} | Chat ID Ada?: {bool(chat_id)}")
+        text = f"🚨 LAPORAN DIAGNOSA MELESET\n\nKeluhan: {data.keluhan}\nDiagnosa AI: {data.diagnosa_ai}"
+        telegram_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
         
-        if bot_token and chat_id:
-            text = f"🚨 LAPORAN DIAGNOSA MELESET\n\nKeluhan: {data.keluhan}\nDiagnosa AI: {data.diagnosa_ai}"
-            telegram_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-            
-            response = requests.post(telegram_url, json={"chat_id": chat_id, "text": text}, timeout=3)
-            logger.info(f"Respon Telegram API: {response.status_code} - {response.text}")
-        else:
-            logger.error("❌ GAGAL KIRIM TELEGRAM: Token atau Chat ID kosong di Environment Variables!")
+        response = requests.post(telegram_url, json={"chat_id": chat_id, "text": text}, timeout=5)
+        logger.info(f"Respon Telegram API: {response.status_code} - {response.text}")
             
         return {"status": "success", "pesan": "Terima kasih, laporan Anda telah masuk ke sistem evaluasi."}
     except Exception as e:
