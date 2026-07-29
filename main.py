@@ -2,11 +2,12 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import requests
 import numpy as np
+import os
 
 app = FastAPI(title="MontirPintar API Lite")
 
-# ⚠️ PASTIKAN ANDA MENGISI TOKEN HUGGING FACE DI SINI
-HF_TOKEN = "MASUKKAN_TOKEN_HUGGING_FACE_ANDA_DISINI" 
+# Minta Vercel mengambilkan token dari brankas rahasia
+HF_TOKEN = os.environ.get("HF_TOKEN")
 API_URL = "https://api-inference.huggingface.co/pipeline/feature-extraction/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
 # Database Kasus Bengkel
