@@ -1,0 +1,35 @@
+[
+  {
+    "id": "MBL_TR_001",
+    "vehicle": "car",
+    "system": "transmission",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "mobil matic jedug",
+          "transmisi nyentak kasar saat pindah gigi",
+          "masuk gigi nabrak"
+        ],
+        "problem": "Kualitas oli transmisi (ATF/CVTF) sudah jelek/berkurang, atau katup solenoid mampet.",
+        "action": "Jangan panik. Kendarai mobil dengan pelan dan halus, hindari menginjak gas secara spontan.",
+        "garage_tip": "Sampaikan: 'Mas, matic saya jedug, tolong cek kualitas oli matic-nya, jangan langsung disuruh turun mesin ya.'"
+      },
+      "en": {
+        "symptoms": [
+          "automatic transmission jerks",
+          "hard shifting gears",
+          "rough transmission shift"
+        ],
+        "problem": "Degraded transmission fluid or clogged solenoid valves.",
+        "action": "Drive gently and avoid sudden acceleration.",
+        "garage_tip": "Say: 'Please check the transmission fluid first before suggesting a gearbox rebuild.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 800.000 - Rp 2.500.000",
+      "usd": "$50 - $160"
+    }
+  }
+]
