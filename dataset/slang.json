@@ -1,12 +1,16 @@
 {
-  "jedug": "nyentak kasar transmisi",
-  "jeduk": "nyentak kasar transmisi",
+  "jedug": "transmisi nyentak kasar",
+  "jeduk": "transmisi nyentak kasar",
   "nyentak": "pindah gigi kasar",
   "brebet": "mesin nyendat",
   "mbrebet": "mesin nyendat",
-  "ngelitik": "suara tek tek mesin",
-  "gredek": "getar kencang cvt",
-  "ngempos": "tenaga hilang",
+  "ngelitik": "suara tek tek mesin knocking",
+  "gredek": "getar kencang cvt selip",
+  "ngempos": "tenaga hilang tertahan",
   "ngorok": "suara bearing kasar",
-  "gluduk": "kaki-kaki berisik"
+  "gluduk": "kaki kaki berisik oblak",
+  "ngebul": "asap putih knalpot",
+  "peyang": "velg bengkok",
+  "oblak": "longgar aus",
+  "tekor": "aki soak mati"
 }
