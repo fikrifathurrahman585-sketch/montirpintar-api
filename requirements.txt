@@ -2,3 +2,4 @@ fastapi
 pydantic
 requests
 scikit-learn
+google-generativeai
