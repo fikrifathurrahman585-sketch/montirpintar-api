@@ -444,4 +444,172 @@
       "usd": "$20 - $100"
     }
   }
+  ,
+  {
+    "id": "MBL_MS_007",
+    "vehicle": "car",
+    "system": "engine",
+    "severity": "WARNING",
+    "driveability": "NORMAL",
+    "language": {
+      "id": {
+        "symptoms": [
+          "rpm mesin naik turun sendiri",
+          "idle gas tidak stabil hunting",
+          "mesin mau mati saat ac nyala",
+          "gas ngayun"
+        ],
+        "problem": "Throttle body kotor, Idle Speed Control (ISC) bermasalah, atau ada selang vacuum yang bocor.",
+        "action": "Nyalakan AC dengan stabil dan hindari melepas gas secara mendadak di kemacetan agar mesin tidak mati.",
+        "garage_tip": "Sampaikan: 'Tolong bersihkan throttle body dan kalibrasi ulang ISC-nya, sekalian cek selang vacuum.'"
+      },
+      "en": {
+        "symptoms": [
+          "engine rpm fluctuates up and down",
+          "unstable idle hunting",
+          "engine almost stalls when ac is on",
+          "surging idle"
+        ],
+        "problem": "Dirty throttle body, faulty Idle Speed Control (ISC), or leaking vacuum hoses.",
+        "action": "Keep the AC running stably and avoid sudden throttle releases in traffic.",
+        "garage_tip": "Say: 'Please clean the throttle body, recalibrate the ISC valve, and check for vacuum leaks.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 150.000 - Rp 350.000",
+      "usd": "$10 - $25"
+    }
+  },
+  {
+    "id": "MBL_MS_008",
+    "vehicle": "car",
+    "system": "engine",
+    "severity": "DANGER",
+    "driveability": "STOP",
+    "language": {
+      "id": {
+        "symptoms": [
+          "lampu indikator oli warna merah nyala",
+          "logo teko oli menyala terus",
+          "suara mesin tiba-tiba sangat kasar gemeretak"
+        ],
+        "problem": "Tekanan oli hilang sama sekali! Bisa karena pompa oli jebol, filter oli mampet total, atau oli benar-benar habis.",
+        "action": "BAHAYA FATAL! Segera matikan mesin detik ini juga! Memaksa jalan 1 menit saja akan membuat mesin hancur total (stang seher bengkok).",
+        "garage_tip": "Sampaikan: 'Indikator oli nyala dan mesin kasar, tolong cek pompa oli dan saringan olinya. Mobil saya derek ke bengkel.'"
+      },
+      "en": {
+        "symptoms": [
+          "red oil pressure warning light on",
+          "oil can logo stays illuminated",
+          "engine suddenly sounds very harsh and clattering"
+        ],
+        "problem": "Zero oil pressure! Could be a blown oil pump, totally clogged oil filter, or zero oil in the engine.",
+        "action": "FATAL DANGER! Turn off the engine this exact second! Driving even for 1 minute will destroy the engine completely.",
+        "garage_tip": "Say: 'The oil light is on and engine sounds rough, please check the oil pump and filter. I towed the car here.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 1.500.000 - Rp 8.000.000",
+      "usd": "$100 - $500"
+    }
+  },
+  {
+    "id": "MBL_KK_004",
+    "vehicle": "car",
+    "system": "suspension",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "bunyi kletek kletek saat belok patah",
+          "ban depan bunyi tek tek saat putar balik",
+          "as roda bunyi"
+        ],
+        "problem": "CV Joint (As Roda / Kokel) bagian luar sudah aus, pelor hancur, atau karet boot sobek kemasukan pasir.",
+        "action": "Hindari membelokkan setir secara patah (mentok) atau bermanuver terlalu keras.",
+        "garage_tip": "Sampaikan: 'Tolong cek CV Joint roda depan, sepertinya as roda luar sudah kena dan karet boot-nya sobek.'"
+      },
+      "en": {
+        "symptoms": [
+          "clicking noise when turning sharply",
+          "popping sound from front tires on u-turn",
+          "cv axle noise"
+        ],
+        "problem": "Worn outer CV joint, broken bearings, or torn boot cover filled with sand.",
+        "action": "Avoid turning the steering wheel to full lock or making aggressive maneuvers.",
+        "garage_tip": "Say: 'Please check the front CV joint, the outer axle seems worn and the boot is torn.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 400.000 - Rp 1.200.000",
+      "usd": "$25 - $80"
+    }
+  },
+  {
+    "id": "MBL_KK_005",
+    "vehicle": "car",
+    "system": "suspension",
+    "severity": "INFO",
+    "driveability": "NORMAL",
+    "language": {
+      "id": {
+        "symptoms": [
+          "mobil lari ke kiri kanan sendiri",
+          "setir narik ke satu sisi saat jalan lurus",
+          "ban botak sebelah"
+        ],
+        "problem": "Sudut roda (Camber/Toe) berantakan, tie rod bengkok, atau mobil sudah lama tidak di-spooring.",
+        "action": "Segera jadwalkan penyetelan kaki-kaki agar ban tidak semakin parah ausnya di satu sisi.",
+        "garage_tip": "Sampaikan: 'Tolong cek tie rod dan long tie rod, lalu lakukan Spooring 3D presisi agar setir lurus lagi.'"
+      },
+      "en": {
+        "symptoms": [
+          "car pulls to the left or right",
+          "steering pulls to one side on straight road",
+          "tires balding on one edge"
+        ],
+        "problem": "Misaligned wheel angles (Camber/Toe), bent tie rods, or lack of regular wheel alignment.",
+        "action": "Schedule a suspension adjustment soon to prevent further uneven tire wear.",
+        "garage_tip": "Say: 'Please check the tie rods and perform a 3D wheel alignment (spooring) to straighten the steering.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 250.000 - Rp 800.000",
+      "usd": "$15 - $50"
+    }
+  },
+  {
+    "id": "MBL_EL_003",
+    "vehicle": "car",
+    "system": "electrical",
+    "severity": "DANGER",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "mobil mati mendadak saat jalan malam",
+          "lampu depan tiba-tiba redup lalu mesin mati",
+          "tape mati sendiri lalu mobil mogok"
+        ],
+        "problem": "Alternator (dinamo ampere) mati total! Mobil hanya berjalan mengandalkan sisa daya aki sampai benar-benar habis.",
+        "action": "Segera menepi. Matikan AC, tape, dan lampu (jika aman) untuk menghemat sisa aki agar bisa jalan sedikit lebih jauh.",
+        "garage_tip": "Sampaikan: 'Alternator tidak ngisi, tolong cek IC regulator atau gulungan alternatornya, mungkin perlu servis/ganti.'"
+      },
+      "en": {
+        "symptoms": [
+          "car dies suddenly driving at night",
+          "headlights dim and then engine stalls",
+          "radio shuts off then car breaks down"
+        ],
+        "problem": "Alternator has completely failed! The car is running solely on reserve battery power until it drains entirely.",
+        "action": "Pull over immediately. Turn off AC, radio, and lights (if safe) to save remaining battery power.",
+        "garage_tip": "Say: 'The alternator isn't charging, please check the IC regulator or alternator coils, it might need a rebuild/replacement.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 800.000 - Rp 3.000.000",
+      "usd": "$50 - $200"
+    }
+  }
 ]
