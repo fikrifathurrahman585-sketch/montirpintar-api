@@ -272,4 +272,170 @@
       "usd": "$13 - $40"
     }
   }
+  ,
+  {
+    "id": "MTR_CV_003",
+    "vehicle": "motorcycle",
+    "system": "cvt",
+    "severity": "DANGER",
+    "driveability": "STOP",
+    "language": {
+      "id": {
+        "symptoms": [
+          "motor matic mati mendadak di jalan",
+          "gas ditarik tapi ban belakang tidak mutar",
+          "terdengar suara tarikan lepas pletok dari cvt"
+        ],
+        "problem": "V-Belt CVT putus total di dalam blok karena sudah sangat aus dan terlambat diganti.",
+        "action": "Tuntun motor ke tepi jalan yang aman. Motor tidak bisa dijalankan sama sekali. Panggil derek/bengkel.",
+        "garage_tip": "Sampaikan: 'V-belt motor saya putus di jalan, tolong bongkar CVT, bersihkan sisa serpihan karetnya, dan ganti baru.'"
+      },
+      "en": {
+        "symptoms": [
+          "scooter died suddenly on the road",
+          "revving engine but rear wheel doesn't move",
+          "snapping sound from cvt box"
+        ],
+        "problem": "V-Belt snapped completely inside the CVT case due to severe wear.",
+        "action": "Push the scooter to a safe area. It cannot be driven. Call towing or a mechanic.",
+        "garage_tip": "Say: 'My V-belt snapped, please open the CVT, clean out the rubber debris, and install a new belt.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 200.000 - Rp 400.000",
+      "usd": "$13 - $28"
+    }
+  },
+  {
+    "id": "MTR_MS_004",
+    "vehicle": "motorcycle",
+    "system": "engine",
+    "severity": "INFO",
+    "driveability": "NORMAL",
+    "language": {
+      "id": {
+        "symptoms": [
+          "suara mesin tek tek kasar",
+          "bunyi berisik mirip mesin jahit saat langsam",
+          "suara rantai keteng kendor"
+        ],
+        "problem": "Setelan celah klep terlalu renggang, atau rantai keteng (cam chain) kendor dan aus.",
+        "action": "Hindari menggeber mesin terlalu ekstrem dalam kondisi stasioner.",
+        "garage_tip": "Sampaikan: 'Tolong cek dan setel ulang celah klep pakai filler gauge, sekalian periksa kondisi rantai keteng tensionernya.'"
+      },
+      "en": {
+        "symptoms": [
+          "harsh ticking sound from engine",
+          "sounds like a sewing machine at idle",
+          "loose cam chain noise"
+        ],
+        "problem": "Valve clearance is too loose, or the cam chain is loose and worn out.",
+        "action": "Avoid revving the engine aggressively while idling.",
+        "garage_tip": "Say: 'Please adjust valve clearance with a feeler gauge, and inspect the cam chain and tensioner.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 50.000 - Rp 300.000",
+      "usd": "$3 - $20"
+    }
+  },
+  {
+    "id": "MTR_MS_005",
+    "vehicle": "motorcycle",
+    "system": "engine",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "knalpot motor sering nembak",
+          "bunyi dor dor saat turun gas",
+          "mbrebet boros bensin"
+        ],
+        "problem": "Knalpot bocor di paking leher, busi melemah, atau setelan injeksi/karbu kotor (campuran udara miskin).",
+        "action": "Kurangi penggunaan kecepatan tinggi sampai sistem pembakaran dan sirkulasi udara diservis.",
+        "garage_tip": "Sampaikan: 'Tolong cek paking leher knalpot yang bocor dan bersihkan injektor atau karburator.'"
+      },
+      "en": {
+        "symptoms": [
+          "motorcycle exhaust backfires",
+          "popping sound when decelerating",
+          "sputtering and wasting fuel"
+        ],
+        "problem": "Exhaust leak at the header gasket, weak spark plug, or dirty fuel injection/carburetor (lean mixture).",
+        "action": "Avoid high speed riding until the combustion system is serviced.",
+        "garage_tip": "Say: 'Please check for exhaust header gasket leaks and clean the injector or carburetor.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 50.000 - Rp 150.000",
+      "usd": "$3 - $10"
+    }
+  },
+  {
+    "id": "MTR_KK_003",
+    "vehicle": "motorcycle",
+    "system": "suspension",
+    "severity": "DANGER",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "ban belakang terasa goyang oleng",
+          "motor megal megol saat jalan",
+          "roda belakang oblak"
+        ],
+        "problem": "Bearing (lakher) roda belakang hancur/oblak, ban benjol, atau velg peyang habis hajar lubang.",
+        "action": "Kurangi kecepatan drastis. Bermanuver tajam dengan roda oblak bisa menyebabkan Anda jatuh tergelincir.",
+        "garage_tip": "Sampaikan: 'Tolong cek bearing roda belakang, sepertinya pelornya sudah hancur oblak, tolong press ganti baru.'"
+      },
+      "en": {
+        "symptoms": [
+          "rear tire feels unstable and wobbling",
+          "motorcycle swaying",
+          "loose rear wheel"
+        ],
+        "problem": "Destroyed/loose rear wheel bearings, bulged tire, or bent rim from hitting potholes.",
+        "action": "Reduce speed drastically. Sharp maneuvers with a loose wheel can cause crashes.",
+        "garage_tip": "Say: 'Please check the rear wheel bearings, they feel loose and need to be replaced.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 50.000 - Rp 150.000",
+      "usd": "$3 - $10"
+    }
+  },
+  {
+    "id": "MTR_RM_001",
+    "vehicle": "motorcycle",
+    "system": "brakes",
+    "severity": "DANGER",
+    "driveability": "STOP",
+    "language": {
+      "id": {
+        "symptoms": [
+          "roda motor seret berat diputar",
+          "rem cakram mengunci",
+          "piringan cakram sangat panas bau hangus"
+        ],
+        "problem": "Piston kaliper rem macet tidak bisa balik karena karat/kotoran, atau lubang balik master rem mampet.",
+        "action": "Jangan dipaksakan jalan! Rem yang mengunci bisa membuat cakram melengkung parah dan ban meledak karena panas.",
+        "garage_tip": "Sampaikan: 'Tolong bongkar kaliper rem, bersihkan piston dari karat pakai amplas halus, dan lumasi pakai gemuk khusus.'"
+      },
+      "en": {
+        "symptoms": [
+          "motorcycle wheel is hard to spin",
+          "disc brake is locked up",
+          "brake rotor gets extremely hot smelling burnt"
+        ],
+        "problem": "Caliper piston is stuck due to rust/dirt, or master cylinder return port is blocked.",
+        "action": "Do not force riding! Locked brakes can warp rotors and blow out tires from heat.",
+        "garage_tip": "Say: 'Please remove the brake caliper, clean piston rust with fine sandpaper, and apply special brake grease.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 50.000 - Rp 100.000",
+      "usd": "$3 - $7"
+    }
+  }
 ]
