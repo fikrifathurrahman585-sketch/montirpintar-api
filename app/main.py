@@ -4,6 +4,7 @@ import logging
 import os
 import requests
 from app.diagnosis import analyze_symptom
+from app.vision import analyze_image_with_ai
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("MontirPintarAPIV2")
@@ -45,6 +46,17 @@ def diagnosa_ai(data: KeluhanInput):
             
     except Exception as e:
         logger.error(f"Error AI: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+# 🚀 ENDPOINT BARU UNTUK AI KAMERA / VISION
+@app.post("/analisis_gambar")
+async def analisis_gambar(file: UploadFile = File(...)):
+    try:
+        logger.info(f"Menerima file gambar untuk analisis: {file.filename}")
+        result = await analyze_image_with_ai(file)
+        return result
+    except Exception as e:
+        logger.error(f"Error AI Kamera: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/lapor_error")
