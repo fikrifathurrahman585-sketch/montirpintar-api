@@ -1,0 +1,104 @@
+[
+  {
+    "id": "MTR_CV_001",
+    "vehicle": "motorcycle",
+    "system": "cvt",
+    "severity": "WARNING",
+    "driveability": "NORMAL",
+    "language": {
+      "id": {
+        "symptoms": [
+          "motor matic gredek",
+          "getar kencang saat digas awal",
+          "cvit getar",
+          "gredek"
+        ],
+        "problem": "Mangkok kampas ganda kotor penuh debu, kampas ganda tipis/slip, atau karet dumper aus.",
+        "action": "Jangan langsung ganti part mahal, lakukan servis pembersihan blok CVT rutin.",
+        "garage_tip": "Sampaikan: 'Mas, tolong servis CVT dan bersihkan mangkok kampas gandanya dari debu.'"
+      },
+      "en": {
+        "symptoms": [
+          "scooter cvt shakes",
+          "chattering during acceleration",
+          "clutch vibration"
+        ],
+        "problem": "Dirty clutch housing with dust, slipping clutch pads, or worn damper rubber.",
+        "action": "Do not rush to buy expensive parts, a routine CVT cleaning is enough.",
+        "garage_tip": "Say: 'Please service the CVT block and clean the clutch housing from dust.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 50.000 - Rp 250.000",
+      "usd": "$3 - $15"
+    }
+  },
+  {
+    "id": "MTR_MS_001",
+    "vehicle": "motorcycle",
+    "system": "engine",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "knalpot motor ngebul",
+          "asap putih knalpot",
+          "oli mesin susut",
+          "ngebul"
+        ],
+        "problem": "Oli mesin lolos ke ruang bakar karena ring piston baret, silinder aus, atau seal klep bocor.",
+        "action": "Cek rutin volume oli mesin agar tidak kehabisan total di tengah jalan.",
+        "garage_tip": "Sampaikan: 'Knalpot motor ngebul putih, tolong cek ring piston dan seal klep untuk turun mesin atas.'"
+      },
+      "en": {
+        "symptoms": [
+          "motorcycle exhaust white smoke",
+          "burning oil smoke",
+          "exhaust smoking"
+        ],
+        "problem": "Engine oil leaking into combustion chamber due to scratched piston rings or leaking valve seals.",
+        "action": "Check engine oil level regularly to avoid running dry.",
+        "garage_tip": "Say: 'Exhaust is smoking white, please check piston rings and valve seals for a top overhaul.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 800.000 - Rp 1.500.000",
+      "usd": "$50 - $100"
+    }
+  },
+  {
+    "id": "MTR_KL_001",
+    "vehicle": "motorcycle",
+    "system": "electrical",
+    "severity": "WARNING",
+    "driveability": "NORMAL",
+    "language": {
+      "id": {
+        "symptoms": [
+          "starter bunyi cetek cetek",
+          "tombol stater tidak nyala",
+          "dinamo starter mati",
+          "aki tekor"
+        ],
+        "problem": "Aki drop, atau Bendik Starter (Relay Starter) mengalami konslet/kotor di dalamnya.",
+        "action": "Gunakan kick starter (celah manual) untuk menghidupkan mesin sementara.",
+        "garage_tip": "Sampaikan: 'Tolong cek voltase aki, jika normal berarti bendik starter-nya yang rusak, tolong ganti.'"
+      },
+      "en": {
+        "symptoms": [
+          "starter makes clicking sound",
+          "electric starter not working",
+          "weak battery click"
+        ],
+        "problem": "Weak battery or shorted/faulty starter relay (bendik).",
+        "action": "Use the kick starter to turn on the engine temporarily.",
+        "garage_tip": "Say: 'Please check battery voltage, if normal the starter relay is faulty, please replace it.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 60.000 - Rp 150.000",
+      "usd": "$4 - $10"
+    }
+  }
+]
