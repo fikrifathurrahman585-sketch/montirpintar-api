@@ -1,6 +1,6 @@
 def format_response(match, score, lang):
     # Naikkan threshold dari 0.15 ke 0.28 untuk menyaring diagnosa meleset
-    if match and score > 0.28:
+    if match and score > 0.20:
         lang_data = match["language"][lang]
         cost = match["cost"]["idr"] if lang == "id" else match["cost"]["usd"]
         
