@@ -1600,5 +1600,474 @@
     "usd": "$20 - $160"
   }
 },
-  
+ {
+  "id": "MBL_MS_019",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "fan belt bunyi",
+        "v belt bunyi",
+        "bunyi ciiit dari mesin",
+        "belt mesin bunyi",
+        "fan belt berdecit",
+        "belt alternator bunyi",
+        "belt selip",
+        "bunyi decit saat starter pagi",
+        "bunyi saat ac hidup",
+        "belt mesin berisik"
+      ],
+      "problem": "Fan belt/V-Belt alternator mulai kendur, retak, aus atau pulley mengalami keausan.",
+      "action": "Kurangi penggunaan AC dan segera lakukan pemeriksaan agar belt tidak putus di jalan.",
+      "garage_tip": "Sampaikan: 'Tolong cek kondisi fan belt, tensioner dan pulley alternator apakah sudah aus atau kendur.'"
+    },
+    "en": {
+      "symptoms": [
+        "squealing belt",
+        "serpentine belt noise",
+        "alternator belt squeal",
+        "belt chirping",
+        "belt slipping",
+        "engine belt squeak",
+        "belt noise on startup",
+        "belt squeals with ac",
+        "drive belt noise",
+        "fan belt squeal"
+      ],
+      "problem": "Loose or worn drive belt, damaged pulley or failing belt tensioner.",
+      "action": "Inspect the belt soon before it snaps.",
+      "garage_tip": "Say: 'Please inspect the drive belt, belt tensioner and alternator pulley.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 600.000",
+    "usd": "$10 - $40"
+  }
+},
+{
+  "id": "MBL_MS_020",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "DANGER",
+  "driveability": "STOP",
+  "language": {
+    "id": {
+      "symptoms": [
+        "oli mesin seperti susu",
+        "oli warna kopi susu",
+        "oli bercampur air",
+        "dipstick warna putih",
+        "oli berubah putih",
+        "air masuk mesin",
+        "head gasket bocor",
+        "oli berbusa",
+        "radiator berkurang terus",
+        "oli keruh"
+      ],
+      "problem": "Coolant masuk ke dalam mesin akibat head gasket bocor, cylinder head retak atau oil cooler rusak.",
+      "action": "Jangan hidupkan mesin kembali karena dapat menyebabkan kerusakan total pada mesin.",
+      "garage_tip": "Sampaikan: 'Tolong cek head gasket, lakukan compression test dan pressure test sistem pendingin.'"
+    },
+    "en": {
+      "symptoms": [
+        "milky engine oil",
+        "oil mixed with coolant",
+        "white engine oil",
+        "coolant in engine oil",
+        "frothy engine oil",
+        "blown head gasket",
+        "milky dipstick",
+        "oil looks like milk",
+        "oil contamination",
+        "coolant contamination"
+      ],
+      "problem": "Coolant is mixing with engine oil due to a blown head gasket, cracked cylinder head or faulty oil cooler.",
+      "action": "Do not restart the engine.",
+      "garage_tip": "Say: 'Please inspect the head gasket, perform compression and cooling system pressure tests.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 3.000.000 - Rp 15.000.000",
+    "usd": "$200 - $950"
+  }
+},
+{
+  "id": "MBL_EL_009",
+  "vehicle": "car",
+  "system": "electrical",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "alarm mobil bunyi terus",
+        "alarm hidup sendiri",
+        "alarm sering aktif",
+        "remote tidak normal",
+        "alarm error",
+        "alarm berbunyi sendiri",
+        "mobil bunyi sendiri",
+        "alarm tidak mau mati",
+        "remote error",
+        "alarm sensitif"
+      ],
+      "problem": "Sensor alarm bermasalah, remote lemah, atau modul alarm mengalami gangguan.",
+      "action": "Gunakan kunci manual apabila remote tidak berfungsi.",
+      "garage_tip": "Sampaikan: 'Tolong cek modul alarm, sensor pintu dan baterai remote.'"
+    },
+    "en": {
+      "symptoms": [
+        "car alarm keeps going off",
+        "alarm triggers itself",
+        "alarm malfunction",
+        "remote key issue",
+        "alarm randomly sounds",
+        "alarm won't stop",
+        "false alarm",
+        "alarm sensor problem",
+        "key fob problem",
+        "alarm error"
+      ],
+      "problem": "Faulty alarm sensor, weak key fob battery or alarm control module issue.",
+      "action": "Use the physical key if necessary.",
+      "garage_tip": "Say: 'Please inspect the alarm module, door sensors and key fob battery.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 1.500.000",
+    "usd": "$10 - $100"
+  }
+},
+{
+  "id": "MBL_EL_010",
+  "vehicle": "car",
+  "system": "electrical",
+  "severity": "WARNING",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "remote mobil tidak berfungsi",
+        "smart key tidak terbaca",
+        "mobil tidak mendeteksi remote",
+        "keyless error",
+        "remote tidak bisa unlock",
+        "remote mati",
+        "keyless tidak bekerja",
+        "push start tidak respon",
+        "remote tidak connect",
+        "remote low battery"
+      ],
+      "problem": "Baterai remote habis, antena smart key bermasalah atau modul keyless mengalami gangguan.",
+      "action": "Gunakan emergency key bila tersedia.",
+      "garage_tip": "Sampaikan: 'Tolong cek baterai remote, antena smart key dan modul keyless entry.'"
+    },
+    "en": {
+      "symptoms": [
+        "smart key not detected",
+        "keyless entry failure",
+        "push button start not working",
+        "remote not detected",
+        "car cannot detect key",
+        "key fob battery low",
+        "remote unlock failure",
+        "smart key error",
+        "push start inactive",
+        "keyless malfunction"
+      ],
+      "problem": "Weak key fob battery, smart key antenna failure or keyless control module issue.",
+      "action": "Use the emergency key if available.",
+      "garage_tip": "Say: 'Please inspect the smart key battery, antenna and keyless module.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 50.000 - Rp 2.000.000",
+    "usd": "$3 - $130"
+  }
+},
+{
+  "id": "MBL_RM_005",
+  "vehicle": "car",
+  "system": "brakes",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "abs menyala",
+        "lampu abs nyala",
+        "indikator abs hidup",
+        "logo abs kuning",
+        "abs error",
+        "lampu rem abs",
+        "abs warning",
+        "abs tidak berfungsi",
+        "indikator rem abs",
+        "abs bermasalah"
+      ],
+      "problem": "Sensor roda ABS kotor/rusak, kabel sensor putus atau modul ABS mengalami gangguan.",
+      "action": "Hindari pengereman mendadak di jalan licin.",
+      "garage_tip": "Sampaikan: 'Tolong scan modul ABS dan cek wheel speed sensor pada setiap roda.'"
+    },
+    "en": {
+      "symptoms": [
+        "abs warning light",
+        "abs light on",
+        "anti lock brake warning",
+        "abs fault",
+        "wheel speed sensor fault",
+        "abs error",
+        "yellow abs light",
+        "abs malfunction",
+        "abs inactive",
+        "brake abs warning"
+      ],
+      "problem": "Faulty wheel speed sensor, damaged wiring or ABS control module issue.",
+      "action": "Drive carefully on slippery roads.",
+      "garage_tip": "Say: 'Please scan the ABS module and inspect all wheel speed sensors.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 250.000 - Rp 2.500.000",
+    "usd": "$15 - $160"
+  }
+},
+  {
+  "id": "MBL_MS_021",
+  "vehicle": "car",
+  "system": "fuel_system",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mobil bau bensin",
+        "bau bensin dari kap mesin",
+        "bau bensin masuk kabin",
+        "ada tetesan bensin",
+        "bbm bocor",
+        "bau pertalite",
+        "bau pertamax",
+        "bau bensin menyengat",
+        "tangki bensin bocor",
+        "selang bensin bocor"
+      ],
+      "problem": "Terjadi kebocoran pada selang bahan bakar, injector, fuel rail atau tangki bensin.",
+      "action": "Segera matikan mesin. Jangan merokok atau menyalakan api di dekat kendaraan.",
+      "garage_tip": "Sampaikan: 'Tolong cek seluruh jalur bahan bakar mulai dari tangki, selang, fuel rail hingga injector apakah ada kebocoran.'"
+    },
+    "en": {
+      "symptoms": [
+        "strong fuel smell",
+        "gasoline leak",
+        "fuel dripping",
+        "fuel odor inside cabin",
+        "engine smells like gasoline",
+        "petrol leak",
+        "fuel line leak",
+        "gas smell",
+        "fuel tank leak",
+        "injector leaking"
+      ],
+      "problem": "Fuel leak from the fuel hose, injector, fuel rail or fuel tank.",
+      "action": "Turn the engine off immediately and keep away from flames.",
+      "garage_tip": "Say: 'Please inspect the complete fuel system for leaks including hoses, injectors and fuel rail.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 2.500.000",
+    "usd": "$10 - $160"
+  }
+},
+{
+  "id": "MBL_MS_022",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin bunyi tik tik saat dingin",
+        "bunyi klep",
+        "suara klep kasar",
+        "mesin tik tik",
+        "bunyi tappet",
+        "katup mesin bunyi",
+        "mesin berisik saat pagi",
+        "bunyi dari kepala silinder",
+        "klep longgar",
+        "valve bunyi"
+      ],
+      "problem": "Celah klep tidak sesuai spesifikasi atau hydraulic lifter mulai aus.",
+      "action": "Masih aman digunakan namun segera lakukan penyetelan klep.",
+      "garage_tip": "Sampaikan: 'Tolong cek clearance klep sesuai spesifikasi pabrikan dan kondisi hydraulic lifter.'"
+    },
+    "en": {
+      "symptoms": [
+        "ticking engine",
+        "valve ticking",
+        "lifter noise",
+        "tappet noise",
+        "engine ticks when cold",
+        "valve train noise",
+        "top engine ticking",
+        "rocker arm noise",
+        "hydraulic lifter noise",
+        "clicking cylinder head"
+      ],
+      "problem": "Incorrect valve clearance or worn hydraulic lifters.",
+      "action": "Schedule a valve adjustment.",
+      "garage_tip": "Say: 'Please inspect valve clearance and hydraulic lifters.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 200.000 - Rp 800.000",
+    "usd": "$13 - $50"
+  }
+},
+{
+  "id": "MBL_ST_003",
+  "vehicle": "car",
+  "system": "steering",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "oli power steering bocor",
+        "power steering rembes",
+        "oli setir bocor",
+        "minyak power steering habis",
+        "setir berdengung",
+        "pompa power steering bunyi",
+        "power steering ngorok",
+        "oli ps netes",
+        "selang power steering bocor",
+        "rack steer bocor"
+      ],
+      "problem": "Kebocoran terjadi pada selang power steering, rack steer, seal pompa atau reservoir.",
+      "action": "Periksa volume oli power steering secara berkala dan hindari memutar setir mentok terlalu lama.",
+      "garage_tip": "Sampaikan: 'Tolong cek kebocoran rack steer, selang power steering dan seal pompa.'"
+    },
+    "en": {
+      "symptoms": [
+        "power steering leak",
+        "steering fluid leak",
+        "power steering whining",
+        "low steering fluid",
+        "rack and pinion leak",
+        "steering pump noise",
+        "power steering hose leak",
+        "fluid dripping",
+        "power steering reservoir empty",
+        "steering fluid low"
+      ],
+      "problem": "Leak from the steering rack, steering hose, pump seal or reservoir.",
+      "action": "Monitor steering fluid level and avoid holding the steering at full lock.",
+      "garage_tip": "Say: 'Please inspect the steering rack, hoses and steering pump seals.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 300.000 - Rp 3.500.000",
+    "usd": "$20 - $230"
+  }
+},
+{
+  "id": "MBL_KK_008",
+  "vehicle": "car",
+  "system": "tires",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "ban benjol",
+        "ban menggelembung",
+        "ban bocor samping",
+        "ban pecah dalam",
+        "dinding ban benjol",
+        "ban tidak bulat",
+        "ban rusak",
+        "sidewall ban benjol",
+        "ban retak",
+        "ban sobek"
+      ],
+      "problem": "Lapisan kawat (ply) di dalam ban rusak akibat benturan keras atau tekanan angin yang tidak sesuai.",
+      "action": "Segera ganti ban karena berisiko pecah saat kecepatan tinggi.",
+      "garage_tip": "Sampaikan: 'Tolong cek kondisi ban, velg dan lakukan penggantian ban karena sidewall sudah rusak.'"
+    },
+    "en": {
+      "symptoms": [
+        "tire bulge",
+        "bubble on tire",
+        "sidewall bulge",
+        "damaged tire",
+        "tire sidewall damage",
+        "tire bubble",
+        "bulging tire",
+        "tire deformation",
+        "tire crack",
+        "swollen tire"
+      ],
+      "problem": "Internal tire ply damage caused by impact or improper tire pressure.",
+      "action": "Replace the tire immediately.",
+      "garage_tip": "Say: 'Please inspect the tire and rim. Replace the damaged tire immediately.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 500.000 - Rp 2.500.000",
+    "usd": "$35 - $160"
+  }
+},
+{
+  "id": "MBL_EL_011",
+  "vehicle": "car",
+  "system": "electrical",
+  "severity": "WARNING",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "airbag menyala",
+        "lampu airbag hidup",
+        "indikator srs menyala",
+        "srs warning",
+        "logo airbag merah",
+        "airbag error",
+        "lampu srs nyala",
+        "airbag malfunction",
+        "airbag tidak normal",
+        "indikator safety menyala"
+      ],
+      "problem": "Gangguan pada sensor tabrakan, spiral cable (clock spring) atau modul SRS Airbag.",
+      "action": "Kendaraan masih dapat digunakan namun sistem airbag mungkin tidak bekerja optimal saat kecelakaan.",
+      "garage_tip": "Sampaikan: 'Tolong scan modul SRS dan cek clock spring serta sensor airbag.'"
+    },
+    "en": {
+      "symptoms": [
+        "airbag warning light",
+        "srs light on",
+        "airbag fault",
+        "airbag malfunction",
+        "srs warning",
+        "airbag system warning",
+        "red airbag light",
+        "airbag error",
+        "supplemental restraint warning",
+        "srs malfunction"
+      ],
+      "problem": "Fault in the crash sensor, clock spring or SRS control module.",
+      "action": "Have the SRS system inspected soon.",
+      "garage_tip": "Say: 'Please scan the SRS module and inspect the clock spring and crash sensors.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 250.000 - Rp 2.500.000",
+    "usd": "$15 - $160"
+  }
+}
 ]
