@@ -712,4 +712,374 @@
       "usd": "$15 - $60"
     }
   }
+  {
+  "id": "MBL_AC_003",
+  "vehicle": "car",
+  "system": "ac",
+  "severity": "WARNING",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "ac mobil tidak dingin sama sekali",
+        "ac cuma keluar angin",
+        "angin ac panas",
+        "ac tidak dingin siang hari",
+        "ac mobil panas"
+      ],
+      "problem": "Freon AC habis karena bocor, magnetic clutch kompresor rusak, atau kipas kondensor mati.",
+      "action": "Matikan AC jika terdengar bunyi kasar dari kompresor dan gunakan ventilasi alami sementara.",
+      "garage_tip": "Sampaikan: 'Tolong cek tekanan freon, kebocoran sistem AC, magnetic clutch dan kipas kondensor.'"
+    },
+    "en": {
+      "symptoms": [
+        "car ac not cold",
+        "only warm air from vents",
+        "ac blowing hot air",
+        "air conditioner not cooling",
+        "weak ac cooling"
+      ],
+      "problem": "Low refrigerant due to leaks, faulty magnetic clutch, or failed condenser fan.",
+      "action": "Turn off the AC if the compressor makes unusual noises and use natural ventilation.",
+      "garage_tip": "Say: 'Please inspect refrigerant pressure, AC leaks, magnetic clutch and condenser fan.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 350.000 - Rp 1.500.000",
+    "usd": "$25 - $100"
+  }
+},
+{
+  "id": "MBL_AC_004",
+  "vehicle": "car",
+  "system": "ac",
+  "severity": "WARNING",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "ac bunyi ngorok",
+        "kompresor ac berisik",
+        "ac bunyi grok grok",
+        "ac bunyi saat dinyalakan",
+        "ngorok dari kap mesin saat ac hidup"
+      ],
+      "problem": "Bearing kompresor AC aus, oli kompresor habis, atau kompresor mulai rusak.",
+      "action": "Matikan AC jika bunyi semakin keras agar kompresor tidak macet total.",
+      "garage_tip": "Sampaikan: 'Tolong cek bearing kompresor dan kondisi oli kompresor AC.'"
+    },
+    "en": {
+      "symptoms": [
+        "ac compressor noisy",
+        "growling ac compressor",
+        "rough ac noise",
+        "compressor rattling",
+        "grinding noise when ac is on"
+      ],
+      "problem": "Worn compressor bearing, insufficient compressor oil, or failing AC compressor.",
+      "action": "Turn off the AC if the noise becomes louder.",
+      "garage_tip": "Say: 'Please inspect the AC compressor bearing and compressor oil condition.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 500.000 - Rp 2.500.000",
+    "usd": "$35 - $160"
+  }
+},
+{
+  "id": "MBL_TR_003",
+  "vehicle": "car",
+  "system": "transmission",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "gigi susah masuk",
+        "persneling keras",
+        "oper gigi bunyi krek",
+        "gigi masuk susah",
+        "kopling diinjak tetap keras"
+      ],
+      "problem": "Master kopling bocor, ada udara di sistem kopling, atau sinkromes transmisi aus.",
+      "action": "Injak kopling penuh saat memindahkan gigi dan hindari memaksa masuk gigi.",
+      "garage_tip": "Sampaikan: 'Tolong cek master kopling, lakukan bleeding dan periksa sinkromes transmisi.'"
+    },
+    "en": {
+      "symptoms": [
+        "hard shifting",
+        "gear difficult to engage",
+        "grinding gears",
+        "manual transmission hard to shift",
+        "gearbox crunching"
+      ],
+      "problem": "Leaking clutch master cylinder, air in clutch line, or worn synchronizers.",
+      "action": "Fully depress the clutch pedal before shifting.",
+      "garage_tip": "Say: 'Please inspect the clutch hydraulic system and transmission synchronizers.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 300.000 - Rp 2.500.000",
+    "usd": "$20 - $160"
+  }
+},
+{
+  "id": "MBL_TR_004",
+  "vehicle": "car",
+  "system": "transmission",
+  "severity": "DANGER",
+  "driveability": "STOP",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mobil matic slip",
+        "rpm naik mobil tidak jalan",
+        "mobil digas tidak jalan",
+        "matic ngempos",
+        "transmisi selip"
+      ],
+      "problem": "Kampas kopling transmisi matic aus, oli transmisi sangat kotor, atau tekanan oli transmisi hilang.",
+      "action": "Jangan dipaksa berjalan karena dapat memperparah kerusakan transmisi.",
+      "garage_tip": "Sampaikan: 'Tolong cek tekanan oli transmisi dan kondisi kampas kopling matic sebelum overhaul.'"
+    },
+    "en": {
+      "symptoms": [
+        "automatic transmission slipping",
+        "engine revs but car won't move",
+        "rpm increases no acceleration",
+        "gear slipping",
+        "automatic gearbox slipping"
+      ],
+      "problem": "Worn transmission clutch packs, contaminated fluid or hydraulic pressure loss.",
+      "action": "Do not continue driving.",
+      "garage_tip": "Say: 'Please inspect transmission pressure and clutch packs before recommending overhaul.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 3.500.000 - Rp 8.000.000",
+    "usd": "$230 - $520"
+  }
+},
+{
+  "id": "MBL_EL_004",
+  "vehicle": "car",
+  "system": "electrical",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "starter cuma cetek cetek",
+        "starter klik klik",
+        "mobil tidak bisa starter cuma bunyi",
+        "relay starter bunyi",
+        "starter tidak mutar"
+      ],
+      "problem": "Relay starter rusak, aki lemah, atau motor starter macet.",
+      "action": "Periksa kondisi aki sebelum mencoba starter berulang kali.",
+      "garage_tip": "Sampaikan: 'Tolong cek relay starter, aki dan motor starter menggunakan multitester.'"
+    },
+    "en": {
+      "symptoms": [
+        "starter clicking",
+        "starter only clicks",
+        "engine won't crank",
+        "starter relay clicking",
+        "starter motor not turning"
+      ],
+      "problem": "Faulty starter relay, weak battery or seized starter motor.",
+      "action": "Check battery condition before repeated start attempts.",
+      "garage_tip": "Say: 'Please inspect the starter relay, battery and starter motor.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 900.000",
+    "usd": "$10 - $60"
+  }
+},
+{
+  "id": "MBL_ST_001",
+  "vehicle": "car",
+  "system": "steering",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "setir berat",
+        "stir berat",
+        "kemudi berat",
+        "setir susah diputar",
+        "power steering berat"
+      ],
+      "problem": "Oli power steering kurang, pompa power steering rusak, atau EPS mengalami gangguan.",
+      "action": "Kurangi penggunaan kendaraan sampai sistem kemudi diperiksa.",
+      "garage_tip": "Sampaikan: 'Tolong cek oli power steering, pompa power steering dan modul EPS.'"
+    },
+    "en": {
+      "symptoms": [
+        "heavy steering",
+        "stiff steering wheel",
+        "hard steering",
+        "power steering failure",
+        "steering difficult to turn"
+      ],
+      "problem": "Low power steering fluid, faulty steering pump or EPS malfunction.",
+      "action": "Drive carefully until repaired.",
+      "garage_tip": "Say: 'Please inspect the steering pump, fluid and EPS module.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 500.000 - Rp 3.500.000",
+    "usd": "$35 - $220"
+  }
+},
+{
+  "id": "MBL_ST_002",
+  "vehicle": "car",
+  "system": "steering",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "setir bergetar",
+        "stir getar di kecepatan tinggi",
+        "mobil bergetar di tol",
+        "kemudi bergetar",
+        "setir goyang"
+      ],
+      "problem": "Roda tidak balance, velg peyang, atau ban benjol.",
+      "action": "Kurangi kecepatan dan hindari berkendara cepat.",
+      "garage_tip": "Sampaikan: 'Tolong balancing keempat roda dan cek kondisi velg serta ban.'"
+    },
+    "en": {
+      "symptoms": [
+        "steering wheel vibration",
+        "vibration at highway speed",
+        "wheel shakes",
+        "steering shakes",
+        "car vibrates at high speed"
+      ],
+      "problem": "Wheel imbalance, bent rim or damaged tire.",
+      "action": "Reduce speed immediately.",
+      "garage_tip": "Say: 'Please perform wheel balancing and inspect rims and tires.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 500.000",
+    "usd": "$7 - $35"
+  }
+},
+{
+  "id": "MBL_RM_003",
+  "vehicle": "car",
+  "system": "brakes",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "pedal rem bergetar",
+        "rem ndut ndutan",
+        "rem berdenyut",
+        "pedal rem memantul",
+        "rem getar saat kecepatan tinggi"
+      ],
+      "problem": "Piringan cakram bergelombang akibat panas berlebih atau aus tidak merata.",
+      "action": "Kurangi kecepatan dan hindari pengereman mendadak berulang.",
+      "garage_tip": "Sampaikan: 'Tolong cek kondisi piringan cakram apakah perlu dibubut atau diganti.'"
+    },
+    "en": {
+      "symptoms": [
+        "brake pedal vibration",
+        "pulsating brake pedal",
+        "brake judder",
+        "vibrating brakes",
+        "brake pedal shakes"
+      ],
+      "problem": "Warped brake rotors caused by overheating or uneven wear.",
+      "action": "Avoid repeated hard braking.",
+      "garage_tip": "Say: 'Please inspect the brake rotors for warping.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 350.000 - Rp 1.200.000",
+    "usd": "$23 - $80"
+  }
+},
+{
+  "id": "MBL_RM_004",
+  "vehicle": "car",
+  "system": "brakes",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mobil lari saat direm",
+        "rem narik kiri",
+        "rem narik kanan",
+        "mobil membanting saat direm",
+        "rem tidak seimbang"
+      ],
+      "problem": "Kaliper rem macet, selang rem tersumbat, atau kampas rem aus tidak merata.",
+      "action": "Kurangi kecepatan dan hindari pengereman keras.",
+      "garage_tip": "Sampaikan: 'Tolong cek kaliper rem, pin slider dan kondisi kampas rem kanan kiri.'"
+    },
+    "en": {
+      "symptoms": [
+        "car pulls while braking",
+        "brakes pull left",
+        "brakes pull right",
+        "vehicle swerves under braking",
+        "uneven braking"
+      ],
+      "problem": "Sticking brake caliper, blocked brake hose or uneven brake pad wear.",
+      "action": "Drive carefully until repaired.",
+      "garage_tip": "Say: 'Please inspect brake calipers, slide pins and brake pads.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 600.000",
+    "usd": "$10 - $40"
+  }
+},
+{
+  "id": "MBL_DF_001",
+  "vehicle": "car",
+  "system": "drivetrain",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "gardan bunyi dengung",
+        "bunyi ngiiing dari belakang",
+        "mobil dengung saat jalan",
+        "suara gardan",
+        "gardan berisik"
+      ],
+      "problem": "Oli gardan kurang, bearing gardan aus, atau gigi gardan mulai rusak.",
+      "action": "Kurangi kecepatan dan hindari perjalanan jauh.",
+      "garage_tip": "Sampaikan: 'Tolong cek oli gardan, bearing dan backlash gardan.'"
+    },
+    "en": {
+      "symptoms": [
+        "differential whining",
+        "rear differential noise",
+        "whining from rear axle",
+        "rear axle humming",
+        "differential bearing noise"
+      ],
+      "problem": "Low differential oil, worn bearings or damaged differential gears.",
+      "action": "Reduce speed until inspected.",
+      "garage_tip": "Say: 'Please inspect the differential oil, bearings and gear backlash.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 250.000 - Rp 3.000.000",
+    "usd": "$15 - $200"
+  }
+}
 ]
