@@ -575,4 +575,104 @@
       "usd": "$7 - $25"
     }
   }
+  ,
+  {
+    "id": "MTR_KL_004",
+    "vehicle": "motorcycle",
+    "system": "electrical",
+    "severity": "DANGER",
+    "driveability": "STOP",
+    "language": {
+      "id": {
+        "symptoms": [
+          "motor injeksi mati total seperti tidak ada arus",
+          "kunci kontak diputar spedo tidak mau nyala",
+          "klakson dan lampu mati semua"
+        ],
+        "problem": "Sekring utama (Main Fuse) putus total akibat korsleting pada jalur kabel atau komponen kelistrikan.",
+        "action": "Cek kotak sekring. Jika sekring putus, ganti dengan cadangan. Jika langsung putus lagi, jangan dipaksa karena ada kabel konslet.",
+        "garage_tip": "Sampaikan: 'Motor saya mati total karena main fuse putus, tolong cek apakah ada jalur kabel bodi yang leleh atau konslet.'"
+      },
+      "en": {
+        "symptoms": [
+          "fi motorcycle completely dead with no power",
+          "turning key on doesn't light up dashboard",
+          "horn and lights completely dead"
+        ],
+        "problem": "Main fuse blown due to an electrical short circuit in the wiring harness or components.",
+        "action": "Check the fuse box. If replaced and blows again immediately, do not force it as there is a wiring short.",
+        "garage_tip": "Say: 'My bike is completely dead from a blown main fuse, please trace the wiring harness for any short circuits.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 20.000 - Rp 150.000",
+      "usd": "$2 - $10"
+    }
+  },
+  {
+    "id": "MTR_KK_005",
+    "vehicle": "motorcycle",
+    "system": "suspension",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "stang motor terasa berat sebelah kaku",
+          "ada bunyi jeglek saat rem depan ditarik",
+          "kemudi motor oblak naik turun"
+        ],
+        "problem": "Komstir (steering cone) sudah aus, mangkok pelor baret, atau kendor total.",
+        "action": "Kurangi kecepatan saat melintasi jalan bergelombang agar pengendalian tidak liar.",
+        "garage_tip": "Sampaikan: 'Tolong bongkar bagian depan dan setel ulang komstirnya, kalau mangkok pelornya sudah baret tolong ganti baru.'"
+      },
+      "en": {
+        "symptoms": [
+          "motorcycle steering feels heavy and stiff",
+          "clunking noise when pulling front brake",
+          "loose play in steering head"
+        ],
+        "problem": "Steering cone bearings worn out, races pitted, or completely loose.",
+        "action": "Reduce speed over bumps to maintain proper handling control.",
+        "garage_tip": "Say: 'Please teardown the front end and adjust the steering head bearings, replace if pitted.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 150.000 - Rp 350.000",
+      "usd": "$10 - $25"
+    }
+  },
+  {
+    "id": "MTR_RM_002",
+    "vehicle": "motorcycle",
+    "system": "brakes",
+    "severity": "DANGER",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "rem motor bunyi bergesek besi kasar",
+          "saat direm ada suara srek srek kasar sekali",
+          "piringan cakram baret dalam"
+        ],
+        "problem": "Kampas rem sudah habis total, sehingga plat besi kampas bergesekan langsung dengan piringan cakram.",
+        "action": "Segera ganti kampas rem. Jangan diteruskan berkendara karena piringan cakram bisa terkikis habis dan rem blong.",
+        "garage_tip": "Sampaikan: 'Kampas rem sudah habis sampai bergesekan besi, tolong ganti kampas rem baru dan cek kondisi cakramnya.'"
+      },
+      "en": {
+        "symptoms": [
+          "motorcycle brakes grinding metal on metal",
+          "harsh scraping noise when braking",
+          "deep grooves on brake rotor"
+        ],
+        "problem": "Brake pads completely depleted, causing the metal backing plate to grind directly against the rotor.",
+        "action": "Replace brake pads immediately. Do not keep riding or rotors will be ruined and brakes will fail.",
+        "garage_tip": "Say: 'The brake pads are worn down to metal, please replace them immediately and check rotor damage.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 50.000 - Rp 150.000",
+      "usd": "$3 - $10"
+    }
+  }
 ]
