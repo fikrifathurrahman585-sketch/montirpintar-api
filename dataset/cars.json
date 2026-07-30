@@ -711,7 +711,7 @@
       "idr": "Rp 250.000 - Rp 900.000",
       "usd": "$15 - $60"
     }
-  }
+  },
   {
   "id": "MBL_AC_003",
   "vehicle": "car",
@@ -1081,5 +1081,265 @@
     "idr": "Rp 250.000 - Rp 3.000.000",
     "usd": "$15 - $200"
   }
-}
+},
+ {
+  "id": "MBL_MS_011",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "knalpot keluar asap putih tebal",
+        "mobil ngebul putih",
+        "asap putih terus menerus",
+        "knalpot berasap putih",
+        "oli cepat habis dan ngebul"
+      ],
+      "problem": "Ring piston aus, seal klep bocor, atau dinding silinder sudah aus sehingga oli ikut terbakar.",
+      "action": "Pantau level oli mesin dan hindari perjalanan jauh sebelum diperbaiki.",
+      "garage_tip": "Sampaikan: 'Tolong cek ring piston, seal klep dan kompresi mesin apakah perlu turun mesin.'"
+    },
+    "en": {
+      "symptoms": [
+        "thick white smoke",
+        "white exhaust smoke",
+        "engine burning oil",
+        "continuous white smoke",
+        "oil consumption with smoke"
+      ],
+      "problem": "Worn piston rings, leaking valve seals or worn cylinder walls allowing oil into the combustion chamber.",
+      "action": "Monitor engine oil level and avoid long trips.",
+      "garage_tip": "Say: 'Please inspect piston rings, valve seals and perform a compression test.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 3.000.000 - Rp 10.000.000",
+    "usd": "$200 - $650"
+  }
+},
+{
+  "id": "MBL_MS_012",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "knalpot keluar asap hitam",
+        "mobil ngebul hitam",
+        "asap hitam saat digas",
+        "bensin boros asap hitam",
+        "knalpot hitam pekat"
+      ],
+      "problem": "Campuran bahan bakar terlalu kaya, filter udara kotor, injektor bocor atau sensor MAF bermasalah.",
+      "action": "Kurangi akselerasi tinggi sampai sistem injeksi diperiksa.",
+      "garage_tip": "Sampaikan: 'Tolong cek injektor, MAF sensor, throttle body dan filter udara.'"
+    },
+    "en": {
+      "symptoms": [
+        "black exhaust smoke",
+        "rich fuel mixture",
+        "black smoke during acceleration",
+        "poor fuel economy black smoke",
+        "black tailpipe smoke"
+      ],
+      "problem": "Rich fuel mixture caused by dirty air filter, leaking injectors or faulty MAF sensor.",
+      "action": "Avoid aggressive acceleration until repaired.",
+      "garage_tip": "Say: 'Please inspect injectors, MAF sensor and air filter.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 250.000 - Rp 2.000.000",
+    "usd": "$15 - $130"
+  }
+},
+{
+  "id": "MBL_MS_013",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mobil boros bensin",
+        "bensin cepat habis",
+        "konsumsi bbm boros",
+        "isi bensin sering",
+        "pemakaian bensin naik drastis"
+      ],
+      "problem": "Filter udara kotor, sensor O2 rusak, MAF sensor bermasalah atau injektor bocor.",
+      "action": "Hindari perjalanan jauh sebelum konsumsi bahan bakar diperiksa.",
+      "garage_tip": "Sampaikan: 'Tolong cek O2 sensor, injektor, throttle body dan scanner OBD2.'"
+    },
+    "en": {
+      "symptoms": [
+        "poor fuel economy",
+        "fuel consumption increased",
+        "car uses too much fuel",
+        "high fuel usage",
+        "fuel efficiency dropped"
+      ],
+      "problem": "Dirty air filter, faulty oxygen sensor, MAF sensor issue or leaking injectors.",
+      "action": "Inspect the fuel system soon.",
+      "garage_tip": "Say: 'Please inspect O2 sensor, injectors and scan the ECU.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 1.500.000",
+    "usd": "$10 - $100"
+  }
+},
+{
+  "id": "MBL_EL_005",
+  "vehicle": "car",
+  "system": "electrical",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "klakson tidak bunyi",
+        "horn mati",
+        "klakson lemah",
+        "suara klakson kecil",
+        "klakson kadang hidup kadang mati"
+      ],
+      "problem": "Sekring putus, relay horn rusak, saklar klakson bermasalah atau horn sudah mati.",
+      "action": "Gunakan isyarat lain saat berkendara sampai klakson diperbaiki.",
+      "garage_tip": "Sampaikan: 'Tolong cek relay horn, sekring dan saklar di setir.'"
+    },
+    "en": {
+      "symptoms": [
+        "horn not working",
+        "car horn dead",
+        "weak horn sound",
+        "horn intermittent",
+        "no horn sound"
+      ],
+      "problem": "Blown fuse, faulty horn relay, steering switch or damaged horn unit.",
+      "action": "Repair the horn as soon as possible.",
+      "garage_tip": "Say: 'Please inspect the horn relay, fuse and steering wheel switch.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 500.000",
+    "usd": "$7 - $35"
+  }
+},
+{
+  "id": "MBL_EL_006",
+  "vehicle": "car",
+  "system": "electrical",
+  "severity": "WARNING",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "lampu depan redup",
+        "headlamp redup",
+        "lampu mobil kurang terang",
+        "lampu depan mati sebelah",
+        "lampu redup saat langsam"
+      ],
+      "problem": "Alternator lemah, aki mulai soak, bohlam mulai rusak atau grounding kelistrikan kurang baik.",
+      "action": "Kurangi berkendara malam sebelum sistem kelistrikan diperiksa.",
+      "garage_tip": "Sampaikan: 'Tolong cek pengisian alternator, aki dan jalur grounding lampu.'"
+    },
+    "en": {
+      "symptoms": [
+        "dim headlights",
+        "weak headlights",
+        "one headlight out",
+        "lights dim at idle",
+        "poor headlight brightness"
+      ],
+      "problem": "Weak alternator output, failing battery, bad bulb or poor electrical grounding.",
+      "action": "Inspect the charging system soon.",
+      "garage_tip": "Say: 'Please inspect alternator charging, battery and grounding.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 1.200.000",
+    "usd": "$10 - $80"
+  }
+},
+{
+  "id": "MBL_KK_007",
+  "vehicle": "car",
+  "system": "suspension",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mobil limbung",
+        "mobil ngayun",
+        "mobil mantul terus",
+        "shock mati",
+        "mobil tidak stabil"
+      ],
+      "problem": "Shockbreaker bocor, per melemah atau shock absorber sudah kehilangan daya redam.",
+      "action": "Kurangi kecepatan terutama saat menikung.",
+      "garage_tip": "Sampaikan: 'Tolong cek shockbreaker depan belakang dan kondisi per suspensi.'"
+    },
+    "en": {
+      "symptoms": [
+        "car feels floaty",
+        "vehicle keeps bouncing",
+        "bad shock absorbers",
+        "unstable suspension",
+        "car sways excessively"
+      ],
+      "problem": "Leaking shock absorbers or weakened suspension springs.",
+      "action": "Reduce speed especially on corners.",
+      "garage_tip": "Say: 'Please inspect front and rear shock absorbers.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 800.000 - Rp 2.500.000",
+    "usd": "$50 - $160"
+  }
+},
+{
+  "id": "MBL_TR_005",
+  "vehicle": "car",
+  "system": "transmission",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "tuas matic nyangkut",
+        "tuas transmisi tidak bisa pindah",
+        "gigi matic terkunci di P",
+        "shift lock bermasalah",
+        "persneling matic macet"
+      ],
+      "problem": "Brake switch rusak atau solenoid shift lock mengalami kerusakan.",
+      "action": "Gunakan tombol Shift Lock darurat bila tersedia.",
+      "garage_tip": "Sampaikan: 'Tolong cek brake switch dan solenoid shift lock.'"
+    },
+    "en": {
+      "symptoms": [
+        "gear shifter stuck",
+        "automatic shifter locked",
+        "cannot shift from park",
+        "shift lock problem",
+        "gear selector stuck"
+      ],
+      "problem": "Faulty brake switch or failed shift lock solenoid.",
+      "action": "Use the emergency shift lock release if available.",
+      "garage_tip": "Say: 'Please inspect the brake switch and shift lock solenoid.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 400.000",
+    "usd": "$7 - $25"
+  }
+},
+  
 ]
