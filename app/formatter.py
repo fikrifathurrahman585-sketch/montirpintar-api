@@ -1,24 +1,20 @@
 def format_response(match, score, lang):
-    if match and score > 0.15:
+    # Naikkan threshold dari 0.15 ke 0.28 untuk menyaring diagnosa meleset
+    if match and score > 0.28:
         lang_data = match["language"][lang]
         cost = match["cost"]["idr"] if lang == "id" else match["cost"]["usd"]
         
-        # Gabungkan teks untuk kompatibilitas kunci 'solusi' Android lama
         solusi_gabungan = f"{lang_data['action']} \n\nTips Bengkel: {lang_data['garage_tip']}"
         
         return {
             "status": "success",
-            
-            # 🛡️ FORMAT LAMA (V1) AGAR ANDROID 100% AMAN DARI CRASH
             "bahasa": lang,
             "akurasi": round(score * 100, 2),
             "diagnosa_ai": lang_data["problem"],
-            "solusi": solusi_gabungan,  # INI KUNCI PENYELAMATNYA
+            "solusi": solusi_gabungan,
             "saran_tindakan": lang_data["action"],
             "tips_bengkel": lang_data["garage_tip"],
             "estimasi_biaya": cost,
-            
-            # 🚀 FORMAT BARU (V2)
             "language": lang,
             "confidence": round(score * 100, 2),
             "severity": match.get("severity", "WARNING"),
@@ -31,17 +27,13 @@ def format_response(match, score, lang):
     else:
         return {
             "status": "success",
-            
-            # 🛡️ FORMAT LAMA (V1)
             "bahasa": lang,
             "akurasi": 0.0,
-            "diagnosa_ai": "Kerusakan belum teridentifikasi secara spesifik.",
-            "solusi": "Berhenti di tempat aman dan bawa ke bengkel terdekat untuk dicek manual.", # KUNCI PENYELAMAT
+            "diagnosa_ai": "Kerusakan belum teridentifikasi secara spesifik dalam database.",
+            "solusi": "Silakan periksakan kendaraan Anda ke bengkel terdekat untuk pengecekan manual.",
             "saran_tindakan": "Berhenti di tempat aman dan cek manual.",
             "tips_bengkel": "Bawa ke bengkel terdekat untuk dicek manual.",
             "estimasi_biaya": "Bervariasi",
-            
-            # 🚀 FORMAT BARU (V2)
             "language": lang,
             "confidence": 0.0,
             "severity": "UNKNOWN",
