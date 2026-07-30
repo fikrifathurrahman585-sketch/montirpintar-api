@@ -1,5 +1,43 @@
 [
   {
+    "id": "MBL_RM_001",
+    "vehicle": "car",
+    "system": "brakes",
+    "severity": "DANGER",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "rem blong",
+          "pedal rem ngempos",
+          "rem terasa ngempos saat di injak",
+          "rem ngempos",
+          "rem harus dikocok",
+          "minyak rem bocor"
+        ],
+        "problem": "Minyak rem habis/bocor, ada angin palsu di selang rem, atau master rem sentral jebol.",
+        "action": "BAHAYA! Jangan paksakan jalan. Gunakan rem tangan perlahan jika darurat untuk berhenti.",
+        "garage_tip": "Sampaikan: 'Rem saya ngempos/blong, tolong cek kebocoran minyak rem dan master remnya.'"
+      },
+      "en": {
+        "symptoms": [
+          "brake failure",
+          "spongy brake pedal",
+          "brakes sink low",
+          "soft brakes",
+          "brake pedal feels soft when pressed"
+        ],
+        "problem": "Brake fluid leak, air in brake lines, or master cylinder failure.",
+        "action": "DANGER! Do not continue driving. Use emergency handbrake gently if needed.",
+        "garage_tip": "Say: 'My brakes failed/feel spongy, please check fluid leaks and master cylinder.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 200.000 - Rp 800.000",
+      "usd": "$13 - $50"
+    }
+  },
+  {
     "id": "MBL_TR_001",
     "vehicle": "car",
     "system": "transmission",
@@ -67,109 +105,6 @@
     "cost": {
       "idr": "Rp 250.000 - Rp 1.200.000",
       "usd": "$15 - $80"
-    }
-  },
-  {
-    "id": "MBL_KK_001",
-    "vehicle": "car",
-    "system": "suspension",
-    "severity": "INFO",
-    "driveability": "NORMAL",
-    "language": {
-      "id": {
-        "symptoms": [
-          "bunyi gluduk gluduk",
-          "bletok dari bawah ban",
-          "kaki kaki bunyi di jalan rusak",
-          "gluduk"
-        ],
-        "problem": "Komponen kaki-kaki aus seperti bushing arm pecah, link stabilizer oblak, atau ball joint jebol.",
-        "action": "Kurangi kecepatan secara drastis saat melintasi jalan berlubang atau polisi tidur.",
-        "garage_tip": "Sampaikan: 'Tolong dongkrak mobilnya, cek bagian bushing arm, link stabilizer, dan ball joint.'"
-      },
-      "en": {
-        "symptoms": [
-          "clunking noise from suspension",
-          "knocking sound over bumps",
-          "rough road rattles"
-        ],
-        "problem": "Worn suspension parts such as cracked arm bushings, loose stabilizer links, or damaged ball joints.",
-        "action": "Reduce speed significantly when passing over potholes or speed bumps.",
-        "garage_tip": "Say: 'Please jack up the car and inspect bushing arms, stabilizer links, and ball joints.'"
-      }
-    },
-    "cost": {
-      "idr": "Rp 400.000 - Rp 1.500.000",
-      "usd": "$25 - $100"
-    }
-  },
-  {
-    "id": "MBL_MS_002",
-    "vehicle": "car",
-    "system": "engine",
-    "severity": "DANGER",
-    "driveability": "STOP",
-    "language": {
-      "id": {
-        "symptoms": [
-          "mesin overheat",
-          "suhu indikator naik drastis",
-          "air radiator mendidih",
-          "uap panas kap mesin"
-        ],
-        "problem": "Air radiator habis/bocor, motor extra fan mati, waterpump bocor, atau thermostat macet.",
-        "action": "SEGERA tepikan mobil di tempat aman, matikan mesin, dan JANGAN buka tutup radiator saat panas.",
-        "garage_tip": "Sampaikan: 'Mobil saya overheat, tolong cek kipas radiator, selang, waterpump, dan isi coolant.'"
-      },
-      "en": {
-        "symptoms": [
-          "engine overheats",
-          "temperature gauge spikes to H",
-          "boiling coolant under hood"
-        ],
-        "problem": "Low/leaking coolant, dead cooling fan, leaking water pump, or stuck thermostat.",
-        "action": "Pull over immediately, turn off engine, do not open radiator cap while hot.",
-        "garage_tip": "Say: 'My car overheated, please check radiator fan, hoses, water pump, and coolant system.'"
-      }
-    },
-    "cost": {
-      "idr": "Rp 400.000 - Rp 1.500.000",
-      "usd": "$25 - $100"
-    }
-  },
-  {
-    "id": "MBL_RM_001",
-    "vehicle": "car",
-    "system": "brakes",
-    "severity": "DANGER",
-    "driveability": "LIMITED",
-    "language": {
-      "id": {
-        "symptoms": [
-          "rem blong",
-          "pedal rem ngempos",
-          "rem harus dikocok",
-          "minyak rem bocor"
-        ],
-        "problem": "Minyak rem habis/bocor, ada angin palsu di selang rem, atau master rem sentral jebol.",
-        "action": "BAHAYA! Jangan paksakan jalan. Gunakan rem tangan perlahan jika darurat untuk berhenti.",
-        "garage_tip": "Sampaikan: 'Rem saya ngempos/blong, tolong cek kebocoran minyak rem dan master remnya.'"
-      },
-      "en": {
-        "symptoms": [
-          "brake failure",
-          "spongy brake pedal",
-          "brakes sink low",
-          "soft brakes"
-        ],
-        "problem": "Brake fluid leak, air in brake lines, or master cylinder failure.",
-        "action": "DANGER! Do not continue driving. Use emergency handbrake gently if needed.",
-        "garage_tip": "Say: 'My brakes failed/feel spongy, please check fluid leaks and master cylinder.'"
-      }
-    },
-    "cost": {
-      "idr": "Rp 200.000 - Rp 800.000",
-      "usd": "$13 - $50"
     }
   }
 ]
