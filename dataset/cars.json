@@ -2069,5 +2069,476 @@
     "idr": "Rp 250.000 - Rp 2.500.000",
     "usd": "$15 - $160"
   }
-}
+},
+  {
+  "id": "MBL_EFI_001",
+  "vehicle": "car",
+  "system": "fuel_system",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "sensor maf rusak",
+        "mobil ngempos setelah filter udara",
+        "tarikan berat setelah cuci mesin",
+        "mesin brebet saat digas",
+        "rpm tidak stabil setelah filter udara dibuka",
+        "mobil kurang tenaga",
+        "tarikan loyo",
+        "mesin terasa sesak",
+        "gas lambat respon",
+        "mobil kehilangan tenaga"
+      ],
+      "problem": "Mass Air Flow (MAF) sensor kotor atau rusak sehingga jumlah udara yang dibaca ECU tidak akurat.",
+      "action": "Hindari akselerasi penuh dan segera lakukan pemeriksaan sensor.",
+      "garage_tip": "Sampaikan: 'Tolong cek data live MAF menggunakan scanner dan bersihkan sensor dengan MAF Cleaner.'"
+    },
+    "en": {
+      "symptoms": [
+        "maf sensor problem",
+        "poor acceleration",
+        "loss of engine power",
+        "rough acceleration",
+        "hesitation",
+        "dirty maf sensor",
+        "maf failure",
+        "engine lacks power",
+        "weak throttle response",
+        "maf reading incorrect"
+      ],
+      "problem": "Dirty or faulty Mass Air Flow sensor causing incorrect air flow readings.",
+      "action": "Avoid heavy acceleration until inspected.",
+      "garage_tip": "Say: 'Please inspect live MAF sensor readings and clean the sensor using MAF cleaner.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 200.000 - Rp 1.800.000",
+    "usd": "$15 - $120"
+  }
+},
+{
+  "id": "MBL_EFI_002",
+  "vehicle": "car",
+  "system": "fuel_system",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "sensor map rusak",
+        "rpm naik turun saat dingin",
+        "mobil ngempos saat nanjak",
+        "gas telat respon",
+        "mesin pincang",
+        "mesin brebet saat idle",
+        "tarikan berat",
+        "idle tidak stabil",
+        "mesin seperti kehabisan tenaga",
+        "mesin tersendat"
+      ],
+      "problem": "MAP (Manifold Absolute Pressure) sensor memberikan data tekanan intake yang tidak akurat.",
+      "action": "Kurangi beban mesin dan hindari perjalanan jauh.",
+      "garage_tip": "Sampaikan: 'Tolong cek MAP sensor, selang vacuum dan data scanner ECU.'"
+    },
+    "en": {
+      "symptoms": [
+        "map sensor fault",
+        "unstable idle",
+        "poor hill climbing",
+        "hesitation",
+        "engine stumble",
+        "weak acceleration",
+        "vacuum sensor problem",
+        "rough idle",
+        "poor throttle response",
+        "engine bogging"
+      ],
+      "problem": "Faulty MAP sensor or vacuum leak causing incorrect intake pressure readings.",
+      "action": "Drive gently until diagnosed.",
+      "garage_tip": "Say: 'Please inspect the MAP sensor, vacuum hose and ECU live data.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 200.000 - Rp 1.500.000",
+    "usd": "$15 - $100"
+  }
+},
+{
+  "id": "MBL_EFI_003",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "DANGER",
+  "driveability": "STOP",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin mati mendadak lalu tidak hidup",
+        "sensor crankshaft rusak",
+        "mobil mati tiba tiba",
+        "starter normal tapi mesin tidak hidup",
+        "mesin mati saat panas",
+        "ckp rusak",
+        "mobil mogok acak",
+        "mati sendiri saat jalan",
+        "hilang pengapian",
+        "mesin tidak mau menyala"
+      ],
+      "problem": "Crankshaft Position Sensor (CKP) gagal mengirim sinyal posisi poros engkol ke ECU.",
+      "action": "Jangan memaksa starter berulang kali. Kendaraan sebaiknya diderek.",
+      "garage_tip": "Sampaikan: 'Tolong cek CKP sensor menggunakan scanner dan ukur resistansi sensornya.'"
+    },
+    "en": {
+      "symptoms": [
+        "crankshaft sensor failure",
+        "engine suddenly stalls",
+        "cranks but won't start",
+        "random stalling",
+        "engine dies while driving",
+        "ckp sensor fault",
+        "no spark",
+        "engine won't restart",
+        "stalls when hot",
+        "position sensor problem"
+      ],
+      "problem": "Failed Crankshaft Position Sensor preventing ECU from determining crank position.",
+      "action": "Tow the vehicle instead of repeatedly cranking the engine.",
+      "garage_tip": "Say: 'Please diagnose the CKP sensor using a scan tool and resistance test.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 350.000 - Rp 1.500.000",
+    "usd": "$25 - $100"
+  }
+},
+{
+  "id": "MBL_EFI_004",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "sensor camshaft rusak",
+        "mesin susah hidup pagi",
+        "starter lama baru hidup",
+        "tenaga hilang",
+        "check engine hidup",
+        "cmp sensor error",
+        "mesin brebet",
+        "idle kasar",
+        "mobil kurang tenaga",
+        "mesin tersendat"
+      ],
+      "problem": "Camshaft Position Sensor (CMP) mengalami gangguan sehingga waktu injeksi dan pengapian menjadi tidak tepat.",
+      "action": "Masih dapat digunakan secara terbatas tetapi segera lakukan diagnosis.",
+      "garage_tip": "Sampaikan: 'Tolong scan CMP sensor dan sinkronisasi timing mesin.'"
+    },
+    "en": {
+      "symptoms": [
+        "camshaft sensor failure",
+        "hard starting",
+        "long cranking",
+        "loss of power",
+        "check engine light",
+        "cmp sensor fault",
+        "rough idle",
+        "hesitation",
+        "timing problem",
+        "poor performance"
+      ],
+      "problem": "Faulty Camshaft Position Sensor causing incorrect ignition and injection timing.",
+      "action": "Drive only if necessary until repaired.",
+      "garage_tip": "Say: 'Please inspect the CMP sensor and verify engine timing.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 350.000 - Rp 1.500.000",
+    "usd": "$25 - $100"
+  }
+},
+{
+  "id": "MBL_EFI_005",
+  "vehicle": "car",
+  "system": "emission",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "bau bensin dari knalpot",
+        "emisi tinggi",
+        "mobil gagal uji emisi",
+        "knalpot bau menyengat",
+        "asap tidak normal",
+        "bbm boros",
+        "check engine karena emisi",
+        "gas buang bau",
+        "knalpot menyengat",
+        "hasil emisi jelek"
+      ],
+      "problem": "Catalytic converter mulai tersumbat atau kehilangan efektivitas sehingga emisi gas buang meningkat.",
+      "action": "Segera lakukan pemeriksaan agar konsumsi bahan bakar tidak semakin boros.",
+      "garage_tip": "Sampaikan: 'Tolong cek catalytic converter, O2 sensor dan hasil pembacaan emisi gas buang.'"
+    },
+    "en": {
+      "symptoms": [
+        "high emissions",
+        "failed emissions test",
+        "strong exhaust smell",
+        "bad catalytic converter",
+        "rich exhaust smell",
+        "poor emissions",
+        "fuel smell from exhaust",
+        "exhaust pollution",
+        "check engine emissions",
+        "catalyst efficiency low"
+      ],
+      "problem": "Catalytic converter is clogged or losing efficiency, increasing exhaust emissions.",
+      "action": "Have the emission system inspected soon.",
+      "garage_tip": "Say: 'Please inspect the catalytic converter, oxygen sensors and exhaust emissions.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 500.000 - Rp 4.000.000",
+    "usd": "$35 - $260"
+  }
+},
+  {
+  "id": "MBL_EFI_006",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "sensor tps rusak",
+        "gas telat respon",
+        "pedal gas tidak responsif",
+        "mobil ngempos saat diinjak",
+        "tarikan putus putus",
+        "rpm naik terlambat",
+        "mobil tersendat saat akselerasi",
+        "gas kosong",
+        "pedal gas tidak enak",
+        "throttle position error"
+      ],
+      "problem": "Throttle Position Sensor (TPS) mengirimkan data bukaan throttle yang tidak akurat ke ECU sehingga akselerasi menjadi tidak normal.",
+      "action": "Hindari akselerasi mendadak dan segera lakukan pemeriksaan sensor.",
+      "garage_tip": "Sampaikan: 'Tolong cek nilai TPS menggunakan scanner dan lakukan kalibrasi bila diperlukan.'"
+    },
+    "en": {
+      "symptoms": [
+        "tps sensor fault",
+        "poor throttle response",
+        "delayed acceleration",
+        "throttle hesitation",
+        "slow pedal response",
+        "throttle position error",
+        "engine hesitation",
+        "poor acceleration",
+        "accelerator lag",
+        "tps malfunction"
+      ],
+      "problem": "Faulty Throttle Position Sensor sending incorrect throttle angle data to the ECU.",
+      "action": "Avoid sudden acceleration until repaired.",
+      "garage_tip": "Say: 'Please inspect the TPS live data and recalibrate if necessary.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 250.000 - Rp 1.500.000",
+    "usd": "$15 - $100"
+  }
+},
+{
+  "id": "MBL_EFI_007",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "sensor suhu mesin rusak",
+        "jarum suhu tidak normal",
+        "kipas radiator hidup terus",
+        "mesin susah hidup saat dingin",
+        "check engine",
+        "sensor ect rusak",
+        "bbm boros",
+        "idle tinggi saat dingin",
+        "temperatur mesin salah",
+        "coolant sensor error"
+      ],
+      "problem": "Engine Coolant Temperature (ECT) sensor memberikan pembacaan suhu yang tidak sesuai sehingga ECU salah mengatur campuran bahan bakar.",
+      "action": "Masih dapat digunakan sementara tetapi segera lakukan diagnosis.",
+      "garage_tip": "Sampaikan: 'Tolong cek Engine Coolant Temperature Sensor menggunakan scanner dan multimeter.'"
+    },
+    "en": {
+      "symptoms": [
+        "coolant temperature sensor fault",
+        "ect sensor problem",
+        "radiator fan always on",
+        "poor cold start",
+        "incorrect engine temperature",
+        "high idle when cold",
+        "engine coolant sensor",
+        "temperature sensor error",
+        "rich fuel mixture",
+        "coolant sensor malfunction"
+      ],
+      "problem": "Faulty Engine Coolant Temperature sensor causing incorrect fuel enrichment.",
+      "action": "Have the sensor inspected soon.",
+      "garage_tip": "Say: 'Please inspect the ECT sensor using live scanner data and resistance measurement.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 200.000 - Rp 800.000",
+    "usd": "$15 - $55"
+  }
+},
+{
+  "id": "MBL_EFI_008",
+  "vehicle": "car",
+  "system": "emission",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "egr rusak",
+        "mobil brebet saat langsam",
+        "asap hitam tipis",
+        "check engine egr",
+        "tarikan berat rpm bawah",
+        "idle kasar",
+        "mesin bergetar",
+        "katup egr macet",
+        "emisi tinggi",
+        "rpm tidak stabil"
+      ],
+      "problem": "Katup Exhaust Gas Recirculation (EGR) macet terbuka atau tertutup akibat kerak karbon.",
+      "action": "Segera lakukan pembersihan EGR agar emisi dan performa kembali normal.",
+      "garage_tip": "Sampaikan: 'Tolong lepas dan bersihkan katup EGR serta saluran karbonnya.'"
+    },
+    "en": {
+      "symptoms": [
+        "egr valve problem",
+        "rough idle",
+        "egr stuck",
+        "high emissions",
+        "engine shaking",
+        "poor low rpm",
+        "black smoke",
+        "egr malfunction",
+        "carbon buildup",
+        "check engine egr"
+      ],
+      "problem": "Carbon buildup causing the EGR valve to stick open or closed.",
+      "action": "Clean the EGR system as soon as possible.",
+      "garage_tip": "Say: 'Please remove and clean the EGR valve and passages.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 250.000 - Rp 900.000",
+    "usd": "$15 - $60"
+  }
+},
+{
+  "id": "MBL_EFI_009",
+  "vehicle": "car",
+  "system": "fuel_system",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "injector bocor",
+        "bau bensin setelah mesin mati",
+        "starter lama setelah parkir",
+        "busi basah",
+        "bbm cepat habis",
+        "mesin pincang pagi hari",
+        "knalpot bau bensin",
+        "idle kasar",
+        "mesin banjir bensin",
+        "fuel injector bocor"
+      ],
+      "problem": "Injector bocor atau tidak dapat menutup sempurna sehingga bahan bakar terus menetes ke ruang bakar.",
+      "action": "Hindari penggunaan kendaraan dalam waktu lama karena dapat merusak catalytic converter.",
+      "garage_tip": "Sampaikan: 'Tolong lakukan injector leak test dan injector cleaning sebelum memutuskan penggantian.'"
+    },
+    "en": {
+      "symptoms": [
+        "leaking injector",
+        "fuel injector leak",
+        "hard start after parking",
+        "wet spark plugs",
+        "rich fuel mixture",
+        "rough idle",
+        "fuel flooding",
+        "gas smell exhaust",
+        "poor fuel economy",
+        "injector dripping"
+      ],
+      "problem": "Fuel injector leaking internally and allowing fuel into the combustion chamber.",
+      "action": "Repair promptly to avoid catalytic converter damage.",
+      "garage_tip": "Say: 'Please perform an injector leak-down test before replacing the injectors.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 250.000 - Rp 2.000.000",
+    "usd": "$15 - $130"
+  }
+},
+{
+  "id": "MBL_EFI_010",
+  "vehicle": "car",
+  "system": "emission",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "evap error",
+        "bau bensin saat parkir",
+        "check engine evap",
+        "tutup tangki bunyi",
+        "tangki bensin mengembun",
+        "tekanan tangki tinggi",
+        "mobil gagal uji emisi",
+        "purge valve rusak",
+        "canister rusak",
+        "bbm menguap"
+      ],
+      "problem": "Sistem EVAP mengalami kebocoran atau purge valve/canister tidak bekerja dengan baik.",
+      "action": "Kendaraan masih dapat digunakan tetapi segera lakukan pemeriksaan sistem emisi.",
+      "garage_tip": "Sampaikan: 'Tolong lakukan smoke test pada sistem EVAP dan cek purge valve serta charcoal canister.'"
+    },
+    "en": {
+      "symptoms": [
+        "evap leak",
+        "evap system fault",
+        "fuel vapor leak",
+        "purge valve problem",
+        "charcoal canister issue",
+        "check engine evap",
+        "fuel tank pressure",
+        "gas cap issue",
+        "evap malfunction",
+        "fuel vapor smell"
+      ],
+      "problem": "Leak in the EVAP system or malfunctioning purge valve/charcoal canister.",
+      "action": "Schedule an emission system inspection.",
+      "garage_tip": "Say: 'Please perform an EVAP smoke test and inspect the purge valve and charcoal canister.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 300.000 - Rp 1.800.000",
+    "usd": "$20 - $120"
+  }
+},
+  
 ]
