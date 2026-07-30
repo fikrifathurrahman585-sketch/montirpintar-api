@@ -5,21 +5,20 @@ def semantic_search(normalized_input: str, database: list, lang: str):
     highest_score = 0.0
     
     for item in database:
-        # Ambil daftar gejala berdasarkan bahasa yang terdeteksi
         symptoms = item.get("language", {}).get(lang, {}).get("symptoms", [])
         
         for symptom in symptoms:
-            # 1. Hitung kemiripan urutan kata (Sequence Matcher)
+            # 1. Hitung Sequence Matcher
             seq_score = difflib.SequenceMatcher(None, normalized_input, symptom).ratio()
             
-            # 2. Hitung jumlah kata kunci yang cocok (Keyword Matcher)
+            # 2. Hitung Keyword Matcher (Bobot lebih tinggi untuk kecocokan kata kunci)
             input_words = set(normalized_input.split())
             symp_words = set(symptom.split())
             common_words = input_words.intersection(symp_words)
             kw_score = len(common_words) / max(len(input_words), 1)
             
-            # Gabungkan skor (Lebih menitikberatkan pada kata kunci)
-            total_score = (seq_score * 0.4) + (kw_score * 0.6)
+            # Perketat bobot keyword menjadi 70% agar kata spesifik seperti "rem" / "ngempos" lebih dominan
+            total_score = (seq_score * 0.3) + (kw_score * 0.7)
             
             if total_score > highest_score:
                 highest_score = total_score
