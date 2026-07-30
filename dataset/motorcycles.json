@@ -438,4 +438,141 @@
       "usd": "$3 - $7"
     }
   }
+  ,
+  {
+    "id": "MTR_MS_006",
+    "vehicle": "motorcycle",
+    "system": "engine",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "gigi persneling motor manual keras",
+          "susah masuk gigi netral",
+          "tarikan kopling selip ngempos",
+          "oper gigi alot"
+        ],
+        "problem": "Kampas kopling sudah tipis, plat gesek hangus terbakar, atau kabel kopling berkarat dan seret.",
+        "action": "Tarik tuas kopling sepenuhnya saat memindahkan gigi persneling, jangan dipaksa diinjak keras.",
+        "garage_tip": "Sampaikan: 'Tolong bongkar bak kopling, ganti kampas kopling satu set, dan lumasi/ganti kabel koplingnya.'"
+      },
+      "en": {
+        "symptoms": [
+          "manual motorcycle gears hard to shift",
+          "hard to find neutral",
+          "clutch slipping",
+          "stiff gear shifting"
+        ],
+        "problem": "Worn clutch friction plates, burnt clutch plates, or rusted/sticky clutch cable.",
+        "action": "Pull the clutch lever fully when shifting gears, do not force the shifter pedal.",
+        "garage_tip": "Say: 'Please open the clutch cover, replace the clutch plates, and lube/replace the clutch cable.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 150.000 - Rp 450.000",
+      "usd": "$10 - $30"
+    }
+  },
+  {
+    "id": "MTR_MS_007",
+    "vehicle": "motorcycle",
+    "system": "engine",
+    "severity": "DANGER",
+    "driveability": "STOP",
+    "language": {
+      "id": {
+        "symptoms": [
+          "lampu merah indikator suhu nyala",
+          "air radiator mendidih muncrat",
+          "kipas radiator tidak muter",
+          "mesin sangat panas overheat"
+        ],
+        "problem": "Sistem pendingin gagal (Overheat). Air radiator habis, thermostat macet, atau kipas radiator mati.",
+        "action": "BERHENTI SEKARANG JUGA! Tunggu mesin dingin minimal 30 menit. Jangan buka tutup radiator saat mendidih!",
+        "garage_tip": "Sampaikan: 'Motor overheat parah, tolong cek kipas radiator, thermostat, dan isi cairan coolant baru.'"
+      },
+      "en": {
+        "symptoms": [
+          "red temperature warning light on",
+          "radiator boiling and spraying coolant",
+          "radiator fan not spinning",
+          "engine extremely hot overheat"
+        ],
+        "problem": "Cooling system failure (Overheat). Low coolant, stuck thermostat, or dead radiator fan.",
+        "action": "STOP IMMEDIATELY! Wait at least 30 minutes for engine to cool. Do not open boiling radiator cap!",
+        "garage_tip": "Say: 'The bike overheated, please check the radiator fan, thermostat, and refill with new coolant.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 150.000 - Rp 600.000",
+      "usd": "$10 - $40"
+    }
+  },
+  {
+    "id": "MTR_KK_004",
+    "vehicle": "motorcycle",
+    "system": "suspension",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "stang miring sebelah saat jalan lurus",
+          "motor habis jatuh setir tidak center",
+          "segitiga stang bengkok"
+        ],
+        "problem": "As shock depan bengkok, atau Segitiga (T) kemudi melintir akibat benturan/jatuh.",
+        "action": "Kendarai motor dengan pelan karena keseimbangan dan titik berat (center of gravity) motor sudah bergeser.",
+        "garage_tip": "Sampaikan: 'Motor habis jatuh stangnya miring, tolong press segitiga dan luruskan as shock depannya.'"
+      },
+      "en": {
+        "symptoms": [
+          "handlebars misaligned when riding straight",
+          "steering not centered after a fall",
+          "bent triple clamp"
+        ],
+        "problem": "Bent front fork tubes or twisted triple tree clamp due to impact/crash.",
+        "action": "Ride slowly as the motorcycle's balance and center of gravity are compromised.",
+        "garage_tip": "Say: 'The handlebars are misaligned after a crash, please press the triple tree and straighten the fork tubes.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 100.000 - Rp 300.000",
+      "usd": "$7 - $20"
+    }
+  },
+  {
+    "id": "MTR_KL_003",
+    "vehicle": "motorcycle",
+    "system": "electrical",
+    "severity": "WARNING",
+    "driveability": "NORMAL",
+    "language": {
+      "id": {
+        "symptoms": [
+          "lampu depan motor sering putus",
+          "ganti bohlam baru langsung putus saat digas",
+          "lampu terlalu terang lalu mati"
+        ],
+        "problem": "Kiprok (Regulator/Rectifier) jebol / tidak bisa menahan arus berlebih dari spul (Overcharge).",
+        "action": "Jangan pasang bohlam baru lagi sebelum kiprok diganti, karena pasti akan langsung putus terbakar lagi.",
+        "garage_tip": "Sampaikan: 'Lampu utama sering putus kalau digas, tolong cek voltase overcharge dan ganti kiproknya.'"
+      },
+      "en": {
+        "symptoms": [
+          "headlight bulb keeps blowing",
+          "new bulb blows immediately when revving",
+          "lights get too bright then burn out"
+        ],
+        "problem": "Regulator/Rectifier is broken and cannot control excess current from the stator (Overcharge).",
+        "action": "Do not install a new bulb until the regulator is replaced, or it will burn out immediately.",
+        "garage_tip": "Say: 'The headlight keeps blowing when revving, please check for overcharge voltage and replace the regulator.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 100.000 - Rp 350.000",
+      "usd": "$7 - $25"
+    }
+  }
 ]
