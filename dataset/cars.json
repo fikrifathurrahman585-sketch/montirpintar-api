@@ -107,4 +107,173 @@
       "usd": "$15 - $80"
     }
   }
+  ,
+  {
+    "id": "MBL_EL_001",
+    "vehicle": "car",
+    "system": "electrical",
+    "severity": "DANGER",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "mobil susah distarter saat pagi",
+          "bunyi dinamo lemah ngek ngek",
+          "aki tekor",
+          "indikator aki warna merah menyala terus"
+        ],
+        "problem": "Aki (Accu) sudah soak/lemah, dinamo starter kotor, atau alternator tidak mengisi arus kelistrikan.",
+        "action": "Lakukan jumper aki darurat. Jika mesin sudah menyala, jangan matikan mesin sampai tiba di bengkel.",
+        "garage_tip": "Sampaikan: 'Tolong cek tegangan aki dan sistem pengisian alternator pakai multitester, jangan langsung vonis dinamo starter.'"
+      },
+      "en": {
+        "symptoms": [
+          "car hard to start in the morning",
+          "weak starter motor sound",
+          "dead battery",
+          "red battery light stays on"
+        ],
+        "problem": "Weak or dead battery, dirty starter motor, or failing alternator charging system.",
+        "action": "Try a battery jump start. If the engine starts, do not turn it off until you reach a repair shop.",
+        "garage_tip": "Say: 'Please check the battery voltage and alternator charging system with a multimeter before replacing the starter.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 700.000 - Rp 2.500.000",
+      "usd": "$45 - $160"
+    }
+  },
+  {
+    "id": "MBL_MS_003",
+    "vehicle": "car",
+    "system": "engine",
+    "severity": "WARNING",
+    "driveability": "NORMAL",
+    "language": {
+      "id": {
+        "symptoms": [
+          "lampu indikator check engine kuning nyala",
+          "check engine nyala terus",
+          "logo mesin di speedometer menyala",
+          "bensin terasa boros dan bau sangit"
+        ],
+        "problem": "Sensor O2 kotor/rusak, Mass Air Flow (MAF) sensor bermasalah, atau ada misfire di ruang bakar.",
+        "action": "Kendaraan masih aman dikendarai sementara, namun segera periksakan agar konsumsi bensin tidak bocor.",
+        "garage_tip": "Sampaikan: 'Tolong colok scanner komputer (OBD2) untuk membaca kode error Check Engine-nya yang pasti.'"
+      },
+      "en": {
+        "symptoms": [
+          "yellow check engine light is on",
+          "engine icon stays illuminated on dashboard",
+          "bad fuel economy and strong exhaust smell"
+        ],
+        "problem": "Dirty/faulty O2 sensor, problematic Mass Air Flow sensor, or engine misfire.",
+        "action": "Vehicle is safe to drive temporarily, but get it checked soon to avoid wasting fuel.",
+        "garage_tip": "Say: 'Please plug in the OBD2 computer scanner to read the exact Check Engine error code.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 150.000 - Rp 1.500.000",
+      "usd": "$10 - $100"
+    }
+  },
+  {
+    "id": "MBL_MS_004",
+    "vehicle": "car",
+    "system": "engine",
+    "severity": "DANGER",
+    "driveability": "STOP",
+    "language": {
+      "id": {
+        "symptoms": [
+          "mobil mendadak mogok total di jalan",
+          "saat dikontak tidak ada bunyi dengung dari bawah jok belakang",
+          "distarter panjang tapi mesin tidak mau hidup"
+        ],
+        "problem": "Fuel pump (pompa bensin) mati total akibat kotoran di tangki, arus pendek, atau usia pakai.",
+        "action": "Panggil layanan derek. Jangan terus-menerus memutar kunci kontak karena bisa merusak dinamo starter.",
+        "garage_tip": "Sampaikan: 'Mobil mogok dan tidak ada suara pompa, tolong cek sekring fuel pump dan motor rotak di tangki bensin.'"
+      },
+      "en": {
+        "symptoms": [
+          "car suddenly stalls completely on the road",
+          "no humming sound from the fuel tank when ignition is on",
+          "engine cranks but won't start"
+        ],
+        "problem": "Fuel pump has completely failed due to tank debris, electrical short, or end of lifespan.",
+        "action": "Call a tow truck. Do not keep cranking the engine as it will burn out the starter motor.",
+        "garage_tip": "Say: 'Car stalled and there's no pump noise, please check the fuel pump fuse and the motor inside the gas tank.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 350.000 - Rp 1.500.000",
+      "usd": "$25 - $100"
+    }
+  },
+  {
+    "id": "MBL_EL_002",
+    "vehicle": "car",
+    "system": "electrical",
+    "severity": "INFO",
+    "driveability": "NORMAL",
+    "language": {
+      "id": {
+        "symptoms": [
+          "kaca jendela pintu mobil macet",
+          "kaca tidak bisa dinaik turunkan",
+          "tombol power window ditekan tidak ada reaksi"
+        ],
+        "problem": "Motor power window mati, saklar kotor berkarat, atau jalur rel kaca seret/putus kawatnya.",
+        "action": "Jangan paksa menekan tombol terus menerus agar sekring atau motor tidak terbakar.",
+        "garage_tip": "Sampaikan: 'Tolong cek arus listrik ke motor power window dan bersihkan saklarnya.'"
+      },
+      "en": {
+        "symptoms": [
+          "car door window is stuck",
+          "window cannot roll up or down",
+          "power window switch has no reaction"
+        ],
+        "problem": "Dead power window motor, dirty/corroded switch, or broken window regulator cable.",
+        "action": "Do not force pressing the switch repeatedly to prevent burning the fuse.",
+        "garage_tip": "Say: 'Please check the electrical current to the power window motor and clean the switch contacts.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 150.000 - Rp 500.000",
+      "usd": "$10 - $35"
+    }
+  },
+  {
+    "id": "MBL_AC_002",
+    "vehicle": "car",
+    "system": "ac",
+    "severity": "INFO",
+    "driveability": "NORMAL",
+    "language": {
+      "id": {
+        "symptoms": [
+          "ac mobil bau apek asam",
+          "bau kecut saat ac pertama dinyalakan",
+          "keluar debu putih dari kisi ac"
+        ],
+        "problem": "Filter kabin AC sudah sangat kotor/berjamur, atau Evaporator penuh lendir dan bakteri.",
+        "action": "Matikan tombol AC (hanya hidupkan kipas) beberapa menit sebelum mesin dimatikan untuk mengeringkan embun evaporator.",
+        "garage_tip": "Sampaikan: 'Tolong ganti filter kabin dan lakukan cuci evaporator AC tanpa bongkar dashboard (AC bersin).'"
+      },
+      "en": {
+        "symptoms": [
+          "car ac smells musty and sour",
+          "bad odor when ac is first turned on",
+          "white dust blowing from ac vents"
+        ],
+        "problem": "Cabin air filter is extremely dirty/moldy, or Evaporator is coated in slime and bacteria.",
+        "action": "Turn off the AC compressor (fan only) a few minutes before shutting off the car to dry the evaporator.",
+        "garage_tip": "Say: 'Please replace the cabin air filter and clean the AC evaporator without dismantling the dashboard.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 150.000 - Rp 800.000",
+      "usd": "$10 - $50"
+    }
+  }
 ]
