@@ -101,4 +101,175 @@
       "usd": "$4 - $10"
     }
   }
+  ,
+  {
+    "id": "MTR_KL_002",
+    "vehicle": "motorcycle",
+    "system": "electrical",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "aki motor selalu tekor",
+          "sudah ganti aki baru tapi tekor lagi",
+          "lampu motor makin direv makin redup",
+          "klakson suaranya pelan sember"
+        ],
+        "problem": "Kiprok (Regulator/Rectifier) mati, atau spul motor gosong sehingga tidak ada arus pengisian ke aki.",
+        "action": "Batasi penggunaan aksesoris kelistrikan tambahan (seperti lampu sorot) agar aki tidak langsung habis di jalan.",
+        "garage_tip": "Sampaikan: 'Tolong cek voltase pengisian aki saat digas, apakah kiprok atau spul-nya yang mati.'"
+      },
+      "en": {
+        "symptoms": [
+          "motorcycle battery keeps dying",
+          "new battery drains fast",
+          "lights dim when revving",
+          "weak horn sound"
+        ],
+        "problem": "Faulty regulator/rectifier or burned stator coil preventing battery charging.",
+        "action": "Limit extra electrical accessories like spotlights to prevent fast battery drain.",
+        "garage_tip": "Say: 'Please check the charging voltage when revving to see if the regulator or stator coil is dead.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 150.000 - Rp 400.000",
+      "usd": "$10 - $25"
+    }
+  },
+  {
+    "id": "MTR_MS_002",
+    "vehicle": "motorcycle",
+    "system": "engine",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "motor sering mati mendadak saat berhenti di lampu merah",
+          "rpm diturunkan langsung mati",
+          "tidak bisa langsam idle",
+          "mesin mbrebet saat gas ditarik dikit"
+        ],
+        "problem": "Throttle body sangat kotor, sensor IACV kotor/mati, atau setelan klep terlalu rapat.",
+        "action": "Tahan sedikit selongsong gas saat berhenti agar motor tidak mati mendadak.",
+        "garage_tip": "Sampaikan: 'Motor sering mati saat gas ditutup, tolong bersihkan throttle body, sensor IACV, dan setel ulang klep.'"
+      },
+      "en": {
+        "symptoms": [
+          "motorcycle frequently stalls when stopping at red lights",
+          "engine dies when rpm drops",
+          "cannot idle smoothly",
+          "engine sputters on light throttle"
+        ],
+        "problem": "Very dirty throttle body, dirty/dead IACV sensor, or valve clearance is too tight.",
+        "action": "Keep a slight throttle input when stopping to prevent sudden stalling.",
+        "garage_tip": "Say: 'The bike stalls when closing throttle, please clean the throttle body, IACV sensor, and adjust valves.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 75.000 - Rp 200.000",
+      "usd": "$5 - $13"
+    }
+  },
+  {
+    "id": "MTR_MS_003",
+    "vehicle": "motorcycle",
+    "system": "engine",
+    "severity": "DANGER",
+    "driveability": "STOP",
+    "language": {
+      "id": {
+        "symptoms": [
+          "oli mesin motor berubah warna jadi keputihan",
+          "oli campur air seperti kopi susu",
+          "air radiator sering habis sendiri"
+        ],
+        "problem": "Air radiator (coolant) bocor menyeberang masuk ke ruang mesin akibat Seal Waterpump jebol.",
+        "action": "BAHAYA! Jangan nyalakan mesin sama sekali agar komponen dalam (kruk as, bearing) tidak hancur tergerus air.",
+        "garage_tip": "Sampaikan: 'Oli saya jadi susu putih, tolong ganti seal waterpump satu set dan kuras oli mesin berulang kali (flushing).'"
+      },
+      "en": {
+        "symptoms": [
+          "engine oil turns milky white",
+          "oil looks like coffee with milk",
+          "radiator coolant drops inexplicably"
+        ],
+        "problem": "Coolant leak crossing into the engine crankcase due to a blown water pump seal.",
+        "action": "DANGER! Do not start the engine to prevent total destruction of internal bearings by water.",
+        "garage_tip": "Say: 'The oil is milky white, please replace the water pump seal and flush the engine oil thoroughly multiple times.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 250.000 - Rp 500.000",
+      "usd": "$15 - $35"
+    }
+  },
+  {
+    "id": "MTR_KK_002",
+    "vehicle": "motorcycle",
+    "system": "suspension",
+    "severity": "WARNING",
+    "driveability": "NORMAL",
+    "language": {
+      "id": {
+        "symptoms": [
+          "shockbreaker depan motor sangat keras",
+          "mentok nabrak besi saat lewat lubang",
+          "bocor keluar oli di as shock",
+          "shock depan jedug"
+        ],
+        "problem": "Seal shock bocor sehingga oli habis kering, per patah, atau as shock baret/bengkok.",
+        "action": "Kurangi kecepatan secara drastis saat melewati jalan berlubang agar velg motor tidak ikut bengkok.",
+        "garage_tip": "Sampaikan: 'Tolong bongkar shock depan, cek as-nya, ganti seal shock, dan isi ulang takaran oli shock-nya.'"
+      },
+      "en": {
+        "symptoms": [
+          "front shock absorbers are extremely stiff",
+          "bottoms out hitting metal on potholes",
+          "leaking oil on the fork tubes"
+        ],
+        "problem": "Leaking shock seals draining the oil, broken springs, or scratched/bent shock fork tubes.",
+        "action": "Slow down significantly when riding over potholes to avoid bending the motorcycle rims.",
+        "garage_tip": "Say: 'Please overhaul the front shocks, check the tubes, replace the seals, and refill the shock oil properly.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 80.000 - Rp 200.000",
+      "usd": "$5 - $13"
+    }
+  },
+  {
+    "id": "MTR_DR_001",
+    "vehicle": "motorcycle",
+    "system": "drivetrain",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "rantai motor berisik kletek kletek",
+          "tarikan gas awal rantai loncat",
+          "gear motor sudah tajam seperti pisau"
+        ],
+        "problem": "Rantai sudah sangat kendor/mulur, dan mata gear depan-belakang sudah aus meruncing (tajam).",
+        "action": "Jangan berakselerasi spontan. Risiko rantai putus atau lepas dari gear sangat tinggi dan berbahaya.",
+        "garage_tip": "Sampaikan: 'Tolong ganti Gear Set (rantai, gear depan, dan belakang) satu paket ori.'"
+      },
+      "en": {
+        "symptoms": [
+          "motorcycle chain making loud clicking noise",
+          "chain skips during initial acceleration",
+          "sprocket teeth are sharp like a knife"
+        ],
+        "problem": "Chain is severely stretched/loose, and the front and rear sprocket teeth are dangerously worn and sharp.",
+        "action": "Do not accelerate aggressively. There is a high risk of the chain snapping or derailing.",
+        "garage_tip": "Say: 'Please replace the entire chain and sprocket kit (front and rear) as a complete set.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 200.000 - Rp 600.000",
+      "usd": "$13 - $40"
+    }
+  }
 ]
