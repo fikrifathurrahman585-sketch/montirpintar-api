@@ -612,4 +612,104 @@
       "usd": "$50 - $200"
     }
   }
+  ,
+  {
+    "id": "MBL_MS_009",
+    "vehicle": "car",
+    "system": "engine",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "mobil digas tapi ngempos tidak mau lari",
+          "rpm tinggi tapi kecepatan tertahan",
+          "tarikan mobil berat hampa saat diinjak dalam"
+        ],
+        "problem": "Tekanan bahan bakar lemah akibat filter bensin mampet parah atau motor fuel pump sudah melemah.",
+        "action": "Hindari menginjak pedal gas secara mendadak atau memaksa menyalip kendaraan lain di jalan tol.",
+        "garage_tip": "Sampaikan: 'Tolong cek tekanan bensin (fuel pressure) di rail injektor, sepertinya rotak fuel pump atau filter bensin sudah lemah.'"
+      },
+      "en": {
+        "symptoms": [
+          "car revs up but acceleration lags",
+          "loss of power when pressing gas pedal",
+          "sluggish acceleration under load"
+        ],
+        "problem": "Low fuel pressure caused by a severely clogged fuel filter or weakening fuel pump motor.",
+        "action": "Avoid stepping heavily on the gas pedal or attempting sudden overtaking maneuvers.",
+        "garage_tip": "Say: 'Please check the fuel pressure at the rail, the fuel pump or filter seems weak and needs replacement.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 300.000 - Rp 1.500.000",
+      "usd": "$20 - $100"
+    }
+  },
+  {
+    "id": "MBL_KK_006",
+    "vehicle": "car",
+    "system": "suspension",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "bunyi jedug di kap mesin dekat kaca saat lewat jalan jelek",
+          "karet shock atas jebol",
+          "bagian atas ban terasa longgar oblak"
+        ],
+        "problem": "Karet support shockbreaker sudah jebol, pecah, atau mangkok dudukan shock aus.",
+        "action": "Kurangi kecepatan saat melewati jalan tidak rata untuk meredam benturan langsung ke bodi atas.",
+        "garage_tip": "Sampaikan: 'Tolong cek karet support shockbreaker depan, sepertinya sudah jebol dan oblak saat lewat jalan rusak.'"
+      },
+      "en": {
+        "symptoms": [
+          "thump noise near windshield when hitting bumps",
+          "broken upper shock mount",
+          "loose front strut mount"
+        ],
+        "problem": "Shock absorber upper mount rubber is torn, broken, or worn out.",
+        "action": "Slow down when passing rough roads to cushion direct impacts to the body frame.",
+        "garage_tip": "Say: 'Please inspect the front shock absorber upper mounts; they are blown and causing clunking noises over bumps.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 350.000 - Rp 1.200.000",
+      "usd": "$23 - $80"
+    }
+  },
+  {
+    "id": "MBL_MS_010",
+    "vehicle": "car",
+    "system": "engine",
+    "severity": "DANGER",
+    "driveability": "STOP",
+    "language": {
+      "id": {
+        "symptoms": [
+          "selang radiator pecah bocor",
+          "air radiator menyembur keluar dari mesin",
+          "asap putih uap air keluar deras dari bawah kap"
+        ],
+        "problem": "Selang radiator getas dan pecah total, membuat seluruh air pendingin langsung habis dalam hitungan detik.",
+        "action": "MATIKAN MESIN SEGERA! Jangan coba-coba menambah air saat mesin masih panas karena blok mesin bisa retak.",
+        "garage_tip": "Sampaikan: 'Selang radiator mobil saya pecah dan air habis total, tolong ganti selang baru dan cek kondisi mesin.'"
+      },
+      "en": {
+        "symptoms": [
+          "radiator hose burst and leaked",
+          "coolant spraying out of engine bay",
+          "heavy steam billowing from under hood"
+        ],
+        "problem": "Radiator hose cracked and completely burst, causing all coolant to dump out instantly.",
+        "action": "TURN OFF ENGINE IMMEDIATELY! Do not pour cold water into a hot engine to avoid cracking the block.",
+        "garage_tip": "Say: 'My radiator hose burst and coolant drained out completely, please replace the hose and check engine health.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 250.000 - Rp 900.000",
+      "usd": "$15 - $60"
+    }
+  }
 ]
