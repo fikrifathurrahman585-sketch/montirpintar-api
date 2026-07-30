@@ -276,4 +276,172 @@
       "usd": "$10 - $50"
     }
   }
+  ,
+  {
+    "id": "MBL_TR_002",
+    "vehicle": "car",
+    "system": "transmission",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "mobil manual bau sangit",
+          "bau gosong kap mesin saat nanjak",
+          "tenaga ngempos di tanjakan",
+          "kopling selip"
+        ],
+        "problem": "Kampas kopling (matahari/dekrup) gosong karena sering gantung kopling atau sudah tipis/aus.",
+        "action": "Jangan dipaksa menanjak curam atau membawa beban berat agar mobil tidak kehilangan tenaga total dan mundur.",
+        "garage_tip": "Sampaikan: 'Sepertinya kampas kopling saya habis atau gosong, tolong turun transmisi dan ganti satu set koplingnya.'"
+      },
+      "en": {
+        "symptoms": [
+          "manual car smells burnt",
+          "scorched odor on steep hills",
+          "clutch slipping",
+          "loss of power on incline"
+        ],
+        "problem": "Clutch disc and pressure plate are burnt due to clutch slipping or normal wear and tear.",
+        "action": "Avoid steep hills or heavy loads to prevent total power loss.",
+        "garage_tip": "Say: 'The clutch seems burned out and slipping; please drop the transmission and replace the clutch set.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 1.500.000 - Rp 3.500.000",
+      "usd": "$100 - $230"
+    }
+  },
+  {
+    "id": "MBL_KK_003",
+    "vehicle": "car",
+    "system": "suspension",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "language": {
+      "id": {
+        "symptoms": [
+          "bunyi mendengung dari ban",
+          "roda bunyi ngiung saat lari kencang",
+          "makin kencang makin berisik gemuruh"
+        ],
+        "problem": "Bearing roda (lakher) sudah aus, kering pelumas, atau pelor di dalamnya hancur.",
+        "action": "Hindari perjalanan jauh berkecepatan tinggi karena bearing roda yang hancur bisa mengunci ban secara tiba-tiba.",
+        "garage_tip": "Sampaikan: 'Tolong dongkrak dan putar roda untuk mengecek bearing roda mana yang berdengung, lalu press ganti baru.'"
+      },
+      "en": {
+        "symptoms": [
+          "humming noise from wheels",
+          "whining sound at high speeds",
+          "roaring noise from tires"
+        ],
+        "problem": "Wheel bearings are worn out, dry, or damaged internally.",
+        "action": "Avoid long high-speed trips as a failed wheel bearing can seize up suddenly.",
+        "garage_tip": "Say: 'Please jack up and spin the wheels to identify the noisy bearing, then press in a new one.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 300.000 - Rp 900.000",
+      "usd": "$20 - $60"
+    }
+  },
+  {
+    "id": "MBL_MS_005",
+    "vehicle": "car",
+    "system": "engine",
+    "severity": "INFO",
+    "driveability": "NORMAL",
+    "language": {
+      "id": {
+        "symptoms": [
+          "mesin mobil ngelitik",
+          "suara tek tek halus kletek saat digas",
+          "engine knocking saat nanjak"
+        ],
+        "problem": "Bahan bakar beroktan rendah, ruang bakar banyak kerak karbon, atau timing pengapian tidak pas.",
+        "action": "Isi bahan bakar dengan oktan lebih tinggi di pom bensin terdekat dan hindari putaran mesin tinggi.",
+        "garage_tip": "Sampaikan: 'Mesin ngelitik parah, tolong lakukan gurah mesin (carbon clean) dan cek busi.'"
+      },
+      "en": {
+        "symptoms": [
+          "engine knocking",
+          "pinging noise when accelerating",
+          "subtle tapping sound on hills"
+        ],
+        "problem": "Low octane fuel, heavy carbon buildup in the combustion chamber, or incorrect ignition timing.",
+        "action": "Fill up with higher octane fuel immediately and avoid heavy engine loads.",
+        "garage_tip": "Say: 'The engine is pinging, please perform a carbon clean and inspect the spark plugs.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 250.000 - Rp 500.000",
+      "usd": "$15 - $35"
+    }
+  },
+  {
+    "id": "MBL_RM_002",
+    "vehicle": "car",
+    "system": "brakes",
+    "severity": "WARNING",
+    "driveability": "NORMAL",
+    "language": {
+      "id": {
+        "symptoms": [
+          "rem mobil bunyi decit",
+          "bunyi srek srek cicit saat direm",
+          "rem depan bunyi berdecit"
+        ],
+        "problem": "Kampas rem sudah sangat tipis bergesekan dengan plat besi cakram, atau banyak debu dan kotoran terjebak.",
+        "action": "Kurangi kecepatan berkendara karena pengereman bisa sedikit berkurang kepakemannya jika kampas habis.",
+        "garage_tip": "Sampaikan: 'Tolong cek kampas rem depan, apakah sudah tipis dan perlu diganti, sekalian bersihkan kalipernya.'"
+      },
+      "en": {
+        "symptoms": [
+          "brakes squeaking",
+          "scraping noise when braking",
+          "loud squeal from front wheels"
+        ],
+        "problem": "Brake pads are severely worn down rubbing against the rotor, or dirt is trapped.",
+        "action": "Reduce driving speed as braking efficiency may be reduced if pads are worn out.",
+        "garage_tip": "Say: 'Please check the front brake pads; they seem thin and need replacement, and clean the calipers.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 250.000 - Rp 600.000",
+      "usd": "$15 - $40"
+    }
+  },
+  {
+    "id": "MBL_MS_006",
+    "vehicle": "car",
+    "system": "engine",
+    "severity": "WARNING",
+    "driveability": "NORMAL",
+    "language": {
+      "id": {
+        "symptoms": [
+          "ada tetesan oli warna hitam di lantai garasi",
+          "mesin rembes oli",
+          "oli netes dari bawah mesin"
+        ],
+        "problem": "Oli mesin bocor karena Seal Kruk As (Crankshaft) atau paking karter bak oli sudah getas/jebol.",
+        "action": "Cabut stik oli (dipstick) dan cek kapasitas oli mesin. Jika masih di batas wajar, aman dipakai jalan perlahan.",
+        "garage_tip": "Sampaikan: 'Ada tetesan oli, tolong cek sumber rembesannya, ganti seal kruk as atau lem ulang paking karter bak oli.'"
+      },
+      "en": {
+        "symptoms": [
+          "black oil drops on garage floor",
+          "oil leaking from engine",
+          "puddle of oil under car"
+        ],
+        "problem": "Engine oil leak due to hardened crankshaft seals or degraded oil pan gasket.",
+        "action": "Check the oil dipstick level. If it's still at a safe level, it can be driven slowly.",
+        "garage_tip": "Say: 'Please find the oil leak source, replace the crankshaft seal or reseal the oil pan gasket.'"
+      }
+    },
+    "cost": {
+      "idr": "Rp 300.000 - Rp 1.500.000",
+      "usd": "$20 - $100"
+    }
+  }
 ]
