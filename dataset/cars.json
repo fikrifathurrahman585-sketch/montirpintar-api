@@ -1341,5 +1341,264 @@
     "usd": "$7 - $25"
   }
 },
+ {
+  "id": "MBL_MS_014",
+  "vehicle": "car",
+  "system": "cooling",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "air radiator sering habis",
+        "coolant cepat berkurang",
+        "harus tambah air radiator terus",
+        "radiator cepat kosong",
+        "tabung reservoir sering kosong"
+      ],
+      "problem": "Terjadi kebocoran pada radiator, selang radiator, tutup radiator, waterpump atau reservoir coolant.",
+      "action": "Periksa volume coolant setiap sebelum berkendara dan hindari perjalanan jauh.",
+      "garage_tip": "Sampaikan: 'Tolong lakukan pressure test sistem pendingin dan cari titik kebocoran coolant.'"
+    },
+    "en": {
+      "symptoms": [
+        "coolant keeps disappearing",
+        "radiator loses coolant",
+        "coolant level keeps dropping",
+        "reservoir always empty",
+        "frequent coolant refill"
+      ],
+      "problem": "Cooling system leak from radiator, hoses, water pump, radiator cap or coolant reservoir.",
+      "action": "Monitor coolant level before driving.",
+      "garage_tip": "Say: 'Please perform a cooling system pressure test and locate the leak.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 200.000 - Rp 1.500.000",
+    "usd": "$15 - $100"
+  }
+},
+{
+  "id": "MBL_MS_015",
+  "vehicle": "car",
+  "system": "cooling",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "kipas radiator tidak nyala",
+        "extra fan mati",
+        "kipas pendingin tidak berputar",
+        "mobil cepat panas saat macet",
+        "fan radiator mati"
+      ],
+      "problem": "Motor kipas radiator rusak, relay fan rusak, sekring putus atau sensor temperatur bermasalah.",
+      "action": "Hindari kemacetan panjang sebelum sistem pendingin diperbaiki.",
+      "garage_tip": "Sampaikan: 'Tolong cek motor fan, relay fan, sekring dan sensor suhu radiator.'"
+    },
+    "en": {
+      "symptoms": [
+        "radiator fan not working",
+        "cooling fan not spinning",
+        "engine overheats in traffic",
+        "electric fan failure",
+        "condenser fan not running"
+      ],
+      "problem": "Faulty cooling fan motor, relay, fuse or temperature sensor.",
+      "action": "Avoid stop-and-go traffic.",
+      "garage_tip": "Say: 'Please inspect the cooling fan motor, relay, fuse and coolant temperature sensor.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 250.000 - Rp 1.200.000",
+    "usd": "$15 - $80"
+  }
+},
+{
+  "id": "MBL_MS_016",
+  "vehicle": "car",
+  "system": "cooling",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "heater kabin tidak panas",
+        "mesin lama panas",
+        "jarum suhu tidak naik",
+        "thermostat rusak",
+        "mesin dingin terus"
+      ],
+      "problem": "Thermostat macet dalam posisi terbuka sehingga mesin sulit mencapai suhu kerja normal.",
+      "action": "Masih dapat digunakan tetapi konsumsi bahan bakar dapat meningkat.",
+      "garage_tip": "Sampaikan: 'Tolong cek thermostat apakah macet terbuka dan ganti bila perlu.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine takes too long to warm up",
+        "temperature gauge stays low",
+        "heater not warm",
+        "engine runs cold",
+        "thermostat stuck open"
+      ],
+      "problem": "Thermostat is stuck open preventing the engine from reaching operating temperature.",
+      "action": "Vehicle can still be driven but fuel economy may decrease.",
+      "garage_tip": "Say: 'Please inspect the thermostat for a stuck-open condition.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 250.000 - Rp 700.000",
+    "usd": "$15 - $45"
+  }
+},
+{
+  "id": "MBL_EL_007",
+  "vehicle": "car",
+  "system": "electrical",
+  "severity": "WARNING",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "central lock tidak berfungsi",
+        "pintu tidak bisa dikunci",
+        "remote tidak mengunci pintu",
+        "door lock mati",
+        "lock pintu rusak"
+      ],
+      "problem": "Motor actuator central lock rusak, sekring putus atau modul body control mengalami gangguan.",
+      "action": "Pastikan seluruh pintu terkunci secara manual.",
+      "garage_tip": "Sampaikan: 'Tolong cek actuator central lock dan body control module.'"
+    },
+    "en": {
+      "symptoms": [
+        "central locking not working",
+        "door lock not responding",
+        "remote cannot lock doors",
+        "door actuator failure",
+        "power door lock issue"
+      ],
+      "problem": "Faulty door lock actuator, blown fuse or body control module issue.",
+      "action": "Lock the doors manually until repaired.",
+      "garage_tip": "Say: 'Please inspect the central locking actuator and BCM.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 250.000 - Rp 1.500.000",
+    "usd": "$15 - $100"
+  }
+},
+{
+  "id": "MBL_EL_008",
+  "vehicle": "car",
+  "system": "electrical",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "wiper tidak bergerak",
+        "wiper mati",
+        "motor wiper rusak",
+        "wiper macet",
+        "wiper berhenti di tengah"
+      ],
+      "problem": "Motor wiper rusak, linkage macet, relay rusak atau sekring putus.",
+      "action": "Hindari berkendara saat hujan deras sebelum diperbaiki.",
+      "garage_tip": "Sampaikan: 'Tolong cek motor wiper, linkage dan relay wiper.'"
+    },
+    "en": {
+      "symptoms": [
+        "windshield wiper not working",
+        "wiper stopped moving",
+        "wiper motor failure",
+        "stuck windshield wiper",
+        "wiper frozen"
+      ],
+      "problem": "Faulty wiper motor, linkage problem, relay failure or blown fuse.",
+      "action": "Avoid driving in heavy rain until repaired.",
+      "garage_tip": "Say: 'Please inspect the wiper motor, linkage and relay.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 800.000",
+    "usd": "$10 - $50"
+  }
+},
+{
+  "id": "MBL_MS_017",
+  "vehicle": "car",
+  "system": "fuel_system",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mobil susah hidup setelah isi bensin",
+        "mesin pincang setelah isi bbm",
+        "habis isi bensin mesin brebet",
+        "bbm jelek",
+        "mesin tidak enak setelah isi bensin"
+      ],
+      "problem": "Bahan bakar terkontaminasi air atau kualitas bahan bakar buruk sehingga mengganggu sistem pembakaran.",
+      "action": "Hindari memacu kendaraan sampai kualitas bahan bakar dipastikan.",
+      "garage_tip": "Sampaikan: 'Tolong cek kualitas bahan bakar, filter bensin dan lakukan pengurasan tangki bila perlu.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine runs poorly after refueling",
+        "bad fuel symptoms",
+        "misfire after refueling",
+        "water in fuel",
+        "contaminated gasoline"
+      ],
+      "problem": "Fuel contamination or poor-quality fuel affecting combustion.",
+      "action": "Avoid aggressive driving until the fuel system is inspected.",
+      "garage_tip": "Say: 'Please inspect the fuel quality and fuel filter.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 300.000 - Rp 2.000.000",
+    "usd": "$20 - $130"
+  }
+},
+{
+  "id": "MBL_MS_018",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin bergetar saat langsam",
+        "idle kasar",
+        "getaran mesin besar",
+        "mesin pincang saat idle",
+        "stir ikut bergetar saat diam"
+      ],
+      "problem": "Engine mounting rusak, busi lemah atau salah satu silinder mengalami misfire.",
+      "action": "Kurangi penggunaan kendaraan hingga sumber getaran diketahui.",
+      "garage_tip": "Sampaikan: 'Tolong cek engine mounting dan lakukan pengecekan misfire menggunakan scanner.'"
+    },
+    "en": {
+      "symptoms": [
+        "rough idle vibration",
+        "engine shakes at idle",
+        "vehicle vibrates while stopped",
+        "steering wheel vibrates at idle",
+        "rough idle"
+      ],
+      "problem": "Failed engine mount, ignition misfire or weak spark plugs.",
+      "action": "Drive gently until diagnosed.",
+      "garage_tip": "Say: 'Please inspect engine mounts and scan for misfire.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 300.000 - Rp 2.500.000",
+    "usd": "$20 - $160"
+  }
+},
   
 ]
