@@ -4,91 +4,199 @@ import base64
 import requests
 from fastapi import UploadFile, HTTPException
 
-# Konfigurasi API Key Gemini (Ambil dari Environment Variable Vercel)
+# API Key Gemini
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
+# Model Gemini (mudah diganti nanti)
+GEMINI_MODEL = "gemini-2.5-flash"
+
+
 async def analyze_image_with_ai(file: UploadFile):
+
     if not GEMINI_API_KEY:
         raise HTTPException(
-            status_code=500, 
-            detail="API Key Gemini belum dikonfigurasi di server."
+            status_code=500,
+            detail="API Key Gemini belum dikonfigurasi."
         )
-    
+
     try:
-        # 1. Baca gambar dari Android dan ubah ke format Base64
+
+        # ==========================
+        # Baca gambar
+        # ==========================
+
         image_bytes = await file.read()
-        base64_image = base64.b64encode(image_bytes).decode("utf-8")
+
+        if not image_bytes:
+            raise HTTPException(
+                status_code=400,
+                detail="File gambar kosong."
+            )
+
         mime_type = file.content_type or "image/jpeg"
-        
-        # 2. Prompt Logika Pakar Kepala Mekanik
-        prompt = """Anda adalah seorang Kepala Mekanik Mobil dan Motor dengan pengalaman 20 tahun. 
-Analisis foto komponen kendaraan yang dikirimkan ini. Identifikasi apakah ada kerusakan, kebocoran, keausan, atau masalah lainnya.
 
-GUNAKAN LOGIKA PAKAR BERIKUT JIKA MELIHAT KEBOCORAN CAIRAN ATAU KERUSAKAN:
-1. Sambungan Mesin & Transmisi + Oli Warna Merah/Kemerahan = "Bocor Seal Input Transmisi (Seal Torque Converter)". (Oli Matic rembes).
-2. Sambungan Mesin & Transmisi + Oli Warna Hitam/Coklat Pekat = "Bocor Seal Kruk As Belakang (Rear Main Seal)". (Oli Mesin rembes).
-3. Area Velg/Piringan Cakram/Selang Rem/Master Rem + Cairan Bening/Kekuningan Agak Licin = "Bocor Minyak Rem (Brake Fluid)". (BAHAYA FATAL, Rem bisa blong).
-4. Area Depan/Bawah Bumper/Radiator + Cairan Encer Merah/Hijau/Biru = "Bocor Air Radiator (Coolant)". (Bisa bikin mesin overheat).
-5. Area Tabung/As Shockbreaker Depan/Belakang + Basah Oli = "Seal Shockbreaker Bocor/Jebol". (Suspensi mati/keras).
-6. Area Karet As Roda (CV Joint) + Gemuk/Grease Hitam Berceceran = "Karet Boot CV Joint Sobek". (Bisa bikin as roda berbunyi kletek-kletek).
-7. Area Rack Steer (Bawah Setir) + Oli Kemerahan/Kecoklatan = "Bocor Oli Power Steering". (Setir bisa jadi berat atau bunyi dengung).
-8. Area Gardan (Roda Belakang RWD) + Oli Kental Bau Menyengat = "Bocor Seal Gardan".
+        base64_image = base64.b64encode(image_bytes).decode("utf-8")
 
-Berdasarkan foto yang diupload, berikan diagnosa pasti menggunakan pedoman di atas jika cocok. Cermati warna cairan dan area komponennya!
+        # ==========================
+        # Prompt
+        # ==========================
 
-Berikan jawaban dalam format JSON murni (tanpa teks lain di luar JSON) dengan struktur kunci berikut:
+        prompt = """
+Anda adalah seorang Kepala Mekanik Mobil dan Motor dengan pengalaman 20 tahun.
+
+Analisis foto komponen kendaraan ini.
+
+Perhatikan:
+
+- kebocoran oli
+- kebocoran coolant
+- kebocoran minyak rem
+- kebocoran power steering
+- kebocoran shock
+- CV Joint
+- seal gardan
+- kerusakan mekanis
+- keausan
+
+Gunakan logika pakar berikut:
+
+1. Sambungan Mesin + Transmisi + Oli Merah = Bocor Seal Input Transmisi
+2. Sambungan Mesin + Transmisi + Oli Hitam = Bocor Rear Main Seal
+3. Area Rem + Brake Fluid = Bocor Minyak Rem
+4. Radiator + Coolant = Bocor Radiator
+5. Shock + Oli = Seal Shock Bocor
+6. CV Joint + Grease = Boot CV Sobek
+7. Rack Steer + Oli = Bocor Power Steering
+8. Gardan + Gear Oil = Bocor Seal Gardan
+
+Jawaban WAJIB JSON.
+
 {
-  "status": "success",
-  "bahasa": "id",
-  "akurasi": 98.0,
-  "diagnosa_ai": "[Jelaskan secara spesifik bagian yang rusak atau bocor, misal: Kebocoran Minyak Rem pada Kaliper]",
-  "solusi": "[Berikan tindakan perbaikan darurat dan tips penanganan di bengkel]",
-  "saran_tindakan": "[Tindakan darurat untuk pengendara, misal: JANGAN JALANKAN KENDARAAN JIKA MINYAK REM BOCOR]",
-  "tips_bengkel": "[Kalimat yang harus diucapkan ke mekanik bengkel]",
-  "estimasi_biaya": "[Estimasi biaya perbaikan dalam Rupiah, misal: Rp 300.000 - Rp 1.000.000]",
-  "severity": "WARNING",
-  "driveability": "LIMITED"
+  "status":"success",
+  "bahasa":"id",
+  "akurasi":95,
+  "diagnosa_ai":"",
+  "solusi":"",
+  "saran_tindakan":"",
+  "tips_bengkel":"",
+  "estimasi_biaya":"",
+  "severity":"INFO",
+  "driveability":"NORMAL"
 }
-Jika gambar tidak jelas atau bukan bagian kendaraan, berikan diagnosa_ai: "Foto tidak dapat diidentifikasi sebagai komponen kendaraan. Harap foto ulang bagian yang bermasalah secara lebih jelas."
+
+Jika gambar tidak jelas maka isi diagnosa_ai:
+
+"Foto tidak dapat diidentifikasi sebagai komponen kendaraan. Harap foto ulang bagian yang bermasalah secara lebih jelas."
+
+JANGAN memberikan markdown.
+JANGAN memberikan penjelasan.
+Hanya JSON.
 """
-        
-        # 3. Siapkan format Payload JSON standar Google REST API
+
+        # ==========================
+        # Payload
+        # ==========================
+
         payload = {
-            "contents": [{
-                "parts": [
-                    {"text": prompt},
-                    {
-                        "inline_data": {
-                            "mime_type": mime_type,
-                            "data": base64_image
+            "contents": [
+                {
+                    "parts": [
+                        {
+                            "text": prompt
+                        },
+                        {
+                            "inline_data": {
+                                "mime_type": mime_type,
+                                "data": base64_image
+                            }
                         }
-                    }
-                ]
-            }]
+                    ]
+                }
+            ]
         }
-        
-        # 4. Tembak langsung ke Endpoint Gemini 1.5 Flash (Tanpa -latest)
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
-        headers = {"Content-Type": "application/json"}
-        
-        response = requests.post(url, json=payload, headers=headers)
-        response_data = response.json()
-        
-        # Cek jika ada error dari Google
+
+        # ==========================
+        # Request
+        # ==========================
+
+        url = (
+            f"https://generativelanguage.googleapis.com/v1beta/models/"
+            f"{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}"
+        )
+
+        response = requests.post(
+            url,
+            headers={
+                "Content-Type": "application/json"
+            },
+            json=payload,
+            timeout=60
+        )
+
+        # ==========================
+        # Error Google
+        # ==========================
+
         if response.status_code != 200:
-            raise Exception(f"API Error: {response_data}")
-            
-        # 5. Ambil teks hasil balasan AI
-        raw_text = response_data['candidates'][0]['content']['parts'][0]['text'].strip()
-        
-        # Bersihkan text dari format markdown ```json jika AI menambahkannya
+
+            try:
+                error_json = response.json()
+            except Exception:
+                error_json = response.text
+
+            raise Exception(error_json)
+
+        response_data = response.json()
+
+        # ==========================
+        # Validasi response
+        # ==========================
+
+        if "candidates" not in response_data:
+            raise Exception(
+                f"Response Gemini tidak memiliki candidates.\n{response_data}"
+            )
+
+        raw_text = (
+            response_data["candidates"][0]
+            ["content"]["parts"][0]["text"]
+            .strip()
+        )
+
+        # ==========================
+        # Bersihkan markdown
+        # ==========================
+
         if raw_text.startswith("```json"):
-            raw_text = raw_text[7:]
+            raw_text = raw_text.replace("```json", "", 1)
+
+        if raw_text.startswith("```"):
+            raw_text = raw_text.replace("```", "", 1)
+
         if raw_text.endswith("```"):
             raw_text = raw_text[:-3]
-            
-        result_json = json.loads(raw_text.strip())
-        return result_json
-        
+
+        raw_text = raw_text.strip()
+
+        # ==========================
+        # Parse JSON
+        # ==========================
+
+        try:
+            result = json.loads(raw_text)
+        except json.JSONDecodeError:
+            raise Exception(
+                f"AI tidak mengembalikan JSON.\n\n{raw_text}"
+            )
+
+        return result
+
+    except HTTPException:
+        raise
+
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Gagal memproses gambar dengan AI: {str(e)}")
+
+        raise HTTPException(
+            status_code=500,
+            detail=f"Gagal memproses gambar dengan AI: {str(e)}"
+        )
