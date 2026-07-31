@@ -32,9 +32,6 @@ def version():
     }
 
 
-@app.post("/diagnosa")
-def diagnosa_ai(data: KeluhanInput):
-
 @app.get("/models")
 def list_models():
     try:
