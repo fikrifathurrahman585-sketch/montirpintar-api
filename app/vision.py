@@ -7,8 +7,8 @@ from fastapi import UploadFile, HTTPException
 # API Key Gemini
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
-# Model Gemini (mudah diganti nanti)
-GEMINI_MODEL = "gemini-2.5-flash"
+# Model Gemini (KEMBALIKAN KE VERSI 1.5 YANG RESMI & ADA)
+GEMINI_MODEL = "gemini-1.5-flash"
 
 
 async def analyze_image_with_ai(file: UploadFile):
@@ -106,10 +106,10 @@ Hanya JSON.
         }
 
         # ==========================
-        # Request
+        # Request (PERBAIKAN KE JALUR v1)
         # ==========================
         url = (
-            f"https://generativelanguage.googleapis.com/v1beta/models/"
+            f"https://generativelanguage.googleapis.com/v1/models/"
             f"{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}"
         )
 
