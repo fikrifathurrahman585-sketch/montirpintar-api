@@ -67,8 +67,8 @@ Jika gambar tidak jelas atau bukan bagian kendaraan, berikan diagnosa_ai: "Foto 
             }]
         }
         
-        # 4. Tembak langsung ke Endpoint Gemini 1.5 Flash menggunakan Requests
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
+        # 4. Tembak langsung ke Endpoint Gemini 1.5 Flash menggunakan Requests (PERBAIKAN URL DENGAN -latest)
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={GEMINI_API_KEY}"
         headers = {"Content-Type": "application/json"}
         
         response = requests.post(url, json=payload, headers=headers)
