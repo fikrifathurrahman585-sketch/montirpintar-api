@@ -23,6 +23,32 @@ class ErrorReportInput(BaseModel):
 def home():
     return {"status": "aktif", "version": "v2.0", "pesan": "MontirPintar API v2 (Modular) Berjalan!"}
 
+@app.get("/models")
+def list_models():
+    try:
+        api_key = os.environ.get("GEMINI_API_KEY")
+
+        if not api_key:
+            return {
+                "status": "error",
+                "message": "GEMINI_API_KEY tidak ditemukan."
+            }
+
+        url = (
+            "https://generativelanguage.googleapis.com/v1beta/models"
+            f"?key={api_key}"
+        )
+
+        response = requests.get(url, timeout=20)
+
+        return response.json()
+
+    except Exception as e:
+        return {
+            "status": "error",
+            "message": str(e)
+        }
+
 @app.post("/diagnosa")
 def diagnosa_ai(data: KeluhanInput):
     try:
