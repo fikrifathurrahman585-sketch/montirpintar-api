@@ -2540,5 +2540,1180 @@
     "usd": "$20 - $120"
   }
 },
+  {
+  "id": "MBL_MS_023",
+  "vehicle": "car",
+  "system": "turbo",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "turbo tidak ngisi",
+        "mobil turbo ngempos",
+        "boost hilang",
+        "mobil tidak ada tenaga turbo",
+        "turbo tidak bunyi",
+        "tenaga hilang di rpm atas",
+        "mobil turbo loyo",
+        "boost pressure rendah",
+        "tarikan turbo hilang",
+        "turbo lambat masuk"
+      ],
+      "problem": "Turbocharger kehilangan tekanan akibat kebocoran selang intercooler, wastegate macet atau turbo mulai aus.",
+      "action": "Hindari akselerasi penuh dan segera lakukan pemeriksaan tekanan boost.",
+      "garage_tip": "Sampaikan: 'Tolong cek tekanan boost turbo, selang intercooler dan actuator wastegate.'"
+    },
+    "en": {
+      "symptoms": [
+        "turbo not boosting",
+        "low boost pressure",
+        "loss of turbo power",
+        "turbo lag",
+        "poor boost",
+        "no turbo pressure",
+        "weak turbo acceleration",
+        "boost leak",
+        "turbo power loss",
+        "turbo underboost"
+      ],
+      "problem": "Turbocharger boost loss due to intercooler hose leaks, sticking wastegate or worn turbocharger.",
+      "action": "Avoid heavy acceleration until inspected.",
+      "garage_tip": "Say: 'Please inspect turbo boost pressure, intercooler hoses and wastegate actuator.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 500.000 - Rp 8.000.000",
+    "usd": "$35 - $520"
+  }
+},
+{
+  "id": "MBL_MS_024",
+  "vehicle": "car",
+  "system": "diesel",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "diesel susah hidup pagi",
+        "common rail brebet",
+        "mesin diesel pincang",
+        "diesel berasap putih",
+        "solar jelek",
+        "injektor diesel rusak",
+        "mesin diesel ngempos",
+        "diesel susah starter",
+        "rail pressure rendah",
+        "solar masuk angin"
+      ],
+      "problem": "Tekanan common rail rendah akibat injector bocor, SCV rusak atau pompa solar melemah.",
+      "action": "Hindari memaksa starter berulang kali.",
+      "garage_tip": "Sampaikan: 'Tolong cek rail pressure, injector correction dan kondisi SCV.'"
+    },
+    "en": {
+      "symptoms": [
+        "diesel hard start",
+        "common rail problem",
+        "diesel misfire",
+        "white smoke diesel",
+        "low rail pressure",
+        "injector correction",
+        "diesel hesitation",
+        "poor diesel performance",
+        "fuel pressure low",
+        "diesel injector fault"
+      ],
+      "problem": "Low common rail pressure caused by leaking injectors, faulty SCV or weak high-pressure pump.",
+      "action": "Avoid repeated cranking.",
+      "garage_tip": "Say: 'Please inspect rail pressure, injector correction values and SCV operation.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 500.000 - Rp 6.000.000",
+    "usd": "$35 - $390"
+  }
+},
+{
+  "id": "MBL_MS_025",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "DANGER",
+  "driveability": "STOP",
+  "language": {
+    "id": {
+      "symptoms": [
+        "timing belt putus",
+        "mesin mati mendadak",
+        "starter ringan sekali",
+        "kompresi hilang",
+        "mobil mogok tiba tiba",
+        "belt timing putus",
+        "mesin tidak hidup setelah bunyi keras",
+        "timing belt rusak",
+        "belt mesin putus",
+        "katup bengkok"
+      ],
+      "problem": "Timing belt putus sehingga sinkronisasi crankshaft dan camshaft hilang. Pada mesin interference dapat menyebabkan klep bengkok.",
+      "action": "Jangan mencoba menghidupkan mesin kembali.",
+      "garage_tip": "Sampaikan: 'Tolong cek kondisi timing belt dan lakukan compression test sebelum starter mesin.'"
+    },
+    "en": {
+      "symptoms": [
+        "timing belt snapped",
+        "engine suddenly stopped",
+        "no compression",
+        "engine cranks too easily",
+        "timing belt failure",
+        "engine won't restart",
+        "broken timing belt",
+        "cam timing failure",
+        "engine died suddenly",
+        "possible bent valves"
+      ],
+      "problem": "Broken timing belt causing loss of valve timing. Interference engines may suffer bent valves.",
+      "action": "Do not attempt to restart the engine.",
+      "garage_tip": "Say: 'Please inspect the timing belt and perform a compression test before cranking.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 2.500.000 - Rp 12.000.000",
+    "usd": "$170 - $780"
+  }
+},
+{
+  "id": "MBL_MS_026",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "timing chain berisik",
+        "rantai mesin bunyi",
+        "bunyi klotok dari depan mesin",
+        "rantai keteng bunyi",
+        "keteng kendor",
+        "bunyi saat starter pagi",
+        "timing chain longgar",
+        "suara rantai mesin",
+        "keteng kasar",
+        "mesin bunyi rantai"
+      ],
+      "problem": "Timing chain memanjang, tensioner lemah atau guide chain aus.",
+      "action": "Segera lakukan pemeriksaan sebelum timing melompat.",
+      "garage_tip": "Sampaikan: 'Tolong cek timing chain, tensioner dan chain guide.'"
+    },
+    "en": {
+      "symptoms": [
+        "timing chain noise",
+        "timing chain rattle",
+        "engine chain noise",
+        "chain tensioner problem",
+        "timing chain loose",
+        "startup rattle",
+        "chain slap",
+        "timing chain worn",
+        "engine rattles",
+        "front engine noise"
+      ],
+      "problem": "Stretched timing chain, weak tensioner or worn chain guides.",
+      "action": "Inspect promptly before the chain skips timing.",
+      "garage_tip": "Say: 'Please inspect the timing chain, tensioner and chain guides.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 1.500.000 - Rp 5.000.000",
+    "usd": "$100 - $325"
+  }
+},
+{
+  "id": "MBL_MS_027",
+  "vehicle": "car",
+  "system": "cooling",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "water pump bocor",
+        "air radiator netes",
+        "waterpump bunyi",
+        "bearing water pump rusak",
+        "coolant bocor dari bawah",
+        "pompa air mesin bocor",
+        "air radiator menetes",
+        "waterpump oblak",
+        "pendingin bocor",
+        "air radiator keluar dari pompa"
+      ],
+      "problem": "Seal water pump bocor atau bearing water pump mulai aus sehingga sirkulasi coolant terganggu.",
+      "action": "Pantau suhu mesin dan hindari perjalanan jauh.",
+      "garage_tip": "Sampaikan: 'Tolong cek water pump, bearing dan kebocoran coolant di area pompa.'"
+    },
+    "en": {
+      "symptoms": [
+        "water pump leak",
+        "coolant leaking from water pump",
+        "water pump bearing noise",
+        "coolant drip",
+        "water pump failure",
+        "coolant leak front engine",
+        "bearing worn",
+        "water pump noisy",
+        "cooling pump leak",
+        "engine coolant leak"
+      ],
+      "problem": "Leaking water pump seal or worn bearing reducing coolant circulation.",
+      "action": "Monitor engine temperature and repair promptly.",
+      "garage_tip": "Say: 'Please inspect the water pump, bearing and coolant leakage.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 600.000 - Rp 2.500.000",
+    "usd": "$40 - $160"
+  }
+},
+  {
+  "id": "MBL_EFI_011",
+  "vehicle": "car",
+  "system": "intake",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "throttle body kotor",
+        "rpm naik turun",
+        "idle tidak stabil",
+        "gas berat",
+        "mobil brebet saat langsam",
+        "mesin hampir mati",
+        "mobil mati saat berhenti",
+        "gas tidak responsif",
+        "throttle kotor",
+        "mesin pincang saat idle"
+      ],
+      "problem": "Throttle body dipenuhi kerak karbon sehingga aliran udara menuju mesin terganggu.",
+      "action": "Masih dapat digunakan, namun segera lakukan pembersihan throttle body.",
+      "garage_tip": "Sampaikan: 'Tolong bersihkan throttle body dan lakukan idle relearn menggunakan scanner bila diperlukan.'"
+    },
+    "en": {
+      "symptoms": [
+        "dirty throttle body",
+        "rough idle",
+        "unstable idle",
+        "engine almost stalls",
+        "poor throttle response",
+        "idle fluctuation",
+        "engine dies at stop",
+        "carbon buildup throttle",
+        "hesitation",
+        "low idle"
+      ],
+      "problem": "Carbon deposits inside the throttle body restricting airflow.",
+      "action": "Schedule throttle body cleaning soon.",
+      "garage_tip": "Say: 'Please clean the throttle body and perform idle relearn if necessary.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 500.000",
+    "usd": "$10 - $35"
+  }
+},
+{
+  "id": "MBL_EFI_012",
+  "vehicle": "car",
+  "system": "intake",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "selang vakum bocor",
+        "rpm tinggi sendiri",
+        "mesin ngempos",
+        "idle tidak normal",
+        "suara ngiss",
+        "angin palsu mesin",
+        "vacuum bocor",
+        "mesin pincang",
+        "gas naik sendiri",
+        "mobil brebet"
+      ],
+      "problem": "Kebocoran pada selang vacuum menyebabkan campuran udara dan bahan bakar tidak seimbang.",
+      "action": "Hindari perjalanan jauh sebelum kebocoran diperbaiki.",
+      "garage_tip": "Sampaikan: 'Tolong lakukan smoke test pada intake dan cek semua selang vacuum.'"
+    },
+    "en": {
+      "symptoms": [
+        "vacuum leak",
+        "high idle",
+        "hissing sound",
+        "rough idle",
+        "lean mixture",
+        "vacuum hose leak",
+        "engine hesitation",
+        "idle surge",
+        "air leak",
+        "unstable idle"
+      ],
+      "problem": "Vacuum leak causing excess air to enter the intake manifold.",
+      "action": "Inspect the intake system soon.",
+      "garage_tip": "Say: 'Please perform a smoke test and inspect all vacuum hoses.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 500.000",
+    "usd": "$7 - $35"
+  }
+},
+{
+  "id": "MBL_EFI_013",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "pcv valve rusak",
+        "oli keluar dari tutup mesin",
+        "mesin berasap tipis",
+        "oli cepat habis",
+        "idle kasar",
+        "tekanan mesin tinggi",
+        "breather mampet",
+        "selang pcv berminyak",
+        "oli muncrat",
+        "bau oli terbakar"
+      ],
+      "problem": "PCV Valve macet sehingga tekanan di dalam crankcase meningkat.",
+      "action": "Segera ganti PCV Valve agar kebocoran oli tidak semakin parah.",
+      "garage_tip": "Sampaikan: 'Tolong cek fungsi PCV Valve dan bersihkan jalur ventilasi crankcase.'"
+    },
+    "en": {
+      "symptoms": [
+        "pcv valve failure",
+        "oil leak from valve cover",
+        "crankcase pressure",
+        "burning oil smell",
+        "rough idle",
+        "oil consumption",
+        "blocked pcv",
+        "oil blowby",
+        "engine ventilation issue",
+        "pcv clogged"
+      ],
+      "problem": "Faulty PCV valve causing excessive crankcase pressure.",
+      "action": "Replace the PCV valve promptly.",
+      "garage_tip": "Say: 'Please inspect the PCV valve and crankcase ventilation system.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 600.000",
+    "usd": "$10 - $40"
+  }
+},
+{
+  "id": "MBL_EFI_014",
+  "vehicle": "car",
+  "system": "fuel_system",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "fuel filter mampet",
+        "tarikan hilang rpm tinggi",
+        "mobil brebet saat jalan jauh",
+        "mobil ngempos",
+        "mesin tersendat",
+        "naik tanjakan berat",
+        "bensin tidak lancar",
+        "mesin kekurangan bensin",
+        "akselerasi lemah",
+        "mesin seperti kehabisan bensin"
+      ],
+      "problem": "Filter bahan bakar tersumbat sehingga tekanan bensin menuju injector menurun.",
+      "action": "Kurangi beban mesin dan segera ganti filter bahan bakar.",
+      "garage_tip": "Sampaikan: 'Tolong ukur fuel pressure dan cek apakah fuel filter sudah tersumbat.'"
+    },
+    "en": {
+      "symptoms": [
+        "clogged fuel filter",
+        "weak acceleration",
+        "fuel starvation",
+        "poor engine power",
+        "hesitation",
+        "engine bogging",
+        "loss of power uphill",
+        "restricted fuel flow",
+        "engine stumbling",
+        "low fuel pressure"
+      ],
+      "problem": "Fuel filter restriction causing low fuel pressure.",
+      "action": "Replace the fuel filter promptly.",
+      "garage_tip": "Say: 'Please measure fuel pressure and inspect the fuel filter.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 700.000",
+    "usd": "$10 - $45"
+  }
+},
+{
+  "id": "MBL_EFI_015",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "engine mounting rusak",
+        "mesin bergetar hebat",
+        "mobil bergetar saat masuk D",
+        "getaran terasa di kabin",
+        "mesin oblak",
+        "mesin goyang",
+        "body ikut bergetar",
+        "vibrasi saat idle",
+        "mesin menghentak",
+        "engine support rusak"
+      ],
+      "problem": "Engine mounting sobek atau karet mounting sudah getas sehingga getaran mesin diteruskan ke bodi.",
+      "action": "Masih dapat digunakan namun hindari akselerasi kasar.",
+      "garage_tip": "Sampaikan: 'Tolong cek semua engine mounting dan transmission mounting apakah sudah robek.'"
+    },
+    "en": {
+      "symptoms": [
+        "bad engine mount",
+        "engine vibration",
+        "car shakes in drive",
+        "vibration at idle",
+        "engine moves excessively",
+        "broken engine mount",
+        "cab vibration",
+        "engine support failure",
+        "transmission mount worn",
+        "rough vibration"
+      ],
+      "problem": "Worn or torn engine mounts transmitting vibration to the chassis.",
+      "action": "Replace damaged mounts soon.",
+      "garage_tip": "Say: 'Please inspect all engine and transmission mounts.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 500.000 - Rp 2.500.000",
+    "usd": "$35 - $160"
+  }
+},
+  {
+  "id": "MBL_EFI_016",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "sensor knock rusak",
+        "mobil ngempos saat nanjak",
+        "mesin kurang tenaga",
+        "check engine nyala",
+        "ngelitik terus",
+        "tenaga hilang saat panas",
+        "mesin knocking",
+        "tarikan berat",
+        "suara ngelitik keras",
+        "sensor detonasi rusak"
+      ],
+      "problem": "Knock Sensor gagal mendeteksi detonasi sehingga ECU memundurkan timing pengapian dan tenaga mesin berkurang.",
+      "action": "Kurangi beban mesin dan hindari akselerasi penuh.",
+      "garage_tip": "Sampaikan: 'Tolong scan Knock Sensor dan cek wiring serta torsi pemasangan sensor.'"
+    },
+    "en": {
+      "symptoms": [
+        "knock sensor fault",
+        "engine knocking",
+        "loss of power",
+        "retarded ignition timing",
+        "check engine light",
+        "poor acceleration",
+        "pinging noise",
+        "detonation sensor error",
+        "weak performance",
+        "knock sensor malfunction"
+      ],
+      "problem": "Faulty Knock Sensor causing incorrect ignition timing adjustments.",
+      "action": "Avoid heavy engine loads.",
+      "garage_tip": "Say: 'Please inspect the knock sensor and verify its signal using a scan tool.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 350.000 - Rp 1.800.000",
+    "usd": "$25 - $120"
+  }
+},
+{
+  "id": "MBL_EFI_017",
+  "vehicle": "car",
+  "system": "fuel_system",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "fuel pressure regulator rusak",
+        "bensin boros",
+        "starter susah",
+        "mesin brebet",
+        "idle kasar",
+        "bau bensin",
+        "knalpot hitam",
+        "tekanan bensin tidak stabil",
+        "mobil ngempos",
+        "rpm naik turun"
+      ],
+      "problem": "Fuel Pressure Regulator tidak mampu menjaga tekanan bahan bakar sesuai spesifikasi.",
+      "action": "Segera lakukan pemeriksaan tekanan bahan bakar.",
+      "garage_tip": "Sampaikan: 'Tolong ukur fuel pressure dan cek Fuel Pressure Regulator.'"
+    },
+    "en": {
+      "symptoms": [
+        "fuel pressure regulator failure",
+        "fuel pressure unstable",
+        "poor fuel economy",
+        "rich mixture",
+        "hard starting",
+        "rough idle",
+        "fuel smell",
+        "black smoke",
+        "weak acceleration",
+        "fuel regulator problem"
+      ],
+      "problem": "Faulty Fuel Pressure Regulator causing unstable fuel pressure.",
+      "action": "Inspect the fuel system soon.",
+      "garage_tip": "Say: 'Please test fuel pressure and inspect the fuel pressure regulator.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 300.000 - Rp 1.500.000",
+    "usd": "$20 - $100"
+  }
+},
+{
+  "id": "MBL_EL_012",
+  "vehicle": "car",
+  "system": "charging_system",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "tegangan aki overcharge",
+        "aki panas",
+        "lampu terlalu terang",
+        "aki mendidih",
+        "air aki cepat habis",
+        "bau aki",
+        "voltase tinggi",
+        "aki menggembung",
+        "alternator overcharge",
+        "regulator rusak"
+      ],
+      "problem": "IC Regulator alternator rusak sehingga tegangan pengisian terlalu tinggi.",
+      "action": "Kurangi penggunaan kendaraan sebelum aki rusak permanen.",
+      "garage_tip": "Sampaikan: 'Tolong ukur tegangan pengisian alternator dan cek IC regulator.'"
+    },
+    "en": {
+      "symptoms": [
+        "battery overcharging",
+        "alternator overcharge",
+        "battery overheating",
+        "high charging voltage",
+        "battery swelling",
+        "lights too bright",
+        "charging system fault",
+        "regulator failure",
+        "battery boiling",
+        "voltage too high"
+      ],
+      "problem": "Faulty alternator voltage regulator causing excessive charging voltage.",
+      "action": "Inspect the charging system immediately.",
+      "garage_tip": "Say: 'Please measure alternator output voltage and inspect the voltage regulator.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 350.000 - Rp 1.800.000",
+    "usd": "$25 - $120"
+  }
+},
+{
+  "id": "MBL_TR_006",
+  "vehicle": "car",
+  "system": "transmission",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "oli transmisi bocor",
+        "atf bocor",
+        "oli matic netes",
+        "transmisi rembes",
+        "oli gearbox bocor",
+        "seal transmisi bocor",
+        "bawah mobil ada oli merah",
+        "cvt bocor",
+        "gearbox bocor",
+        "oli transmisi habis"
+      ],
+      "problem": "Seal transmisi, gasket bak oli transmisi atau oil cooler transmisi mengalami kebocoran.",
+      "action": "Periksa level oli transmisi dan hindari perjalanan jauh.",
+      "garage_tip": "Sampaikan: 'Tolong cek sumber kebocoran ATF/CVTF dan lakukan pressure test bila perlu.'"
+    },
+    "en": {
+      "symptoms": [
+        "transmission fluid leak",
+        "atf leak",
+        "gearbox oil leak",
+        "red fluid under car",
+        "transmission seal leak",
+        "cvt fluid leak",
+        "gearbox leaking",
+        "automatic transmission leak",
+        "low transmission fluid",
+        "transmission pan leak"
+      ],
+      "problem": "Transmission seals, oil pan gasket or transmission cooler leaking.",
+      "action": "Check transmission fluid level immediately.",
+      "garage_tip": "Say: 'Please inspect transmission seals, oil pan gasket and cooler lines.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 300.000 - Rp 2.000.000",
+    "usd": "$20 - $130"
+  }
+},
+{
+  "id": "MBL_BR_001",
+  "vehicle": "car",
+  "system": "body",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "bagasi tidak bisa ditutup",
+        "kap bagasi macet",
+        "bagasi susah dibuka",
+        "pengunci bagasi rusak",
+        "bagasi tidak mengunci",
+        "bagasi nyangkut",
+        "tailgate macet",
+        "bagasi tidak rapat",
+        "bagasi terbuka sendiri",
+        "bagasi oblak"
+      ],
+      "problem": "Latch bagasi aus, kabel pembuka macet atau aktuator elektrik mengalami kerusakan.",
+      "action": "Pastikan bagasi terkunci dengan aman sebelum berkendara.",
+      "garage_tip": "Sampaikan: 'Tolong cek latch bagasi, kabel pembuka dan aktuator penguncinya.'"
+    },
+    "en": {
+      "symptoms": [
+        "trunk won't close",
+        "tailgate stuck",
+        "trunk latch problem",
+        "boot won't lock",
+        "tailgate won't open",
+        "trunk actuator fault",
+        "boot latch failure",
+        "tailgate jammed",
+        "rear hatch won't close",
+        "trunk lock issue"
+      ],
+      "problem": "Worn trunk latch, damaged release cable or faulty electric actuator.",
+      "action": "Ensure the trunk is securely closed before driving.",
+      "garage_tip": "Say: 'Please inspect the trunk latch, release cable and lock actuator.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 1.200.000",
+    "usd": "$10 - $80"
+  }
+},
+  {
+  "id": "MBL_KK_009",
+  "vehicle": "car",
+  "system": "drivetrain",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "cv joint bunyi",
+        "bunyi tek tek saat belok",
+        "tek tek saat putar setir",
+        "bunyi saat belok penuh",
+        "as roda bunyi",
+        "cv joint rusak",
+        "bunyi klik saat belok",
+        "joint as roda bunyi",
+        "bunyi ketika belok kiri",
+        "bunyi ketika belok kanan"
+      ],
+      "problem": "CV Joint aus karena grease habis atau boot CV Joint robek sehingga kotoran masuk ke dalam joint.",
+      "action": "Hindari belokan tajam dengan akselerasi tinggi sebelum dilakukan perbaikan.",
+      "garage_tip": "Sampaikan: 'Tolong cek boot CV Joint, grease dan kondisi joint luar maupun dalam.'"
+    },
+    "en": {
+      "symptoms": [
+        "cv joint clicking",
+        "clicking while turning",
+        "front axle clicking",
+        "click noise on turns",
+        "outer cv joint noise",
+        "cv axle noise",
+        "click when steering",
+        "constant velocity joint noise",
+        "front drivetrain clicking",
+        "cv boot damaged"
+      ],
+      "problem": "Worn CV Joint caused by grease loss or torn CV boot allowing dirt inside.",
+      "action": "Avoid hard acceleration while turning.",
+      "garage_tip": "Say: 'Please inspect both inner and outer CV joints along with the CV boots.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 600.000 - Rp 2.500.000",
+    "usd": "$40 - $160"
+  }
+},
+{
+  "id": "MBL_KK_010",
+  "vehicle": "car",
+  "system": "wheel",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "bearing roda bunyi",
+        "dengung roda",
+        "nguing saat jalan",
+        "suara humming",
+        "roda berdengung",
+        "bunyi ngung",
+        "bearing aus",
+        "suara mendengung",
+        "roda depan bunyi",
+        "roda belakang bunyi"
+      ],
+      "problem": "Bearing roda aus akibat umur pakai atau kerusakan karena benturan dan air masuk.",
+      "action": "Kurangi kecepatan dan hindari perjalanan jauh.",
+      "garage_tip": "Sampaikan: 'Tolong cek bearing roda menggunakan wheel play test.'"
+    },
+    "en": {
+      "symptoms": [
+        "wheel bearing noise",
+        "humming wheel",
+        "bearing humming",
+        "wheel growl",
+        "bearing failure",
+        "road speed humming",
+        "wheel hub noise",
+        "bearing rumble",
+        "front wheel humming",
+        "rear wheel humming"
+      ],
+      "problem": "Worn wheel bearing due to age, impact damage or water contamination.",
+      "action": "Reduce speed until repaired.",
+      "garage_tip": "Say: 'Please inspect wheel bearings and check for excessive play.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 450.000 - Rp 1.800.000",
+    "usd": "$30 - $120"
+  }
+},
+{
+  "id": "MBL_ST_004",
+  "vehicle": "car",
+  "system": "steering",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "rack steer bunyi",
+        "setir oblak",
+        "setir longgar",
+        "kemudi tidak presisi",
+        "bunyi gluduk saat belok",
+        "rack steer aus",
+        "stir goyang",
+        "kemudi goyang",
+        "rack steer bocor",
+        "bunyi saat putar setir"
+      ],
+      "problem": "Rack steer mengalami keausan pada gear, bushing atau tie rod dalam.",
+      "action": "Kurangi kecepatan dan hindari jalan rusak.",
+      "garage_tip": "Sampaikan: 'Tolong cek rack steer, inner tie rod dan steering gear.'"
+    },
+    "en": {
+      "symptoms": [
+        "steering rack noise",
+        "loose steering",
+        "steering play",
+        "rack and pinion wear",
+        "clunk steering",
+        "steering rack leak",
+        "wandering steering",
+        "rack bush worn",
+        "steering looseness",
+        "rack problem"
+      ],
+      "problem": "Worn steering rack gears, bushings or inner tie rods.",
+      "action": "Drive carefully until repaired.",
+      "garage_tip": "Say: 'Please inspect the steering rack, inner tie rods and steering gear.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 800.000 - Rp 4.500.000",
+    "usd": "$55 - $300"
+  }
+},
+{
+  "id": "MBL_KK_011",
+  "vehicle": "car",
+  "system": "suspension",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "shock mounting bunyi",
+        "dug dug depan",
+        "jedug saat polisi tidur",
+        "bunyi gluduk depan",
+        "shock atas bunyi",
+        "mounting shock rusak",
+        "bunyi saat jalan rusak",
+        "bunyi saat belok",
+        "suspensi depan bunyi",
+        "top mount bunyi"
+      ],
+      "problem": "Shock mounting atau bearing top mount mengalami keausan sehingga menimbulkan bunyi.",
+      "action": "Kurangi kecepatan saat melewati jalan bergelombang.",
+      "garage_tip": "Sampaikan: 'Tolong cek shock mounting, bearing top mount dan shock absorber.'"
+    },
+    "en": {
+      "symptoms": [
+        "strut mount noise",
+        "top mount clunk",
+        "front suspension clunk",
+        "shock mount worn",
+        "noise over bumps",
+        "strut bearing noise",
+        "front top mount",
+        "clunking suspension",
+        "shock absorber mount",
+        "mount bearing worn"
+      ],
+      "problem": "Worn strut mount or top bearing causing suspension noise.",
+      "action": "Reduce speed over rough roads.",
+      "garage_tip": "Say: 'Please inspect the strut mount, top bearing and shock absorber.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 350.000 - Rp 1.500.000",
+    "usd": "$25 - $100"
+  }
+},
+{
+  "id": "MBL_RM_006",
+  "vehicle": "car",
+  "system": "brakes",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "abs aktif terus",
+        "pedal rem bergetar saat abs",
+        "abs bekerja terus",
+        "rem berdenyut pelan",
+        "sensor abs rusak",
+        "rem seperti mengunci",
+        "bunyi tek tek saat rem",
+        "abs bunyi",
+        "pedal rem memantul",
+        "abs sering aktif"
+      ],
+      "problem": "Wheel Speed Sensor memberikan pembacaan yang salah atau tone ring mengalami kerusakan.",
+      "action": "Kurangi kecepatan terutama di jalan licin hingga sistem diperiksa.",
+      "garage_tip": "Sampaikan: 'Tolong scan modul ABS dan cek wheel speed sensor serta tone ring.'"
+    },
+    "en": {
+      "symptoms": [
+        "abs activates unnecessarily",
+        "brake pedal pulsates",
+        "false abs activation",
+        "wheel speed sensor issue",
+        "abs kicks in",
+        "pedal vibration",
+        "abs engages at low speed",
+        "tone ring damage",
+        "unexpected abs",
+        "abs sensor problem"
+      ],
+      "problem": "Incorrect wheel speed sensor readings or damaged ABS tone ring.",
+      "action": "Drive cautiously until repaired.",
+      "garage_tip": "Say: 'Please inspect the ABS wheel speed sensors and tone rings.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 300.000 - Rp 1.800.000",
+    "usd": "$20 - $120"
+  }
+},
+  {
+  "id": "MBL_EFI_018",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "vvti error",
+        "mesin loyo di rpm bawah",
+        "tarikan bawah berat",
+        "check engine vvt",
+        "mesin ngempos saat digas",
+        "oil control valve rusak",
+        "vvt tidak bekerja",
+        "rpm tinggi tenaga hilang",
+        "mesin brebet saat akselerasi",
+        "ocv rusak"
+      ],
+      "problem": "Oil Control Valve (OCV) atau sistem Variable Valve Timing mengalami gangguan akibat oli kotor, tekanan oli rendah atau solenoid macet.",
+      "action": "Periksa kondisi oli mesin dan hindari akselerasi tinggi.",
+      "garage_tip": "Sampaikan: 'Tolong cek OCV, tekanan oli mesin dan data VVT menggunakan scanner.'"
+    },
+    "en": {
+      "symptoms": [
+        "vvt system fault",
+        "oil control valve failure",
+        "vvt solenoid problem",
+        "poor low rpm power",
+        "vvt malfunction",
+        "cam timing error",
+        "engine hesitation",
+        "low power",
+        "vvt not working",
+        "check engine vvt"
+      ],
+      "problem": "Variable Valve Timing malfunction caused by a faulty Oil Control Valve, dirty oil or low oil pressure.",
+      "action": "Inspect engine oil condition and avoid high engine loads.",
+      "garage_tip": "Say: 'Please inspect the OCV, oil pressure and VVT live data.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 350.000 - Rp 2.000.000",
+    "usd": "$25 - $130"
+  }
+},
+{
+  "id": "MBL_EFI_019",
+  "vehicle": "car",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "vtec tidak aktif",
+        "tenaga atas hilang",
+        "mobil tidak ngisi rpm tinggi",
+        "vtec error",
+        "rpm tinggi loyo",
+        "mesin tidak mau kitiran",
+        "vtec tidak buka",
+        "tarikan atas hilang",
+        "check engine vtec",
+        "solenoid vtec rusak"
+      ],
+      "problem": "Solenoid VTEC, pressure switch atau jalur oli VTEC mengalami gangguan.",
+      "action": "Pastikan oli mesin berada pada level dan spesifikasi yang benar.",
+      "garage_tip": "Sampaikan: 'Tolong cek VTEC Solenoid, pressure switch dan tekanan oli mesin.'"
+    },
+    "en": {
+      "symptoms": [
+        "vtec not engaging",
+        "high rpm power loss",
+        "vtec malfunction",
+        "vtec solenoid fault",
+        "poor top end power",
+        "engine won't rev",
+        "vtec pressure switch",
+        "vtec failure",
+        "high rpm sluggish",
+        "vtec inactive"
+      ],
+      "problem": "Faulty VTEC solenoid, pressure switch or insufficient oil pressure.",
+      "action": "Check engine oil level and condition.",
+      "garage_tip": "Say: 'Please inspect the VTEC solenoid, pressure switch and engine oil pressure.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 350.000 - Rp 2.500.000",
+    "usd": "$25 - $160"
+  }
+},
+{
+  "id": "MBL_CVT_001",
+  "vehicle": "car",
+  "system": "cvt",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "cvt ngorok",
+        "bunyi dengung cvt",
+        "transmisi cvt bunyi",
+        "ngorok saat jalan",
+        "rpm tinggi mobil pelan",
+        "cvt kasar",
+        "suara ngung dari cvt",
+        "tarikan cvt berat",
+        "cvt selip",
+        "bunyi saat akselerasi"
+      ],
+      "problem": "Bearing CVT mulai aus, oli CVTF menurun kualitasnya atau pulley CVT mengalami keausan.",
+      "action": "Kurangi akselerasi dan segera lakukan pemeriksaan CVT.",
+      "garage_tip": "Sampaikan: 'Tolong cek bearing CVT, tekanan hydraulic CVT dan kondisi oli CVTF.'"
+    },
+    "en": {
+      "symptoms": [
+        "cvt whining",
+        "cvt bearing noise",
+        "transmission whining",
+        "high rpm low speed",
+        "cvt slipping",
+        "rough cvt",
+        "cvt vibration",
+        "cvt pulley wear",
+        "cvt humming",
+        "cvt gearbox noise"
+      ],
+      "problem": "CVT bearing wear, degraded CVT fluid or worn pulley assembly.",
+      "action": "Avoid heavy acceleration until inspected.",
+      "garage_tip": "Say: 'Please inspect CVT bearings, hydraulic pressure and CVT fluid condition.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 800.000 - Rp 6.000.000",
+    "usd": "$50 - $390"
+  }
+},
+{
+  "id": "MBL_TR_007",
+  "vehicle": "car",
+  "system": "automatic_transmission",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "transmisi telat pindah gigi",
+        "matic telat oper",
+        "kickdown telat",
+        "rpm tinggi baru pindah",
+        "gigi telat masuk",
+        "oper gigi lambat",
+        "transmisi lambat",
+        "gear terlambat",
+        "matic lemot",
+        "oper transmisi lama"
+      ],
+      "problem": "Solenoid valve mulai melemah, tekanan oli transmisi rendah atau ATF sudah menurun kualitasnya.",
+      "action": "Gunakan akselerasi halus dan hindari kickdown.",
+      "garage_tip": "Sampaikan: 'Tolong cek line pressure transmisi, ATF dan kondisi solenoid valve.'"
+    },
+    "en": {
+      "symptoms": [
+        "delayed shifting",
+        "late gear change",
+        "slow transmission shift",
+        "automatic shifts late",
+        "gear change delayed",
+        "late kickdown",
+        "high rpm before shift",
+        "lazy transmission",
+        "slow automatic gearbox",
+        "shift delay"
+      ],
+      "problem": "Low transmission hydraulic pressure, worn solenoid or degraded ATF.",
+      "action": "Drive gently and avoid aggressive acceleration.",
+      "garage_tip": "Say: 'Please inspect transmission line pressure, ATF condition and shift solenoids.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 600.000 - Rp 3.500.000",
+    "usd": "$40 - $230"
+  }
+},
+{
+  "id": "MBL_EL_013",
+  "vehicle": "car",
+  "system": "ecu",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "ecu error",
+        "mobil tiba tiba mati",
+        "sensor banyak error",
+        "scanner tidak bisa masuk",
+        "mesin hidup mati",
+        "indikator acak",
+        "mobil sering reset",
+        "speedometer mati",
+        "check engine banyak",
+        "kelistrikan aneh"
+      ],
+      "problem": "ECU mengalami gangguan komunikasi akibat tegangan tidak stabil, kerusakan internal atau masalah pada jalur CAN Bus.",
+      "action": "Hindari melepas aki sembarangan dan segera lakukan diagnosis menggunakan scanner.",
+      "garage_tip": "Sampaikan: 'Tolong cek komunikasi ECU, tegangan suplai dan jalur CAN Bus sebelum mengganti ECU.'"
+    },
+    "en": {
+      "symptoms": [
+        "ecu fault",
+        "communication error",
+        "multiple warning lights",
+        "scanner cannot connect",
+        "engine stalls randomly",
+        "can bus issue",
+        "electrical glitches",
+        "module communication failure",
+        "ecu malfunction",
+        "vehicle electronics unstable"
+      ],
+      "problem": "ECU communication failure caused by unstable voltage, CAN Bus issues or internal ECU faults.",
+      "action": "Perform a full diagnostic scan before replacing any modules.",
+      "garage_tip": "Say: 'Please inspect ECU communication, CAN Bus integrity and power supply.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 500.000 - Rp 8.000.000",
+    "usd": "$35 - $520"
+  }
+}
   
 ]
