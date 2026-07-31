@@ -18,6 +18,33 @@ genai.configure(api_key=GEMINI_API_KEY)
 # Gunakan model yang memang tersedia pada API Key Anda
 MODEL_NAME = "gemini-3.5-flash"
 
+GENERATION_CONFIG = {
+    "response_mime_type": "application/json",
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "top_k": 40,
+    "max_output_tokens": 2048
+}
+
+SAFETY_SETTINGS = [
+    {
+        "category": "HARM_CATEGORY_HARASSMENT",
+        "threshold": "BLOCK_NONE"
+    },
+    {
+        "category": "HARM_CATEGORY_HATE_SPEECH",
+        "threshold": "BLOCK_NONE"
+    },
+    {
+        "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+        "threshold": "BLOCK_NONE"
+    },
+    {
+        "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+        "threshold": "BLOCK_NONE"
+    }
+]
+
 
 # ==========================================================
 # Prompt Pakar
@@ -149,15 +176,25 @@ async def analyze_image_with_ai(file: UploadFile):
 
         model = genai.GenerativeModel(MODEL_NAME)
 
-        response = model.generate_content(
-            [
-                PROMPT,
-                {
-                    "mime_type": mime_type,
-                    "data": image_bytes
-                }
-            ]
-        )
+generation_config = {
+    "response_mime_type": "application/json",
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "top_k": 40,
+    "max_output_tokens": 2048
+}
+
+response = model.generate_content(
+    [
+        PROMPT,
+        {
+            "mime_type": mime_type,
+            "data": image_bytes
+        }
+    ],
+    generation_config=generation_config
+    safety_settings=SAFETY_SETTINGS
+)
 
         raw = response.text.strip()
 
