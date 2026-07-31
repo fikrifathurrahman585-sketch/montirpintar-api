@@ -5,6 +5,7 @@ import os
 import requests
 from app.diagnosis import analyze_symptom
 from app.vision import analyze_image_with_ai
+from fastapi import FastAPI, UploadFile, File, HTTPException
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("MontirPintarAPIV2")
