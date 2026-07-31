@@ -23,25 +23,37 @@ async def analyze_image_with_ai(file: UploadFile):
         # Gunakan model Gemini Flash yang cepat dan gratis/murah untuk Multimodal
         model = genai.GenerativeModel('gemini-1.5-flash')
         
-        # Prompt khusus agar AI bertindak sebagai mekanik senior
+        # Prompt khusus agar AI bertindak sebagai mekanik senior dengan Logika Pakar
         prompt = """
-        Anda adalah seorang mekanik mobil dan motor profesional yang ahli. Analisis foto komponen kendaraan yang dikirimkan ini.
-        Identifikasi apakah ada kerusakan, kebocoran (oli/radiator/minyak rem), keausan, atau masalah lainnya.
+        Anda adalah seorang Kepala Mekanik Mobil dan Motor dengan pengalaman 20 tahun. 
+        Analisis foto komponen kendaraan yang dikirimkan ini. Identifikasi apakah ada kerusakan, kebocoran, keausan, atau masalah lainnya.
+        
+        GUNAKAN LOGIKA PAKAR BERIKUT JIKA MELIHAT KEBOCORAN CAIRAN ATAU KERUSAKAN:
+        1. Sambungan Mesin & Transmisi + Oli Warna Merah/Kemerahan = "Bocor Seal Input Transmisi (Seal Torque Converter)". (Oli Matic rembes).
+        2. Sambungan Mesin & Transmisi + Oli Warna Hitam/Coklat Pekat = "Bocor Seal Kruk As Belakang (Rear Main Seal)". (Oli Mesin rembes).
+        3. Area Velg/Piringan Cakram/Selang Rem/Master Rem + Cairan Bening/Kekuningan Agak Licin = "Bocor Minyak Rem (Brake Fluid)". (BAHAYA FATAL, Rem bisa blong).
+        4. Area Depan/Bawah Bumper/Radiator + Cairan Encer Merah/Hijau/Biru = "Bocor Air Radiator (Coolant)". (Bisa bikin mesin overheat).
+        5. Area Tabung/As Shockbreaker Depan/Belakang + Basah Oli = "Seal Shockbreaker Bocor/Jebol". (Suspensi mati/keras).
+        6. Area Karet As Roda (CV Joint) + Gemuk/Grease Hitam Berceceran = "Karet Boot CV Joint Sobek". (Bisa bikin as roda berbunyi kletek-kletek).
+        7. Area Rack Steer (Bawah Setir) + Oli Kemerahan/Kecoklatan = "Bocor Oli Power Steering". (Setir bisa jadi berat atau bunyi dengung).
+        8. Area Gardan (Roda Belakang RWD) + Oli Kental Bau Menyengat = "Bocor Seal Gardan".
+        
+        Berdasarkan foto yang diupload, berikan diagnosa pasti menggunakan pedoman di atas jika cocok. Cermati warna cairan dan area komponennya!
         
         Berikan jawaban dalam format JSON murni (tanpa teks lain di luar JSON) dengan struktur kunci berikut:
         {
           "status": "success",
           "bahasa": "id",
           "akurasi": 95.0,
-          "diagnosa_ai": "[Jelaskan secara spesifik bagian yang rusak atau bocor, misal: Kebocoran oli pada seal kruk as]",
+          "diagnosa_ai": "[Jelaskan secara spesifik bagian yang rusak atau bocor, misal: Kebocoran Minyak Rem pada Kaliper]",
           "solusi": "[Berikan tindakan perbaikan darurat dan tips penanganan di bengkel]",
-          "saran_tindakan": "[Tindakan darurat untuk pengendara]",
+          "saran_tindakan": "[Tindakan darurat untuk pengendara, misal: JANGAN JALANKAN KENDARAAN JIKA MINYAK REM BOCOR]",
           "tips_bengkel": "[Kalimat yang harus diucapkan ke mekanik bengkel]",
           "estimasi_biaya": "[Estimasi biaya perbaikan dalam Rupiah, misal: Rp 300.000 - Rp 1.000.000]",
-          "severity": "WARNING",
-          "driveability": "LIMITED"
+          "severity": "[Tentukan antara INFO, WARNING, atau DANGER]",
+          "driveability": "[Tentukan antara NORMAL, LIMITED, atau STOP]"
         }
-        Jika gambar tidak jelas atau bukan bagian kendaraan, berikan diagnosa_ai: "Foto tidak dapat diidentifikasi sebagai komponen kendaraan. Harap foto ulang bagian yang bermasalah."
+        Jika gambar tidak jelas atau bukan bagian kendaraan, berikan diagnosa_ai: "Foto tidak dapat diidentifikasi sebagai komponen kendaraan. Harap foto ulang bagian yang bermasalah secara lebih jelas."
         """
         
         # Kirim gambar dan prompt ke Gemini
