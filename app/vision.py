@@ -21,7 +21,7 @@ async def analyze_image_with_ai(file: UploadFile):
         image_bytes = await file.read()
         
         # Gunakan model Gemini Flash yang cepat dan gratis/murah untuk Multimodal
-        model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-1.5-flash-latest')
         
         # Prompt khusus agar AI bertindak sebagai mekanik senior dengan Logika Pakar
         prompt = """
