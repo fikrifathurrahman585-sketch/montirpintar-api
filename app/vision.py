@@ -12,7 +12,6 @@ GEMINI_MODEL = "gemini-2.5-flash"
 
 
 async def analyze_image_with_ai(file: UploadFile):
-
     if not GEMINI_API_KEY:
         raise HTTPException(
             status_code=500,
@@ -20,11 +19,9 @@ async def analyze_image_with_ai(file: UploadFile):
         )
 
     try:
-
         # ==========================
         # Baca gambar
         # ==========================
-
         image_bytes = await file.read()
 
         if not image_bytes:
@@ -34,20 +31,16 @@ async def analyze_image_with_ai(file: UploadFile):
             )
 
         mime_type = file.content_type or "image/jpeg"
-
         base64_image = base64.b64encode(image_bytes).decode("utf-8")
 
         # ==========================
         # Prompt
         # ==========================
-
         prompt = """
 Anda adalah seorang Kepala Mekanik Mobil dan Motor dengan pengalaman 20 tahun.
-
 Analisis foto komponen kendaraan ini.
 
 Perhatikan:
-
 - kebocoran oli
 - kebocoran coolant
 - kebocoran minyak rem
@@ -59,7 +52,6 @@ Perhatikan:
 - keausan
 
 Gunakan logika pakar berikut:
-
 1. Sambungan Mesin + Transmisi + Oli Merah = Bocor Seal Input Transmisi
 2. Sambungan Mesin + Transmisi + Oli Hitam = Bocor Rear Main Seal
 3. Area Rem + Brake Fluid = Bocor Minyak Rem
@@ -85,7 +77,6 @@ Jawaban WAJIB JSON.
 }
 
 Jika gambar tidak jelas maka isi diagnosa_ai:
-
 "Foto tidak dapat diidentifikasi sebagai komponen kendaraan. Harap foto ulang bagian yang bermasalah secara lebih jelas."
 
 JANGAN memberikan markdown.
@@ -96,7 +87,6 @@ Hanya JSON.
         # ==========================
         # Payload
         # ==========================
-
         payload = {
             "contents": [
                 {
@@ -118,7 +108,6 @@ Hanya JSON.
         # ==========================
         # Request
         # ==========================
-
         url = (
             f"https://generativelanguage.googleapis.com/v1beta/models/"
             f"{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}"
@@ -136,14 +125,11 @@ Hanya JSON.
         # ==========================
         # Error Google
         # ==========================
-
         if response.status_code != 200:
-
             try:
                 error_json = response.json()
             except Exception:
                 error_json = response.text
-
             raise Exception(error_json)
 
         response_data = response.json()
@@ -151,7 +137,6 @@ Hanya JSON.
         # ==========================
         # Validasi response
         # ==========================
-
         if "candidates" not in response_data:
             raise Exception(
                 f"Response Gemini tidak memiliki candidates.\n{response_data}"
@@ -166,7 +151,6 @@ Hanya JSON.
         # ==========================
         # Bersihkan markdown
         # ==========================
-
         if raw_text.startswith("```json"):
             raw_text = raw_text.replace("```json", "", 1)
 
@@ -181,7 +165,6 @@ Hanya JSON.
         # ==========================
         # Parse JSON
         # ==========================
-
         try:
             result = json.loads(raw_text)
         except json.JSONDecodeError:
@@ -193,9 +176,7 @@ Hanya JSON.
 
     except HTTPException:
         raise
-
     except Exception as e:
-
         raise HTTPException(
             status_code=500,
             detail=f"Gagal memproses gambar dengan AI: {str(e)}"
