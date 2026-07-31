@@ -2,5 +2,5 @@ fastapi
 pydantic
 requests
 scikit-learn
-google-generativeai
 python-multipart
+google-genai
