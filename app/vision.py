@@ -21,6 +21,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
 
+# GANTI sesuai model yang benar-benar muncul di endpoint /models
 MODEL_NAME = "gemini-3.5-flash-lite"
 
 GENERATION_CONFIG = {
@@ -88,47 +89,31 @@ Periksa kemungkinan:
 
 LOGIKA PAKAR
 
-1.
-Jika terdapat oli merah pada sambungan mesin dan transmisi
-=
-Seal Input Transmisi Bocor
+1. Oli merah pada sambungan mesin dan transmisi
+= Seal Input Transmisi Bocor
 
-2.
-Jika terdapat oli hitam pekat
-=
-Rear Main Seal Bocor
+2. Oli hitam pekat
+= Rear Main Seal Bocor
 
-3.
-Jika cairan bening kekuningan pada area rem
-=
-Brake Fluid Bocor
+3. Cairan bening kekuningan pada area rem
+= Brake Fluid Bocor
 Severity=DANGER
 Driveability=STOP
 
-4.
-Jika coolant merah/hijau/biru
-=
-Radiator Bocor
+4. Coolant merah/hijau/biru
+= Radiator Bocor
 
-5.
-Jika shock basah oli
-=
-Seal Shock Bocor
+5. Shock basah oli
+= Seal Shock Bocor
 
-6.
-Jika grease berceceran
-=
-Boot CV Joint Sobek
+6. Grease berceceran
+= Boot CV Joint Sobek
 
-7.
-Jika rack steer basah oli
-=
-Seal Rack Steer Bocor
+7. Rack steer basah oli
+= Seal Rack Steer Bocor
 
-8.
-Jika gardan basah gear oil
-=
-Seal Gardan Bocor
+8. Gardan basah gear oil
+= Seal Gardan Bocor
 
 Jawab HANYA JSON.
 
@@ -145,20 +130,12 @@ Jawab HANYA JSON.
   "driveability":"NORMAL"
 }
 
-Jika gambar blur,
-gelap,
-tidak fokus,
-atau bukan kendaraan,
+Jika gambar blur, gelap, tidak fokus, atau bukan kendaraan maka isi diagnosa_ai:
 
-isi:
-
-diagnosa_ai =
 "Foto tidak dapat diidentifikasi sebagai komponen kendaraan. Harap foto ulang bagian yang bermasalah secara lebih jelas."
 
 JANGAN menggunakan markdown.
-
 JANGAN menggunakan ```json.
-
 Output WAJIB JSON VALID.
 """
 
@@ -178,7 +155,7 @@ async def analyze_image_with_ai(file: UploadFile):
 
         image_bytes = await file.read()
 
-        if len(image_bytes) == 0:
+        if not image_bytes:
             raise HTTPException(
                 status_code=400,
                 detail="File gambar kosong."
@@ -186,19 +163,19 @@ async def analyze_image_with_ai(file: UploadFile):
 
         filename = (file.filename or "").lower()
 
-if filename.endswith(".png"):
-    mime_type = "image/png"
+        if filename.endswith(".png"):
+            mime_type = "image/png"
+        elif filename.endswith(".webp"):
+            mime_type = "image/webp"
+        elif filename.endswith(".jpg") or filename.endswith(".jpeg"):
+            mime_type = "image/jpeg"
+        else:
+            mime_type = "image/jpeg"
 
-elif filename.endswith(".webp"):
-    mime_type = "image/webp"
-
-elif filename.endswith(".jpg") or filename.endswith(".jpeg"):
-    mime_type = "image/jpeg"
-
-else:
-    mime_type = "image/jpeg"
-
-        logger.info("Memulai analisis Gemini Vision")
+        logger.info("===== GEMINI VISION =====")
+        logger.info("Filename : %s", filename)
+        logger.info("MimeType : %s", mime_type)
+        logger.info("Size     : %d bytes", len(image_bytes))
 
         model = genai.GenerativeModel(MODEL_NAME)
 
@@ -214,7 +191,7 @@ else:
             safety_settings=SAFETY_SETTINGS
         )
 
-        raw = response.text.strip()
+        raw = (response.text or "").strip()
 
         logger.info("RAW RESPONSE:")
         logger.info(raw)
@@ -246,9 +223,7 @@ else:
         ]
 
         for key in required:
-
             if key not in result:
-
                 result[key] = ""
 
         return result
