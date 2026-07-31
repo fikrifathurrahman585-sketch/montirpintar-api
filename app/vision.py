@@ -1,27 +1,142 @@
 import os
 import json
-import base64
-import requests
+import google.generativeai as genai
+
 from fastapi import UploadFile, HTTPException
 
-# API Key Gemini
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+# ==========================================================
+# Konfigurasi Gemini
+# ==========================================================
 
-# Model Gemini (Versi 2026 yang aktif dan valid)
-GEMINI_MODEL = "gemini-3.5-flash"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
+if not GEMINI_API_KEY:
+    raise RuntimeError("GEMINI_API_KEY belum dikonfigurasi.")
+
+genai.configure(api_key=GEMINI_API_KEY)
+
+# Gunakan model yang memang tersedia pada API Key Anda
+MODEL_NAME = "gemini-3.5-flash"
+
+
+# ==========================================================
+# Prompt Pakar
+# ==========================================================
+
+PROMPT = """
+Anda adalah Kepala Mekanik Mobil dan Motor profesional dengan pengalaman lebih dari 20 tahun.
+
+Tugas Anda adalah menganalisis foto kendaraan yang diupload pengguna.
+
+PERIKSA:
+
+- Kebocoran oli mesin
+- Kebocoran oli transmisi
+- Kebocoran coolant
+- Kebocoran minyak rem
+- Kebocoran power steering
+- Seal shock bocor
+- CV Joint
+- Gardan
+- Boot As roda
+- Selang radiator
+- Selang rem
+- Master rem
+- Kaliper
+- Water pump
+- Kompresor AC
+- Oli gardan
+- Oli differential
+- Oli gearbox
+- Oli mesin
+- Oli matic
+- Kerusakan fisik
+- Baut hilang
+- Retak
+- Pecah
+- Aus
+
+LOGIKA PAKAR:
+
+1.
+Jika terlihat oli merah pada sambungan mesin dan transmisi
+=
+Seal Input Transmisi Bocor.
+
+2.
+Jika terlihat oli hitam pekat pada sambungan mesin
+=
+Rear Main Seal Bocor.
+
+3.
+Jika terlihat cairan bening kekuningan di area rem
+=
+Brake Fluid Bocor.
+
+Severity = DANGER
+
+4.
+Jika coolant merah/hijau/biru keluar dari radiator
+=
+Radiator Bocor.
+
+5.
+Jika shock basah oli
+=
+Seal Shock Bocor.
+
+6.
+Jika grease berceceran di CV Joint
+=
+Boot CV Joint Sobek.
+
+7.
+Jika power steering basah oli
+=
+Seal Rack Steer Bocor.
+
+8.
+Jika gardan basah gear oil
+=
+Seal Gardan Bocor.
+
+Jawab HANYA JSON.
+
+Format:
+
+{
+    "status":"success",
+    "bahasa":"id",
+    "akurasi":95,
+    "diagnosa_ai":"",
+    "solusi":"",
+    "saran_tindakan":"",
+    "tips_bengkel":"",
+    "estimasi_biaya":"",
+    "severity":"INFO",
+    "driveability":"NORMAL"
+}
+
+Jika foto blur, gelap, atau bukan kendaraan maka isi diagnosa_ai:
+
+"Foto tidak dapat diidentifikasi sebagai komponen kendaraan. Harap foto ulang bagian yang bermasalah secara lebih jelas."
+
+JANGAN menggunakan markdown.
+
+JANGAN menggunakan ```json.
+
+Output HARUS JSON valid.
+"""
+
+
+# ==========================================================
+# Analisis AI Vision
+# ==========================================================
 
 async def analyze_image_with_ai(file: UploadFile):
-    if not GEMINI_API_KEY:
-        raise HTTPException(
-            status_code=500,
-            detail="API Key Gemini belum dikonfigurasi."
-        )
 
     try:
-        # ==========================
-        # Baca gambar
-        # ==========================
+
         image_bytes = await file.read()
 
         if not image_bytes:
@@ -31,153 +146,46 @@ async def analyze_image_with_ai(file: UploadFile):
             )
 
         mime_type = file.content_type or "image/jpeg"
-        base64_image = base64.b64encode(image_bytes).decode("utf-8")
 
-        # ==========================
-        # Prompt
-        # ==========================
-        prompt = """
-Anda adalah seorang Kepala Mekanik Mobil dan Motor dengan pengalaman 20 tahun.
-Analisis foto komponen kendaraan ini.
+        model = genai.GenerativeModel(MODEL_NAME)
 
-Perhatikan:
-- kebocoran oli
-- kebocoran coolant
-- kebocoran minyak rem
-- kebocoran power steering
-- kebocoran shock
-- CV Joint
-- seal gardan
-- kerusakan mekanis
-- keausan
-
-Gunakan logika pakar berikut:
-1. Sambungan Mesin + Transmisi + Oli Merah = Bocor Seal Input Transmisi
-2. Sambungan Mesin + Transmisi + Oli Hitam = Bocor Rear Main Seal
-3. Area Rem + Brake Fluid = Bocor Minyak Rem
-4. Radiator + Coolant = Bocor Radiator
-5. Shock + Oli = Seal Shock Bocor
-6. CV Joint + Grease = Boot CV Sobek
-7. Rack Steer + Oli = Bocor Power Steering
-8. Gardan + Gear Oil = Bocor Seal Gardan
-
-Jawaban WAJIB JSON.
-
-{
-  "status":"success",
-  "bahasa":"id",
-  "akurasi":95,
-  "diagnosa_ai":"",
-  "solusi":"",
-  "saran_tindakan":"",
-  "tips_bengkel":"",
-  "estimasi_biaya":"",
-  "severity":"INFO",
-  "driveability":"NORMAL"
-}
-
-Jika gambar tidak jelas maka isi diagnosa_ai:
-"Foto tidak dapat diidentifikasi sebagai komponen kendaraan. Harap foto ulang bagian yang bermasalah secara lebih jelas."
-
-JANGAN memberikan markdown.
-JANGAN memberikan penjelasan.
-Hanya JSON.
-"""
-
-        # ==========================
-        # Payload
-        # ==========================
-        payload = {
-            "contents": [
+        response = model.generate_content(
+            [
+                PROMPT,
                 {
-                    "parts": [
-                        {
-                            "text": prompt
-                        },
-                        {
-                            "inline_data": {
-                                "mime_type": mime_type,
-                                "data": base64_image
-                            }
-                        }
-                    ]
+                    "mime_type": mime_type,
+                    "data": image_bytes
                 }
             ]
-        }
-
-        # ==========================
-        # Request (MENGGUNAKAN v1beta)
-        # ==========================
-        url = (
-            f"https://generativelanguage.googleapis.com/v1beta/models/"
-            f"{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}"
         )
 
-        response = requests.post(
-            url,
-            headers={
-                "Content-Type": "application/json"
-            },
-            json=payload,
-            timeout=60
-        )
+        raw = response.text.strip()
 
-        # ==========================
-        # Error Google
-        # ==========================
-        if response.status_code != 200:
-            try:
-                error_json = response.json()
-            except Exception:
-                error_json = response.text
-            raise Exception(error_json)
+        if raw.startswith("```json"):
+            raw = raw.replace("```json", "", 1)
 
-        response_data = response.json()
+        if raw.startswith("```"):
+            raw = raw.replace("```", "", 1)
 
-        # ==========================
-        # Validasi response
-        # ==========================
-        if "candidates" not in response_data:
-            raise Exception(
-                f"Response Gemini tidak memiliki candidates.\n{response_data}"
-            )
+        if raw.endswith("```"):
+            raw = raw[:-3]
 
-        raw_text = (
-            response_data["candidates"][0]
-            ["content"]["parts"][0]["text"]
-            .strip()
-        )
+        raw = raw.strip()
 
-        # ==========================
-        # Bersihkan markdown
-        # ==========================
-        if raw_text.startswith("```json"):
-            raw_text = raw_text.replace("```json", "", 1)
-
-        if raw_text.startswith("```"):
-            raw_text = raw_text.replace("```", "", 1)
-
-        if raw_text.endswith("```"):
-            raw_text = raw_text[:-3]
-
-        raw_text = raw_text.strip()
-
-        # ==========================
-        # Parse JSON
-        # ==========================
-        try:
-            result = json.loads(raw_text)
-        except json.JSONDecodeError:
-            raise Exception(
-                f"AI tidak mengembalikan JSON.\n\n{raw_text}"
-            )
+        result = json.loads(raw)
 
         return result
 
-    except HTTPException:
-        raise
-    except Exception as e:
+    except json.JSONDecodeError:
+
         raise HTTPException(
             status_code=500,
-            detail=f"Gagal memproses gambar dengan AI: {str(e)}"
+            detail="AI tidak mengembalikan JSON yang valid."
+        )
+
+    except Exception as e:
+
+        raise HTTPException(
+            status_code=500,
+            detail=f"Vision AI Error : {str(e)}"
         )
