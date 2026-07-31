@@ -89,8 +89,8 @@ async def analisis_gambar(file: UploadFile = File(...)):
 @app.post("/lapor_error")
 def lapor_error(data: ErrorReportInput):
     try:
-        bot_token = os.environ.get("TELEGRAM_BOT_TOKEN","8739496643:AAFRM2JtXrPe2s5DRwTPM-sceC6ctah2Jsg")
-        chat_id = os.environ.get("TELEGRAM_CHAT_ID","8875393494")
+        bot_token = os.environ.get("TELEGRAM_BOT_TOKEN")
+        chat_id = os.environ.get("TELEGRAM_CHAT_ID")
         
         if bot_token and chat_id:
             text = f"🚨 LAPORAN V2 MELESET\n\nKeluhan: {data.keluhan}\nDiagnosa AI: {data.diagnosa_ai}"
