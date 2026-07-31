@@ -20,7 +20,7 @@ async def analyze_image_with_ai(file: UploadFile):
         base64_image = base64.b64encode(image_bytes).decode("utf-8")
         mime_type = file.content_type or "image/jpeg"
         
-        # 2. Prompt Logika Pakar
+        # 2. Prompt Logika Pakar Kepala Mekanik
         prompt = """Anda adalah seorang Kepala Mekanik Mobil dan Motor dengan pengalaman 20 tahun. 
 Analisis foto komponen kendaraan yang dikirimkan ini. Identifikasi apakah ada kerusakan, kebocoran, keausan, atau masalah lainnya.
 
@@ -67,8 +67,8 @@ Jika gambar tidak jelas atau bukan bagian kendaraan, berikan diagnosa_ai: "Foto 
             }]
         }
         
-        # 4. Tembak langsung ke Endpoint Gemini 1.5 Flash menggunakan Requests (PERBAIKAN URL DENGAN -latest)
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={GEMINI_API_KEY}"
+        # 4. Tembak langsung ke Endpoint Gemini 1.5 Flash (Tanpa -latest)
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
         headers = {"Content-Type": "application/json"}
         
         response = requests.post(url, json=payload, headers=headers)
