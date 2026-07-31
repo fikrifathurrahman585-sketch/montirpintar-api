@@ -1,6 +1,7 @@
 fastapi
-pydantic
+uvicorn
 requests
-scikit-learn
+pydantic
 python-multipart
-google-genai
+scikit-learn
+google-generativeai
