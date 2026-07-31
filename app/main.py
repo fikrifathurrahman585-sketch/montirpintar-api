@@ -23,6 +23,18 @@ class ErrorReportInput(BaseModel):
 def home():
     return {"status": "aktif", "version": "v2.0", "pesan": "MontirPintar API v2 (Modular) Berjalan!"}
 
+import google.generativeai as genai
+
+@app.get("/version")
+def version():
+    return {
+        "google-generativeai": genai.__version__
+    }
+
+
+@app.post("/diagnosa")
+def diagnosa_ai(data: KeluhanInput):
+
 @app.get("/models")
 def list_models():
     try:
