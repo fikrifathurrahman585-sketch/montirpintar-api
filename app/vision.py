@@ -184,7 +184,19 @@ async def analyze_image_with_ai(file: UploadFile):
                 detail="File gambar kosong."
             )
 
-        mime_type = file.content_type or "image/jpeg"
+        filename = (file.filename or "").lower()
+
+if filename.endswith(".png"):
+    mime_type = "image/png"
+
+elif filename.endswith(".webp"):
+    mime_type = "image/webp"
+
+elif filename.endswith(".jpg") or filename.endswith(".jpeg"):
+    mime_type = "image/jpeg"
+
+else:
+    mime_type = "image/jpeg"
 
         logger.info("Memulai analisis Gemini Vision")
 
