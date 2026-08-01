@@ -1,21 +1,39 @@
 import json
+from pathlib import Path
+from collections import Counter
 
-from app.loader import *
 
-from app.utils import duplicate
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+DATASET_DIR = BASE_DIR / "dataset"
+
+CARS_FILE = DATASET_DIR / "cars.json"
+MOTORCYCLES_FILE = DATASET_DIR / "motorcycles.json"
+
+STANDARD_DIR = DATASET_DIR / "standards"
+
+SYSTEM_FILE = STANDARD_DIR / "systems.json"
+SEVERITY_FILE = STANDARD_DIR / "severity.json"
+DRIVEABILITY_FILE = STANDARD_DIR / "driveability.json"
+VALIDATION_FILE = STANDARD_DIR / "validation.json"
+
+
+def load_json(path):
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
 class DatasetValidator:
 
     def __init__(self):
 
-        self.systems = load_systems()
+        self.systems = load_json(SYSTEM_FILE)
 
-        self.severity = load_severity()
+        self.severity = load_json(SEVERITY_FILE)
 
-        self.driveability = load_driveability()
+        self.driveability = load_json(DRIVEABILITY_FILE)
 
-        self.rules = load_validation()
+        self.rules = load_json(VALIDATION_FILE)
 
     def validate(self, dataset):
 
@@ -32,114 +50,92 @@ class DatasetValidator:
             for field in required:
 
                 if field not in item:
-
                     errors.append(
-
                         f'{item.get("id","UNKNOWN")} missing "{field}"'
-
                     )
 
-            if item["severity"] not in self.severity:
-
+            if item["system"] not in self.systems:
                 errors.append(
+                    f'{item["id"]} invalid system'
+                )
 
+            if item["severity"] not in self.severity:
+                errors.append(
                     f'{item["id"]} invalid severity'
-
                 )
 
             if item["driveability"] not in self.driveability:
-
                 errors.append(
-
                     f'{item["id"]} invalid driveability'
-
-                )
-
-            if item["system"] not in self.systems:
-
-                errors.append(
-
-                    f'{item["id"]} invalid system'
-
                 )
 
             if "id" not in item["language"]:
-
                 errors.append(
-
-                    f'{item["id"]} missing Indonesian language'
-
+                    f'{item["id"]} missing language.id'
                 )
 
             if "en" not in item["language"]:
-
                 errors.append(
+                    f'{item["id"]} missing language.en'
+                )
 
-                    f'{item["id"]} missing English language'
-
+            if "cost" not in item:
+                errors.append(
+                    f'{item["id"]} missing cost'
                 )
 
             if len(item["language"]["id"]["symptoms"]) < self.rules["minimum_symptoms"]:
-
                 errors.append(
-
-                    f'{item["id"]} too few Indonesian symptoms'
-
+                    f'{item["id"]} Indonesian symptoms below minimum'
                 )
 
             if len(item["language"]["en"]["symptoms"]) < self.rules["minimum_symptoms"]:
-
                 errors.append(
-
-                    f'{item["id"]} too few English symptoms'
-
+                    f'{item["id"]} English symptoms below minimum'
                 )
 
-        dup = duplicate(ids)
+        dup = Counter(ids)
 
-        for d in dup:
+        for key, value in dup.items():
 
-            errors.append(
-
-                f'Duplicate ID : {d}'
-
-            )
+            if value > 1:
+                errors.append(f"Duplicate ID : {key}")
 
         return errors
 
 
-if __name__ == "__main__":
+def run_validation():
 
     validator = DatasetValidator()
 
-    cars = load_cars()
+    cars = load_json(CARS_FILE)
 
-    motorcycles = load_motorcycles()
+    motorcycles = load_json(MOTORCYCLES_FILE)
+
+    errors = []
+
+    errors.extend(validator.validate(cars))
+
+    errors.extend(validator.validate(motorcycles))
+
+    return errors
+
+
+if __name__ == "__main__":
+
+    result = run_validation()
 
     print("=" * 60)
-
-    print("MontirPintar Validator")
-
+    print("MontirPintar Dataset Validator")
     print("=" * 60)
 
-    print()
+    if not result:
 
-    errors = validator.validate(cars)
-
-    errors += validator.validate(motorcycles)
-
-    if not errors:
-
-        print("✔ Dataset Valid")
+        print("Dataset VALID")
 
     else:
 
-        print()
+        print(f"{len(result)} Error ditemukan\n")
 
-        print(f"{len(errors)} Error Found")
-
-        print()
-
-        for e in errors:
-
-            print("-", e)
+        for err in result:
+            print("-", err)
