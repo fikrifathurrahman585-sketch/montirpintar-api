@@ -13,6 +13,13 @@ def load_cars():
     if _CARS is None:
         _CARS = load_json(CARS_FILE)
     return _CARS
+
+# 🚀 INI ADALAH FUNGSI YANG HILANG DAN MENYEBABKAN CRASH
+def load_motorcycles():
+    global _MOTOR
+    if _MOTOR is None:
+        _MOTOR = load_json(MOTORCYCLES_FILE)
+    return _MOTOR
     
 def load_slang():
     return load_json(SLANG_FILE)
