@@ -1,1 +1,27 @@
-
+[
+    "engine",
+    "fuel_system",
+    "cooling",
+    "electrical",
+    "charging_system",
+    "starting_system",
+    "ecu",
+    "transmission",
+    "automatic_transmission",
+    "manual_transmission",
+    "cvt",
+    "drivetrain",
+    "steering",
+    "suspension",
+    "wheel",
+    "brakes",
+    "body",
+    "interior",
+    "ac",
+    "lighting",
+    "safety",
+    "turbo",
+    "diesel",
+    "hybrid",
+    "ev"
+]
