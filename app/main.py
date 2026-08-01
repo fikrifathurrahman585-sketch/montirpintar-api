@@ -54,12 +54,13 @@ class ErrorReportInput(BaseModel):
 
 @app.exception_handler(Exception)
 async def global_exception_handler(request, exc):
-    logger.exception(exc)
+    logger.exception("Unhandled Exception")
+
     return JSONResponse(
         status_code=500,
         content={
-            "status":"error",
-            "message":"Internal Server Error"
+            "status": "error",
+            "message": "Internal Server Error"
         }
     )
 
@@ -70,18 +71,20 @@ async def log_requests(request, call_next):
     response = await call_next(request)
     duration = time.time()-start
     logger.info(
-        f"{request.method} {request.url.path} {duration:.3f}s"
-    )
+    "Image received: %s",
+    file.filename
+)
     return response
 
 
-@app.get("/health")
+@app.get("/health", tags=["System"])
 def health():
-  errors = run_validation()
-return {
-    "status":"healthy",
-    "validator":"PASS" if not errors else "FAIL"
-}
+    errors = run_validation()
+
+    return {
+        "status": "healthy",
+        "validator": "PASS" if not errors else "FAIL"
+    }
 
 @app.get("/qa")
 def qa():
@@ -180,15 +183,19 @@ def list_models():
             "https://generativelanguage.googleapis.com/v1beta/models"
             f"?key={api_key}"
         )
-        response = requests.get(url, timeout=20)
-        return response.json()
+        response.raise_for_status()
+
+return response.json()
     except Exception as e:
         return {
             "status": "error",
             "message": str(e)
         }
 
-@app.post("/diagnosa")
+@app.post(
+    "/diagnosa",
+    tags=["Diagnosis"]
+)
 def diagnosa_ai(data: KeluhanInput):
     try:
         logger.info(f"Keluhan masuk: {data.keluhan}")
@@ -213,7 +220,10 @@ def diagnosa_ai(data: KeluhanInput):
         raise HTTPException(status_code=500, detail=str(e))
 
 # 🚀 ENDPOINT BARU UNTUK AI KAMERA / VISION
-@app.post("/analisis_gambar")
+@app.post(
+    "/analisis_gambar",
+    tags=["Vision"]
+)
 async def analisis_gambar(file: UploadFile = File(...)):
     try:
         logger.info(
@@ -225,7 +235,10 @@ async def analisis_gambar(file: UploadFile = File(...)):
         logger.error(f"Error AI Kamera: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/lapor_error")
+@app.post(
+    "/lapor_error",
+    tags=["System"]
+)
 def lapor_error(data: ErrorReportInput):
     try:
         bot_token = os.environ.get("TELEGRAM_BOT_TOKEN")
