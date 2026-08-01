@@ -1,1 +1,25 @@
+{
+    "required_fields": [
+        "id",
+        "vehicle",
+        "system",
+        "severity",
+        "driveability",
+        "language",
+        "cost"
+    ],
 
+    "language_required": [
+        "id",
+        "en"
+    ],
+
+    "cost_required": [
+        "idr",
+        "usd"
+    ],
+
+    "minimum_symptoms": 20,
+
+    "minimum_languages": 2
+}
