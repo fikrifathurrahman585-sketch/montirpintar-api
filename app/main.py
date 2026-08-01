@@ -217,7 +217,8 @@ def list_models():
 def diagnosa_ai(data: KeluhanInput):
     try:
         logger.info(f"Keluhan masuk: {data.keluhan}")
-        result = analyze_symptom(data.keluhan)   
+        # --- TARUH / PERBARUI DI BAGIAN INI ---
+        result = analyze_symptom(data.keluhan, data.lang)   
         if result:
             return result
         else:
