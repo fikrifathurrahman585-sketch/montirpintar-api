@@ -15,3 +15,9 @@ SEVERITY_FILE = STANDARDS_DIR / "severity.json"
 DRIVEABILITY_FILE = STANDARDS_DIR / "driveability.json"
 VALIDATION_FILE = STANDARDS_DIR / "validation.json"
 TAXONOMY_FILE = STANDARDS_DIR / "taxonomy.json"
+
+LOG_LEVEL = "INFO"
+
+API_VERSION = "2.0"
+
+API_NAME = "MontirPintar AI"
