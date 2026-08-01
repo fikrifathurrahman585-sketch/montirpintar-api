@@ -1,27 +1,13 @@
-import json
-from pathlib import Path
 from collections import Counter
 
-
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-DATASET_DIR = BASE_DIR / "dataset"
-
-CARS_FILE = DATASET_DIR / "cars.json"
-MOTORCYCLES_FILE = DATASET_DIR / "motorcycles.json"
-
-STANDARD_DIR = DATASET_DIR / "standards"
-
-SYSTEM_FILE = STANDARD_DIR / "systems.json"
-SEVERITY_FILE = STANDARD_DIR / "severity.json"
-DRIVEABILITY_FILE = STANDARD_DIR / "driveability.json"
-VALIDATION_FILE = STANDARD_DIR / "validation.json"
-
-
-def load_json(path):
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
-
+from app.loader import (
+    load_cars,
+    load_motorcycles,
+    load_systems,
+    load_severity,
+    load_driveability,
+    load_validation,
+)
 
 class DatasetValidator:
 
