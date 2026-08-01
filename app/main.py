@@ -15,13 +15,22 @@ from app.loader import (
 )
 from contextlib import asynccontextmanager
 from pydantic import BaseModel
-from datetime import datetime, timezone
-
-"generated_at": datetime.now(timezone.utc).isoformat()
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("MontirPintarAPIV2")
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    errors = run_validation()
+    if errors:
+        logger.warning(
+            f"Dataset Warning : {len(errors)}"
+        )
+    else:
+        logger.info("Dataset OK")
+    yield
+
+    
 app = FastAPI(
     title="MontirPintar AI",
     version="2.0",
@@ -54,16 +63,6 @@ async def global_exception_handler(request, exc):
         }
     )
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    errors = run_validation()
-    if errors:
-        logger.warning(
-            f"Dataset Warning : {len(errors)}"
-        )
-    else:
-        logger.info("Dataset OK")
-    yield
 
 @app.middleware("http")
 async def log_requests(request, call_next):
@@ -78,11 +77,10 @@ async def log_requests(request, call_next):
 
 @app.get("/health")
 def health():
-    return {
-"status":"healthy",
-"cars":len(load_cars()),
-"motorcycles":len(load_motorcycles()),
-"validator":"OK"
+  errors = run_validation()
+return {
+    "status":"healthy",
+    "validator":"PASS" if not errors else "FAIL"
 }
 
 @app.get("/qa")
