@@ -1,20 +1,34 @@
-import time
-import google.generativeai as genai
 import logging
 import os
-import requests
 import sys
+import time
+
+import google.generativeai as genai
+import requests
+
+from contextlib import asynccontextmanager
+
+from fastapi import (
+    FastAPI,
+    UploadFile,
+    File,
+    HTTPException
+)
+
 from fastapi.responses import JSONResponse
-from app.diagnosis import analyze_symptom
-from app.vision import analyze_image_with_ai
-from fastapi import FastAPI, UploadFile, File, HTTPException
-from app.validator import run_validation
+
+from pydantic import BaseModel
+
 from app.loader import (
     load_cars,
-    load_motorcycles,
+    load_motorcycles
 )
-from contextlib import asynccontextmanager
-from pydantic import BaseModel
+
+from app.validator import run_validation
+from app.diagnosis import analyze_symptom
+from app.vision import analyze_image_with_ai
+
+
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("MontirPintarAPIV2")
@@ -54,7 +68,7 @@ class ErrorReportInput(BaseModel):
 
 @app.exception_handler(Exception)
 async def global_exception_handler(request, exc):
-    logger.exception("Unhandled Exception")
+    logger.exception(exc)
 
     return JSONResponse(
         status_code=500,
@@ -67,13 +81,17 @@ async def global_exception_handler(request, exc):
 
 @app.middleware("http")
 async def log_requests(request, call_next):
+
     start = time.time()
     response = await call_next(request)
-    duration = time.time()-start
+    duration = time.time() - start
+
     logger.info(
-    "Image received: %s",
-    file.filename
-)
+        "%s %s %.3fs",
+        request.method,
+        request.url.path,
+        duration
+    )
     return response
 
 
@@ -183,7 +201,9 @@ def list_models():
             "https://generativelanguage.googleapis.com/v1beta/models"
             f"?key={api_key}"
         )
-        response.raise_for_status()
+        response = requests.get(url, timeout=20)
+
+response.raise_for_status()
 
 return response.json()
     except Exception as e:
@@ -226,8 +246,11 @@ def diagnosa_ai(data: KeluhanInput):
 )
 async def analisis_gambar(file: UploadFile = File(...)):
     try:
-        logger.info(
-    f"Menerima file gambar: {file.filename}"
+       logger.info(
+    "%s %s %.3fs",
+    request.method,
+    request.url.path,
+    duration
 )
         result = await analyze_image_with_ai(file)
         return result
