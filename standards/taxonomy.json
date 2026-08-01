@@ -1,1 +1,52 @@
+{
+    "engine": {
+        "children": [
+            "ignition",
+            "intake",
+            "exhaust",
+            "lubrication",
+            "cooling",
+            "timing",
+            "turbo"
+        ]
+    },
 
+    "fuel_system": {
+        "children": [
+            "injector",
+            "fuel_pump",
+            "fuel_filter",
+            "regulator",
+            "common_rail"
+        ]
+    },
+
+    "electrical": {
+        "children": [
+            "starting_system",
+            "charging_system",
+            "lighting",
+            "ecu",
+            "body_control"
+        ]
+    },
+
+    "transmission": {
+        "children": [
+            "manual_transmission",
+            "automatic_transmission",
+            "cvt",
+            "dct"
+        ]
+    },
+
+    "chassis": {
+        "children": [
+            "steering",
+            "suspension",
+            "wheel",
+            "brakes",
+            "drivetrain"
+        ]
+    }
+}
