@@ -32,6 +32,9 @@ except Exception as e:
 # FUNGSI UTAMA DIAGNOSA
 # ==========================================
 def analyze_symptom(user_input: str):
+    # Gunakan bahasa yang dikirim dari Android, atau deteksi otomatis jika kosong
+    lang = forced_lang if forced_lang in ["id", "en"] else detect_language(user_input)
+    
     lang = detect_language(user_input)
     normalized_input = normalize_slang(user_input)
     
