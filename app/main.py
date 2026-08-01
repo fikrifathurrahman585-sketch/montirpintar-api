@@ -6,6 +6,9 @@ import requests
 from app.diagnosis import analyze_symptom
 from app.vision import analyze_image_with_ai
 from fastapi import FastAPI, UploadFile, File, HTTPException
+from app.validator import run_validation
+from app.loader import load_cars
+from app.loader import load_motorcycles
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("MontirPintarAPIV2")
@@ -18,6 +21,71 @@ class KeluhanInput(BaseModel):
 class ErrorReportInput(BaseModel):
     keluhan: str
     diagnosa_ai: str
+
+@app.get("/health")
+def health():
+
+    return {
+        "status": "healthy",
+        "service": "MontirPintar AI",
+        "version": "2.0"
+    }
+
+@app.get("/qa")
+def qa():
+
+    errors = run_validation()
+
+    return {
+
+        "valid": len(errors) == 0,
+
+        "error_count": len(errors),
+
+        "errors": errors
+
+    }
+
+@app.get("/stats")
+def stats():
+
+    cars = load_cars()
+
+    motorcycles = load_motorcycles()
+
+    return {
+
+        "cars": len(cars),
+
+        "motorcycles": len(motorcycles),
+
+        "total": len(cars)+len(motorcycles)
+
+    }
+
+@app.get("/ping")
+def ping():
+
+    return {
+
+        "message":"pong"
+
+    }
+
+@app.get("/languages")
+def languages():
+
+    return {
+
+        "supported":[
+
+            "id",
+
+            "en"
+
+        ]
+
+    }
 
 @app.get("/")
 def home():
