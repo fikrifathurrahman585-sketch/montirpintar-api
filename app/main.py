@@ -57,6 +57,7 @@ app = FastAPI(
 
 class KeluhanInput(BaseModel):
     keluhan: str
+    lang: str = "id"
 
 class ErrorReportInput(BaseModel):
     keluhan: str
