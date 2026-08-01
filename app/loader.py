@@ -5,12 +5,15 @@ def load_json(path):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
+_CARS = None
+_MOTOR = None
+
 def load_cars():
-    return load_json(CARS_FILE)
-
-def load_motorcycles():
-    return load_json(MOTORCYCLES_FILE)
-
+    global _CARS
+    if _CARS is None:
+        _CARS = load_json(CARS_FILE)
+    return _CARS
+    
 def load_slang():
     return load_json(SLANG_FILE)
 
