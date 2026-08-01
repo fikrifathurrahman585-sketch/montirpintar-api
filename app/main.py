@@ -15,6 +15,9 @@ from app.loader import (
 )
 from contextlib import asynccontextmanager
 from pydantic import BaseModel
+from datetime import datetime, timezone
+
+"generated_at": datetime.now(timezone.utc).isoformat()
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("MontirPintarAPIV2")
@@ -91,14 +94,17 @@ def qa():
         "errors": errors
     }
 
-@app.get("/stats")
+@app.get("/stats", tags=["System"])
 def stats():
     cars = load_cars()
     motorcycles = load_motorcycles()
     return {
-        "cars": len(cars),
-        "motorcycles": len(motorcycles),
-        "total": len(cars)+len(motorcycles)
+        "dataset": {
+            "cars": len(cars),
+            "motorcycles": len(motorcycles),
+            "total": len(cars)+len(motorcycles)
+        },
+        "status":"ready"
     }
 
 @app.get("/ping")
@@ -129,23 +135,28 @@ def version():
     "python":sys.version.split()[0]
 }
 
-@app.get("/about")
+@app.get("/about", tags=["System"])
 def about():
+    cars = load_cars()
+    motorcycles = load_motorcycles()
     return {
-        "name":"MontirPintar AI",
-        "version":"2.0",
-        "engine":"Gemini",
-        "languages":[
-            "Indonesia",
-            "English"
+        "application": {
+            "name": "MontirPintar AI",
+            "version": "2.0",
+            "engine": "Gemini"
+        },
+        "supported_language": [
+            "id",
+            "en"
         ],
-        "vehicle":[
-            "Car",
-            "Motorcycle"
+        "supported_vehicle": [
+            "car",
+            "motorcycle"
         ],
-        "knowledge":{
-            "cars":len(load_cars()),
-            "motorcycles":len(load_motorcycles())
+        "knowledge": {
+            "cars": len(cars),
+            "motorcycles": len(motorcycles),
+            "total": len(cars)+len(motorcycles)
         }
     }
 
