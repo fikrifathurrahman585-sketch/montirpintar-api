@@ -28,8 +28,6 @@ from app.validator import run_validation
 from app.diagnosis import analyze_symptom
 from app.vision import analyze_image_with_ai
 
-
-
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("MontirPintarAPIV2")
 
@@ -44,7 +42,6 @@ async def lifespan(app: FastAPI):
         logger.info("Dataset OK")
     yield
 
-    
 app = FastAPI(
     title="MontirPintar AI",
     version="2.0",
@@ -81,7 +78,6 @@ async def global_exception_handler(request, exc):
 
 @app.middleware("http")
 async def log_requests(request, call_next):
-
     start = time.time()
     response = await call_next(request)
     duration = time.time() - start
@@ -202,10 +198,11 @@ def list_models():
             f"?key={api_key}"
         )
         response = requests.get(url, timeout=20)
-
-response.raise_for_status()
-
-return response.json()
+        
+        # BARIS INI SUDAH DIPERBAIKI INDENTASINYA
+        response.raise_for_status()
+        return response.json()
+        
     except Exception as e:
         return {
             "status": "error",
@@ -246,12 +243,7 @@ def diagnosa_ai(data: KeluhanInput):
 )
 async def analisis_gambar(file: UploadFile = File(...)):
     try:
-       logger.info(
-    "%s %s %.3fs",
-    request.method,
-    request.url.path,
-    duration
-)
+        logger.info(f"Menerima file gambar untuk analisis: {file.filename}")
         result = await analyze_image_with_ai(file)
         return result
     except Exception as e:
