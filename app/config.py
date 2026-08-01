@@ -8,7 +8,8 @@ CARS_FILE = DATASET_DIR / "cars.json"
 MOTORCYCLES_FILE = DATASET_DIR / "motorcycles.json"
 SLANG_FILE = DATASET_DIR / "slang.json"
 
-STANDARDS_DIR = DATASET_DIR / "standards"
+# 🚀 PERBAIKAN: Folder standards diarahkan ke BASE_DIR karena posisinya sejajar dengan dataset
+STANDARDS_DIR = BASE_DIR / "standards"
 
 SYSTEMS_FILE = STANDARDS_DIR / "systems.json"
 SEVERITY_FILE = STANDARDS_DIR / "severity.json"
