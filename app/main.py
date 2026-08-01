@@ -137,8 +137,12 @@ def version():
 
 @app.get("/about", tags=["System"])
 def about():
+
     cars = load_cars()
     motorcycles = load_motorcycles()
+
+    errors = run_validation()
+
     return {
         "application": {
             "name": "MontirPintar AI",
@@ -156,7 +160,11 @@ def about():
         "knowledge": {
             "cars": len(cars),
             "motorcycles": len(motorcycles),
-            "total": len(cars)+len(motorcycles)
+            "total": len(cars) + len(motorcycles)
+        },
+        "validator": {
+            "status": "PASS" if len(errors) == 0 else "FAIL",
+            "error_count": len(errors)
         }
     }
 
