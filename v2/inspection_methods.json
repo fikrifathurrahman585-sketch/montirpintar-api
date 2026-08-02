@@ -1,0 +1,49 @@
+[
+    {
+        "id":"VISUAL",
+        "name_id":"Inspeksi Visual",
+        "name_en":"Visual Inspection"
+    },
+
+    {
+        "id":"AUDIO",
+        "name_id":"Analisis Bunyi",
+        "name_en":"Audio Inspection"
+    },
+
+    {
+        "id":"TEXT",
+        "name_id":"Analisis Keluhan",
+        "name_en":"Text Analysis"
+    },
+
+    {
+        "id":"VISION_AI",
+        "name_id":"AI Vision",
+        "name_en":"AI Vision"
+    },
+
+    {
+        "id":"OBD",
+        "name_id":"OBD Scanner",
+        "name_en":"OBD Scan"
+    },
+
+    {
+        "id":"MANUAL",
+        "name_id":"Pemeriksaan Manual",
+        "name_en":"Manual Inspection"
+    },
+
+    {
+        "id":"PRESSURE_TEST",
+        "name_id":"Pressure Test",
+        "name_en":"Pressure Test"
+    },
+
+    {
+        "id":"COMPRESSION_TEST",
+        "name_id":"Compression Test",
+        "name_en":"Compression Test"
+    }
+]
