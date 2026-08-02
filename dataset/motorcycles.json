@@ -674,5 +674,5237 @@
       "idr": "Rp 50.000 - Rp 150.000",
       "usd": "$3 - $10"
     }
+  },
+  ,
+{
+  "id": "MTR_MS_008",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "motor brebet saat putaran atas",
+        "tarikan atas ngempos",
+        "motor tersendat saat rpm tinggi",
+        "nafas motor pendek"
+      ],
+      "problem": "Filter udara sangat kotor, injektor mulai tersumbat, atau tekanan pompa bensin melemah.",
+      "action": "Hindari memaksakan motor pada putaran tinggi hingga sistem bahan bakar diperiksa.",
+      "garage_tip": "Sampaikan: 'Tolong cek filter udara, injector cleaner, dan tekanan fuel pump menggunakan fuel pressure gauge.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine sputters at high rpm",
+        "poor top speed",
+        "hesitates at high speed",
+        "loss of power at high rpm"
+      ],
+      "problem": "Dirty air filter, clogged injector, or weak fuel pump pressure.",
+      "action": "Avoid riding at high RPM until the fuel system has been inspected.",
+      "garage_tip": "Say: 'Please inspect the air filter, injector flow, and fuel pressure.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 450.000",
+    "usd": "$7 - $30"
   }
+},
+{
+  "id": "MTR_MS_009",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "rpm langsam naik turun",
+        "idle tidak stabil",
+        "putaran mesin hunting",
+        "langsam tidak konstan"
+      ],
+      "problem": "Throttle body kotor, ISC/IACV mulai lemah, atau ada kebocoran vakum.",
+      "action": "Masih aman digunakan, namun segera lakukan pembersihan throttle body.",
+      "garage_tip": "Sampaikan: 'Mohon bersihkan throttle body dan cek ISC serta kebocoran vakum.'"
+    },
+    "en": {
+      "symptoms": [
+        "unstable idle",
+        "engine hunting",
+        "idle fluctuates",
+        "rough idle"
+      ],
+      "problem": "Dirty throttle body, weak ISC/IACV, or vacuum leak.",
+      "action": "Safe to ride temporarily but schedule throttle body cleaning soon.",
+      "garage_tip": "Say: 'Please clean the throttle body and inspect the idle control valve.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 75.000 - Rp 250.000",
+    "usd": "$5 - $18"
+  }
+},
+{
+  "id": "MTR_MS_010",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "motor boros bensin",
+        "bbm cepat habis",
+        "jarak tempuh menurun",
+        "konsumsi bensin boros"
+      ],
+      "problem": "Injector kotor, sensor O2 lemah, filter udara mampet, atau busi sudah aus.",
+      "action": "Kurangi perjalanan jauh sampai konsumsi bahan bakar kembali normal.",
+      "garage_tip": "Sampaikan: 'Tolong cek injector, sensor O2, filter udara dan kondisi businya.'"
+    },
+    "en": {
+      "symptoms": [
+        "poor fuel economy",
+        "uses too much fuel",
+        "high fuel consumption",
+        "fuel drains quickly"
+      ],
+      "problem": "Dirty injector, faulty oxygen sensor, clogged air filter, or worn spark plug.",
+      "action": "Limit long trips until the fuel system has been serviced.",
+      "garage_tip": "Say: 'Please inspect the injector, O2 sensor, air filter and spark plug.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 500.000",
+    "usd": "$7 - $35"
+  }
+},
+{
+  "id": "MTR_MS_011",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "motor susah hidup pagi hari",
+        "starter lama baru hidup",
+        "mesin dingin susah nyala",
+        "harus digas terus baru hidup"
+      ],
+      "problem": "Busi mulai lemah, injector menetes, kompresi menurun, atau aki mulai melemah.",
+      "action": "Hindari mematikan mesin terlalu sering selama perjalanan.",
+      "garage_tip": "Sampaikan: 'Mohon cek kompresi mesin, busi, injector, dan aki.'"
+    },
+    "en": {
+      "symptoms": [
+        "hard cold start",
+        "engine difficult to start in the morning",
+        "takes long to start",
+        "needs throttle to stay running"
+      ],
+      "problem": "Weak spark plug, leaking injector, low compression, or weak battery.",
+      "action": "Avoid repeatedly shutting off the engine during trips.",
+      "garage_tip": "Say: 'Please check compression, spark plug, injector and battery.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 75.000 - Rp 350.000",
+    "usd": "$5 - $22"
+  }
+},
+{
+  "id": "MTR_MS_012",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin terasa pincang",
+        "tenaga hilang sebelah",
+        "motor brebet satu silinder",
+        "getaran mesin berlebihan"
+      ],
+      "problem": "Pengapian tidak sempurna akibat busi mati, koil lemah, atau injector tidak bekerja optimal.",
+      "action": "Hindari akselerasi penuh hingga sistem pengapian diperiksa.",
+      "garage_tip": "Sampaikan: 'Mohon cek busi, koil, injector dan tekanan kompresi.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine misfire",
+        "engine vibration",
+        "loss of one cylinder",
+        "rough engine"
+      ],
+      "problem": "Ignition failure caused by faulty spark plug, weak ignition coil or injector malfunction.",
+      "action": "Avoid full throttle until the ignition system is inspected.",
+      "garage_tip": "Say: 'Please inspect spark plugs, ignition coil, injectors and compression.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 600.000",
+    "usd": "$7 - $40"
+  }
+},
+{
+  "id": "MTR_MS_013",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "oli mesin cepat habis",
+        "harus sering tambah oli",
+        "oli berkurang terus",
+        "volume oli cepat turun"
+      ],
+      "problem": "Ring piston mulai aus, seal klep bocor, atau terjadi kebocoran oli ringan.",
+      "action": "Periksa volume oli setiap hari sebelum digunakan.",
+      "garage_tip": "Sampaikan: 'Mohon lakukan tes kompresi dan cek kebocoran seal klep maupun ring piston.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine oil disappears quickly",
+        "consumes engine oil",
+        "oil level drops rapidly",
+        "frequent oil refill"
+      ],
+      "problem": "Worn piston rings, leaking valve seals, or minor oil leakage.",
+      "action": "Check engine oil level before every ride.",
+      "garage_tip": "Say: 'Please perform a compression test and inspect valve seals and piston rings.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 250.000 - Rp 1.200.000",
+    "usd": "$15 - $80"
+  }
+},
+{
+  "id": "MTR_MS_014",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "DANGER",
+  "driveability": "STOP",
+  "language": {
+    "id": {
+      "symptoms": [
+        "lampu oli menyala",
+        "indikator oli merah",
+        "tekanan oli hilang",
+        "mesin bunyi kasar setelah lampu oli hidup"
+      ],
+      "problem": "Tekanan oli mesin hilang akibat pompa oli rusak, filter oli mampet, atau oli habis.",
+      "action": "Matikan mesin segera. Menjalankan mesin tanpa tekanan oli dapat menyebabkan kerusakan total.",
+      "garage_tip": "Sampaikan: 'Mohon cek oil pump, pressure relief valve, filter oli dan tekanan oli mesin.'"
+    },
+    "en": {
+      "symptoms": [
+        "oil warning light on",
+        "low oil pressure",
+        "oil pressure warning",
+        "engine knocking after oil light"
+      ],
+      "problem": "Loss of oil pressure due to failed oil pump, clogged oil filter or insufficient oil.",
+      "action": "Stop the engine immediately to prevent severe engine damage.",
+      "garage_tip": "Say: 'Please inspect the oil pump, oil pressure and oil filter.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 300.000 - Rp 2.000.000",
+    "usd": "$20 - $130"
+  }
+},
+{
+  "id": "MTR_MS_015",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin knocking",
+        "bunyi ngelitik saat digas",
+        "detonasi mesin",
+        "bunyi ping saat akselerasi"
+      ],
+      "problem": "Bahan bakar beroktan rendah, pengapian terlalu maju, atau ruang bakar dipenuhi karbon.",
+      "action": "Gunakan bahan bakar sesuai rekomendasi pabrikan dan hindari beban berat.",
+      "garage_tip": "Sampaikan: 'Mohon cek timing pengapian dan bersihkan ruang bakar dari kerak karbon.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine knocking",
+        "pinging during acceleration",
+        "detonation",
+        "spark knock"
+      ],
+      "problem": "Low octane fuel, advanced ignition timing, or excessive carbon deposits.",
+      "action": "Use the recommended fuel octane and avoid heavy acceleration.",
+      "garage_tip": "Say: 'Please inspect ignition timing and remove combustion chamber carbon deposits.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 500.000",
+    "usd": "$7 - $35"
+  }
+},
+{
+  "id": "MTR_MS_016",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "tenaga motor hilang setelah panas",
+        "mesin ngempos saat panas",
+        "motor loyo setelah lama jalan",
+        "tarikan berat ketika mesin panas"
+      ],
+      "problem": "Koil pengapian melemah saat temperatur tinggi atau fuel pump kehilangan tekanan ketika panas.",
+      "action": "Istirahatkan mesin beberapa menit sebelum melanjutkan perjalanan.",
+      "garage_tip": "Sampaikan: 'Mohon cek ignition coil saat panas dan ukur tekanan fuel pump.'"
+    },
+    "en": {
+      "symptoms": [
+        "loss of power when hot",
+        "engine weak after warming up",
+        "performance drops when hot",
+        "poor acceleration after long ride"
+      ],
+      "problem": "Ignition coil weak at high temperature or fuel pump pressure drops when hot.",
+      "action": "Allow the engine to cool before continuing.",
+      "garage_tip": "Say: 'Please test the ignition coil and fuel pressure when the engine is hot.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 700.000",
+    "usd": "$10 - $45"
+  }
+},
+{
+  "id": "MTR_MS_017",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "motor terasa berat",
+        "akselerasi lambat",
+        "mesin tidak bertenaga",
+        "gas mentok tenaga tetap lemah"
+      ],
+      "problem": "Kompresi mesin menurun akibat ring piston aus, klep bocor, atau silinder mulai aus.",
+      "action": "Hindari membawa beban berat sampai kompresi diperiksa.",
+      "garage_tip": "Sampaikan: 'Mohon lakukan compression test dan leak-down test untuk mengetahui sumber kehilangan kompresi.'"
+    },
+    "en": {
+      "symptoms": [
+        "poor acceleration",
+        "low engine power",
+        "weak engine",
+        "loss of compression"
+      ],
+      "problem": "Low engine compression caused by worn piston rings, leaking valves or cylinder wear.",
+      "action": "Avoid carrying heavy loads until the engine is inspected.",
+      "garage_tip": "Say: 'Please perform compression and leak-down testing.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 300.000 - Rp 2.000.000",
+    "usd": "$20 - $130"
+  }
+},
+  ,
+{
+  "id": "MTR_MS_018",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin pincang saat hujan",
+        "motor brebet habis kehujanan",
+        "pengapian hilang saat basah",
+        "motor susah hidup setelah hujan"
+      ],
+      "problem": "Air masuk ke cop busi, koil pengapian lembap, atau soket kelistrikan terkena air.",
+      "action": "Hindari menerobos banjir dan keringkan area busi sebelum menyalakan mesin kembali.",
+      "garage_tip": "Sampaikan: 'Tolong cek cop busi, koil, dan soket pengapian apakah ada air atau korosi.'"
+    },
+    "en": {
+      "symptoms": [
+        "misfires after rain",
+        "hard start after rain",
+        "ignition failure when wet",
+        "engine sputters when wet"
+      ],
+      "problem": "Water entered the spark plug cap, ignition coil, or electrical connectors.",
+      "action": "Avoid deep water crossings and dry the ignition components.",
+      "garage_tip": "Say: 'Please inspect the spark plug cap, ignition coil, and connectors for moisture.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 50.000 - Rp 250.000",
+    "usd": "$3 - $17"
+  }
+},
+{
+  "id": "MTR_MS_019",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "getaran mesin saat langsam",
+        "motor bergetar saat idle",
+        "mesin halus saat digas tapi bergetar saat diam"
+      ],
+      "problem": "Engine mounting longgar, setelan idle kurang tepat, atau pembakaran kurang stabil.",
+      "action": "Masih aman digunakan namun lakukan pemeriksaan mounting dan idle.",
+      "garage_tip": "Sampaikan: 'Tolong cek engine mounting, idle RPM, dan sistem pembakaran.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine vibrates at idle",
+        "vibration while idling",
+        "rough idle vibration"
+      ],
+      "problem": "Loose engine mounts, incorrect idle speed, or unstable combustion.",
+      "action": "Safe to ride but inspect the engine mounts and idle setting.",
+      "garage_tip": "Say: 'Please inspect engine mounts and idle adjustment.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 50.000 - Rp 200.000",
+    "usd": "$3 - $13"
+  }
+},
+{
+  "id": "MTR_MS_020",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "busi cepat hitam",
+        "busi cepat mati",
+        "ujung busi berjelaga",
+        "mesin brebet karena busi"
+      ],
+      "problem": "Campuran bahan bakar terlalu kaya, filter udara mampet, atau injector menetes.",
+      "action": "Kurangi perjalanan jauh hingga sistem pembakaran diperiksa.",
+      "garage_tip": "Sampaikan: 'Mohon cek AFR, injector, filter udara dan kondisi busi.'"
+    },
+    "en": {
+      "symptoms": [
+        "spark plug fouls quickly",
+        "black spark plug",
+        "carbon fouled plug",
+        "plug keeps failing"
+      ],
+      "problem": "Rich fuel mixture, clogged air filter, or leaking injector.",
+      "action": "Avoid long trips until the combustion system is inspected.",
+      "garage_tip": "Say: 'Please inspect AFR, injector and air filter.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 50.000 - Rp 300.000",
+    "usd": "$3 - $20"
+  }
+},
+{
+  "id": "MTR_MS_021",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin batuk saat digas",
+        "gas dibuka tersendat",
+        "tarikan tersendat di putaran bawah"
+      ],
+      "problem": "Throttle Position Sensor (TPS) tidak akurat atau throttle body kotor.",
+      "action": "Hindari akselerasi mendadak hingga sensor diperiksa.",
+      "garage_tip": "Sampaikan: 'Mohon lakukan kalibrasi TPS dan bersihkan throttle body.'"
+    },
+    "en": {
+      "symptoms": [
+        "hesitates on throttle",
+        "engine coughs when accelerating",
+        "poor throttle response"
+      ],
+      "problem": "Faulty throttle position sensor or dirty throttle body.",
+      "action": "Avoid sudden acceleration until inspected.",
+      "garage_tip": "Say: 'Please calibrate the TPS and clean the throttle body.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 400.000",
+    "usd": "$7 - $27"
+  }
+},
+{
+  "id": "MTR_MS_022",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "DANGER",
+  "driveability": "STOP",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin tiba tiba mati lalu terkunci",
+        "kick starter tidak bisa diinjak",
+        "mesin macet total"
+      ],
+      "problem": "Mesin mengalami seizure akibat overheat berat atau kekurangan pelumasan.",
+      "action": "Jangan mencoba menghidupkan mesin kembali karena dapat memperparah kerusakan.",
+      "garage_tip": "Sampaikan: 'Mohon bongkar mesin dan periksa piston, silinder serta kruk as.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine seized",
+        "kick starter locked",
+        "engine completely stuck"
+      ],
+      "problem": "Engine seizure caused by overheating or lubrication failure.",
+      "action": "Do not attempt to restart the engine.",
+      "garage_tip": "Say: 'Please inspect piston, cylinder and crankshaft.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 1.500.000 - Rp 5.000.000",
+    "usd": "$95 - $320"
+  }
+},
+{
+  "id": "MTR_MS_023",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin terasa panas terus",
+        "suhu mesin cepat naik",
+        "panas berlebihan"
+      ],
+      "problem": "Sirip pendingin kotor, coolant kurang, atau oli mesin kualitasnya menurun.",
+      "action": "Kurangi beban mesin dan hentikan bila suhu terus meningkat.",
+      "garage_tip": "Sampaikan: 'Mohon cek sistem pendinginan dan kualitas oli mesin.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine runs too hot",
+        "high engine temperature",
+        "engine overheating frequently"
+      ],
+      "problem": "Dirty cooling fins, low coolant or degraded engine oil.",
+      "action": "Reduce engine load and stop if temperature continues to rise.",
+      "garage_tip": "Say: 'Please inspect the cooling system and engine oil condition.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 500.000",
+    "usd": "$7 - $35"
+  }
+},
+{
+  "id": "MTR_MS_024",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "suara ngorok dari mesin",
+        "bunyi gesekan logam",
+        "mesin kasar saat rpm naik"
+      ],
+      "problem": "Bearing kruk as mulai aus atau pelumasan kurang.",
+      "action": "Kurangi penggunaan RPM tinggi sampai diperiksa.",
+      "garage_tip": "Sampaikan: 'Mohon cek bearing kruk as dan tekanan oli mesin.'"
+    },
+    "en": {
+      "symptoms": [
+        "grinding engine noise",
+        "metal scraping sound",
+        "rough engine at high rpm"
+      ],
+      "problem": "Worn crankshaft bearing or insufficient lubrication.",
+      "action": "Avoid high RPM until repaired.",
+      "garage_tip": "Say: 'Please inspect crankshaft bearings and oil pressure.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 600.000 - Rp 2.500.000",
+    "usd": "$40 - $160"
+  }
+},
+{
+  "id": "MTR_MS_025",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "suara klep halus",
+        "mesin sedikit berisik saat dingin",
+        "bunyi hilang setelah panas"
+      ],
+      "problem": "Celah klep mulai berubah namun masih dalam batas toleransi servis.",
+      "action": "Lakukan penyetelan klep pada jadwal servis berikutnya.",
+      "garage_tip": "Sampaikan: 'Mohon ukur ulang celah klep sesuai spesifikasi pabrikan.'"
+    },
+    "en": {
+      "symptoms": [
+        "slight valve ticking",
+        "noise only when cold",
+        "engine quiet when warm"
+      ],
+      "problem": "Valve clearance beginning to change but still serviceable.",
+      "action": "Adjust valves during the next scheduled service.",
+      "garage_tip": "Say: 'Please measure and adjust valve clearance.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 50.000 - Rp 150.000",
+    "usd": "$3 - $10"
+  }
+},
+{
+  "id": "MTR_MS_026",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin hidup lalu mati sendiri",
+        "mati setelah beberapa detik",
+        "starter hidup sebentar lalu mati"
+      ],
+      "problem": "Sensor CKP mulai bermasalah, fuel pump lemah, atau relay EFI tidak stabil.",
+      "action": "Hindari perjalanan jauh hingga penyebab ditemukan.",
+      "garage_tip": "Sampaikan: 'Mohon cek sensor CKP, relay EFI dan tekanan fuel pump.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine starts then stalls",
+        "dies after a few seconds",
+        "starts then shuts off"
+      ],
+      "problem": "Faulty CKP sensor, weak fuel pump or unstable EFI relay.",
+      "action": "Avoid long rides until diagnosed.",
+      "garage_tip": "Say: 'Please inspect the CKP sensor, EFI relay and fuel pressure.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 700.000",
+    "usd": "$10 - $45"
+  }
+},
+{
+  "id": "MTR_MS_027",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin ngempos saat tanjakan",
+        "kehilangan tenaga di tanjakan",
+        "motor tidak kuat nanjak"
+      ],
+      "problem": "Kompresi mulai turun, filter udara kotor, atau kopling mulai selip.",
+      "action": "Hindari membawa beban berat hingga dilakukan pemeriksaan.",
+      "garage_tip": "Sampaikan: 'Mohon cek kompresi mesin, filter udara dan kondisi kopling.'"
+    },
+    "en": {
+      "symptoms": [
+        "poor hill climbing",
+        "loses power uphill",
+        "weak on inclines"
+      ],
+      "problem": "Low compression, clogged air filter or slipping clutch.",
+      "action": "Avoid carrying heavy loads until inspected.",
+      "garage_tip": "Say: 'Please inspect engine compression, air filter and clutch.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 900.000",
+    "usd": "$7 - $60"
+  }
+},
+  ,
+{
+  "id": "MTR_MS_028",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "motor susah hidup pagi hari",
+        "harus distarter berkali kali",
+        "dingin susah hidup"
+      ],
+      "problem": "Busi mulai melemah, tekanan kompresi turun, atau injektor mulai kotor.",
+      "action": "Panaskan mesin beberapa menit sebelum digunakan.",
+      "garage_tip": "Sampaikan: 'Mohon cek kompresi, busi dan injector cleaning.'"
+    },
+    "en": {
+      "symptoms": [
+        "hard cold start",
+        "takes many attempts to start",
+        "difficult morning start"
+      ],
+      "problem": "Weak spark plug, low compression, or dirty injector.",
+      "action": "Warm up the engine briefly before riding.",
+      "garage_tip": "Say: 'Please inspect compression, spark plug and injector.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 80.000 - Rp 350.000",
+    "usd": "$5 - $22"
+  }
+},
+{
+  "id": "MTR_MS_029",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "tarikan berat",
+        "motor tidak bertenaga",
+        "gas berat"
+      ],
+      "problem": "Filter udara sangat kotor, injector mulai tersumbat, atau kompresi mulai turun.",
+      "action": "Kurangi membawa beban berat.",
+      "garage_tip": "Sampaikan: 'Mohon cek filter udara, injector dan kompresi mesin.'"
+    },
+    "en": {
+      "symptoms": [
+        "poor acceleration",
+        "engine lacks power",
+        "sluggish throttle"
+      ],
+      "problem": "Dirty air filter, partially clogged injector or low compression.",
+      "action": "Avoid carrying heavy loads.",
+      "garage_tip": "Say: 'Please inspect the air filter, injector and compression.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 500.000",
+    "usd": "$7 - $35"
+  }
+},
+{
+  "id": "MTR_MS_030",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "suara ngelitik saat digas",
+        "mesin ngelitik",
+        "bunyi detonasi"
+      ],
+      "problem": "Bahan bakar beroktan rendah atau ruang bakar dipenuhi kerak karbon.",
+      "action": "Gunakan bahan bakar dengan oktan sesuai rekomendasi pabrikan.",
+      "garage_tip": "Sampaikan: 'Mohon bersihkan ruang bakar dan cek timing pengapian.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine knocking",
+        "pinging noise",
+        "detonation sound"
+      ],
+      "problem": "Low octane fuel or excessive carbon deposits.",
+      "action": "Use the recommended fuel octane.",
+      "garage_tip": "Say: 'Please inspect ignition timing and clean combustion chamber.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 600.000",
+    "usd": "$7 - $40"
+  }
+},
+{
+  "id": "MTR_MS_031",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "idle naik turun",
+        "rpm naik turun sendiri",
+        "langsam tidak stabil"
+      ],
+      "problem": "Throttle body kotor atau sensor idle membutuhkan kalibrasi.",
+      "action": "Segera lakukan throttle body cleaning.",
+      "garage_tip": "Sampaikan: 'Mohon bersihkan throttle body dan reset idle learning.'"
+    },
+    "en": {
+      "symptoms": [
+        "unstable idle",
+        "idle surging",
+        "rpm fluctuates"
+      ],
+      "problem": "Dirty throttle body or idle control calibration issue.",
+      "action": "Perform throttle body cleaning.",
+      "garage_tip": "Say: 'Please clean the throttle body and perform idle relearn.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 75.000 - Rp 250.000",
+    "usd": "$5 - $17"
+  }
+},
+{
+  "id": "MTR_MS_032",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "bau bensin menyengat",
+        "motor bau bensin",
+        "bensin menetes"
+      ],
+      "problem": "Selang bahan bakar retak atau injector mengalami kebocoran.",
+      "action": "Jangan parkir dekat sumber api.",
+      "garage_tip": "Sampaikan: 'Mohon cek fuel hose, injector dan tekanan bahan bakar.'"
+    },
+    "en": {
+      "symptoms": [
+        "strong gasoline smell",
+        "fuel odor",
+        "fuel leak"
+      ],
+      "problem": "Cracked fuel hose or leaking injector.",
+      "action": "Keep away from ignition sources.",
+      "garage_tip": "Say: 'Please inspect the fuel hose and injectors.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 450.000",
+    "usd": "$7 - $30"
+  }
+},
+{
+  "id": "MTR_MS_033",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "DANGER",
+  "driveability": "STOP",
+  "language": {
+    "id": {
+      "symptoms": [
+        "oli keluar deras",
+        "oli bocor banyak",
+        "lampu oli menyala"
+      ],
+      "problem": "Seal mesin rusak, baut tap oli lepas, atau crankcase retak.",
+      "action": "Matikan mesin segera agar tidak terjadi kerusakan total.",
+      "garage_tip": "Sampaikan: 'Mohon periksa sumber kebocoran oli sebelum mesin dihidupkan kembali.'"
+    },
+    "en": {
+      "symptoms": [
+        "major oil leak",
+        "oil pouring out",
+        "oil warning light"
+      ],
+      "problem": "Damaged oil seal, loose drain bolt or cracked crankcase.",
+      "action": "Stop the engine immediately.",
+      "garage_tip": "Say: 'Please inspect the source of the oil leak before restarting.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 200.000 - Rp 2.000.000",
+    "usd": "$13 - $130"
+  }
+},
+{
+  "id": "MTR_MS_034",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "tenaga hilang setelah panas",
+        "motor ngempos saat panas",
+        "mesin lemah ketika suhu tinggi"
+      ],
+      "problem": "Koil pengapian melemah saat panas atau fuel pump kehilangan tekanan.",
+      "action": "Istirahatkan mesin hingga suhu turun.",
+      "garage_tip": "Sampaikan: 'Mohon cek ignition coil dan tekanan fuel pump saat mesin panas.'"
+    },
+    "en": {
+      "symptoms": [
+        "loses power when hot",
+        "weak when engine warms up",
+        "poor performance hot"
+      ],
+      "problem": "Weak ignition coil when hot or low fuel pump pressure.",
+      "action": "Allow the engine to cool.",
+      "garage_tip": "Say: 'Please inspect the ignition coil and fuel pressure.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 700.000",
+    "usd": "$10 - $45"
+  }
+},
+{
+  "id": "MTR_MS_035",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "suara injector keras",
+        "injector bunyi tik tik",
+        "bunyi normal injector"
+      ],
+      "problem": "Suara kerja injector masih dalam batas normal.",
+      "action": "Tidak memerlukan perbaikan jika performa mesin normal.",
+      "garage_tip": "Sampaikan: 'Mohon cek hanya jika performa mesin berubah.'"
+    },
+    "en": {
+      "symptoms": [
+        "injector ticking",
+        "injector clicking",
+        "fuel injector noise"
+      ],
+      "problem": "Injector operating noise within normal range.",
+      "action": "No repair required if engine performance is normal.",
+      "garage_tip": "Say: 'Inspect only if engine performance changes.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 0",
+    "usd": "$0"
+  }
+},
+{
+  "id": "MTR_MS_036",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "motor boros bensin",
+        "konsumsi bensin meningkat",
+        "irit jadi boros"
+      ],
+      "problem": "Sensor O2 melemah, injector kotor atau filter udara tersumbat.",
+      "action": "Lakukan servis sistem injeksi.",
+      "garage_tip": "Sampaikan: 'Mohon cek O2 sensor, injector dan filter udara.'"
+    },
+    "en": {
+      "symptoms": [
+        "poor fuel economy",
+        "high fuel consumption",
+        "uses too much fuel"
+      ],
+      "problem": "Weak oxygen sensor, dirty injector or clogged air filter.",
+      "action": "Service the fuel injection system.",
+      "garage_tip": "Say: 'Please inspect the O2 sensor, injector and air filter.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 600.000",
+    "usd": "$7 - $40"
+  }
+},
+{
+  "id": "MTR_MS_037",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "motor ngempos rpm atas",
+        "kecepatan mentok",
+        "tidak bisa putaran tinggi"
+      ],
+      "problem": "Filter bensin tersumbat, fuel pump melemah atau exhaust tersumbat.",
+      "action": "Hindari perjalanan jauh hingga sistem bahan bakar diperiksa.",
+      "garage_tip": "Sampaikan: 'Mohon cek fuel pump, fuel filter dan knalpot.'"
+    },
+    "en": {
+      "symptoms": [
+        "no power at high rpm",
+        "top speed reduced",
+        "engine won't rev high"
+      ],
+      "problem": "Clogged fuel filter, weak fuel pump or restricted exhaust.",
+      "action": "Avoid long trips until repaired.",
+      "garage_tip": "Say: 'Please inspect the fuel pump, fuel filter and exhaust.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 800.000",
+    "usd": "$7 - $55"
+  }
+},
+  ,
+{
+  "id": "MTR_MS_038",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "motor brebet saat digas penuh",
+        "nafas atas putus putus",
+        "rpm tinggi tersendat"
+      ],
+      "problem": "Fuel pump mulai lemah atau tekanan bahan bakar tidak stabil.",
+      "action": "Hindari berkendara dengan putaran mesin tinggi sebelum diperiksa.",
+      "garage_tip": "Sampaikan: 'Tolong ukur tekanan fuel pump menggunakan fuel pressure gauge.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine stutters at full throttle",
+        "high rpm hesitation",
+        "cuts out at high speed"
+      ],
+      "problem": "Weak fuel pump or unstable fuel pressure.",
+      "action": "Avoid high RPM riding until repaired.",
+      "garage_tip": "Say: 'Please measure fuel pressure using a fuel pressure gauge.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 250.000 - Rp 700.000",
+    "usd": "$16 - $45"
+  }
+},
+{
+  "id": "MTR_MS_039",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin pincang",
+        "mesin seperti satu silinder mati",
+        "getaran mesin berlebihan"
+      ],
+      "problem": "Koil pengapian lemah atau busi gagal menghasilkan percikan stabil.",
+      "action": "Segera lakukan pemeriksaan sistem pengapian.",
+      "garage_tip": "Sampaikan: 'Mohon cek ignition coil dan kualitas percikan busi.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine misfire",
+        "rough engine",
+        "engine vibration"
+      ],
+      "problem": "Weak ignition coil or unstable spark plug ignition.",
+      "action": "Inspect the ignition system.",
+      "garage_tip": "Say: 'Please inspect ignition coil and spark quality.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 500.000",
+    "usd": "$7 - $35"
+  }
+},
+{
+  "id": "MTR_MS_040",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "suara injector lebih keras setelah servis",
+        "injector tik tik"
+      ],
+      "problem": "Karakteristik kerja injector normal setelah proses pembersihan.",
+      "action": "Tidak diperlukan tindakan selama performa mesin normal.",
+      "garage_tip": "Sampaikan: 'Suara injector masih normal.'"
+    },
+    "en": {
+      "symptoms": [
+        "injector louder after cleaning",
+        "injector ticking"
+      ],
+      "problem": "Normal injector operation after cleaning.",
+      "action": "No repair required.",
+      "garage_tip": "Say: 'Injector sound is within normal specification.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 0",
+    "usd": "$0"
+  }
+},
+{
+  "id": "MTR_MS_041",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "motor susah langsam setelah hujan",
+        "mesin brebet habis kehujanan"
+      ],
+      "problem": "Air masuk ke soket koil, busi atau konektor sensor EFI.",
+      "action": "Keringkan area pengapian sebelum digunakan kembali.",
+      "garage_tip": "Sampaikan: 'Mohon cek semua konektor EFI dan koil apakah kemasukan air.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine misfires after rain",
+        "poor idle after rain"
+      ],
+      "problem": "Water entered ignition coil or EFI connectors.",
+      "action": "Dry ignition components.",
+      "garage_tip": "Say: 'Please inspect ignition and EFI connectors for moisture.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 50.000 - Rp 200.000",
+    "usd": "$3 - $13"
+  }
+},
+{
+  "id": "MTR_MS_042",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "tenaga motor hilang setelah isi bensin",
+        "motor brebet setelah isi bbm"
+      ],
+      "problem": "Kemungkinan bahan bakar tercampur air atau kualitas bahan bakar buruk.",
+      "action": "Kurangi penggunaan kendaraan dan kuras tangki bila perlu.",
+      "garage_tip": "Sampaikan: 'Mohon cek kualitas bahan bakar dan bersihkan injector.'"
+    },
+    "en": {
+      "symptoms": [
+        "loss of power after refueling",
+        "engine stutters after filling fuel"
+      ],
+      "problem": "Contaminated or poor quality fuel.",
+      "action": "Avoid riding until fuel system is inspected.",
+      "garage_tip": "Say: 'Please inspect fuel quality and clean injectors.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 150.000 - Rp 500.000",
+    "usd": "$10 - $35"
+  }
+},
+{
+  "id": "MTR_MS_043",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin cepat panas",
+        "suhu mesin naik terus"
+      ],
+      "problem": "Sirip pendingin kotor atau sirkulasi udara pendinginan terganggu.",
+      "action": "Bersihkan area pendinginan secara berkala.",
+      "garage_tip": "Sampaikan: 'Mohon bersihkan sirip pendingin dan cek sistem pendingin.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine runs hot",
+        "temperature rises quickly"
+      ],
+      "problem": "Dirty cooling fins or restricted airflow.",
+      "action": "Clean cooling system.",
+      "garage_tip": "Say: 'Please inspect cooling fins and airflow.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 50.000 - Rp 150.000",
+    "usd": "$3 - $10"
+  }
+},
+{
+  "id": "MTR_MS_044",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin sering mati saat hujan",
+        "motor mati kena genangan"
+      ],
+      "problem": "Sensor CKP atau konektor pengapian mengalami gangguan akibat air.",
+      "action": "Jangan menerobos genangan tinggi.",
+      "garage_tip": "Sampaikan: 'Mohon cek CKP sensor dan kabel pengapiannya.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine dies in rain",
+        "stalls after water crossing"
+      ],
+      "problem": "CKP sensor or ignition wiring affected by water.",
+      "action": "Avoid deep water crossings.",
+      "garage_tip": "Say: 'Please inspect CKP sensor and ignition wiring.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 100.000 - Rp 500.000",
+    "usd": "$7 - $35"
+  }
+},
+{
+  "id": "MTR_MS_045",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "INFO",
+  "driveability": "NORMAL",
+  "language": {
+    "id": {
+      "symptoms": [
+        "kipas radiator sering hidup",
+        "kipas nyala terus"
+      ],
+      "problem": "Kipas radiator bekerja normal menjaga suhu mesin.",
+      "action": "Tidak diperlukan perbaikan bila suhu mesin tetap normal.",
+      "garage_tip": "Sampaikan: 'Mohon cek hanya jika indikator overheat menyala.'"
+    },
+    "en": {
+      "symptoms": [
+        "radiator fan runs often",
+        "fan cycles frequently"
+      ],
+      "problem": "Cooling fan operating normally.",
+      "action": "No repair required if temperature is normal.",
+      "garage_tip": "Say: 'Inspect only if overheating occurs.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 0",
+    "usd": "$0"
+  }
+},
+{
+  "id": "MTR_MS_046",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "DANGER",
+  "driveability": "STOP",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin tiba tiba mati dan terkunci",
+        "kick starter tidak bisa diinjak",
+        "mesin macet total"
+      ],
+      "problem": "Mesin mengalami seizure akibat kekurangan pelumasan atau overheat berat.",
+      "action": "Jangan paksa menghidupkan mesin kembali.",
+      "garage_tip": "Sampaikan: 'Mohon bongkar mesin dan cek piston, silinder serta crankshaft.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine seized",
+        "kick starter locked",
+        "engine completely stuck"
+      ],
+      "problem": "Engine seizure caused by oil starvation or severe overheating.",
+      "action": "Do not attempt to restart.",
+      "garage_tip": "Say: 'Please perform a complete engine teardown inspection.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 2.000.000 - Rp 6.000.000",
+    "usd": "$130 - $390"
+  }
+},
+{
+  "id": "MTR_MS_047",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "mesin terasa kasar setelah ganti oli",
+        "suara mesin berubah setelah servis"
+      ],
+      "problem": "Viskositas oli tidak sesuai spesifikasi atau volume oli tidak tepat.",
+      "action": "Periksa kembali jenis dan jumlah oli mesin.",
+      "garage_tip": "Sampaikan: 'Mohon cek spesifikasi SAE oli dan volume pengisian.'"
+    },
+    "en": {
+      "symptoms": [
+        "engine rough after oil change",
+        "engine sounds different after service"
+      ],
+      "problem": "Incorrect oil viscosity or oil level.",
+      "action": "Verify engine oil specification and level.",
+      "garage_tip": "Say: 'Please verify the oil viscosity and oil level.'"
+    }
+  },
+  "cost": {
+    "idr": "Rp 0 - Rp 150.000",
+    "usd": "$0 - $10"
+  }
+},
+  ,
+{
+  "id": "MTR_MS_048",
+  "vehicle": "motorcycle",
+  "system": "engine",
+  "severity": "WARNING",
+  "driveability": "LIMITED",
+  "language": {
+    "id": {
+      "symptoms": [
+        "motor ngempos saat menanjak",
+        "tidak kuat naik tanjakan",
+        "tenaga hilang di tanjakan"
+      ],
+      "problem": "Tekanan kompresi mulai turun akibat ring piston aus atau klep bocor.",
+      "action": "Kurangi membawa beban berat sampai mesin diperiksa.",
+      "garage_tip": "Sampaikan: 'Mohon lakukan tes kompresi mesin dan cek kebocoran klep.'"
+    },
+    "en": {
+      "symptoms": [
+        "weak uphill performance",
+        "loses power uphill",
+        "cannot climb hills"
+      ],
+      "problem": "Low compression due to worn piston rings or leaking valves.",
+      "action": "Avoid carrying heavy loads.",
+      "garage_tip": "Say: 'Please perform a compression test and valve leakage inspection.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp 300.000 - Rp 1.800.000",
+    "usd":"$20 - $120"
+  }
+},
+{
+  "id":"MTR_MS_049",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"INFO",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin halus setelah servis",
+        "tarikan jadi enteng"
+      ],
+      "problem":"Kondisi mesin normal setelah servis berkala.",
+      "action":"Lanjutkan jadwal servis rutin sesuai buku servis.",
+      "garage_tip":"Tidak diperlukan tindakan tambahan."
+    },
+    "en":{
+      "symptoms":[
+        "engine smoother after service",
+        "better acceleration"
+      ],
+      "problem":"Engine operating normally after scheduled maintenance.",
+      "action":"Continue regular maintenance schedule.",
+      "garage_tip":"No further repair required."
+    }
+  },
+  "cost":{
+    "idr":"Rp 0",
+    "usd":"$0"
+  }
+},
+{
+  "id":"MTR_MS_050",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor sering meletup di intake",
+        "letupan dari filter udara"
+      ],
+      "problem":"Timing pengapian tidak tepat atau klep masuk bocor.",
+      "action":"Hindari putaran mesin tinggi.",
+      "garage_tip":"Sampaikan: 'Mohon cek timing pengapian dan celah klep masuk.'"
+    },
+    "en":{
+      "symptoms":[
+        "backfire through intake",
+        "popping from air filter"
+      ],
+      "problem":"Incorrect ignition timing or leaking intake valve.",
+      "action":"Avoid high engine speed.",
+      "garage_tip":"Say: 'Please inspect ignition timing and intake valve clearance.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp 150.000 - Rp 700.000",
+    "usd":"$10 - $45"
+  }
+},
+{
+  "id":"MTR_MS_051",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "asap hitam dari knalpot",
+        "knalpot hitam pekat"
+      ],
+      "problem":"Campuran bahan bakar terlalu kaya akibat injector bocor atau sensor rusak.",
+      "action":"Segera lakukan pemeriksaan sistem injeksi.",
+      "garage_tip":"Sampaikan: 'Mohon cek injector, MAP sensor dan O2 sensor.'"
+    },
+    "en":{
+      "symptoms":[
+        "black exhaust smoke",
+        "rich fuel mixture"
+      ],
+      "problem":"Fuel mixture too rich due to leaking injector or faulty sensors.",
+      "action":"Inspect the EFI system.",
+      "garage_tip":"Say: 'Please inspect injector, MAP sensor and O2 sensor.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp 200.000 - Rp 800.000",
+    "usd":"$13 - $55"
+  }
+},
+{
+  "id":"MTR_MS_052",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin susah hidup setelah jatuh",
+        "motor habis jatuh tidak mau hidup"
+      ],
+      "problem":"Sensor bank angle aktif atau konektor kelistrikan terlepas.",
+      "action":"Periksa posisi motor dan matikan kontak beberapa saat.",
+      "garage_tip":"Sampaikan: 'Mohon reset bank angle sensor dan cek semua konektor.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine won't start after crash",
+        "bike won't start after falling"
+      ],
+      "problem":"Bank angle sensor activated or connectors disconnected.",
+      "action":"Reset ignition and inspect wiring.",
+      "garage_tip":"Say: 'Please inspect the bank angle sensor and wiring.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp 50.000 - Rp 250.000",
+    "usd":"$3 - $17"
+  }
+},
+{
+  "id":"MTR_MS_053",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin cepat panas saat macet",
+        "overheat di kemacetan"
+      ],
+      "problem":"Radiator kotor atau kipas pendingin bekerja tidak optimal.",
+      "action":"Hindari kemacetan panjang bila memungkinkan.",
+      "garage_tip":"Sampaikan: 'Mohon bersihkan radiator dan cek motor kipas pendingin.'"
+    },
+    "en":{
+      "symptoms":[
+        "overheats in traffic",
+        "gets hot while idling"
+      ],
+      "problem":"Dirty radiator or weak cooling fan.",
+      "action":"Avoid prolonged traffic jams.",
+      "garage_tip":"Say: 'Please clean the radiator and inspect the cooling fan.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp 100.000 - Rp 450.000",
+    "usd":"$7 - $30"
+  }
+},
+{
+  "id":"MTR_MS_054",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor susah hidup setelah dicuci",
+        "habis dicuci mesin brebet"
+      ],
+      "problem":"Air masuk ke sistem pengapian atau sensor EFI.",
+      "action":"Keringkan seluruh konektor sebelum digunakan.",
+      "garage_tip":"Sampaikan: 'Mohon cek koil, busi dan konektor ECU.'"
+    },
+    "en":{
+      "symptoms":[
+        "hard start after washing",
+        "misfires after washing"
+      ],
+      "problem":"Water entered ignition or EFI components.",
+      "action":"Dry electrical connectors.",
+      "garage_tip":"Say: 'Please inspect ignition coil, spark plug and ECU connectors.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp 50.000 - Rp 250.000",
+    "usd":"$3 - $17"
+  }
+},
+{
+  "id":"MTR_MS_055",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "suara logam beradu saat akselerasi",
+        "bunyi ngelitik berat"
+      ],
+      "problem":"Detonasi berat akibat oktan rendah atau ruang bakar penuh karbon.",
+      "action":"Gunakan bensin beroktan lebih tinggi.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan carbon cleaning dan cek ignition timing.'"
+    },
+    "en":{
+      "symptoms":[
+        "heavy engine knock",
+        "metallic pinging"
+      ],
+      "problem":"Severe detonation caused by low octane fuel or carbon deposits.",
+      "action":"Use higher octane fuel.",
+      "garage_tip":"Say: 'Please perform combustion chamber decarbonization.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp 150.000 - Rp 700.000",
+    "usd":"$10 - $45"
+  }
+},
+{
+  "id":"MTR_MS_056",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin seperti kehilangan satu tenaga",
+        "tarikan tersendat terus"
+      ],
+      "problem":"Injector sebagian tersumbat sehingga distribusi bahan bakar tidak merata.",
+      "action":"Lakukan injector cleaning.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan injector cleaning menggunakan injector tester.'"
+    },
+    "en":{
+      "symptoms":[
+        "partial power loss",
+        "hesitation during acceleration"
+      ],
+      "problem":"Partially clogged injector causing uneven fuel delivery.",
+      "action":"Perform injector cleaning.",
+      "garage_tip":"Say: 'Please clean and flow-test the injector.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp 100.000 - Rp 300.000",
+    "usd":"$7 - $20"
+  }
+},
+{
+  "id":"MTR_MS_057",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"DANGER",
+  "driveability":"STOP",
+  "language":{
+    "id":{
+      "symptoms":[
+        "lampu oli berkedip terus",
+        "suara mesin kasar lalu mati"
+      ],
+      "problem":"Tekanan oli hilang akibat pompa oli rusak atau oli habis total.",
+      "action":"Matikan mesin secepat mungkin untuk mencegah kerusakan total.",
+      "garage_tip":"Sampaikan: 'Mohon ukur tekanan oli dan periksa oil pump beserta jalur pelumasan.'"
+    },
+    "en":{
+      "symptoms":[
+        "oil warning light flashing",
+        "engine became noisy then stopped"
+      ],
+      "problem":"Loss of oil pressure due to failed oil pump or severe oil loss.",
+      "action":"Stop the engine immediately.",
+      "garage_tip":"Say: 'Please measure oil pressure and inspect the oil pump.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp 500.000 - Rp 3.000.000",
+    "usd":"$35 - $200"
+  }
+},
+  ,
+{
+  "id":"MTR_MS_058",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor ngempos setelah dipakai lama",
+        "tenaga hilang setelah perjalanan jauh"
+      ],
+      "problem":"Fuel pump mengalami overheat sehingga tekanan bahan bakar menurun.",
+      "action":"Istirahatkan mesin beberapa menit sebelum digunakan kembali.",
+      "garage_tip":"Sampaikan: 'Mohon ukur tekanan fuel pump saat mesin panas.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine loses power after long ride",
+        "power drops when hot"
+      ],
+      "problem":"Fuel pump overheats causing low fuel pressure.",
+      "action":"Allow the engine to cool before riding again.",
+      "garage_tip":"Say: 'Please test fuel pressure while the engine is hot.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp300.000 - Rp900.000",
+    "usd":"$20 - $60"
+  }
+},
+{
+  "id":"MTR_MS_059",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin bergetar saat langsam",
+        "idle bergetar"
+      ],
+      "problem":"Engine mounting longgar atau putaran idle terlalu rendah.",
+      "action":"Hindari membiarkan mesin idle terlalu lama.",
+      "garage_tip":"Sampaikan: 'Mohon cek engine mounting dan setelan idle RPM.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine vibrates at idle",
+        "rough idle vibration"
+      ],
+      "problem":"Loose engine mount or idle speed too low.",
+      "action":"Avoid prolonged idling.",
+      "garage_tip":"Say: 'Please inspect engine mounts and idle speed.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp50.000 - Rp250.000",
+    "usd":"$3 - $17"
+  }
+},
+{
+  "id":"MTR_MS_060",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"DANGER",
+  "driveability":"STOP",
+  "language":{
+    "id":{
+      "symptoms":[
+        "suara keras dari bawah mesin",
+        "mesin bunyi jedug lalu mati"
+      ],
+      "problem":"Connecting rod atau crankshaft mengalami kerusakan berat.",
+      "action":"Jangan hidupkan mesin kembali.",
+      "garage_tip":"Sampaikan: 'Mohon bongkar mesin dan cek connecting rod serta crankshaft.'"
+    },
+    "en":{
+      "symptoms":[
+        "loud knocking from engine",
+        "engine stopped with bang"
+      ],
+      "problem":"Severely damaged connecting rod or crankshaft.",
+      "action":"Do not restart the engine.",
+      "garage_tip":"Say: 'Please perform complete engine teardown inspection.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp2.500.000 - Rp7.000.000",
+    "usd":"$160 - $460"
+  }
+},
+{
+  "id":"MTR_MS_061",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "rpm tinggi tersendat",
+        "putaran atas brebet"
+      ],
+      "problem":"Filter bensin mulai tersumbat sehingga debit bahan bakar berkurang.",
+      "action":"Segera lakukan penggantian filter bahan bakar.",
+      "garage_tip":"Sampaikan: 'Mohon cek fuel filter dan tekanan bahan bakar.'"
+    },
+    "en":{
+      "symptoms":[
+        "hesitates at high rpm",
+        "engine stumbles at high speed"
+      ],
+      "problem":"Partially clogged fuel filter restricting fuel flow.",
+      "action":"Replace the fuel filter.",
+      "garage_tip":"Say: 'Please inspect fuel filter and fuel pressure.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp100.000 - Rp350.000",
+    "usd":"$7 - $23"
+  }
+},
+{
+  "id":"MTR_MS_062",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"INFO",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "kipas radiator hidup sebentar lalu mati",
+        "kipas radiator nyala otomatis"
+      ],
+      "problem":"Sistem pendingin bekerja normal sesuai suhu mesin.",
+      "action":"Tidak diperlukan tindakan.",
+      "garage_tip":"Tidak perlu dilakukan perbaikan."
+    },
+    "en":{
+      "symptoms":[
+        "radiator fan cycles normally",
+        "fan turns on automatically"
+      ],
+      "problem":"Cooling fan operating normally.",
+      "action":"No repair required.",
+      "garage_tip":"No repair necessary."
+    }
+  },
+  "cost":{
+    "idr":"Rp0",
+    "usd":"$0"
+  }
+},
+{
+  "id":"MTR_MS_063",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin susah hidup saat panas",
+        "starter lama ketika mesin panas"
+      ],
+      "problem":"Sensor CKP mulai melemah akibat temperatur tinggi.",
+      "action":"Biarkan mesin dingin sebelum distarter kembali.",
+      "garage_tip":"Sampaikan: 'Mohon cek CKP sensor menggunakan scanner.'"
+    },
+    "en":{
+      "symptoms":[
+        "hard hot restart",
+        "slow start when hot"
+      ],
+      "problem":"Weak crankshaft position sensor at high temperature.",
+      "action":"Allow the engine to cool.",
+      "garage_tip":"Say: 'Please diagnose the crankshaft position sensor.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp250.000 - Rp700.000",
+    "usd":"$17 - $47"
+  }
+},
+{
+  "id":"MTR_MS_064",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin berbau gosong",
+        "tercium bau terbakar dari mesin"
+      ],
+      "problem":"Oli mesin sudah melewati masa pakai atau terjadi kebocoran kecil.",
+      "action":"Periksa level oli dan lakukan penggantian bila diperlukan.",
+      "garage_tip":"Sampaikan: 'Mohon cek kualitas oli dan kemungkinan kebocoran.'"
+    },
+    "en":{
+      "symptoms":[
+        "burning smell from engine",
+        "hot oil smell"
+      ],
+      "problem":"Old engine oil or minor oil leak.",
+      "action":"Inspect oil level and condition.",
+      "garage_tip":"Say: 'Please inspect oil condition and possible leaks.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp80.000 - Rp250.000",
+    "usd":"$5 - $17"
+  }
+},
+{
+  "id":"MTR_MS_065",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "suara mendesis dari mesin",
+        "ada suara angin bocor"
+      ],
+      "problem":"Packing intake atau vacuum hose mengalami kebocoran.",
+      "action":"Kurangi penggunaan kendaraan sampai kebocoran diperbaiki.",
+      "garage_tip":"Sampaikan: 'Mohon cek vacuum leak menggunakan smoke tester.'"
+    },
+    "en":{
+      "symptoms":[
+        "hissing noise from engine",
+        "vacuum leak sound"
+      ],
+      "problem":"Leaking intake gasket or vacuum hose.",
+      "action":"Avoid heavy use until repaired.",
+      "garage_tip":"Say: 'Please inspect intake system for vacuum leaks.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp100.000 - Rp350.000",
+    "usd":"$7 - $23"
+  }
+},
+{
+  "id":"MTR_MS_066",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor ngempos saat hujan",
+        "tarikan hilang ketika hujan"
+      ],
+      "problem":"Koil mengalami kebocoran arus akibat kelembapan tinggi.",
+      "action":"Hindari menerobos hujan deras bila memungkinkan.",
+      "garage_tip":"Sampaikan: 'Mohon ukur tahanan ignition coil dan cek kebocoran arus.'"
+    },
+    "en":{
+      "symptoms":[
+        "loss of power in rain",
+        "engine weak when raining"
+      ],
+      "problem":"Ignition coil leakage due to moisture.",
+      "action":"Avoid riding in heavy rain.",
+      "garage_tip":"Say: 'Please inspect ignition coil insulation.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp150.000 - Rp500.000",
+    "usd":"$10 - $33"
+  }
+},
+{
+  "id":"MTR_MS_067",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin terasa berat diputar",
+        "starter elektrik terasa berat"
+      ],
+      "problem":"Gesekan internal meningkat akibat oli terlalu kental atau bearing mulai aus.",
+      "action":"Periksa spesifikasi oli dan hindari penggunaan berlebihan.",
+      "garage_tip":"Sampaikan: 'Mohon cek bearing mesin dan spesifikasi oli yang digunakan.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine hard to crank",
+        "starter struggles to turn engine"
+      ],
+      "problem":"High internal friction caused by incorrect oil or worn bearings.",
+      "action":"Verify oil specification and inspect bearings.",
+      "garage_tip":"Say: 'Please inspect engine bearings and oil viscosity.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp150.000 - Rp1.500.000",
+    "usd":"$10 - $100"
+  }
+},
+  ,
+{
+  "id":"MTR_MS_068",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin ngempos saat rpm tinggi",
+        "motor seperti kehabisan bensin di putaran atas",
+        "nafas atas hilang"
+      ],
+      "problem":"Fuel injector tidak mampu menyuplai debit bahan bakar sesuai kebutuhan mesin pada putaran tinggi.",
+      "action":"Hindari mempertahankan putaran mesin tinggi dalam waktu lama.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan injector flow test dan injector cleaning.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine loses power at high rpm",
+        "runs out of fuel at high speed",
+        "top end power loss"
+      ],
+      "problem":"Fuel injector cannot deliver sufficient fuel at high RPM.",
+      "action":"Avoid prolonged high RPM operation.",
+      "garage_tip":"Say: 'Please perform injector flow test and injector cleaning.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp120.000 - Rp450.000",
+    "usd":"$8 - $30"
+  }
+},
+{
+  "id":"MTR_MS_069",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "idle tinggi terus",
+        "rpm tidak mau turun",
+        "gas seperti nyangkut"
+      ],
+      "problem":"Throttle body kotor, kabel gas seret, atau throttle valve tidak menutup sempurna.",
+      "action":"Jangan memaksa berkendara dalam kondisi RPM tinggi.",
+      "garage_tip":"Sampaikan: 'Mohon bersihkan throttle body dan cek kabel gas.'"
+    },
+    "en":{
+      "symptoms":[
+        "high idle",
+        "rpm won't drop",
+        "sticky throttle"
+      ],
+      "problem":"Dirty throttle body, sticky throttle cable, or throttle valve not closing completely.",
+      "action":"Avoid riding until repaired.",
+      "garage_tip":"Say: 'Please clean throttle body and inspect throttle cable.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp75.000 - Rp250.000",
+    "usd":"$5 - $17"
+  }
+},
+{
+  "id":"MTR_MS_070",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin terasa ngempos setelah ganti bensin",
+        "motor jadi kasar setelah isi bbm"
+      ],
+      "problem":"Bahan bakar memiliki angka oktan tidak sesuai atau terkontaminasi.",
+      "action":"Gunakan bahan bakar sesuai rekomendasi pabrikan.",
+      "garage_tip":"Sampaikan: 'Mohon cek kualitas BBM dan bersihkan sistem injeksi.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine weak after refueling",
+        "rough running after filling fuel"
+      ],
+      "problem":"Incorrect octane fuel or contaminated gasoline.",
+      "action":"Use manufacturer recommended fuel.",
+      "garage_tip":"Say: 'Please inspect fuel quality and clean the fuel system.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp100.000 - Rp500.000",
+    "usd":"$7 - $35"
+  }
+},
+{
+  "id":"MTR_MS_071",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"INFO",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin panas saat macet",
+        "suhu naik ketika idle lama"
+      ],
+      "problem":"Karakteristik normal mesin berpendingin udara atau pendinginan bekerja sesuai desain.",
+      "action":"Hindari idle terlalu lama bila tidak diperlukan.",
+      "garage_tip":"Tidak diperlukan perbaikan bila suhu kembali normal saat motor berjalan."
+    },
+    "en":{
+      "symptoms":[
+        "engine gets hot in traffic",
+        "temperature rises while idling"
+      ],
+      "problem":"Normal operating characteristic for air-cooled engines.",
+      "action":"Avoid unnecessary idling.",
+      "garage_tip":"No repair required if temperature returns to normal while riding."
+    }
+  },
+  "cost":{
+    "idr":"Rp0",
+    "usd":"$0"
+  }
+},
+{
+  "id":"MTR_MS_072",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin pincang saat dingin",
+        "baru hidup langsung brebet"
+      ],
+      "problem":"Injector menetes (dripping), busi mulai aus, atau campuran udara-bahan bakar belum stabil.",
+      "action":"Panaskan mesin sebentar sebelum digunakan.",
+      "garage_tip":"Sampaikan: 'Mohon cek injector leakage dan kondisi busi.'"
+    },
+    "en":{
+      "symptoms":[
+        "rough cold start",
+        "misfire when cold"
+      ],
+      "problem":"Leaking injector, worn spark plug or unstable cold fuel mixture.",
+      "action":"Warm the engine briefly.",
+      "garage_tip":"Say: 'Please inspect injector leakage and spark plug condition.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp80.000 - Rp350.000",
+    "usd":"$5 - $23"
+  }
+},
+{
+  "id":"MTR_MS_073",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"DANGER",
+  "driveability":"STOP",
+  "language":{
+    "id":{
+      "symptoms":[
+        "oli mesin habis tiba tiba",
+        "keluar asap putih banyak",
+        "mesin mulai berisik"
+      ],
+      "problem":"Kerusakan berat pada piston, ring piston, atau silinder sehingga oli terbakar dalam jumlah besar.",
+      "action":"Segera matikan mesin untuk mencegah kerusakan total.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan compression test dan bongkar top engine.'"
+    },
+    "en":{
+      "symptoms":[
+        "rapid oil consumption",
+        "heavy white smoke",
+        "engine becomes noisy"
+      ],
+      "problem":"Severe piston ring or cylinder damage causing excessive oil burning.",
+      "action":"Stop the engine immediately.",
+      "garage_tip":"Say: 'Please perform compression test and inspect the top end.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp1.000.000 - Rp3.500.000",
+    "usd":"$65 - $230"
+  }
+},
+{
+  "id":"MTR_MS_074",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin ngempos saat hujan deras",
+        "tarikan hilang ketika jalan hujan"
+      ],
+      "problem":"Ventilasi udara atau filter udara kemasukan air sehingga suplai udara terganggu.",
+      "action":"Periksa filter udara setelah melewati hujan deras atau banjir.",
+      "garage_tip":"Sampaikan: 'Mohon cek air filter dan air intake.'"
+    },
+    "en":{
+      "symptoms":[
+        "loss of power in heavy rain",
+        "weak acceleration in rain"
+      ],
+      "problem":"Water entering the intake or air filter.",
+      "action":"Inspect the air filter after riding in heavy rain.",
+      "garage_tip":"Say: 'Please inspect the intake system and air filter.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp50.000 - Rp250.000",
+    "usd":"$3 - $17"
+  }
+},
+{
+  "id":"MTR_MS_075",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin terasa kasar saat ACG starter",
+        "starter halus berubah kasar"
+      ],
+      "problem":"Karet damper rotor mulai aus atau baut rotor mulai longgar.",
+      "action":"Segera lakukan pemeriksaan sebelum kerusakan bertambah parah.",
+      "garage_tip":"Sampaikan: 'Mohon cek rotor magnet dan damper ACG starter.'"
+    },
+    "en":{
+      "symptoms":[
+        "rough ACG starter",
+        "starter became noisy"
+      ],
+      "problem":"Rotor damper wear or loose rotor bolts.",
+      "action":"Inspect before further damage occurs.",
+      "garage_tip":"Say: 'Please inspect ACG rotor and dampers.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp200.000 - Rp800.000",
+    "usd":"$13 - $55"
+  }
+},
+{
+  "id":"MTR_MS_076",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin seperti tertahan",
+        "akselerasi berat"
+      ],
+      "problem":"Catalytic converter mulai tersumbat sehingga aliran gas buang terhambat.",
+      "action":"Hindari perjalanan jauh hingga sistem exhaust diperiksa.",
+      "garage_tip":"Sampaikan: 'Mohon ukur back pressure knalpot dan cek catalytic converter.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine feels restricted",
+        "poor acceleration"
+      ],
+      "problem":"Partially clogged catalytic converter restricting exhaust flow.",
+      "action":"Avoid long trips until inspected.",
+      "garage_tip":"Say: 'Please measure exhaust back pressure and inspect the catalytic converter.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp300.000 - Rp1.500.000",
+    "usd":"$20 - $100"
+  }
+},
+{
+  "id":"MTR_MS_077",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "tarikan berat setelah servis besar",
+        "mesin tidak sehalus sebelumnya"
+      ],
+      "problem":"Timing camshaft atau penyetelan klep belum sesuai spesifikasi.",
+      "action":"Jangan memaksa mesin bekerja pada putaran tinggi.",
+      "garage_tip":"Sampaikan: 'Mohon cek ulang timing rantai keteng dan clearance klep sesuai spesifikasi pabrikan.'"
+    },
+    "en":{
+      "symptoms":[
+        "poor performance after engine overhaul",
+        "engine feels sluggish after service"
+      ],
+      "problem":"Incorrect camshaft timing or valve clearance adjustment.",
+      "action":"Avoid high RPM until corrected.",
+      "garage_tip":"Say: 'Please verify cam timing and valve clearance to factory specifications.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp100.000 - Rp600.000",
+    "usd":"$7 - $40"
+  }
+},
+  ,
+{
+  "id":"MTR_MS_078",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor brebet saat tanjakan",
+        "tenaga hilang saat nanjak",
+        "gas penuh tapi tidak kuat"
+      ],
+      "problem":"Tekanan pompa bensin mulai lemah sehingga suplai bahan bakar kurang saat beban tinggi.",
+      "action":"Hindari perjalanan menanjak yang panjang.",
+      "garage_tip":"Sampaikan: 'Mohon ukur tekanan fuel pump menggunakan fuel pressure gauge.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine loses power uphill",
+        "weak acceleration uphill",
+        "poor climbing performance"
+      ],
+      "problem":"Fuel pump pressure is becoming weak under load.",
+      "action":"Avoid steep climbs until repaired.",
+      "garage_tip":"Say: 'Please test fuel pressure with a fuel pressure gauge.'"
+    }
+  },
+  "cost":{"idr":"Rp250.000 - Rp900.000","usd":"$17 - $60"}
+},
+{
+  "id":"MTR_MS_079",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor susah hidup pagi hari",
+        "harus distarter berkali kali pagi"
+      ],
+      "problem":"Tekanan bahan bakar turun karena fuel pump check valve bocor.",
+      "action":"Biarkan fuel pump bekerja beberapa detik sebelum starter.",
+      "garage_tip":"Sampaikan: 'Mohon cek fuel pump check valve.'"
+    },
+    "en":{
+      "symptoms":[
+        "hard cold start",
+        "takes many cranks in the morning"
+      ],
+      "problem":"Fuel pump check valve leaking causing pressure loss.",
+      "action":"Prime the fuel system before starting.",
+      "garage_tip":"Say: 'Please inspect the fuel pump check valve.'"
+    }
+  },
+  "cost":{"idr":"Rp250.000 - Rp850.000","usd":"$17 - $58"}
+},
+{
+  "id":"MTR_MS_080",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"INFO",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "suara injector tik tik",
+        "bunyi injector normal"
+      ],
+      "problem":"Suara kerja injector merupakan karakteristik normal sistem injeksi.",
+      "action":"Tidak memerlukan perbaikan jika performa mesin normal.",
+      "garage_tip":"Tidak diperlukan tindakan."
+    },
+    "en":{
+      "symptoms":[
+        "injector ticking",
+        "injector clicking sound"
+      ],
+      "problem":"Injector ticking is a normal operating characteristic.",
+      "action":"No repair needed if performance is normal.",
+      "garage_tip":"No service required."
+    }
+  },
+  "cost":{"idr":"Rp0","usd":"$0"}
+},
+{
+  "id":"MTR_MS_081",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin berbau bensin",
+        "bau bensin dari motor"
+      ],
+      "problem":"Selang bahan bakar retak atau sambungan fuel line mulai bocor.",
+      "action":"Jangan parkir dekat sumber api.",
+      "garage_tip":"Sampaikan: 'Mohon cek seluruh fuel hose dan quick connector.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel smell from motorcycle",
+        "gasoline odor"
+      ],
+      "problem":"Fuel hose crack or leaking fuel line connector.",
+      "action":"Keep away from open flames.",
+      "garage_tip":"Say: 'Please inspect all fuel hoses and quick connectors.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp250.000","usd":"$3 - $17"}
+},
+{
+  "id":"MTR_MS_082",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin mati setelah panas",
+        "hidup lagi setelah dingin"
+      ],
+      "problem":"Ignition coil mengalami thermal failure ketika suhu meningkat.",
+      "action":"Biarkan mesin dingin sebelum dihidupkan kembali.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan ignition coil heat test.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine dies when hot",
+        "starts again after cooling"
+      ],
+      "problem":"Ignition coil develops thermal failure.",
+      "action":"Allow engine to cool before restarting.",
+      "garage_tip":"Say: 'Please perform an ignition coil heat test.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp600.000","usd":"$10 - $40"}
+},
+{
+  "id":"MTR_MS_083",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin kadang hidup kadang mati",
+        "kontak normal tapi mesin mati"
+      ],
+      "problem":"Engine stop switch atau side stand switch mulai bermasalah.",
+      "action":"Hindari perjalanan jauh sebelum diperiksa.",
+      "garage_tip":"Sampaikan: 'Mohon cek engine stop switch dan side stand switch.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine randomly stalls",
+        "intermittent engine shutdown"
+      ],
+      "problem":"Faulty engine stop switch or side stand switch.",
+      "action":"Avoid long trips until inspected.",
+      "garage_tip":"Say: 'Please inspect the engine stop switch and side stand switch.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp300.000","usd":"$3 - $20"}
+},
+{
+  "id":"MTR_MS_084",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "suara mendesis dari mesin",
+        "ada suara angin bocor"
+      ],
+      "problem":"Vacuum hose bocor sehingga AFR menjadi terlalu miskin.",
+      "action":"Kurangi penggunaan motor sampai diperbaiki.",
+      "garage_tip":"Sampaikan: 'Mohon cek kebocoran vacuum hose.'"
+    },
+    "en":{
+      "symptoms":[
+        "hissing sound",
+        "vacuum leak noise"
+      ],
+      "problem":"Vacuum hose leak causing lean air-fuel mixture.",
+      "action":"Limit riding until repaired.",
+      "garage_tip":"Say: 'Please inspect all vacuum hoses.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp150.000","usd":"$3 - $10"}
+},
+{
+  "id":"MTR_MS_085",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"INFO",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "kipas radiator hidup terus"
+      ],
+      "problem":"Kipas radiator bekerja normal karena suhu mesin tinggi.",
+      "action":"Tidak perlu khawatir bila suhu stabil.",
+      "garage_tip":"Tidak memerlukan perbaikan."
+    },
+    "en":{
+      "symptoms":[
+        "radiator fan always running"
+      ],
+      "problem":"Radiator fan operating normally under high engine temperature.",
+      "action":"No repair needed if temperature remains stable.",
+      "garage_tip":"No repair required."
+    }
+  },
+  "cost":{"idr":"Rp0","usd":"$0"}
+},
+{
+  "id":"MTR_MS_086",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "tenaga hilang setelah ganti knalpot racing",
+        "motor jadi ngempos setelah knalpot diganti"
+      ],
+      "problem":"Mapping ECU belum sesuai dengan karakter knalpot baru.",
+      "action":"Hindari memaksa mesin pada RPM tinggi.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan ECU remapping atau setting AFR.'"
+    },
+    "en":{
+      "symptoms":[
+        "loss of power after aftermarket exhaust",
+        "poor performance after exhaust replacement"
+      ],
+      "problem":"ECU mapping no longer matches the exhaust characteristics.",
+      "action":"Avoid high RPM.",
+      "garage_tip":"Say: 'Please remap ECU or adjust AFR.'"
+    }
+  },
+  "cost":{"idr":"Rp250.000 - Rp1.000.000","usd":"$17 - $70"}
+},
+{
+  "id":"MTR_MS_087",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"DANGER",
+  "driveability":"STOP",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin tiba tiba terkunci",
+        "kick starter tidak bisa diinjak",
+        "roda belakang mengunci karena mesin"
+      ],
+      "problem":"Mesin mengalami seizure akibat overheat atau kekurangan pelumasan.",
+      "action":"Jangan mencoba menghidupkan mesin kembali.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan pembongkaran total mesin untuk inspeksi crankshaft, piston, dan silinder.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine seized",
+        "kick starter locked",
+        "rear wheel locked by engine"
+      ],
+      "problem":"Engine seizure due to overheating or lubrication failure.",
+      "action":"Do not attempt to restart the engine.",
+      "garage_tip":"Say: 'Please perform complete engine teardown and inspection.'"
+    }
+  },
+  "cost":{"idr":"Rp2.000.000 - Rp6.000.000","usd":"$130 - $400"}
+},
+  ,
+{
+  "id":"MTR_MS_088",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor terasa berat setelah ganti oli",
+        "mesin ngempos setelah ganti oli"
+      ],
+      "problem":"Viskositas oli tidak sesuai spesifikasi sehingga gesekan internal mesin meningkat.",
+      "action":"Gunakan oli sesuai spesifikasi pabrikan.",
+      "garage_tip":"Sampaikan: 'Mohon ganti oli dengan viskositas sesuai rekomendasi pabrikan.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine feels heavy after oil change",
+        "poor acceleration after oil service"
+      ],
+      "problem":"Incorrect oil viscosity increasing internal engine drag.",
+      "action":"Use manufacturer recommended engine oil.",
+      "garage_tip":"Say: 'Please replace with the correct oil viscosity.'"
+    }
+  },
+  "cost":{"idr":"Rp60.000 - Rp150.000","usd":"$4 - $10"}
+},
+{
+  "id":"MTR_MS_089",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"INFO",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin baru terasa lebih kasar",
+        "motor baru agak kasar"
+      ],
+      "problem":"Karakteristik proses break-in mesin baru.",
+      "action":"Ikuti prosedur inreyen sesuai buku servis.",
+      "garage_tip":"Tidak memerlukan perbaikan."
+    },
+    "en":{
+      "symptoms":[
+        "new engine feels rough",
+        "new motorcycle sounds rough"
+      ],
+      "problem":"Normal engine break-in characteristics.",
+      "action":"Follow manufacturer break-in procedure.",
+      "garage_tip":"No repair required."
+    }
+  },
+  "cost":{"idr":"Rp0","usd":"$0"}
+},
+{
+  "id":"MTR_MS_090",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin terasa pincang",
+        "tenaga hilang satu ledakan"
+      ],
+      "problem":"Pembakaran tidak sempurna akibat busi atau ignition coil bermasalah.",
+      "action":"Kurangi penggunaan RPM tinggi.",
+      "garage_tip":"Sampaikan: 'Mohon cek sistem pengapian dan lakukan spark test.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine misfire",
+        "loss of one cylinder firing"
+      ],
+      "problem":"Incomplete combustion caused by faulty ignition components.",
+      "action":"Avoid high RPM driving.",
+      "garage_tip":"Say: 'Please inspect the ignition system and perform a spark test.'"
+    }
+  },
+  "cost":{"idr":"Rp80.000 - Rp500.000","usd":"$5 - $35"}
+},
+{
+  "id":"MTR_MS_091",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin cepat panas saat macet",
+        "motor panas di kemacetan"
+      ],
+      "problem":"Pendinginan kurang optimal akibat sirip radiator kotor atau aliran udara terhambat.",
+      "action":"Hindari macet berkepanjangan.",
+      "garage_tip":"Sampaikan: 'Mohon bersihkan radiator dan cek aliran udara pendingin.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine overheats in traffic",
+        "runs hot in congestion"
+      ],
+      "problem":"Restricted airflow through radiator or cooling fins.",
+      "action":"Avoid prolonged stop-and-go traffic.",
+      "garage_tip":"Say: 'Please clean the radiator and inspect airflow.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp200.000","usd":"$3 - $13"}
+},
+{
+  "id":"MTR_MS_092",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor sulit langsam setelah cuci mesin",
+        "habis dicuci motor brebet"
+      ],
+      "problem":"Air masuk ke soket sensor atau sistem pengapian.",
+      "action":"Keringkan seluruh konektor sebelum digunakan.",
+      "garage_tip":"Sampaikan: 'Mohon cek soket ECU, injector, coil dan busi dari kemungkinan kemasukan air.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine misfires after washing",
+        "rough idle after washing"
+      ],
+      "problem":"Water intrusion into ignition or sensor connectors.",
+      "action":"Dry all electrical connectors.",
+      "garage_tip":"Say: 'Please inspect ignition and ECU connectors for moisture.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp150.000","usd":"$3 - $10"}
+},
+{
+  "id":"MTR_MS_093",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor boros setelah ganti filter udara",
+        "tarikan berat setelah servis"
+      ],
+      "problem":"Filter udara tidak terpasang rapat sehingga pembacaan sensor udara terganggu.",
+      "action":"Periksa kembali pemasangan filter.",
+      "garage_tip":"Sampaikan: 'Mohon cek posisi filter udara dan rumah filter.'"
+    },
+    "en":{
+      "symptoms":[
+        "poor fuel economy after air filter replacement",
+        "sluggish after service"
+      ],
+      "problem":"Air filter improperly installed causing incorrect airflow.",
+      "action":"Inspect filter installation.",
+      "garage_tip":"Say: 'Please inspect air filter housing installation.'"
+    }
+  },
+  "cost":{"idr":"Rp0 - Rp100.000","usd":"$0 - $7"}
+},
+{
+  "id":"MTR_MS_094",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin bergetar tidak normal",
+        "vibrasi mesin berlebihan"
+      ],
+      "problem":"Engine mounting longgar atau karet mounting mulai aus.",
+      "action":"Kurangi kecepatan tinggi sampai diperbaiki.",
+      "garage_tip":"Sampaikan: 'Mohon cek engine mounting dan baut pengikat mesin.'"
+    },
+    "en":{
+      "symptoms":[
+        "excessive engine vibration",
+        "engine shaking"
+      ],
+      "problem":"Loose engine mounts or worn mounting bushings.",
+      "action":"Avoid high speed riding.",
+      "garage_tip":"Say: 'Please inspect engine mounts and mounting bolts.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp350.000","usd":"$7 - $24"}
+},
+{
+  "id":"MTR_MS_095",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin bunyi ngelitik saat akselerasi",
+        "detonasi mesin"
+      ],
+      "problem":"Bahan bakar beroktan terlalu rendah menyebabkan knocking ringan.",
+      "action":"Gunakan bahan bakar dengan oktan sesuai rekomendasi.",
+      "garage_tip":"Sampaikan: 'Mohon cek apakah terdapat carbon deposit di ruang bakar.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine pinging",
+        "knocking during acceleration"
+      ],
+      "problem":"Low octane fuel causing light detonation.",
+      "action":"Use recommended octane fuel.",
+      "garage_tip":"Say: 'Please inspect combustion chamber carbon deposits.'"
+    }
+  },
+  "cost":{"idr":"Rp0 - Rp250.000","usd":"$0 - $17"}
+},
+{
+  "id":"MTR_MS_096",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor sulit hidup setelah kehujanan",
+        "mesin tidak mau menyala habis hujan"
+      ],
+      "problem":"Air masuk ke cop busi atau sistem pengapian.",
+      "action":"Keringkan area busi sebelum mencoba menghidupkan mesin.",
+      "garage_tip":"Sampaikan: 'Mohon cek cop busi dan ignition coil dari kelembaban.'"
+    },
+    "en":{
+      "symptoms":[
+        "hard starting after rain",
+        "won't start after heavy rain"
+      ],
+      "problem":"Water entered spark plug cap or ignition system.",
+      "action":"Dry ignition components.",
+      "garage_tip":"Say: 'Please inspect the spark plug cap and ignition coil.'"
+    }
+  },
+  "cost":{"idr":"Rp20.000 - Rp100.000","usd":"$2 - $7"}
+},
+{
+  "id":"MTR_MS_097",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"DANGER",
+  "driveability":"STOP",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin keluar asap dari blok",
+        "bau oli terbakar sangat kuat",
+        "oli menetes ke knalpot"
+      ],
+      "problem":"Kebocoran oli mengenai exhaust sehingga berpotensi menyebabkan kebakaran.",
+      "action":"Matikan mesin segera dan jangan lanjutkan perjalanan.",
+      "garage_tip":"Sampaikan: 'Mohon cari sumber kebocoran oli sebelum menghidupkan mesin kembali.'"
+    },
+    "en":{
+      "symptoms":[
+        "smoke from engine block",
+        "burning oil smell",
+        "oil dripping onto exhaust"
+      ],
+      "problem":"Engine oil leaking onto the hot exhaust creating fire risk.",
+      "action":"Stop the engine immediately.",
+      "garage_tip":"Say: 'Please locate and repair the oil leak before restarting.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp1.000.000","usd":"$7 - $70"}
+},
+  ,
+{
+  "id":"MTR_MS_098",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor keluar asap hitam",
+        "knalpot hitam pekat",
+        "bau bensin dari knalpot",
+        "asap hitam saat digas"
+      ],
+      "problem":"Campuran udara dan bahan bakar terlalu kaya (rich mixture) akibat injector bocor, sensor MAP/TPS bermasalah, filter udara tersumbat, atau setting ECU tidak sesuai.",
+      "action":"Hindari penggunaan putaran mesin tinggi karena konsumsi bahan bakar meningkat dan kerak karbon cepat terbentuk.",
+      "garage_tip":"Sampaikan: 'Mohon cek AFR, injector, sensor MAP, TPS, dan filter udara karena mesin terlalu rich.'"
+    },
+    "en":{
+      "symptoms":[
+        "black smoke from exhaust",
+        "rich exhaust smoke",
+        "fuel smell from exhaust",
+        "black smoke during acceleration"
+      ],
+      "problem":"Air-fuel mixture is excessively rich due to leaking injector, faulty MAP/TPS sensor, clogged air filter, or incorrect ECU calibration.",
+      "action":"Avoid high RPM operation until repaired.",
+      "garage_tip":"Say: 'Please inspect AFR, injector, MAP sensor, TPS and air filter because the engine is running rich.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp100.000 - Rp800.000",
+    "usd":"$7 - $55"
+  }
+},
+{
+  "id":"MTR_MS_099",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin seperti kehilangan kompresi",
+        "kick starter sangat ringan",
+        "starter mutar cepat tapi mesin susah hidup",
+        "kompresi lemah"
+      ],
+      "problem":"Tekanan kompresi rendah akibat ring piston aus, klep bocor, gasket head rusak, atau silinder aus.",
+      "action":"Batasi penggunaan kendaraan karena performa akan terus menurun dan konsumsi bahan bakar meningkat.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan compression test dan leak-down test untuk memastikan sumber kebocoran kompresi.'"
+    },
+    "en":{
+      "symptoms":[
+        "low engine compression",
+        "kick starter feels too light",
+        "starter spins fast but won't start",
+        "weak compression"
+      ],
+      "problem":"Low compression caused by worn piston rings, leaking valves, damaged head gasket or worn cylinder.",
+      "action":"Limit riding until compression is inspected.",
+      "garage_tip":"Say: 'Please perform a compression test and leak-down test.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp600.000 - Rp2.500.000",
+    "usd":"$40 - $170"
+  }
+},
+{
+  "id":"MTR_MS_100",
+  "vehicle":"motorcycle",
+  "system":"engine",
+  "severity":"DANGER",
+  "driveability":"STOP",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin bunyi sangat keras lalu mati",
+        "mesin tiba tiba macet",
+        "oli mesin habis total",
+        "indikator oli menyala lalu mesin mati"
+      ],
+      "problem":"Mesin mengalami kerusakan internal berat akibat kehilangan pelumasan. Kemungkinan bearing kruk as, connecting rod, piston, dan crankshaft mengalami kerusakan serius.",
+      "action":"JANGAN menghidupkan mesin kembali. Kendaraan harus diderek menuju bengkel karena risiko kerusakan total sangat tinggi.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan overhaul total mesin dan inspeksi seluruh komponen pelumasan serta crankshaft.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine made loud noise then stopped",
+        "engine suddenly locked",
+        "engine ran out of oil",
+        "oil warning light then engine stopped"
+      ],
+      "problem":"Catastrophic internal engine damage caused by complete lubrication failure. Crankshaft bearings, connecting rod, piston and crankshaft are likely severely damaged.",
+      "action":"DO NOT restart the engine. Tow the motorcycle to a repair shop immediately.",
+      "garage_tip":"Say: 'Please perform a complete engine overhaul and inspect the lubrication system and crankshaft assembly.'"
+    }
+  },
+  "cost":{
+    "idr":"Rp2.500.000 - Rp8.000.000",
+    "usd":"$170 - $550"
+  }
+},
+  
+{
+"id":"MTR_FS_001",
+"vehicle":"motorcycle",
+"system":"fuel_system",
+"severity":"WARNING",
+"driveability":"LIMITED",
+"language":{
+"id":{
+"symptoms":[
+"motor brebet saat digas",
+"tarikan putus putus",
+"gas tidak responsif"
+],
+"problem":"Injector mulai kotor sehingga pola semprotan bahan bakar tidak lagi merata.",
+"action":"Hindari memaksa akselerasi penuh sebelum injector dibersihkan.",
+"garage_tip":"Sampaikan: 'Mohon lakukan injector cleaning menggunakan injector tester ultrasonic.'"
+},
+"en":{
+"symptoms":[
+"engine hesitates",
+"poor throttle response",
+"engine sputters"
+],
+"problem":"Dirty injector causing poor fuel spray pattern.",
+"action":"Avoid hard acceleration.",
+"garage_tip":"Say: 'Please perform ultrasonic injector cleaning.'"
+}
+},
+"cost":{
+"idr":"Rp80.000 - Rp250.000",
+"usd":"$5 - $17"
+}
+},
+{
+"id":"MTR_FS_002",
+"vehicle":"motorcycle",
+"system":"fuel_system",
+"severity":"WARNING",
+"driveability":"LIMITED",
+"language":{
+"id":{
+"symptoms":[
+"motor ngempos rpm atas",
+"kecepatan mentok",
+"nafas mesin pendek"
+],
+"problem":"Fuel filter mulai tersumbat sehingga debit bensin berkurang.",
+"action":"Kurangi perjalanan jauh.",
+"garage_tip":"Sampaikan: 'Mohon cek fuel filter dan tekanan bahan bakar.'"
+},
+"en":{
+"symptoms":[
+"poor top speed",
+"weak high rpm",
+"lack of power"
+],
+"problem":"Restricted fuel filter reducing fuel flow.",
+"action":"Avoid long trips.",
+"garage_tip":"Say: 'Please inspect fuel filter and fuel pressure.'"
+}
+},
+"cost":{
+"idr":"Rp80.000 - Rp300.000",
+"usd":"$5 - $20"
+}
+},
+{
+"id":"MTR_FS_003",
+"vehicle":"motorcycle",
+"system":"fuel_system",
+"severity":"WARNING",
+"driveability":"LIMITED",
+"language":{
+"id":{
+"symptoms":[
+"motor susah hidup pagi",
+"starter lama baru hidup"
+],
+"problem":"Fuel pump mulai lemah sehingga tekanan awal rendah.",
+"action":"Biarkan kontak ON beberapa detik sebelum starter.",
+"garage_tip":"Sampaikan: 'Mohon ukur tekanan fuel pump.'"
+},
+"en":{
+"symptoms":[
+"hard cold start",
+"long cranking"
+],
+"problem":"Weak fuel pump pressure.",
+"action":"Prime fuel system before cranking.",
+"garage_tip":"Say: 'Please measure fuel pump pressure.'"
+}
+},
+"cost":{
+"idr":"Rp250.000 - Rp900.000",
+"usd":"$17 - $60"
+}
+},
+{
+"id":"MTR_FS_004",
+"vehicle":"motorcycle",
+"system":"fuel_system",
+"severity":"INFO",
+"driveability":"NORMAL",
+"language":{
+"id":{
+"symptoms":[
+"fuel pump berdengung saat kontak on"
+],
+"problem":"Suara fuel pump selama 2–3 detik saat kontak ON merupakan kondisi normal.",
+"action":"Tidak memerlukan perbaikan.",
+"garage_tip":"Tidak diperlukan tindakan."
+},
+"en":{
+"symptoms":[
+"fuel pump buzzing"
+],
+"problem":"Fuel pump priming noise is normal.",
+"action":"No repair required.",
+"garage_tip":"No action required."
+}
+},
+"cost":{
+"idr":"Rp0",
+"usd":"$0"
+}
+},
+{
+"id":"MTR_FS_005",
+"vehicle":"motorcycle",
+"system":"fuel_system",
+"severity":"WARNING",
+"driveability":"LIMITED",
+"language":{
+"id":{
+"symptoms":[
+"motor boros bensin",
+"bensin cepat habis"
+],
+"problem":"Injector bocor sehingga bahan bakar terus menetes.",
+"action":"Kurangi penggunaan kendaraan.",
+"garage_tip":"Sampaikan: 'Mohon lakukan injector leak test.'"
+},
+"en":{
+"symptoms":[
+"high fuel consumption",
+"fuel economy dropped"
+],
+"problem":"Injector leaking fuel.",
+"action":"Limit riding.",
+"garage_tip":"Say: 'Please perform injector leak test.'"
+}
+},
+"cost":{
+"idr":"Rp200.000 - Rp800.000",
+"usd":"$13 - $55"
+}
+},
+{
+"id":"MTR_FS_006",
+"vehicle":"motorcycle",
+"system":"fuel_system",
+"severity":"WARNING",
+"driveability":"LIMITED",
+"language":{
+"id":{
+"symptoms":[
+"rpm naik turun sendiri",
+"idle tidak stabil"
+],
+"problem":"Throttle body kotor sehingga aliran udara idle terganggu.",
+"action":"Hindari macet panjang.",
+"garage_tip":"Sampaikan: 'Mohon lakukan throttle body cleaning.'"
+},
+"en":{
+"symptoms":[
+"unstable idle",
+"rpm fluctuates"
+],
+"problem":"Dirty throttle body.",
+"action":"Avoid heavy traffic.",
+"garage_tip":"Say: 'Please clean the throttle body.'"
+}
+},
+"cost":{
+"idr":"Rp80.000 - Rp250.000",
+"usd":"$5 - $17"
+}
+},
+{
+"id":"MTR_FS_007",
+"vehicle":"motorcycle",
+"system":"fuel_system",
+"severity":"WARNING",
+"driveability":"NORMAL",
+"language":{
+"id":{
+"symptoms":[
+"bau bensin dari motor"
+],
+"problem":"Selang bahan bakar mulai retak atau klem longgar.",
+"action":"Jauhkan kendaraan dari sumber api.",
+"garage_tip":"Sampaikan: 'Mohon cek seluruh fuel hose.'"
+},
+"en":{
+"symptoms":[
+"fuel smell"
+],
+"problem":"Fuel hose cracked or loose clamp.",
+"action":"Keep away from fire.",
+"garage_tip":"Say: 'Please inspect all fuel hoses.'"
+}
+},
+"cost":{
+"idr":"Rp30.000 - Rp150.000",
+"usd":"$2 - $10"
+}
+},
+{
+"id":"MTR_FS_008",
+"vehicle":"motorcycle",
+"system":"fuel_system",
+"severity":"WARNING",
+"driveability":"LIMITED",
+"language":{
+"id":{
+"symptoms":[
+"motor mati saat digas penuh",
+"rpm atas brebet"
+],
+"problem":"Tekanan fuel pump turun pada beban tinggi.",
+"action":"Hindari perjalanan jauh.",
+"garage_tip":"Sampaikan: 'Mohon lakukan fuel pressure test pada rpm tinggi.'"
+},
+"en":{
+"symptoms":[
+"dies at full throttle",
+"high rpm hesitation"
+],
+"problem":"Fuel pressure drops under load.",
+"action":"Avoid long trips.",
+"garage_tip":"Say: 'Please perform fuel pressure test under load.'"
+}
+},
+"cost":{
+"idr":"Rp250.000 - Rp900.000",
+"usd":"$17 - $60"
+}
+},
+{
+"id":"MTR_FS_009",
+"vehicle":"motorcycle",
+"system":"fuel_system",
+"severity":"WARNING",
+"driveability":"LIMITED",
+"language":{
+"id":{
+"symptoms":[
+"motor susah langsam",
+"mati saat idle"
+],
+"problem":"Katup ISC/IACV kotor sehingga suplai udara idle tidak stabil.",
+"action":"Jangan biarkan mesin idle terlalu lama.",
+"garage_tip":"Sampaikan: 'Mohon bersihkan ISC/IACV.'"
+},
+"en":{
+"symptoms":[
+"won't idle",
+"stalls at idle"
+],
+"problem":"Dirty ISC/IACV valve.",
+"action":"Avoid excessive idling.",
+"garage_tip":"Say: 'Please clean ISC/IACV valve.'"
+}
+},
+"cost":{
+"idr":"Rp100.000 - Rp350.000",
+"usd":"$7 - $24"
+}
+},
+{
+"id":"MTR_FS_010",
+"vehicle":"motorcycle",
+"system":"fuel_system",
+"severity":"WARNING",
+"driveability":"LIMITED",
+"language":{
+"id":{
+"symptoms":[
+"motor brebet setelah isi bensin",
+"mesin ngempos setelah isi bbm"
+],
+"problem":"Bahan bakar terkontaminasi air atau kotoran sehingga mengganggu proses pembakaran.",
+"action":"Kurangi penggunaan kendaraan dan hindari mengisi dari sumber yang sama sampai sistem diperiksa.",
+"garage_tip":"Sampaikan: 'Mohon kuras tangki, cek fuel filter, dan bersihkan injector karena diduga bahan bakar terkontaminasi.'"
+},
+"en":{
+"symptoms":[
+"engine sputters after refueling",
+"poor performance after filling up"
+],
+"problem":"Fuel contaminated with water or debris affecting combustion.",
+"action":"Limit riding and avoid refueling from the same source until inspected.",
+"garage_tip":"Say: 'Please drain the fuel tank, inspect the fuel filter, and clean the injector due to suspected contaminated fuel.'"
+}
+},
+"cost":{
+"idr":"Rp150.000 - Rp500.000",
+"usd":"$10 - $35"
+}
+},
+  
+{
+  "id":"MTR_FS_011",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor brebet saat hujan",
+        "mesin tersendat saat hujan"
+      ],
+      "problem":"Air masuk ke saluran intake atau konektor sensor sistem bahan bakar sehingga pembacaan sensor menjadi tidak stabil.",
+      "action":"Hindari menerobos genangan air yang tinggi.",
+      "garage_tip":"Sampaikan: 'Mohon cek intake, throttle body dan konektor sensor dari kemungkinan kemasukan air.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine sputters in rain",
+        "poor running in wet weather"
+      ],
+      "problem":"Water entered the intake or fuel system sensor connectors.",
+      "action":"Avoid deep water crossings.",
+      "garage_tip":"Say: 'Please inspect the intake and fuel system connectors for water intrusion.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp200.000","usd":"$3 - $13"}
+},
+{
+  "id":"MTR_FS_012",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "bau bensin saat motor diparkir",
+        "ada tetesan bensin di bawah motor"
+      ],
+      "problem":"Selang overflow atau sambungan tangki mengalami kebocoran kecil.",
+      "action":"Jangan parkir dekat sumber api.",
+      "garage_tip":"Sampaikan: 'Mohon cek fuel hose, overflow hose dan sambungan tangki.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel smell while parked",
+        "fuel dripping under motorcycle"
+      ],
+      "problem":"Minor leak from overflow hose or tank connection.",
+      "action":"Keep away from ignition sources.",
+      "garage_tip":"Say: 'Please inspect the overflow hose and fuel tank connections.'"
+    }
+  },
+  "cost":{"idr":"Rp30.000 - Rp150.000","usd":"$2 - $10"}
+},
+{
+  "id":"MTR_FS_013",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"INFO",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "suara mendesis saat buka tutup tangki"
+      ],
+      "problem":"Perbedaan tekanan udara di dalam tangki merupakan kondisi normal setelah kendaraan digunakan.",
+      "action":"Tidak memerlukan perbaikan bila tidak disertai gejala lain.",
+      "garage_tip":"Tidak diperlukan tindakan."
+    },
+    "en":{
+      "symptoms":[
+        "hissing sound when opening fuel cap"
+      ],
+      "problem":"Normal pressure equalization inside the fuel tank.",
+      "action":"No repair required unless accompanied by other symptoms.",
+      "garage_tip":"No action required."
+    }
+  },
+  "cost":{"idr":"Rp0","usd":"$0"}
+},
+{
+  "id":"MTR_FS_014",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor tersendat saat rpm tinggi",
+        "brebet di atas 7000 rpm"
+      ],
+      "problem":"Debit injector mulai menurun akibat endapan varnish pada nozzle.",
+      "action":"Hindari penggunaan RPM tinggi.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan injector flow test.'"
+    },
+    "en":{
+      "symptoms":[
+        "hesitation at high rpm",
+        "stumbles above 7000 rpm"
+      ],
+      "problem":"Injector flow reduced by varnish deposits.",
+      "action":"Avoid sustained high RPM.",
+      "garage_tip":"Say: 'Please perform an injector flow test.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp350.000","usd":"$7 - $24"}
+},
+{
+  "id":"MTR_FS_015",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor tersendat saat jalan jauh",
+        "semakin jauh semakin brebet"
+      ],
+      "problem":"Ventilasi tangki tersumbat sehingga aliran bensin terganggu akibat vakum.",
+      "action":"Berhenti di tempat aman bila tenaga mulai hilang.",
+      "garage_tip":"Sampaikan: 'Mohon cek ventilasi tutup tangki dan saluran EVAP.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine loses power on long rides",
+        "gets worse over distance"
+      ],
+      "problem":"Blocked fuel tank vent creating vacuum inside the tank.",
+      "action":"Stop safely if power drops significantly.",
+      "garage_tip":"Say: 'Please inspect the fuel tank vent and EVAP system.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp200.000","usd":"$3 - $13"}
+},
+{
+  "id":"MTR_FS_016",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "rpm menggantung setelah digas",
+        "gas dilepas rpm lama turun"
+      ],
+      "problem":"Throttle body kotor atau kabel gas terlalu tegang.",
+      "action":"Kurangi penggunaan kendaraan sampai diperiksa.",
+      "garage_tip":"Sampaikan: 'Mohon bersihkan throttle body dan cek free play kabel gas.'"
+    },
+    "en":{
+      "symptoms":[
+        "hanging idle",
+        "rpm drops slowly"
+      ],
+      "problem":"Dirty throttle body or overly tight throttle cable.",
+      "action":"Limit riding until inspected.",
+      "garage_tip":"Say: 'Please clean the throttle body and inspect throttle cable free play.'"
+    }
+  },
+  "cost":{"idr":"Rp80.000 - Rp250.000","usd":"$5 - $17"}
+},
+{
+  "id":"MTR_FS_017",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "tarikan bawah kosong",
+        "motor lemot putaran bawah"
+      ],
+      "problem":"Sensor TPS mulai tidak akurat sehingga ECU salah membaca bukaan gas.",
+      "action":"Hindari akselerasi mendadak.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan pemeriksaan tegangan TPS.'"
+    },
+    "en":{
+      "symptoms":[
+        "weak low-end power",
+        "poor throttle pickup"
+      ],
+      "problem":"Throttle Position Sensor is sending inaccurate readings.",
+      "action":"Avoid sudden acceleration.",
+      "garage_tip":"Say: 'Please test TPS voltage output.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp600.000","usd":"$10 - $40"}
+},
+{
+  "id":"MTR_FS_018",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor tersendat saat putaran menengah",
+        "brebet rpm sedang"
+      ],
+      "problem":"Sensor MAP memberikan data tekanan intake yang tidak stabil.",
+      "action":"Kurangi perjalanan jauh sebelum diperiksa.",
+      "garage_tip":"Sampaikan: 'Mohon cek sensor MAP menggunakan scanner.'"
+    },
+    "en":{
+      "symptoms":[
+        "mid-range hesitation",
+        "engine stumbles mid rpm"
+      ],
+      "problem":"MAP sensor sending unstable intake pressure readings.",
+      "action":"Avoid long trips.",
+      "garage_tip":"Say: 'Please inspect the MAP sensor with a diagnostic scanner.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp700.000","usd":"$10 - $48"}
+},
+{
+  "id":"MTR_FS_019",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor sedikit brebet setelah lama tidak dipakai",
+        "mesin pincang setelah disimpan"
+      ],
+      "problem":"Endapan bahan bakar mulai terbentuk pada injector akibat kendaraan lama tidak digunakan.",
+      "action":"Gunakan bahan bakar baru dan jalankan mesin secara berkala.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan injector cleaning dan kuras bahan bakar lama bila diperlukan.'"
+    },
+    "en":{
+      "symptoms":[
+        "rough running after long storage",
+        "engine hesitates after sitting"
+      ],
+      "problem":"Fuel deposits forming inside the injector after prolonged storage.",
+      "action":"Use fresh fuel and run the engine regularly.",
+      "garage_tip":"Say: 'Please clean the injector and replace stale fuel if necessary.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp300.000","usd":"$7 - $20"}
+},
+{
+  "id":"MTR_FS_020",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"DANGER",
+  "driveability":"STOP",
+  "language":{
+    "id":{
+      "symptoms":[
+        "bensin bocor deras",
+        "tangki bocor",
+        "selang bensin putus"
+      ],
+      "problem":"Terjadi kebocoran besar pada sistem bahan bakar yang berisiko tinggi menyebabkan kebakaran.",
+      "action":"Matikan mesin segera, jauhkan kendaraan dari sumber api, dan jangan hidupkan kembali sebelum diperbaiki.",
+      "garage_tip":"Sampaikan: 'Mohon periksa seluruh sistem bahan bakar dan perbaiki sumber kebocoran sebelum kendaraan digunakan lagi.'"
+    },
+    "en":{
+      "symptoms":[
+        "major fuel leak",
+        "fuel tank leaking",
+        "broken fuel hose"
+      ],
+      "problem":"Major fuel system leak creating a serious fire hazard.",
+      "action":"Stop the engine immediately and do not restart until repaired.",
+      "garage_tip":"Say: 'Please inspect the complete fuel system and repair the leak before operating the motorcycle.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp1.000.000","usd":"$7 - $70"}
+}
+  ,
+{
+  "id":"MTR_FS_021",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor brebet saat rpm rendah",
+        "tarikan awal tersendat"
+      ],
+      "problem":"Lubang injector mulai tersumbat sebagian sehingga debit bahan bakar pada putaran rendah tidak stabil.",
+      "action":"Hindari membuka gas secara tiba-tiba sebelum sistem dibersihkan.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan injector flow test dan injector cleaning.'"
+    },
+    "en":{
+      "symptoms":[
+        "hesitation at low rpm",
+        "poor initial acceleration"
+      ],
+      "problem":"Injector nozzle is partially clogged causing unstable fuel delivery at low RPM.",
+      "action":"Avoid sudden throttle openings.",
+      "garage_tip":"Say: 'Please perform an injector flow test and cleaning.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp250.000","usd":"$7 - $17"}
+},
+{
+  "id":"MTR_FS_022",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor pincang saat langsam",
+        "idle terasa kasar"
+      ],
+      "problem":"Pola semprotan injector tidak merata sehingga pembakaran menjadi tidak stabil.",
+      "action":"Batasi penggunaan kendaraan hingga injector diperiksa.",
+      "garage_tip":"Sampaikan: 'Mohon cek spray pattern injector menggunakan injector tester.'"
+    },
+    "en":{
+      "symptoms":[
+        "rough idle",
+        "unstable idle combustion"
+      ],
+      "problem":"Uneven injector spray pattern causing unstable combustion.",
+      "action":"Limit riding until inspected.",
+      "garage_tip":"Say: 'Please inspect injector spray pattern using an injector tester.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp300.000","usd":"$7 - $20"}
+},
+{
+  "id":"MTR_FS_023",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"INFO",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "fuel pump terdengar lebih lama saat kontak on"
+      ],
+      "problem":"Durasi priming fuel pump sedikit lebih lama akibat tekanan sistem turun setelah kendaraan lama diparkir dan masih dapat dianggap normal bila mesin tetap mudah hidup.",
+      "action":"Tidak perlu perbaikan jika tidak ada gejala lain.",
+      "garage_tip":"Tidak diperlukan tindakan."
+    },
+    "en":{
+      "symptoms":[
+        "fuel pump primes longer"
+      ],
+      "problem":"Slightly longer priming time after long parking can be normal if the engine starts properly.",
+      "action":"No repair required unless other symptoms appear.",
+      "garage_tip":"No action required."
+    }
+  },
+  "cost":{"idr":"Rp0","usd":"$0"}
+},
+{
+  "id":"MTR_FS_024",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor kehilangan tenaga saat menyalip",
+        "gas penuh tapi tidak lari"
+      ],
+      "problem":"Fuel pressure regulator tidak mampu mempertahankan tekanan bahan bakar saat beban tinggi.",
+      "action":"Hindari akselerasi penuh.",
+      "garage_tip":"Sampaikan: 'Mohon ukur fuel pressure dan cek regulator tekanan bahan bakar.'"
+    },
+    "en":{
+      "symptoms":[
+        "poor overtaking power",
+        "full throttle but no acceleration"
+      ],
+      "problem":"Fuel pressure regulator cannot maintain pressure under load.",
+      "action":"Avoid full throttle acceleration.",
+      "garage_tip":"Say: 'Please inspect the fuel pressure regulator.'"
+    }
+  },
+  "cost":{"idr":"Rp250.000 - Rp900.000","usd":"$17 - $60"}
+},
+{
+  "id":"MTR_FS_025",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "mesin bau bensin setelah dimatikan"
+      ],
+      "problem":"Tekanan bahan bakar masih bertahan dan injector mulai mengalami rembesan kecil.",
+      "action":"Periksa bila bau bensin semakin kuat.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan injector leak-down test.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel smell after engine shutdown"
+      ],
+      "problem":"Residual fuel pressure with slight injector leakage.",
+      "action":"Inspect if the smell becomes stronger.",
+      "garage_tip":"Say: 'Please perform an injector leak-down test.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp600.000","usd":"$10 - $40"}
+},
+{
+  "id":"MTR_FS_026",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor mati saat tangki setengah",
+        "masih ada bensin tapi mesin mati"
+      ],
+      "problem":"Saringan fuel pump di dalam tangki mulai tersumbat sehingga saat permukaan bensin rendah aliran menjadi tidak stabil.",
+      "action":"Isi bahan bakar secukupnya hingga diperiksa.",
+      "garage_tip":"Sampaikan: 'Mohon cek fuel strainer di dalam tangki.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine dies with half tank",
+        "fuel gauge shows fuel but engine stalls"
+      ],
+      "problem":"Fuel pump strainer is partially clogged.",
+      "action":"Keep the fuel level above half until repaired.",
+      "garage_tip":"Say: 'Please inspect the in-tank fuel strainer.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp500.000","usd":"$10 - $35"}
+},
+{
+  "id":"MTR_FS_027",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "rpm naik sendiri setelah mesin panas",
+        "idle makin tinggi"
+      ],
+      "problem":"Throttle body memuai saat panas dan terdapat kerak karbon pada throttle plate.",
+      "action":"Kurangi perjalanan jauh sebelum dibersihkan.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan throttle body cleaning dan idle relearn.'"
+    },
+    "en":{
+      "symptoms":[
+        "idle increases when hot",
+        "high idle after warm-up"
+      ],
+      "problem":"Carbon buildup on throttle plate combined with thermal expansion.",
+      "action":"Limit long rides until cleaned.",
+      "garage_tip":"Say: 'Please clean the throttle body and perform idle relearn.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp300.000","usd":"$7 - $20"}
+},
+{
+  "id":"MTR_FS_028",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor tersendat saat jalan konstan",
+        "kecepatan stabil tapi brebet"
+      ],
+      "problem":"Sensor TPS mengalami dead spot sehingga ECU menerima sinyal bukaan gas yang tidak konsisten.",
+      "action":"Hindari mempertahankan putaran mesin tinggi dalam waktu lama.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan pengukuran TPS menggunakan scanner atau multimeter.'"
+    },
+    "en":{
+      "symptoms":[
+        "hesitation at steady speed",
+        "surging while cruising"
+      ],
+      "problem":"TPS has a dead spot causing inconsistent throttle readings.",
+      "action":"Avoid prolonged high-speed cruising.",
+      "garage_tip":"Say: 'Please test the TPS using a scanner or multimeter.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp700.000","usd":"$10 - $48"}
+},
+{
+  "id":"MTR_FS_029",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor boros setelah ganti knalpot",
+        "bensin cepat habis setelah modifikasi"
+      ],
+      "problem":"Perubahan aliran gas buang menyebabkan AFR tidak lagi ideal sehingga konsumsi bahan bakar meningkat.",
+      "action":"Gunakan kendaraan secara normal dan hindari putaran tinggi sampai dilakukan penyetelan.",
+      "garage_tip":"Sampaikan: 'Mohon cek AFR dan lakukan penyesuaian mapping ECU bila diperlukan.'"
+    },
+    "en":{
+      "symptoms":[
+        "poor fuel economy after exhaust modification",
+        "high fuel consumption after aftermarket exhaust"
+      ],
+      "problem":"Exhaust modification altered AFR calibration.",
+      "action":"Avoid aggressive riding until tuned.",
+      "garage_tip":"Say: 'Please inspect AFR and adjust ECU mapping if necessary.'"
+    }
+  },
+  "cost":{"idr":"Rp250.000 - Rp1.000.000","usd":"$17 - $70"}
+},
+{
+  "id":"MTR_FS_030",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"DANGER",
+  "driveability":"STOP",
+  "language":{
+    "id":{
+      "symptoms":[
+        "fuel pump mati total",
+        "tidak terdengar suara fuel pump",
+        "motor injeksi tidak hidup sama sekali"
+      ],
+      "problem":"Fuel pump tidak bekerja sehingga tekanan bahan bakar nol dan mesin tidak dapat menyala.",
+      "action":"Jangan memaksa starter berulang kali karena dapat menguras aki tanpa menyelesaikan penyebab utama.",
+      "garage_tip":"Sampaikan: 'Mohon ukur tegangan ke fuel pump dan pastikan pompa bekerja sesuai spesifikasi.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel pump completely dead",
+        "no fuel pump sound",
+        "fuel injected motorcycle won't start"
+      ],
+      "problem":"Fuel pump is not operating, resulting in zero fuel pressure.",
+      "action":"Do not keep cranking the engine repeatedly.",
+      "garage_tip":"Say: 'Please verify fuel pump voltage and operating pressure.'"
+    }
+  },
+  "cost":{"idr":"Rp350.000 - Rp1.500.000","usd":"$24 - $100"}
+}
+  ,
+{
+  "id":"MTR_FS_031",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor karbu susah hidup pagi",
+        "harus dicok dulu baru hidup"
+      ],
+      "problem":"Sistem choke bekerja normal namun pilot jet mulai kotor sehingga campuran udara-bahan bakar terlalu miskin saat mesin dingin.",
+      "action":"Gunakan choke hanya seperlunya sampai mesin mencapai suhu kerja.",
+      "garage_tip":"Sampaikan: 'Mohon bersihkan pilot jet dan saluran langsam karburator.'"
+    },
+    "en":{
+      "symptoms":[
+        "carb motorcycle hard cold start",
+        "needs choke every morning"
+      ],
+      "problem":"Pilot jet is partially clogged causing a lean mixture during cold start.",
+      "action":"Use the choke only until the engine warms up.",
+      "garage_tip":"Say: 'Please clean the pilot jet and idle circuit.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp150.000","usd":"$3 - $10"}
+},
+{
+  "id":"MTR_FS_032",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor karbu boros bensin",
+        "bensin cepat habis"
+      ],
+      "problem":"Jarum pelampung tidak menutup rapat sehingga level bensin di mangkuk karburator terlalu tinggi.",
+      "action":"Hindari parkir dengan posisi miring terlalu lama.",
+      "garage_tip":"Sampaikan: 'Mohon cek needle valve dan setel tinggi pelampung karburator.'"
+    },
+    "en":{
+      "symptoms":[
+        "carb motorcycle poor fuel economy",
+        "uses too much fuel"
+      ],
+      "problem":"Float needle is leaking, causing excessive fuel level inside the carburetor.",
+      "action":"Avoid parking the motorcycle on steep angles.",
+      "garage_tip":"Say: 'Please inspect the float valve and adjust float height.'"
+    }
+  },
+  "cost":{"idr":"Rp75.000 - Rp250.000","usd":"$5 - $17"}
+},
+{
+  "id":"MTR_FS_033",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor ngempos saat gas penuh",
+        "atasnya tidak mau lari"
+      ],
+      "problem":"Main jet terlalu kecil atau mulai tersumbat sehingga suplai bensin kurang pada putaran tinggi.",
+      "action":"Hindari berkendara dengan throttle penuh.",
+      "garage_tip":"Sampaikan: 'Mohon bersihkan atau sesuaikan ukuran main jet.'"
+    },
+    "en":{
+      "symptoms":[
+        "loses power at full throttle",
+        "weak top speed"
+      ],
+      "problem":"Main jet is undersized or partially clogged.",
+      "action":"Avoid prolonged full throttle.",
+      "garage_tip":"Say: 'Please inspect and clean the main jet.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp200.000","usd":"$3 - $13"}
+},
+{
+  "id":"MTR_FS_034",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "gas terasa berat",
+        "tarikan tidak spontan"
+      ],
+      "problem":"Skep karburator macet akibat kerak atau kabel gas mulai seret.",
+      "action":"Jangan memaksa menarik gas secara tiba-tiba.",
+      "garage_tip":"Sampaikan: 'Mohon bersihkan skep karburator dan lumasi kabel gas.'"
+    },
+    "en":{
+      "symptoms":[
+        "heavy throttle",
+        "slow throttle response"
+      ],
+      "problem":"Throttle slide is sticking or throttle cable is dragging.",
+      "action":"Avoid sudden throttle movements.",
+      "garage_tip":"Say: 'Please clean the carb slide and lubricate the throttle cable.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp150.000","usd":"$3 - $10"}
+},
+{
+  "id":"MTR_FS_035",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "karburator banjir",
+        "bensin menetes dari selang overflow"
+      ],
+      "problem":"Pelampung macet atau needle valve tidak menutup sehingga bensin meluap.",
+      "action":"Tutup kran bensin jika motor diparkir lama.",
+      "garage_tip":"Sampaikan: 'Mohon bongkar mangkuk karburator dan periksa pelampung serta needle valve.'"
+    },
+    "en":{
+      "symptoms":[
+        "carburetor flooding",
+        "fuel dripping from overflow"
+      ],
+      "problem":"Float is sticking or the needle valve cannot seal.",
+      "action":"Turn off the fuel valve during long parking.",
+      "garage_tip":"Say: 'Please inspect the float assembly and needle valve.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp200.000","usd":"$3 - $13"}
+},
+{
+  "id":"MTR_FS_036",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor batuk saat dibuka gas",
+        "brebet saat akselerasi"
+      ],
+      "problem":"Membran vakum karburator robek sehingga skep vakum tidak dapat terangkat sempurna.",
+      "action":"Kurangi akselerasi mendadak.",
+      "garage_tip":"Sampaikan: 'Mohon cek diafragma vakum karburator.'"
+    },
+    "en":{
+      "symptoms":[
+        "hesitates during acceleration",
+        "vacuum carb bogging"
+      ],
+      "problem":"Vacuum diaphragm is torn.",
+      "action":"Avoid aggressive acceleration.",
+      "garage_tip":"Say: 'Please inspect the carburetor vacuum diaphragm.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp500.000","usd":"$10 - $35"}
+},
+{
+  "id":"MTR_FS_037",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"INFO",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "idle naik turun sedikit setelah servis"
+      ],
+      "problem":"Setelan idle perlu penyesuaian ulang setelah pembersihan karburator.",
+      "action":"Lakukan penyetelan langsam saat mesin mencapai suhu kerja.",
+      "garage_tip":"Sampaikan: 'Mohon setel ulang idle speed sesuai spesifikasi.'"
+    },
+    "en":{
+      "symptoms":[
+        "idle slightly unstable after carb cleaning"
+      ],
+      "problem":"Idle adjustment needs fine tuning after service.",
+      "action":"Adjust idle when engine reaches operating temperature.",
+      "garage_tip":"Say: 'Please adjust idle speed to specification.'"
+    }
+  },
+  "cost":{"idr":"Rp25.000 - Rp75.000","usd":"$2 - $5"}
+},
+{
+  "id":"MTR_FS_038",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor kehabisan tenaga saat tanjakan",
+        "naik bukit ngempos"
+      ],
+      "problem":"Debit bahan bakar dari kran bensin vakum berkurang akibat membran mulai rusak.",
+      "action":"Hindari perjalanan menanjak jauh.",
+      "garage_tip":"Sampaikan: 'Mohon cek fuel cock vakum dan membrannya.'"
+    },
+    "en":{
+      "symptoms":[
+        "power loss uphill",
+        "weak climbing performance"
+      ],
+      "problem":"Vacuum fuel valve diaphragm is failing.",
+      "action":"Avoid long uphill riding.",
+      "garage_tip":"Say: 'Please inspect the vacuum fuel valve.'"
+    }
+  },
+  "cost":{"idr":"Rp75.000 - Rp250.000","usd":"$5 - $17"}
+},
+{
+  "id":"MTR_FS_039",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "bau bensin dari karburator",
+        "sekitar mesin bau bensin"
+      ],
+      "problem":"Packing mangkuk karburator mengeras sehingga terjadi rembesan bensin.",
+      "action":"Jangan parkir dekat sumber api.",
+      "garage_tip":"Sampaikan: 'Mohon ganti gasket mangkuk karburator.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel smell around carburetor",
+        "gasoline odor near engine"
+      ],
+      "problem":"Carburetor bowl gasket is leaking.",
+      "action":"Avoid parking near ignition sources.",
+      "garage_tip":"Say: 'Please replace the carburetor bowl gasket.'"
+    }
+  },
+  "cost":{"idr":"Rp25.000 - Rp100.000","usd":"$2 - $7"}
+},
+{
+  "id":"MTR_FS_040",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"DANGER",
+  "driveability":"STOP",
+  "language":{
+    "id":{
+      "symptoms":[
+        "bensin bocor deras dari karburator",
+        "motor meneteskan bensin terus"
+      ],
+      "problem":"Needle valve macet terbuka atau pelampung pecah sehingga bensin meluap terus-menerus dan berpotensi menyebabkan kebakaran.",
+      "action":"Matikan mesin, tutup kran bensin, dan jangan hidupkan kendaraan sebelum diperbaiki.",
+      "garage_tip":"Sampaikan: 'Mohon periksa seluruh sistem pelampung dan needle valve karena bensin bocor deras.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel pouring from carburetor",
+        "continuous gasoline leak"
+      ],
+      "problem":"Float valve is stuck open or the float has failed, creating a severe fire hazard.",
+      "action":"Stop the engine immediately and shut off the fuel supply.",
+      "garage_tip":"Say: 'Please inspect the complete float assembly and needle valve.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp400.000","usd":"$7 - $28"}
+}
+
+  ,
+{
+  "id":"MTR_FS_041",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor injeksi brebet saat digas",
+        "tarikan putus putus"
+      ],
+      "problem":"Injector mulai tersumbat kerak sehingga pola semprotan bahan bakar tidak merata.",
+      "action":"Hindari memacu kendaraan pada putaran tinggi sebelum sistem injeksi dibersihkan.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan injector cleaning menggunakan injector tester.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel injected motorcycle hesitates",
+        "jerking during acceleration"
+      ],
+      "problem":"Fuel injector is partially clogged causing poor spray pattern.",
+      "action":"Avoid high RPM until the injector is serviced.",
+      "garage_tip":"Say: 'Please clean the injector using an injector tester.'"
+    }
+  },
+  "cost":{"idr":"Rp80.000 - Rp250.000","usd":"$5 - $17"}
+},
+{
+  "id":"MTR_FS_042",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor kehilangan tenaga saat rpm tinggi",
+        "tarikan atas ngempos"
+      ],
+      "problem":"Tekanan pompa bensin mulai melemah sehingga suplai bahan bakar kurang pada beban tinggi.",
+      "action":"Hindari perjalanan jauh sebelum tekanan fuel pump diperiksa.",
+      "garage_tip":"Sampaikan: 'Mohon ukur tekanan fuel pump menggunakan fuel pressure gauge.'"
+    },
+    "en":{
+      "symptoms":[
+        "power loss at high rpm",
+        "weak top-end acceleration"
+      ],
+      "problem":"Fuel pump pressure is below specification.",
+      "action":"Avoid long distance riding.",
+      "garage_tip":"Say: 'Please measure fuel pressure using a gauge.'"
+    }
+  },
+  "cost":{"idr":"Rp250.000 - Rp900.000","usd":"$16 - $60"}
+},
+{
+  "id":"MTR_FS_043",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"INFO",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "rpm langsam sedikit naik turun",
+        "idle tidak stabil"
+      ],
+      "problem":"Throttle body mulai kotor sehingga aliran udara idle terganggu.",
+      "action":"Bersihkan throttle body secara berkala.",
+      "garage_tip":"Sampaikan: 'Mohon bersihkan throttle body tanpa merusak sensor TPS.'"
+    },
+    "en":{
+      "symptoms":[
+        "unstable idle",
+        "idle fluctuates slightly"
+      ],
+      "problem":"Throttle body has carbon deposits affecting idle airflow.",
+      "action":"Schedule throttle body cleaning.",
+      "garage_tip":"Say: 'Please clean the throttle body carefully without damaging TPS.'"
+    }
+  },
+  "cost":{"idr":"Rp75.000 - Rp200.000","usd":"$5 - $13"}
+},
+{
+  "id":"MTR_FS_044",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor susah langsam setelah mesin panas",
+        "idle hilang saat macet"
+      ],
+      "problem":"Idle Air Control Valve (IACV) mulai macet akibat kerak karbon.",
+      "action":"Kurangi penggunaan kendaraan dalam kemacetan panjang.",
+      "garage_tip":"Sampaikan: 'Mohon bersihkan atau cek IACV.'"
+    },
+    "en":{
+      "symptoms":[
+        "idle disappears when hot",
+        "engine stalls in traffic"
+      ],
+      "problem":"Idle Air Control Valve is sticking.",
+      "action":"Avoid prolonged stop-and-go traffic.",
+      "garage_tip":"Say: 'Please inspect and clean the IAC valve.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp400.000","usd":"$7 - $27"}
+},
+{
+  "id":"MTR_FS_045",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "lampu check engine menyala",
+        "motor brebet setelah hujan"
+      ],
+      "problem":"Sensor MAP membaca tekanan intake tidak akurat akibat kelembaban atau selang vakum bocor.",
+      "action":"Periksa selang vakum dan hindari mencuci area sensor dengan tekanan tinggi.",
+      "garage_tip":"Sampaikan: 'Mohon scan ECU dan cek sensor MAP.'"
+    },
+    "en":{
+      "symptoms":[
+        "check engine light on",
+        "hesitation after rain"
+      ],
+      "problem":"MAP sensor is reading incorrect intake pressure.",
+      "action":"Inspect vacuum hoses.",
+      "garage_tip":"Say: 'Please scan ECU and inspect the MAP sensor.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp600.000","usd":"$10 - $40"}
+},
+{
+  "id":"MTR_FS_046",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "tarikan awal terlambat",
+        "gas tidak responsif"
+      ],
+      "problem":"Throttle Position Sensor (TPS) mulai melenceng sehingga pembacaan bukaan gas tidak akurat.",
+      "action":"Hindari akselerasi mendadak.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan kalibrasi TPS menggunakan scanner.'"
+    },
+    "en":{
+      "symptoms":[
+        "delayed throttle response",
+        "slow acceleration"
+      ],
+      "problem":"Throttle Position Sensor calibration is incorrect.",
+      "action":"Avoid sudden acceleration.",
+      "garage_tip":"Say: 'Please calibrate the TPS with a diagnostic scanner.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp500.000","usd":"$10 - $35"}
+},
+{
+  "id":"MTR_FS_047",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor susah hidup setelah isi bensin",
+        "bau bensin dari tangki"
+      ],
+      "problem":"EVAP atau charcoal canister mengalami penyumbatan sehingga ventilasi tangki terganggu.",
+      "action":"Jangan mengisi tangki hingga terlalu penuh.",
+      "garage_tip":"Sampaikan: 'Mohon cek jalur EVAP dan charcoal canister.'"
+    },
+    "en":{
+      "symptoms":[
+        "hard start after refueling",
+        "fuel smell near tank"
+      ],
+      "problem":"EVAP charcoal canister is clogged.",
+      "action":"Avoid overfilling the fuel tank.",
+      "garage_tip":"Say: 'Please inspect the EVAP system.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp500.000","usd":"$10 - $35"}
+},
+{
+  "id":"MTR_FS_048",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor boros bensin setelah servis",
+        "lampu check engine kadang menyala"
+      ],
+      "problem":"Sensor O2 lambat merespons sehingga ECU memperkaya campuran bahan bakar.",
+      "action":"Gunakan bahan bakar sesuai oktan rekomendasi pabrikan.",
+      "garage_tip":"Sampaikan: 'Mohon cek performa sensor O2 menggunakan scanner.'"
+    },
+    "en":{
+      "symptoms":[
+        "poor fuel economy",
+        "intermittent check engine light"
+      ],
+      "problem":"Oxygen sensor response is slow.",
+      "action":"Use recommended fuel octane.",
+      "garage_tip":"Say: 'Please test the oxygen sensor response.'"
+    }
+  },
+  "cost":{"idr":"Rp300.000 - Rp900.000","usd":"$20 - $60"}
+},
+{
+  "id":"MTR_FS_049",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor sering mati sendiri saat jalan",
+        "fuel pump kadang tidak bunyi"
+      ],
+      "problem":"Relay fuel pump mulai aus sehingga suplai listrik ke pompa terputus sesekali.",
+      "action":"Hindari perjalanan jauh sebelum diperbaiki.",
+      "garage_tip":"Sampaikan: 'Mohon cek relay fuel pump dan jalur kelistrikannya.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine randomly stalls",
+        "fuel pump sometimes silent"
+      ],
+      "problem":"Fuel pump relay has intermittent contact failure.",
+      "action":"Avoid long trips.",
+      "garage_tip":"Say: 'Please inspect the fuel pump relay and wiring.'"
+    }
+  },
+  "cost":{"idr":"Rp75.000 - Rp250.000","usd":"$5 - $17"}
+},
+{
+  "id":"MTR_FS_050",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"DANGER",
+  "driveability":"STOP",
+  "language":{
+    "id":{
+      "symptoms":[
+        "selang bensin bocor",
+        "bensin menetes dekat mesin",
+        "bau bensin sangat menyengat"
+      ],
+      "problem":"Selang bahan bakar retak atau longgar sehingga terjadi kebocoran yang berisiko menyebabkan kebakaran.",
+      "action":"Matikan mesin segera dan jangan menyalakan kendaraan sampai kebocoran diperbaiki.",
+      "garage_tip":"Sampaikan: 'Mohon ganti selang bensin beserta clamp pengikatnya.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel hose leaking",
+        "gasoline dripping near engine",
+        "strong gasoline smell"
+      ],
+      "problem":"Fuel hose is cracked or loose, creating a serious fire hazard.",
+      "action":"Stop the engine immediately until repaired.",
+      "garage_tip":"Say: 'Please replace the fuel hose and clamps.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp250.000","usd":"$3 - $17"}
+}
+,
+{
+  "id":"MTR_FS_051",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor brebet saat mesin panas",
+        "tarikan hilang setelah jalan jauh"
+      ],
+      "problem":"Fuel pressure regulator mulai melemah sehingga tekanan bahan bakar tidak stabil saat suhu mesin meningkat.",
+      "action":"Kurangi beban mesin hingga sistem bahan bakar diperiksa.",
+      "garage_tip":"Sampaikan: 'Mohon ukur tekanan fuel rail dan cek fuel pressure regulator.'"
+    },
+    "en":{
+      "symptoms":[
+        "hesitates when engine is hot",
+        "loses power after long ride"
+      ],
+      "problem":"Fuel pressure regulator cannot maintain stable fuel pressure.",
+      "action":"Reduce engine load until repaired.",
+      "garage_tip":"Say: 'Please measure fuel pressure and inspect the regulator.'"
+    }
+  },
+  "cost":{"idr":"Rp250.000 - Rp700.000","usd":"$17 - $47"}
+},
+{
+  "id":"MTR_FS_052",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor seperti kehabisan bensin padahal tangki penuh",
+        "mesin mati saat rpm tinggi"
+      ],
+      "problem":"Filter bensin tersumbat sehingga aliran bahan bakar menuju injector berkurang.",
+      "action":"Hindari memacu kendaraan dengan throttle penuh.",
+      "garage_tip":"Sampaikan: 'Mohon ganti fuel filter dan cek kebersihan tangki.'"
+    },
+    "en":{
+      "symptoms":[
+        "acts like running out of fuel",
+        "engine dies at high rpm"
+      ],
+      "problem":"Fuel filter is clogged.",
+      "action":"Avoid wide open throttle.",
+      "garage_tip":"Say: 'Please replace the fuel filter.'"
+    }
+  },
+  "cost":{"idr":"Rp75.000 - Rp300.000","usd":"$5 - $20"}
+},
+{
+  "id":"MTR_FS_053",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "bau bensin setelah mesin dimatikan",
+        "starter lama setelah parkir"
+      ],
+      "problem":"Injector bocor halus sehingga bensin menetes ke ruang bakar ketika mesin mati.",
+      "action":"Segera lakukan pemeriksaan injector.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan leak test injector.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel smell after shutdown",
+        "long crank after parking"
+      ],
+      "problem":"Fuel injector is leaking internally.",
+      "action":"Have the injector tested.",
+      "garage_tip":"Say: 'Please perform an injector leak test.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp500.000","usd":"$10 - $35"}
+},
+{
+  "id":"MTR_FS_054",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"INFO",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "tarikan kadang halus kadang berat",
+        "konsumsi bensin berubah ubah"
+      ],
+      "problem":"ECU sedang melakukan koreksi fuel trim akibat pembacaan sensor yang mulai menyimpang.",
+      "action":"Lakukan scanning ECU sebelum mengganti komponen.",
+      "garage_tip":"Sampaikan: 'Mohon baca nilai short dan long fuel trim ECU.'"
+    },
+    "en":{
+      "symptoms":[
+        "inconsistent acceleration",
+        "fuel economy fluctuates"
+      ],
+      "problem":"ECU fuel trim is compensating for incorrect sensor readings.",
+      "action":"Scan ECU before replacing parts.",
+      "garage_tip":"Say: 'Please check ECU fuel trim values.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp200.000","usd":"$3 - $13"}
+},
+{
+  "id":"MTR_FS_055",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor susah hidup saat pagi dingin",
+        "rpm tinggi saat mesin dingin"
+      ],
+      "problem":"Sensor Intake Air Temperature (IAT) membaca suhu udara tidak akurat.",
+      "action":"Gunakan kendaraan seperlunya sampai sensor diperiksa.",
+      "garage_tip":"Sampaikan: 'Mohon cek sensor IAT melalui scanner ECU.'"
+    },
+    "en":{
+      "symptoms":[
+        "hard cold start",
+        "high idle when cold"
+      ],
+      "problem":"Intake Air Temperature sensor is inaccurate.",
+      "action":"Inspect the sensor.",
+      "garage_tip":"Say: 'Please test the IAT sensor.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp450.000","usd":"$10 - $30"}
+},
+{
+  "id":"MTR_FS_056",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor tersendat setelah isi bensin",
+        "mesin pincang setelah mengisi BBM"
+      ],
+      "problem":"Bahan bakar tercampur air sehingga proses pembakaran terganggu.",
+      "action":"Kurangi penggunaan kendaraan dan kuras tangki sesegera mungkin.",
+      "garage_tip":"Sampaikan: 'Mohon kuras tangki dan bersihkan sistem bahan bakar karena ada indikasi air.'"
+    },
+    "en":{
+      "symptoms":[
+        "hesitation after refueling",
+        "engine misfires after filling up"
+      ],
+      "problem":"Fuel is contaminated with water.",
+      "action":"Drain the fuel system.",
+      "garage_tip":"Say: 'Please drain the tank and clean the fuel system.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp400.000","usd":"$10 - $27"}
+},
+{
+  "id":"MTR_FS_057",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor ngempos setelah isi bensin eceran",
+        "mesin kasar setelah isi bensin"
+      ],
+      "problem":"Bahan bakar terkontaminasi kotoran atau kualitas oktan tidak sesuai spesifikasi.",
+      "action":"Hindari penggunaan bahan bakar dari sumber yang tidak terpercaya.",
+      "garage_tip":"Sampaikan: 'Mohon bersihkan injector dan kuras tangki.'"
+    },
+    "en":{
+      "symptoms":[
+        "poor performance after roadside fuel",
+        "rough engine after refueling"
+      ],
+      "problem":"Fuel quality is poor or contaminated.",
+      "action":"Use trusted fuel stations.",
+      "garage_tip":"Say: 'Please clean the injectors and drain the tank.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp500.000","usd":"$10 - $35"}
+},
+{
+  "id":"MTR_FS_058",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"INFO",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "bau bensin di sekitar tangki",
+        "tutup tangki mendesis"
+      ],
+      "problem":"Saluran ventilasi tangki mulai tersumbat sehingga tekanan dalam tangki meningkat.",
+      "action":"Periksa ventilasi tangki secara berkala.",
+      "garage_tip":"Sampaikan: 'Mohon bersihkan jalur breather tangki.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel smell near tank",
+        "hissing fuel cap"
+      ],
+      "problem":"Fuel tank breather is partially blocked.",
+      "action":"Inspect the tank vent.",
+      "garage_tip":"Say: 'Please clean the tank breather line.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp150.000","usd":"$3 - $10"}
+},
+{
+  "id":"MTR_FS_059",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor mati saat bensin tinggal sedikit",
+        "fuel pump berisik"
+      ],
+      "problem":"Fuel pump sering bekerja dalam kondisi tangki hampir kosong sehingga mulai aus.",
+      "action":"Usahakan isi ulang bensin sebelum indikator mencapai level minimum.",
+      "garage_tip":"Sampaikan: 'Mohon cek suara dan tekanan fuel pump.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine stalls on low fuel",
+        "noisy fuel pump"
+      ],
+      "problem":"Fuel pump is wearing due to repeated low-fuel operation.",
+      "action":"Avoid running the tank nearly empty.",
+      "garage_tip":"Say: 'Please inspect the fuel pump pressure and noise.'"
+    }
+  },
+  "cost":{"idr":"Rp300.000 - Rp900.000","usd":"$20 - $60"}
+},
+{
+  "id":"MTR_FS_060",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"DANGER",
+  "driveability":"STOP",
+  "language":{
+    "id":{
+      "symptoms":[
+        "bensin bocor dari tangki",
+        "tangki retak",
+        "bau bensin sangat kuat"
+      ],
+      "problem":"Tangki bahan bakar mengalami kebocoran akibat korosi atau benturan sehingga meningkatkan risiko kebakaran.",
+      "action":"Jangan menghidupkan mesin. Jauhkan kendaraan dari api atau percikan listrik.",
+      "garage_tip":"Sampaikan: 'Mohon periksa tangki, lakukan pengelasan atau penggantian sesuai tingkat kerusakan.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel tank leaking",
+        "cracked fuel tank",
+        "strong gasoline odor"
+      ],
+      "problem":"Fuel tank is leaking because of corrosion or impact damage.",
+      "action":"Do not start the engine. Keep away from flames.",
+      "garage_tip":"Say: 'Please inspect the tank for repair or replacement.'"
+    }
+  },
+  "cost":{"idr":"Rp300.000 - Rp1.500.000","usd":"$20 - $100"}
+}
+  ,
+{
+  "id":"MTR_FS_061",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor langsam normal tapi tidak kuat digas",
+        "tenaga hilang mendadak saat akselerasi"
+      ],
+      "problem":"Tekanan fuel rail turun akibat kebocoran internal pada sistem bahan bakar.",
+      "action":"Hindari akselerasi penuh sampai tekanan bahan bakar diperiksa.",
+      "garage_tip":"Sampaikan: 'Mohon ukur tekanan fuel rail ketika idle dan saat akselerasi.'"
+    },
+    "en":{
+      "symptoms":[
+        "idles fine but loses power",
+        "sudden power loss during acceleration"
+      ],
+      "problem":"Fuel rail pressure drops due to an internal leak.",
+      "action":"Avoid full throttle.",
+      "garage_tip":"Say: 'Please measure fuel rail pressure during idle and acceleration.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp500.000","usd":"$10 - $35"}
+},
+{
+  "id":"MTR_FS_062",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "check engine menyala",
+        "satu silinder tidak bekerja"
+      ],
+      "problem":"Kumparan injector (injector coil) mengalami putus atau short circuit.",
+      "action":"Jangan memaksakan kendaraan dipakai jarak jauh.",
+      "garage_tip":"Sampaikan: 'Mohon ukur resistansi injector menggunakan multimeter.'"
+    },
+    "en":{
+      "symptoms":[
+        "check engine light",
+        "misfiring cylinder"
+      ],
+      "problem":"Injector coil is open or shorted.",
+      "action":"Avoid long trips.",
+      "garage_tip":"Say: 'Please measure injector coil resistance.'"
+    }
+  },
+  "cost":{"idr":"Rp250.000 - Rp800.000","usd":"$17 - $55"}
+},
+{
+  "id":"MTR_FS_063",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "bau bensin dekat injector",
+        "rembes bensin di throttle body"
+      ],
+      "problem":"O-ring injector mengeras sehingga terjadi kebocoran bahan bakar.",
+      "action":"Segera lakukan penggantian seal.",
+      "garage_tip":"Sampaikan: 'Mohon ganti O-ring injector baru.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel smell near injector",
+        "fuel leaking around throttle body"
+      ],
+      "problem":"Injector O-ring is leaking.",
+      "action":"Replace the seal immediately.",
+      "garage_tip":"Say: 'Please replace the injector O-ring.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp150.000","usd":"$3 - $10"}
+},
+{
+  "id":"MTR_FS_064",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor lama hidup setelah parkir semalaman",
+        "starter panjang"
+      ],
+      "problem":"Check valve fuel pump bocor sehingga tekanan bahan bakar hilang setelah mesin dimatikan.",
+      "action":"Lakukan pemeriksaan fuel pump.",
+      "garage_tip":"Sampaikan: 'Mohon cek check valve fuel pump.'"
+    },
+    "en":{
+      "symptoms":[
+        "long crank after overnight parking",
+        "hard start"
+      ],
+      "problem":"Fuel pump check valve is leaking.",
+      "action":"Inspect the fuel pump.",
+      "garage_tip":"Say: 'Please inspect the fuel pump check valve.'"
+    }
+  },
+  "cost":{"idr":"Rp250.000 - Rp900.000","usd":"$17 - $60"}
+},
+{
+  "id":"MTR_FS_065",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"INFO",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor susah hidup setelah lama dijemur",
+        "starter lama saat cuaca panas"
+      ],
+      "problem":"Terjadi vapor lock akibat temperatur tinggi pada jalur bahan bakar.",
+      "action":"Biarkan mesin dingin beberapa menit sebelum distarter ulang.",
+      "garage_tip":"Sampaikan: 'Mohon cek jalur bahan bakar dan pelindung panas.'"
+    },
+    "en":{
+      "symptoms":[
+        "hard hot restart",
+        "starts poorly after sitting in the sun"
+      ],
+      "problem":"Fuel vapor lock due to excessive heat.",
+      "action":"Allow the engine to cool.",
+      "garage_tip":"Say: 'Please inspect the fuel line heat protection.'"
+    }
+  },
+  "cost":{"idr":"Rp50.000 - Rp200.000","usd":"$3 - $13"}
+},
+{
+  "id":"MTR_FS_066",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "indikator bensin tidak akurat",
+        "jarum bensin naik turun sendiri"
+      ],
+      "problem":"Fuel level sender mulai aus atau pelampung macet.",
+      "action":"Gunakan odometer sebagai acuan sementara.",
+      "garage_tip":"Sampaikan: 'Mohon cek fuel sender di dalam tangki.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel gauge inaccurate",
+        "fuel gauge fluctuates"
+      ],
+      "problem":"Fuel sender unit is faulty.",
+      "action":"Track mileage until repaired.",
+      "garage_tip":"Say: 'Please inspect the fuel sender assembly.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp450.000","usd":"$10 - $30"}
+},
+{
+  "id":"MTR_FS_067",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "bensin rembes dari sambungan selang",
+        "bau bensin saat mesin hidup"
+      ],
+      "problem":"Quick connector fuel line tidak mengunci sempurna.",
+      "action":"Matikan mesin bila kebocoran semakin besar.",
+      "garage_tip":"Sampaikan: 'Mohon ganti quick connector fuel line.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel leaking from connector",
+        "fuel smell while running"
+      ],
+      "problem":"Quick fuel connector is not sealing properly.",
+      "action":"Stop the engine if leakage worsens.",
+      "garage_tip":"Say: 'Please replace the quick connector.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp350.000","usd":"$7 - $24"}
+},
+{
+  "id":"MTR_FS_068",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor sering mati saat jalan bergelombang",
+        "fuel pump kadang hidup kadang mati"
+      ],
+      "problem":"Konektor fuel pump longgar sehingga suplai listrik terputus sesaat.",
+      "action":"Hindari jalan rusak sebelum diperbaiki.",
+      "garage_tip":"Sampaikan: 'Mohon cek soket fuel pump dan kabelnya.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine stalls over bumps",
+        "fuel pump intermittent"
+      ],
+      "problem":"Loose electrical connector at the fuel pump.",
+      "action":"Avoid rough roads.",
+      "garage_tip":"Say: 'Please inspect the fuel pump connector.'"
+    }
+  },
+  "cost":{"idr":"Rp75.000 - Rp250.000","usd":"$5 - $17"}
+},
+{
+  "id":"MTR_FS_069",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor brebet terus walau injector sudah dibersihkan",
+        "tangki berkarat"
+      ],
+      "problem":"Karat dalam tangki terus menyumbat filter dan injector.",
+      "action":"Segera bersihkan atau lapisi ulang bagian dalam tangki.",
+      "garage_tip":"Sampaikan: 'Mohon flushing tangki dan cek seluruh sistem bahan bakar.'"
+    },
+    "en":{
+      "symptoms":[
+        "hesitation even after injector cleaning",
+        "rust inside fuel tank"
+      ],
+      "problem":"Rust contamination repeatedly clogs the fuel system.",
+      "action":"Clean or coat the inside of the tank.",
+      "garage_tip":"Say: 'Please flush the tank and fuel system.'"
+    }
+  },
+  "cost":{"idr":"Rp300.000 - Rp900.000","usd":"$20 - $60"}
+},
+{
+  "id":"MTR_FS_070",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"DANGER",
+  "driveability":"STOP",
+  "language":{
+    "id":{
+      "symptoms":[
+        "bensin menyemprot dari selang",
+        "kebocoran besar saat kontak ON"
+      ],
+      "problem":"Selang tekanan tinggi fuel injection pecah sehingga bensin bertekanan tinggi keluar dan berisiko memicu kebakaran.",
+      "action":"Jangan menghidupkan mesin. Matikan kontak dan jauhkan kendaraan dari sumber api.",
+      "garage_tip":"Sampaikan: 'Mohon ganti selang fuel injection tekanan tinggi beserta clamp sesuai spesifikasi.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel spraying from hose",
+        "major leak with ignition on"
+      ],
+      "problem":"High-pressure fuel hose has ruptured, creating a severe fire hazard.",
+      "action":"Do not start the engine. Turn the ignition off immediately.",
+      "garage_tip":"Say: 'Please replace the high-pressure fuel hose and clamps.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp600.000","usd":"$10 - $40"}
+}
+
+
+
+
+  ,
+{
+  "id":"MTR_FS_071",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor pincang satu silinder",
+        "injektor tidak bunyi"
+      ],
+      "problem":"Injector macet tertutup sehingga tidak ada bahan bakar yang masuk ke ruang bakar.",
+      "action":"Hindari memaksa kendaraan berjalan jauh.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan injector balance test dan bersihkan injector.'"
+    },
+    "en":{
+      "symptoms":[
+        "one cylinder misfiring",
+        "injector not clicking"
+      ],
+      "problem":"Injector is stuck closed.",
+      "action":"Avoid extended riding.",
+      "garage_tip":"Say: 'Please perform an injector balance test.'"
+    }
+  },
+  "cost":{"idr":"Rp150.000 - Rp500.000","usd":"$10 - $35"}
+},
+{
+  "id":"MTR_FS_072",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"DANGER",
+  "driveability":"STOP",
+  "language":{
+    "id":{
+      "symptoms":[
+        "knalpot hitam pekat",
+        "bensin sangat boros",
+        "mesin banjir"
+      ],
+      "problem":"Injector macet terbuka sehingga bahan bakar terus mengalir ke ruang bakar.",
+      "action":"Matikan mesin untuk mencegah kerusakan piston dan catalytic converter.",
+      "garage_tip":"Sampaikan: 'Mohon ganti atau servis injector yang macet terbuka.'"
+    },
+    "en":{
+      "symptoms":[
+        "black exhaust smoke",
+        "extreme fuel consumption",
+        "engine flooding"
+      ],
+      "problem":"Injector is stuck open.",
+      "action":"Stop the engine immediately.",
+      "garage_tip":"Say: 'Please replace or service the leaking injector.'"
+    }
+  },
+  "cost":{"idr":"Rp250.000 - Rp700.000","usd":"$17 - $47"}
+},
+{
+  "id":"MTR_FS_073",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "fuel pump sangat berisik",
+        "suara dengung keras dari tangki"
+      ],
+      "problem":"Bearing motor fuel pump mulai aus sehingga pompa bekerja lebih keras.",
+      "action":"Segera periksa tekanan fuel pump sebelum pompa mati total.",
+      "garage_tip":"Sampaikan: 'Mohon cek tekanan dan kondisi fuel pump.'"
+    },
+    "en":{
+      "symptoms":[
+        "loud fuel pump noise",
+        "buzzing from fuel tank"
+      ],
+      "problem":"Fuel pump motor bearings are worn.",
+      "action":"Inspect fuel pressure soon.",
+      "garage_tip":"Say: 'Please inspect the fuel pump.'"
+    }
+  },
+  "cost":{"idr":"Rp300.000 - Rp900.000","usd":"$20 - $60"}
+},
+{
+  "id":"MTR_FS_074",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"INFO",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "indikator bensin selalu penuh",
+        "jarum bensin tidak turun"
+      ],
+      "problem":"Pelampung fuel sender macet pada posisi penuh.",
+      "action":"Gunakan odometer sebagai acuan sementara.",
+      "garage_tip":"Sampaikan: 'Mohon cek mekanisme fuel sender.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel gauge always full",
+        "fuel gauge stuck"
+      ],
+      "problem":"Fuel sender float is stuck.",
+      "action":"Track mileage until repaired.",
+      "garage_tip":"Say: 'Please inspect the fuel sender.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp350.000","usd":"$7 - $24"}
+},
+{
+  "id":"MTR_FS_075",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"NORMAL",
+  "language":{
+    "id":{
+      "symptoms":[
+        "indikator bensin selalu kosong",
+        "lampu bensin terus menyala"
+      ],
+      "problem":"Fuel level sensor mengalami kerusakan sehingga pembacaan volume bensin salah.",
+      "action":"Isi bensin berdasarkan jarak tempuh.",
+      "garage_tip":"Sampaikan: 'Mohon cek fuel level sensor dan kabelnya.'"
+    },
+    "en":{
+      "symptoms":[
+        "fuel gauge always empty",
+        "low fuel warning always on"
+      ],
+      "problem":"Fuel level sensor has failed.",
+      "action":"Refuel based on mileage.",
+      "garage_tip":"Say: 'Please inspect the fuel level sensor.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp400.000","usd":"$7 - $27"}
+},
+{
+  "id":"MTR_FS_076",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor kehilangan tenaga sesekali",
+        "check engine muncul hilang"
+      ],
+      "problem":"ECU masuk mode limp akibat pembacaan sistem bahan bakar tidak normal.",
+      "action":"Kurangi kecepatan dan lakukan scanning ECU.",
+      "garage_tip":"Sampaikan: 'Mohon scan ECU untuk membaca DTC sistem injeksi.'"
+    },
+    "en":{
+      "symptoms":[
+        "intermittent power loss",
+        "check engine comes and goes"
+      ],
+      "problem":"ECU entered limp mode due to fuel system faults.",
+      "action":"Drive slowly and scan ECU.",
+      "garage_tip":"Say: 'Please scan ECU for DTC codes.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp300.000","usd":"$7 - $20"}
+},
+{
+  "id":"MTR_FS_077",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor hidup tapi sangat lemah",
+        "injektor sudah bersih tetap brebet"
+      ],
+      "problem":"Pola semprotan injector berubah sehingga atomisasi bahan bakar tidak optimal.",
+      "action":"Lakukan pengujian injector menggunakan injector tester.",
+      "garage_tip":"Sampaikan: 'Mohon cek spray pattern injector.'"
+    },
+    "en":{
+      "symptoms":[
+        "weak engine performance",
+        "injector cleaned but still hesitates"
+      ],
+      "problem":"Injector spray pattern is distorted.",
+      "action":"Perform injector spray testing.",
+      "garage_tip":"Say: 'Please inspect injector spray pattern.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp350.000","usd":"$7 - $24"}
+},
+{
+  "id":"MTR_FS_078",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor tersendat setelah lama dipakai",
+        "fuel pump panas"
+      ],
+      "problem":"Fuel pump mengalami overheating akibat pendinginan bahan bakar yang kurang.",
+      "action":"Hindari mengoperasikan motor dengan tangki hampir kosong.",
+      "garage_tip":"Sampaikan: 'Mohon cek suhu kerja dan tekanan fuel pump.'"
+    },
+    "en":{
+      "symptoms":[
+        "hesitation after long ride",
+        "hot fuel pump"
+      ],
+      "problem":"Fuel pump is overheating.",
+      "action":"Keep sufficient fuel in the tank.",
+      "garage_tip":"Say: 'Please inspect the fuel pump temperature and pressure.'"
+    }
+  },
+  "cost":{"idr":"Rp250.000 - Rp800.000","usd":"$17 - $55"}
+},
+{
+  "id":"MTR_FS_079",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"WARNING",
+  "driveability":"LIMITED",
+  "language":{
+    "id":{
+      "symptoms":[
+        "selang bensin terlihat kempes",
+        "mesin kekurangan bensin saat rpm tinggi"
+      ],
+      "problem":"Lapisan dalam selang bahan bakar mengelupas sehingga aliran bensin terhambat.",
+      "action":"Segera ganti selang bahan bakar.",
+      "garage_tip":"Sampaikan: 'Mohon ganti seluruh fuel hose sesuai spesifikasi pabrikan.'"
+    },
+    "en":{
+      "symptoms":[
+        "collapsed fuel hose",
+        "fuel starvation at high rpm"
+      ],
+      "problem":"Fuel hose inner lining has collapsed.",
+      "action":"Replace the fuel hose.",
+      "garage_tip":"Say: 'Please replace the complete fuel hose.'"
+    }
+  },
+  "cost":{"idr":"Rp100.000 - Rp300.000","usd":"$7 - $20"}
+},
+{
+  "id":"MTR_FS_080",
+  "vehicle":"motorcycle",
+  "system":"fuel_system",
+  "severity":"DANGER",
+  "driveability":"STOP",
+  "language":{
+    "id":{
+      "symptoms":[
+        "motor mati total karena tidak ada bensin masuk",
+        "fuel pump hidup tetapi injector tidak menyemprot"
+      ],
+      "problem":"Terjadi kegagalan total sistem suplai bahan bakar akibat kombinasi kerusakan fuel pump, injector, atau ECU sehingga mesin tidak menerima bahan bakar sama sekali.",
+      "action":"Jangan memaksa starter terus-menerus. Kendaraan memerlukan diagnosis menyeluruh menggunakan scanner dan alat ukur tekanan bahan bakar.",
+      "garage_tip":"Sampaikan: 'Mohon lakukan diagnosis lengkap sistem fuel injection mulai dari ECU, relay, fuel pump, fuel pressure, injector, hingga sensor-sensor terkait.'"
+    },
+    "en":{
+      "symptoms":[
+        "engine will not start due to no fuel delivery",
+        "fuel pump runs but injector does not spray"
+      ],
+      "problem":"Complete fuel delivery failure involving the fuel pump, injector, ECU, or related components.",
+      "action":"Do not continue cranking the engine. A complete fuel system diagnosis is required.",
+      "garage_tip":"Say: 'Please perform a full fuel injection system diagnosis including ECU, relay, pump, pressure, injectors, and sensors.'"
+    }
+  },
+  "cost":{"idr":"Rp300.000 - Rp2.000.000","usd":"$20 - $135"}
+}
 ]
