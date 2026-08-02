@@ -1,0 +1,181 @@
+[
+    {
+        "id":"COMP_BRAKE_PAD",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"BRAKE",
+        "name_id":"Kampas Rem",
+        "name_en":"Brake Pad",
+        "aliases":[
+            "kampas rem",
+            "brake pad"
+        ]
+    },
+
+    {
+        "id":"COMP_BRAKE_DISC",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"BRAKE",
+        "name_id":"Cakram Rem",
+        "name_en":"Brake Disc",
+        "aliases":[
+            "cakram",
+            "disc brake",
+            "rotor"
+        ]
+    },
+
+    {
+        "id":"COMP_BRAKE_DRUM",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"BRAKE",
+        "name_id":"Tromol",
+        "name_en":"Brake Drum",
+        "aliases":[
+            "tromol",
+            "brake drum"
+        ]
+    },
+
+    {
+        "id":"COMP_BRAKE_SHOE",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"BRAKE",
+        "name_id":"Sepatu Rem",
+        "name_en":"Brake Shoe",
+        "aliases":[
+            "sepatu rem",
+            "brake shoe"
+        ]
+    },
+
+    {
+        "id":"COMP_BRAKE_CALIPER",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"BRAKE",
+        "name_id":"Kaliper Rem",
+        "name_en":"Brake Caliper",
+        "aliases":[
+            "kaliper",
+            "caliper"
+        ]
+    },
+
+    {
+        "id":"COMP_MASTER_CYLINDER",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"BRAKE",
+        "name_id":"Master Rem",
+        "name_en":"Master Cylinder",
+        "aliases":[
+            "master rem",
+            "master cylinder"
+        ]
+    },
+
+    {
+        "id":"COMP_BRAKE_BOOSTER",
+        "vehicle":["CAR"],
+        "system":"BRAKE",
+        "name_id":"Brake Booster",
+        "name_en":"Brake Booster",
+        "aliases":[
+            "booster rem",
+            "vacuum booster"
+        ]
+    },
+
+    {
+        "id":"COMP_BRAKE_HOSE",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"BRAKE",
+        "name_id":"Selang Rem",
+        "name_en":"Brake Hose",
+        "aliases":[
+            "selang rem",
+            "brake hose"
+        ]
+    },
+
+    {
+        "id":"COMP_BRAKE_PIPE",
+        "vehicle":["CAR"],
+        "system":"BRAKE",
+        "name_id":"Pipa Rem",
+        "name_en":"Brake Pipe",
+        "aliases":[
+            "pipa rem",
+            "brake line"
+        ]
+    },
+
+    {
+        "id":"COMP_BRAKE_FLUID",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"BRAKE",
+        "name_id":"Minyak Rem",
+        "name_en":"Brake Fluid",
+        "aliases":[
+            "minyak rem",
+            "brake fluid"
+        ]
+    },
+
+    {
+        "id":"COMP_ABS_MODULE",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"BRAKE",
+        "name_id":"Modul ABS",
+        "name_en":"ABS Module",
+        "aliases":[
+            "abs",
+            "abs module"
+        ]
+    },
+
+    {
+        "id":"COMP_ABS_SENSOR",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"BRAKE",
+        "name_id":"Sensor ABS",
+        "name_en":"ABS Sensor",
+        "aliases":[
+            "sensor abs",
+            "wheel speed sensor"
+        ]
+    },
+
+    {
+        "id":"COMP_PARKING_BRAKE",
+        "vehicle":["CAR"],
+        "system":"BRAKE",
+        "name_id":"Rem Parkir",
+        "name_en":"Parking Brake",
+        "aliases":[
+            "rem tangan",
+            "parking brake"
+        ]
+    },
+
+    {
+        "id":"COMP_PARKING_BRAKE_CABLE",
+        "vehicle":["CAR"],
+        "system":"BRAKE",
+        "name_id":"Kabel Rem Parkir",
+        "name_en":"Parking Brake Cable",
+        "aliases":[
+            "kabel rem tangan",
+            "parking brake cable"
+        ]
+    },
+
+    {
+        "id":"COMP_PROPORTIONING_VALVE",
+        "vehicle":["CAR"],
+        "system":"BRAKE",
+        "name_id":"Katup Proporsional",
+        "name_en":"Proportioning Valve",
+        "aliases":[
+            "proportioning valve"
+        ]
+    }
+]
