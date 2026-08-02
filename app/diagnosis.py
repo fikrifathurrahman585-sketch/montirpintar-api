@@ -15,18 +15,15 @@ def analyze_symptom(
     user_input: str,
     forced_lang: str = "id"
 ):
-    """
-    Diagnosis Engine V2
-    """
 
-    if forced_lang in ["id", "en"]:
+    if forced_lang in ("id", "en"):
         lang = forced_lang
     else:
         lang = detect_language(user_input)
 
     normalized = normalize_slang(user_input)
 
-    best_match, confidence = semantic_search(
+    best_match, score = semantic_search(
         normalized,
         None,
         lang
@@ -34,6 +31,6 @@ def analyze_symptom(
 
     return format_response(
         best_match,
-        confidence,
+        score,
         lang
     )
