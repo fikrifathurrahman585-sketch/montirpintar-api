@@ -1,0 +1,173 @@
+[
+    {
+        "id":"COMP_FUEL_TANK",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"FUEL",
+        "category":"Fuel System",
+        "name_id":"Tangki Bahan Bakar",
+        "name_en":"Fuel Tank",
+        "aliases":["tangki","fuel tank"],
+        "common_symptoms":["bocor bensin","bau bensin"],
+        "inspectable_by_vision":true,
+        "serviceable":false,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_FUEL_PUMP",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"FUEL",
+        "category":"Fuel System",
+        "name_id":"Pompa Bahan Bakar",
+        "name_en":"Fuel Pump",
+        "aliases":["fuel pump","pompa bensin"],
+        "common_symptoms":[
+            "mesin susah hidup",
+            "ngempos",
+            "kehilangan tenaga",
+            "mesin mati mendadak"
+        ],
+        "inspectable_by_vision":false,
+        "serviceable":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_FUEL_FILTER",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"FUEL",
+        "category":"Fuel System",
+        "name_id":"Filter Bahan Bakar",
+        "name_en":"Fuel Filter",
+        "aliases":["filter bensin","fuel filter"],
+        "common_symptoms":[
+            "brebet",
+            "ngempos",
+            "mesin tersendat"
+        ],
+        "inspectable_by_vision":false,
+        "serviceable":true,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_FUEL_INJECTOR",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"FUEL",
+        "category":"Fuel System",
+        "name_id":"Injector",
+        "name_en":"Fuel Injector",
+        "aliases":["injector","injektor"],
+        "common_symptoms":[
+            "idle tidak stabil",
+            "brebet",
+            "boros bbm",
+            "mesin pincang"
+        ],
+        "inspectable_by_vision":false,
+        "serviceable":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_CARBURETOR",
+        "vehicle":["MOTORCYCLE"],
+        "system":"FUEL",
+        "category":"Fuel System",
+        "name_id":"Karburator",
+        "name_en":"Carburetor",
+        "aliases":["karbu","karburator"],
+        "common_symptoms":[
+            "banjir",
+            "brebet",
+            "susah langsam"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_THROTTLE_BODY",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"FUEL",
+        "category":"Fuel System",
+        "name_id":"Throttle Body",
+        "name_en":"Throttle Body",
+        "aliases":["throttle body"],
+        "common_symptoms":[
+            "idle naik turun",
+            "rpm tidak stabil"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_AIR_FILTER",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"FUEL",
+        "category":"Fuel System",
+        "name_id":"Filter Udara",
+        "name_en":"Air Filter",
+        "aliases":["filter udara"],
+        "common_symptoms":[
+            "boros",
+            "tarikan berat"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_FUEL_PRESSURE_REGULATOR",
+        "vehicle":["CAR"],
+        "system":"FUEL",
+        "category":"Fuel System",
+        "name_id":"Fuel Pressure Regulator",
+        "name_en":"Fuel Pressure Regulator",
+        "aliases":["fuel pressure regulator"],
+        "common_symptoms":[
+            "boros bbm",
+            "brebet"
+        ],
+        "inspectable_by_vision":false,
+        "serviceable":false,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_FUEL_RAIL",
+        "vehicle":["CAR"],
+        "system":"FUEL",
+        "category":"Fuel System",
+        "name_id":"Fuel Rail",
+        "name_en":"Fuel Rail",
+        "aliases":["fuel rail"],
+        "common_symptoms":[
+            "kebocoran bensin"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":false,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_EVAP_CANISTER",
+        "vehicle":["CAR"],
+        "system":"FUEL",
+        "category":"Fuel System",
+        "name_id":"EVAP Canister",
+        "name_en":"EVAP Canister",
+        "aliases":["charcoal canister","evap"],
+        "common_symptoms":[
+            "bau bensin",
+            "check engine"
+        ],
+        "inspectable_by_vision":false,
+        "serviceable":false,
+        "critical":false
+    }
+]
