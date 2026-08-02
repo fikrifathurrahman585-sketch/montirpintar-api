@@ -1,18 +1,12 @@
 from app.matcher import match_symptoms
+from app.scorer import calculate_confidence
 
 
 def semantic_search(
-    user_input: str,
+    user_input,
     database=None,
-    lang: str = "id"
+    lang="id"
 ):
-    """
-    Search Engine V2
-
-    Return:
-        best_match,
-        confidence
-    """
 
     matches = match_symptoms(user_input)
 
@@ -21,10 +15,8 @@ def semantic_search(
 
     best = matches[0]
 
-    symptom = best["symptom"]
+    confidence = calculate_confidence(
+        best["score"]
+    )
 
-    score = best["score"]
-
-    confidence = min(100, score * 12)
-
-    return symptom, confidence
+    return best["symptom"], confidence
