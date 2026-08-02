@@ -1,8 +1,28 @@
-[
-    {
-        "code":"FAULT_0001",
-        "component":"ENG_VALVE_COVER_GASKET",
-        "severity":"WARNING",
-        "driveability":"NORMAL"
-    }
-]
+{
+    "id":"FAULT_MAIN_BEARING_WORN",
+
+    "component":"COMP_MAIN_BEARING",
+
+    "vehicle":[
+        "CAR",
+        "MOTORCYCLE"
+    ],
+
+    "system":"ENGINE",
+
+    "severity":"DANGER",
+
+    "driveability":"STOP",
+
+    "confidence":99,
+
+    "repair":"REPAIR_ENGINE_OVERHAUL",
+
+    "cost":"COST_ENGINE_OVERHAUL",
+
+    "symptoms":[
+        "SYM_ENGINE_KNOCK",
+        "SYM_LOW_OIL_PRESSURE",
+        "SYM_METAL_SOUND"
+    ]
+}
