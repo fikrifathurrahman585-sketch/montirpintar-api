@@ -1,14 +1,167 @@
 [
-    {
-        "code":"ENG_VALVE_COVER_GASKET",
-        "id":"Gasket Tutup Klep",
-        "en":"Valve Cover Gasket",
-        "category":"Engine"
-    },
-    {
-        "code":"ENG_REAR_MAIN_SEAL",
-        "id":"Seal Oli Belakang Mesin",
-        "en":"Rear Main Seal",
-        "category":"Engine"
-    }
+  {
+    "id": "COMP_ENGINE_BLOCK",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Blok Mesin",
+    "name_en": "Engine Block",
+    "aliases": [
+      "blok mesin",
+      "engine block"
+    ]
+  },
+  {
+    "id": "COMP_CYLINDER_HEAD",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Kepala Silinder",
+    "name_en": "Cylinder Head",
+    "aliases": [
+      "head",
+      "head silinder",
+      "cylinder head"
+    ]
+  },
+  {
+    "id": "COMP_PISTON",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Piston",
+    "name_en": "Piston",
+    "aliases": [
+      "piston",
+      "seher"
+    ]
+  },
+  {
+    "id": "COMP_PISTON_RING",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Ring Piston",
+    "name_en": "Piston Ring",
+    "aliases": [
+      "ring piston",
+      "ring seher"
+    ]
+  },
+  {
+    "id": "COMP_CONNECTING_ROD",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Connecting Rod",
+    "name_en": "Connecting Rod",
+    "aliases": [
+      "stang piston",
+      "connecting rod"
+    ]
+  },
+  {
+    "id": "COMP_CRANKSHAFT",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Kruk As",
+    "name_en": "Crankshaft",
+    "aliases": [
+      "kruk as",
+      "crankshaft"
+    ]
+  },
+  {
+    "id": "COMP_MAIN_BEARING",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Metal Duduk",
+    "name_en": "Main Bearing",
+    "aliases": [
+      "metal duduk",
+      "main bearing"
+    ]
+  },
+  {
+    "id": "COMP_ROD_BEARING",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Metal Jalan",
+    "name_en": "Rod Bearing",
+    "aliases": [
+      "metal jalan",
+      "rod bearing"
+    ]
+  },
+  {
+    "id": "COMP_CAMSHAFT",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Noken As",
+    "name_en": "Camshaft",
+    "aliases": [
+      "noken",
+      "camshaft"
+    ]
+  },
+  {
+    "id": "COMP_VALVE",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Klep",
+    "name_en": "Valve",
+    "aliases": [
+      "klep",
+      "valve"
+    ]
+  },
+  {
+    "id": "COMP_TIMING_CHAIN",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Rantai Timing",
+    "name_en": "Timing Chain",
+    "aliases": [
+      "rantai keteng",
+      "timing chain"
+    ]
+  },
+  {
+    "id": "COMP_TIMING_BELT",
+    "vehicle": ["CAR"],
+    "system": "ENGINE",
+    "name_id": "Timing Belt",
+    "name_en": "Timing Belt",
+    "aliases": [
+      "timing belt"
+    ]
+  },
+  {
+    "id": "COMP_ENGINE_MOUNT",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Engine Mounting",
+    "name_en": "Engine Mount",
+    "aliases": [
+      "engine mounting",
+      "dudukan mesin"
+    ]
+  },
+  {
+    "id": "COMP_OIL_PUMP",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Pompa Oli",
+    "name_en": "Oil Pump",
+    "aliases": [
+      "pompa oli",
+      "oil pump"
+    ]
+  },
+  {
+    "id": "COMP_OIL_FILTER",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Filter Oli",
+    "name_en": "Oil Filter",
+    "aliases": [
+      "filter oli",
+      "oil filter"
+    ]
+  }
 ]
