@@ -1,0 +1,170 @@
+[
+    {
+        "id":"COMP_FRONT_BUMPER",
+        "vehicle":["CAR"],
+        "system":"BODY",
+        "category":"Body",
+        "name_id":"Bumper Depan",
+        "name_en":"Front Bumper",
+        "aliases":[
+            "bumper depan"
+        ],
+        "common_symptoms":[
+            "retak",
+            "pecah"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_REAR_BUMPER",
+        "vehicle":["CAR"],
+        "system":"BODY",
+        "category":"Body",
+        "name_id":"Bumper Belakang",
+        "name_en":"Rear Bumper",
+        "aliases":[
+            "bumper belakang"
+        ],
+        "common_symptoms":[
+            "penyok"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_HOOD",
+        "vehicle":["CAR"],
+        "system":"BODY",
+        "category":"Body",
+        "name_id":"Kap Mesin",
+        "name_en":"Engine Hood",
+        "aliases":[
+            "kap mesin"
+        ],
+        "common_symptoms":[
+            "penyok"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_DOOR",
+        "vehicle":["CAR"],
+        "system":"BODY",
+        "category":"Body",
+        "name_id":"Pintu",
+        "name_en":"Door",
+        "aliases":[
+            "door",
+            "pintu"
+        ],
+        "common_symptoms":[
+            "susah ditutup",
+            "engsel rusak"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_WINDSHIELD",
+        "vehicle":["CAR"],
+        "system":"BODY",
+        "category":"Glass",
+        "name_id":"Kaca Depan",
+        "name_en":"Windshield",
+        "aliases":[
+            "windshield",
+            "kaca depan"
+        ],
+        "common_symptoms":[
+            "retak"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":false,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_HEADLIGHT",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"BODY",
+        "category":"Lighting",
+        "name_id":"Lampu Depan",
+        "name_en":"Headlight",
+        "aliases":[
+            "headlamp",
+            "lampu depan"
+        ],
+        "common_symptoms":[
+            "mati",
+            "pecah"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_TAILLIGHT",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"BODY",
+        "category":"Lighting",
+        "name_id":"Lampu Belakang",
+        "name_en":"Tail Light",
+        "aliases":[
+            "lampu belakang"
+        ],
+        "common_symptoms":[
+            "mati"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_SIDE_MIRROR",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"BODY",
+        "category":"Body",
+        "name_id":"Spion",
+        "name_en":"Side Mirror",
+        "aliases":[
+            "spion"
+        ],
+        "common_symptoms":[
+            "pecah",
+            "longgar"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_WIPER",
+        "vehicle":["CAR"],
+        "system":"BODY",
+        "category":"Body",
+        "name_id":"Wiper",
+        "name_en":"Wiper",
+        "aliases":[
+            "wiper"
+        ],
+        "common_symptoms":[
+            "tidak menyapu"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":false
+    }
+]
