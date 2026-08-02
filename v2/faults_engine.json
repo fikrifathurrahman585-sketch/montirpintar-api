@@ -23,3 +23,235 @@
         "SYM_ENGINE_DIRTY"
     ]
 }
+,
+{
+    "id":"FAULT_REAR_MAIN_SEAL_LEAK",
+
+    "component":"COMP_CRANKSHAFT",
+
+    "vehicle":["CAR"],
+
+    "system":"ENGINE",
+
+    "severity":"WARNING",
+
+    "driveability":"LIMITED",
+
+    "repair":"REPAIR_REPLACE_REAR_MAIN_SEAL",
+
+    "cost":"COST_REAR_MAIN_SEAL",
+
+    "symptoms":[
+        "SYM_ENGINE_OIL_LEAK",
+        "SYM_ENGINE_UNDERSIDE_OILY"
+    ]
+}
+,
+{
+    "id":"FAULT_OIL_FILTER_LEAK",
+
+    "component":"COMP_OIL_FILTER",
+
+    "vehicle":["CAR","MOTORCYCLE"],
+
+    "system":"ENGINE",
+
+    "severity":"WARNING",
+
+    "driveability":"LIMITED",
+
+    "repair":"REPAIR_REPLACE_OIL_FILTER",
+
+    "cost":"COST_OIL_FILTER",
+
+    "symptoms":[
+        "SYM_ENGINE_OIL_LEAK"
+    ]
+}
+,
+{
+    "id":"FAULT_OIL_PUMP_FAILURE",
+
+    "component":"COMP_OIL_PUMP",
+
+    "vehicle":["CAR","MOTORCYCLE"],
+
+    "system":"ENGINE",
+
+    "severity":"DANGER",
+
+    "driveability":"STOP",
+
+    "repair":"REPAIR_REPLACE_OIL_PUMP",
+
+    "cost":"COST_OIL_PUMP",
+
+    "symptoms":[
+        "SYM_LOW_OIL_PRESSURE",
+        "SYM_ENGINE_NOISE"
+    ]
+}
+,
+{
+    "id":"FAULT_TIMING_CHAIN_STRETCHED",
+
+    "component":"COMP_TIMING_CHAIN",
+
+    "vehicle":["CAR","MOTORCYCLE"],
+
+    "system":"ENGINE",
+
+    "severity":"WARNING",
+
+    "driveability":"LIMITED",
+
+    "repair":"REPAIR_REPLACE_TIMING_CHAIN",
+
+    "cost":"COST_TIMING_CHAIN",
+
+    "symptoms":[
+        "SYM_ENGINE_RATTLE",
+        "SYM_ENGINE_NOISE"
+    ]
+}
+,
+{
+    "id":"FAULT_PISTON_RING_WORN",
+
+    "component":"COMP_PISTON_RING",
+
+    "vehicle":["CAR","MOTORCYCLE"],
+
+    "system":"ENGINE",
+
+    "severity":"WARNING",
+
+    "driveability":"LIMITED",
+
+    "repair":"REPAIR_ENGINE_OVERHAUL",
+
+    "cost":"COST_ENGINE_OVERHAUL",
+
+    "symptoms":[
+        "SYM_BLUE_SMOKE",
+        "SYM_HIGH_OIL_CONSUMPTION",
+        "SYM_LOW_COMPRESSION"
+    ]
+}
+,
+{
+    "id":"FAULT_CONNECTING_ROD_BEARING_WORN",
+
+    "component":"COMP_ROD_BEARING",
+
+    "vehicle":["CAR","MOTORCYCLE"],
+
+    "system":"ENGINE",
+
+    "severity":"DANGER",
+
+    "driveability":"STOP",
+
+    "repair":"REPAIR_ENGINE_OVERHAUL",
+
+    "cost":"COST_ENGINE_OVERHAUL",
+
+    "symptoms":[
+        "SYM_ENGINE_KNOCK",
+        "SYM_METAL_SOUND",
+        "SYM_LOW_OIL_PRESSURE"
+    ]
+}
+,
+{
+    "id":"FAULT_HEAD_GASKET_LEAK",
+
+    "component":"COMP_CYLINDER_HEAD",
+
+    "vehicle":["CAR","MOTORCYCLE"],
+
+    "system":"ENGINE",
+
+    "severity":"DANGER",
+
+    "driveability":"STOP",
+
+    "repair":"REPAIR_REPLACE_HEAD_GASKET",
+
+    "cost":"COST_HEAD_GASKET",
+
+    "symptoms":[
+        "SYM_OVERHEAT",
+        "SYM_WHITE_SMOKE",
+        "SYM_COOLANT_LOSS"
+    ]
+}
+,
+{
+    "id":"FAULT_CAMSHAFT_WORN",
+
+    "component":"COMP_CAMSHAFT",
+
+    "vehicle":["CAR","MOTORCYCLE"],
+
+    "system":"ENGINE",
+
+    "severity":"WARNING",
+
+    "driveability":"LIMITED",
+
+    "repair":"REPAIR_REPLACE_CAMSHAFT",
+
+    "cost":"COST_CAMSHAFT",
+
+    "symptoms":[
+        "SYM_ENGINE_NOISE",
+        "SYM_POWER_LOSS"
+    ]
+}
+,
+{
+    "id":"FAULT_ENGINE_MOUNT_BROKEN",
+
+    "component":"COMP_ENGINE_MOUNT",
+
+    "vehicle":["CAR"],
+
+    "system":"ENGINE",
+
+    "severity":"WARNING",
+
+    "driveability":"LIMITED",
+
+    "repair":"REPAIR_REPLACE_ENGINE_MOUNT",
+
+    "cost":"COST_ENGINE_MOUNT",
+
+    "symptoms":[
+        "SYM_ENGINE_VIBRATION",
+        "SYM_ENGINE_SHAKE"
+    ]
+}
+,
+{
+    "id":"FAULT_VALVE_SEAL_WORN",
+
+    "component":"COMP_VALVE",
+
+    "vehicle":["CAR","MOTORCYCLE"],
+
+    "system":"ENGINE",
+
+    "severity":"WARNING",
+
+    "driveability":"NORMAL",
+
+    "repair":"REPAIR_REPLACE_VALVE_SEAL",
+
+    "cost":"COST_VALVE_SEAL",
+
+    "symptoms":[
+        "SYM_BLUE_SMOKE",
+        "SYM_HIGH_OIL_CONSUMPTION"
+    ]
+}
