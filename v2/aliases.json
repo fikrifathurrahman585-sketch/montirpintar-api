@@ -1,10 +1,41 @@
-[
-    {
-        "keyword":"seal klep",
-        "component":"ENG_VALVE_COVER_GASKET"
-    },
-    {
-        "keyword":"valve cover gasket",
-        "component":"ENG_VALVE_COVER_GASKET"
-    }
-]
+{
+    "gredek":"vibration_cvt",
+    "getar":"vibration",
+    "klotok":"knocking",
+    "tek":"knocking",
+    "tektek":"knocking",
+    "tek-tek":"knocking",
+    "ngelitik":"knocking",
+    "ngorok":"bearing_noise",
+    "ngorok ban":"wheel_bearing",
+    "jedug":"impact",
+    "gluduk":"suspension_noise",
+    "dug":"impact",
+    "kletek":"chain_noise",
+    "ngorok mesin":"bearing_noise",
+    "ngoreng":"bearing_noise",
+    "ngorok roda":"wheel_bearing",
+    "ngorok gardan":"differential_noise",
+    "ngorok cvt":"cvt_noise",
+    "ngempos":"loss_power",
+    "brebet":"misfire",
+    "mbrebet":"misfire",
+    "nembak":"backfire",
+    "mogok":"stall",
+    "mati":"stall",
+    "overheat":"overheat",
+    "panas":"overheat",
+    "ngebul":"white_smoke",
+    "asap putih":"white_smoke",
+    "asap hitam":"black_smoke",
+    "asap biru":"blue_smoke",
+    "rem blong":"brake_failure",
+    "seret":"drag",
+    "oleng":"wobble",
+    "oblak":"loose",
+    "bocor":"leak",
+    "netes":"leak",
+    "banjir":"flood",
+    "ngunci":"locked",
+    "ngunci rem":"brake_locked"
+}
