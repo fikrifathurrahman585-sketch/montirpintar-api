@@ -61,3 +61,46 @@ COMPONENT_GROUPS = {
     ]
 
 }
+
+# ==========================================================
+# DETEKSI KOMPONEN
+# ==========================================================
+
+def detect_component(text):
+
+    text = text.lower()
+
+    result = []
+
+    for system, components in COMPONENT_GROUPS.items():
+
+        for component in components:
+
+            if component in text:
+
+                result.append(component)
+
+    return result
+
+# ==========================================================
+# SKOR KOMPONEN
+# ==========================================================
+
+def component_score(user_input, item):
+
+    score = 0
+
+    components = detect_component(user_input)
+
+    dataset_components = item.get(
+        "components",
+        []
+    )
+
+    for component in components:
+
+        if component in dataset_components:
+
+            score += 20
+
+    return score
