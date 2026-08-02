@@ -1,51 +1,106 @@
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
+import logging
 
-# Inisialisasi vectorizer (Mesin pengubah teks ke angka)
-vectorizer = TfidfVectorizer()
+from rapidfuzz import fuzz
 
-def semantic_search(normalized_input: str, database: list, lang: str):
-    best_match = None
-    highest_score = 0.0
-    
-    # 1. Kumpulkan semua gejala dari database ke dalam satu list
-    corpus = []
-    mapping = []  # Menyimpan index agar tahu gejala ini milik data yang mana
-    
-    for idx, item in enumerate(database):
-        symptoms = item.get("language", {}).get(lang, {}).get("symptoms", [])
-        for symptom in symptoms:
-            corpus.append(symptom)
-            mapping.append(idx)
-            
-    # Jika corpus kosong, langsung kembalikan
-    if not corpus:
-        return None, 0.0
+from app.rules import detect_system
+from app.scorer import score_keywords
 
-    # 2. Tambahkan input user ke akhir corpus agar ikut dipelajari mesin
-    corpus.append(normalized_input)
-    
-    # 3. Ubah semua teks menjadi matriks angka (Vektorisasi)
-    tfidf_matrix = vectorizer.fit_transform(corpus)
-    
-    # 4. Ambil vektor input user (posisi paling akhir)
-    user_vector = tfidf_matrix[-1]
-    
-    # 5. Ambil vektor data bengkel (semua kecuali yang terakhir)
-    db_vectors = tfidf_matrix[:-1]
-    
-    # 6. Hitung kemiripan sudut (Cosine Similarity) antara input user vs database
-    similarities = cosine_similarity(user_vector, db_vectors)[0]
-    
-    # 7. Cari skor tertinggi
-    if len(similarities) > 0:
-        max_idx = np.argmax(similarities)
-        highest_score = similarities[max_idx]
-        
-        # Ambil data asli berdasarkan index mapping
-        if highest_score > 0.0:
-            db_index = mapping[max_idx]
-            best_match = database[db_index]
+logger = logging.getLogger("MontirPintarSearch")
 
-    return best_match, highest_score
+
+# =====================================================
+# Semantic Search V2
+# =====================================================
+
+def semantic_search(user_input, database, lang="id"):
+
+    system = detect_system(user_input)
+
+    # =====================================================
+    # FILTER BERDASARKAN SYSTEM
+    # =====================================================
+
+    candidates = []
+
+    if system:
+
+        for item in database:
+
+            item_system = (
+                item.get("system")
+                or item.get("system_name")
+                or ""
+            ).lower()
+
+            if item_system == system:
+                candidates.append(item)
+
+    # jika tidak ada hasil, gunakan semua dataset
+    if len(candidates) == 0:
+        candidates = database
+
+    logger.info(
+        "System=%s Candidate=%d",
+        system,
+        len(candidates)
+    )
+
+    # =====================================================
+    # RANKING
+    # =====================================================
+
+    best_item = None
+    best_score = -1
+
+    for item in candidates:
+
+        symptom_list = []
+
+        if lang == "en":
+
+            symptom_list.extend(
+                item.get("symptoms", {}).get("en", [])
+            )
+
+        else:
+
+            symptom_list.extend(
+                item.get("symptoms", {}).get("id", [])
+            )
+
+        semantic_score = 0
+
+        for symptom in symptom_list:
+
+            semantic_score = max(
+                semantic_score,
+                fuzz.token_sort_ratio(
+                    user_input.lower(),
+                    symptom.lower()
+                )
+            )
+
+        keyword_bonus = score_keywords(
+            user_input,
+            system if system else ""
+        )
+
+        priority_bonus = item.get("priority", 0) * 2
+
+        final_score = (
+            semantic_score
+            + keyword_bonus
+            + priority_bonus
+        )
+
+        if final_score > best_score:
+
+            best_score = final_score
+            best_item = item
+
+    logger.info(
+        "BEST SCORE = %s",
+        best_score
+    )
+
+    return best_item, best_score
