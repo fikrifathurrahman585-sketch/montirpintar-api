@@ -9,9 +9,9 @@ def semantic_search(
     """
     Search Engine V2
 
-    Mengembalikan:
-    best_match
-    confidence
+    Return:
+        best_match,
+        confidence
     """
 
     matches = match_symptoms(user_input)
