@@ -1,0 +1,12 @@
+[
+    {
+        "id": "CAR",
+        "name_id": "Mobil",
+        "name_en": "Car"
+    },
+    {
+        "id": "MOTORCYCLE",
+        "name_id": "Motor",
+        "name_en": "Motorcycle"
+    }
+]
