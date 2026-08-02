@@ -1,164 +1,71 @@
-from rapidfuzz import fuzz
+from app.loader import load
+from app.knowledge import get_alias
 
-from app.rules import (
-    detect_system,
-    detect_vehicle
-)
-
-from app.scorer import score_bonus
+db = load()
 
 
-# ==========================================================
-# HITUNG SEMANTIC SCORE
-# ==========================================================
+def normalize(text: str):
 
-def semantic_score(user_input, symptoms):
+    text = text.lower().strip()
 
-    highest = 0
+    text = text.replace(",", " ")
+    text = text.replace(".", " ")
+    text = text.replace("-", " ")
 
-    for symptom in symptoms:
+    while "  " in text:
+        text = text.replace("  ", " ")
 
-        score = fuzz.token_set_ratio(
-            user_input.lower(),
-            symptom.lower()
-        )
-
-        if score > highest:
-            highest = score
-
-    return highest
+    return text
 
 
-# ==========================================================
-# RANKING ENGINE
-# ==========================================================
+def tokenize(text: str):
 
-def rank_candidates(
-    user_input,
-    database,
-    lang="id"
-):
+    return normalize(text).split()
 
-    detected_system = detect_system(user_input)
-    detected_vehicle = detect_vehicle(user_input)
 
-    ranking = []
+def expand_alias(tokens):
 
-    for item in database:
+    hasil = []
 
-        # ---------------------------------
-        # FILTER VEHICLE
-        # ---------------------------------
+    for token in tokens:
 
-        vehicle = item.get(
-            "vehicle",
-            ""
-        ).lower()
+        hasil.append(get_alias(token))
 
-        if detected_vehicle:
+    return hasil
 
-            if vehicle != detected_vehicle:
-                continue
 
-        # ---------------------------------
-        # FILTER SYSTEM
-        # ---------------------------------
+def match_symptoms(text: str):
 
-        system = item.get(
-            "system",
-            ""
-        ).lower()
+    tokens = expand_alias(tokenize(text))
 
-        if detected_system:
+    hasil = []
 
-            if system != detected_system:
-                continue
+    for symptom in db["symptoms"]:
 
-        # ---------------------------------
-        # AMBIL GEJALA
-        # ---------------------------------
+        score = 0
 
-        language = item.get("language", {})
+        keywords = symptom.get("keywords", [])
 
-        if lang not in language:
-            continue
+        for keyword in keywords:
 
-        symptoms = language[lang].get(
-            "symptoms",
-            []
-        )
+            keyword = keyword.lower()
 
-        semantic = semantic_score(
-            user_input,
-            symptoms
-        )
+            if keyword in tokens:
+                score += 2
 
-        bonus = score_bonus(
-            user_input,
-            item
-        )
+            elif keyword in text.lower():
+                score += 1
 
-        final_score = semantic + bonus
+        if score > 0:
 
-        ranking.append(
-            {
-                "item": item,
-                "semantic": semantic,
-                "bonus": bonus,
-                "score": final_score
-            }
-        )
+            hasil.append({
+                "symptom": symptom,
+                "score": score
+            })
 
-    ranking.sort(
+    hasil.sort(
         key=lambda x: x["score"],
         reverse=True
     )
 
-    return ranking
-
-
-# ==========================================================
-# BEST MATCH
-# ==========================================================
-
-def best_match(
-    user_input,
-    database,
-    lang="id"
-):
-
-    ranking = rank_candidates(
-        user_input,
-        database,
-        lang
-    )
-
-    if len(ranking) == 0:
-        return None, 0
-
-    best = ranking[0]
-
-    return (
-        best["item"],
-        best["score"]
-    )
-
-
-# ==========================================================
-# TOP MATCHES
-# ==========================================================
-
-def top_matches(
-    user_input,
-    database,
-    lang="id",
-    limit=5
-):
-
-    ranking = rank_candidates(
-        user_input,
-        database,
-        lang
-    )
-
-    return ranking[:limit]
+    return hasil
