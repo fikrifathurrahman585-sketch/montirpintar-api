@@ -1,5 +1,5 @@
 from app.matcher import match_symptoms
-from app.scorer import calculate_confidence
+from app.scorer import confidence
 
 
 def semantic_search(
@@ -10,13 +10,11 @@ def semantic_search(
 
     matches = match_symptoms(user_input)
 
-    if not matches:
+    if len(matches) == 0:
         return None, 0
 
     best = matches[0]
 
-    confidence = calculate_confidence(
-        best["score"]
-    )
+    final_score = confidence(best["score"])
 
-    return best["symptom"], confidence
+    return best["symptom"], final_score
