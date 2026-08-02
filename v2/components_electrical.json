@@ -1,0 +1,82 @@
+[
+    {
+        "id":"COMP_BATTERY",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"ELECTRICAL",
+        "category":"Power Supply",
+        "name_id":"Aki",
+        "name_en":"Battery",
+        "aliases":["aki","battery","accu"],
+        "common_symptoms":[
+            "starter lemah",
+            "mobil tidak bisa hidup",
+            "motor tidak bisa starter",
+            "lampu redup"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_ALTERNATOR",
+        "vehicle":["CAR"],
+        "system":"ELECTRICAL",
+        "category":"Charging",
+        "name_id":"Alternator",
+        "name_en":"Alternator",
+        "aliases":[
+            "alternator",
+            "dinamo ampere"
+        ],
+        "common_symptoms":[
+            "aki tekor",
+            "indikator aki menyala",
+            "lampu redup"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_REGULATOR_RECTIFIER",
+        "vehicle":["MOTORCYCLE"],
+        "system":"ELECTRICAL",
+        "category":"Charging",
+        "name_id":"Kiprok",
+        "name_en":"Regulator Rectifier",
+        "aliases":[
+            "kiprok",
+            "regulator"
+        ],
+        "common_symptoms":[
+            "aki tekor",
+            "lampu putus",
+            "tegangan tidak stabil"
+        ],
+        "inspectable_by_vision":false,
+        "serviceable":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_STARTER_MOTOR",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"ELECTRICAL",
+        "category":"Starting",
+        "name_id":"Motor Starter",
+        "name_en":"Starter Motor",
+        "aliases":[
+            "dinamo starter",
+            "starter motor"
+        ],
+        "common_symptoms":[
+            "starter tidak kuat",
+            "starter tidak berputar"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":true
+    }
+]
