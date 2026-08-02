@@ -147,3 +147,17 @@ def score_bonus(user_input, item):
     total += score_severity(item)
 
     return total
+
+
+
+def calculate_confidence(score: int):
+
+    if score <= 0:
+        return 0
+
+    confidence = score * 12
+
+    if confidence > 98:
+        confidence = 98
+
+    return confidence
