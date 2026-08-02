@@ -1,21 +1,30 @@
-from app.matcher import rank_candidates
+from app.matcher import match_symptoms
 
 
 def semantic_search(
-        user_input,
-        database,
-        lang="id"
+    user_input: str,
+    database=None,
+    lang: str = "id"
 ):
+    """
+    Search Engine V2
 
-    ranking = rank_candidates(
-        user_input,
-        database,
-        lang
-    )
+    Mengembalikan:
+    best_match
+    confidence
+    """
 
-    if not ranking:
+    matches = match_symptoms(user_input)
+
+    if not matches:
         return None, 0
 
-    score, item = ranking[0]
+    best = matches[0]
 
-    return item, score
+    symptom = best["symptom"]
+
+    score = best["score"]
+
+    confidence = min(100, score * 12)
+
+    return symptom, confidence
