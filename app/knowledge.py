@@ -1,84 +1,85 @@
-import json
-import os
+from app.loader import load
 
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
-V2_DIR = os.path.join(BASE_DIR, "v2")
+db = load()
 
 
-class KnowledgeBase:
+# ==========================================================
+# COMPONENT
+# ==========================================================
 
-    def __init__(self):
+def get_component(component_id: str):
 
-        self.components = []
-        self.faults = []
-        self.symptoms = []
-        self.repairs = []
-        self.costs = []
-        self.aliases = []
+    for item in db["components"]:
+        if item.get("id") == component_id:
+            return item
 
-    def load_json(self, filename):
-
-        path = os.path.join(V2_DIR, filename)
-
-        if not os.path.exists(path):
-            return []
-
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
-
-    def load(self):
-
-        self.components = self.load_json("components.json")
-        self.faults = self.load_json("faults.json")
-        self.symptoms = self.load_json("symptoms.json")
-        self.repairs = self.load_json("repairs.json")
-        self.costs = self.load_json("costs.json")
-        self.aliases = self.load_json("aliases.json")
-
-    def get_component(self, code):
-
-        for item in self.components:
-            if item["code"] == code:
-                return item
-
-        return None
-
-    def get_fault(self, code):
-
-        for item in self.faults:
-            if item["code"] == code:
-                return item
-
-        return None
-
-    def get_repair(self, fault):
-
-        for item in self.repairs:
-            if item["fault"] == fault:
-                return item
-
-        return None
-
-    def get_cost(self, fault):
-
-        for item in self.costs:
-            if item["fault"] == fault:
-                return item
-
-        return None
-
-    def search_alias(self, keyword):
-
-        keyword = keyword.lower()
-
-        for item in self.aliases:
-
-            if item["keyword"].lower() == keyword:
-                return item
-
-        return None
+    return None
 
 
-knowledge = KnowledgeBase()
-knowledge.load()
+# ==========================================================
+# FAULT
+# ==========================================================
+
+def get_fault(fault_id: str):
+
+    for item in db["faults"]:
+        if item.get("id") == fault_id:
+            return item
+
+    return None
+
+
+# ==========================================================
+# REPAIR
+# ==========================================================
+
+def get_repair(component_id: str):
+
+    for item in db["repairs"]:
+        if item.get("component") == component_id:
+            return item
+
+    return None
+
+
+# ==========================================================
+# COST
+# ==========================================================
+
+def get_cost(component_id: str):
+
+    for item in db["costs"]:
+        if item.get("component") == component_id:
+            return item
+
+    return None
+
+
+# ==========================================================
+# SYMPTOM
+# ==========================================================
+
+def get_symptom(symptom_id: str):
+
+    for item in db["symptoms"]:
+        if item.get("id") == symptom_id:
+            return item
+
+    return None
+
+
+# ==========================================================
+# ALIAS
+# ==========================================================
+
+def get_alias(word: str):
+
+    word = word.lower()
+
+    for item in db["aliases"]:
+
+        if word == item.get("word", "").lower():
+
+            return item.get("replace")
+
+    return word
