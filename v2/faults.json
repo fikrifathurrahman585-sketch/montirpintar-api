@@ -1,7 +1,7 @@
 {
-    "id":"FAULT_MAIN_BEARING_WORN",
+    "id":"FAULT_HEAD_GASKET_LEAK",
 
-    "component":"COMP_MAIN_BEARING",
+    "component":"COMP_CYLINDER_HEAD",
 
     "vehicle":[
         "CAR",
@@ -14,15 +14,29 @@
 
     "driveability":"STOP",
 
-    "confidence":99,
+    "repair":"REPAIR_REPLACE_HEAD_GASKET",
 
-    "repair":"REPAIR_ENGINE_OVERHAUL",
-
-    "cost":"COST_ENGINE_OVERHAUL",
+    "cost":"COST_HEAD_GASKET",
 
     "symptoms":[
-        "SYM_ENGINE_KNOCK",
-        "SYM_LOW_OIL_PRESSURE",
-        "SYM_METAL_SOUND"
-    ]
+        "SYM_OVERHEAT",
+        "SYM_WHITE_SMOKE",
+        "SYM_COOLANT_LOSS"
+    ],
+
+    "possible_causes":[
+        "CAUSE_OVERHEAT",
+        "CAUSE_HIGH_MILEAGE"
+    ],
+
+    "inspection_methods":[
+        "TEXT",
+        "VISUAL",
+        "VISION_AI",
+        "PRESSURE_TEST"
+    ],
+
+    "estimated_repair_time":"8-12 HOURS",
+
+    "difficulty":"HARD"
 }
