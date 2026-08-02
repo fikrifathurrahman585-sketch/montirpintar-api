@@ -1,257 +1,522 @@
-{
-    "id":"FAULT_ENGINE_OIL_LEAK",
-
-    "component":"COMP_OIL_SEAL",
-
-    "vehicle":[
-        "CAR",
-        "MOTORCYCLE"
+[
+  {
+    "id": "FAULT_ENGINE_OIL_LEAK",
+    "component": "COMP_ENGINE_BLOCK",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "confidence": 90,
+    "repair": "REPAIR_FIX_ENGINE_OIL_LEAK",
+    "cost": "COST_ENGINE_OIL_LEAK",
+    "symptoms": [
+      "SYM_ENGINE_OIL_LEAK",
+      "SYM_ENGINE_DIRTY"
     ],
-
+    "possible_causes": [
+      "CAUSE_NORMAL_WEAR",
+      "CAUSE_HIGH_MILEAGE"
+    ],
+    "inspection_methods": [
+      "TEXT",
+      "VISUAL",
+      "VISION_AI"
+    ],
+    "observable_signs": [
+      "oil stain",
+      "wet engine",
+      "oil dripping"
+    ],
+    "estimated_repair_time": "1-3 HOURS",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "FAULT_LOW_OIL_PRESSURE",
+    "component": "COMP_OIL_PUMP",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "severity": "DANGER",
+    "driveability": "STOP",
+    "confidence": 98,
+    "repair": "REPAIR_CHECK_LUBRICATION_SYSTEM",
+    "cost": "COST_ENGINE_INSPECTION",
+    "symptoms": [
+      "SYM_LOW_OIL_PRESSURE",
+      "SYM_ENGINE_NOISE"
+    ],
+    "possible_causes": [
+      "CAUSE_LOW_ENGINE_OIL",
+      "CAUSE_DIRTY_ENGINE_OIL"
+    ],
+    "inspection_methods": [
+      "TEXT",
+      "MANUAL"
+    ],
+    "observable_signs": [
+      "oil warning lamp"
+    ],
+    "estimated_repair_time": "2-5 HOURS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "FAULT_HIGH_OIL_PRESSURE",
+    "component": "COMP_OIL_PUMP",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "confidence": 86,
+    "repair": "REPAIR_CHECK_OIL_PRESSURE",
+    "cost": "COST_ENGINE_INSPECTION",
+    "symptoms": [
+      "SYM_HIGH_OIL_PRESSURE"
+    ],
+    "possible_causes": [
+      "CAUSE_DIRTY_ENGINE_OIL"
+    ],
+    "inspection_methods": [
+      "MANUAL"
+    ],
+    "observable_signs": [
+      "oil pressure abnormal"
+    ],
+    "estimated_repair_time": "2 HOURS",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "FAULT_OIL_PUMP_FAILURE",
+    "component": "COMP_OIL_PUMP",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "severity": "CRITICAL",
+    "driveability": "STOP",
+    "confidence": 99,
+    "repair": "REPAIR_REPLACE_OIL_PUMP",
+    "cost": "COST_OIL_PUMP",
+    "symptoms": [
+      "SYM_LOW_OIL_PRESSURE",
+      "SYM_ENGINE_KNOCK"
+    ],
+    "possible_causes": [
+      "CAUSE_NORMAL_WEAR"
+    ],
+    "inspection_methods": [
+      "MANUAL"
+    ],
+    "observable_signs": [
+      "oil warning",
+      "engine knocking"
+    ],
+    "estimated_repair_time": "5-8 HOURS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "FAULT_OIL_FILTER_CLOGGED",
+    "component": "COMP_OIL_FILTER",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "confidence": 92,
+    "repair": "REPAIR_REPLACE_OIL_FILTER",
+    "cost": "COST_OIL_FILTER",
+    "symptoms": [
+      "SYM_ENGINE_NOISE"
+    ],
+    "possible_causes": [
+      "CAUSE_DIRTY_ENGINE_OIL"
+    ],
+    "inspection_methods": [
+      "MANUAL"
+    ],
+    "observable_signs": [
+      "dirty oil filter"
+    ],
+    "estimated_repair_time": "30 MINUTES",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "FAULT_OIL_FILTER_LEAK",
+    "component": "COMP_OIL_FILTER",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "confidence": 95,
+    "repair": "REPAIR_REPLACE_OIL_FILTER",
+    "cost": "COST_OIL_FILTER",
+    "symptoms": [
+      "SYM_ENGINE_OIL_LEAK"
+    ],
+    "possible_causes": [
+      "CAUSE_POOR_MAINTENANCE"
+    ],
+    "inspection_methods": [
+      "VISUAL",
+      "VISION_AI"
+    ],
+    "observable_signs": [
+      "oil around filter"
+    ],
+    "estimated_repair_time": "30 MINUTES",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "FAULT_OIL_PICKUP_CLOGGED",
+    "component": "COMP_OIL_PUMP",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "severity": "DANGER",
+    "driveability": "STOP",
+    "confidence": 96,
+    "repair": "REPAIR_CLEAN_OIL_PICKUP",
+    "cost": "COST_ENGINE_INSPECTION",
+    "symptoms": [
+      "SYM_LOW_OIL_PRESSURE"
+    ],
+    "possible_causes": [
+      "CAUSE_ENGINE_SLUDGE"
+    ],
+    "inspection_methods": [
+      "MANUAL"
+    ],
+    "observable_signs": [
+      "low oil pressure"
+    ],
+    "estimated_repair_time": "5-7 HOURS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "FAULT_OIL_PAN_LEAK",
+    "component": "COMP_ENGINE_BLOCK",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "severity": "WARNING",
+    "driveability": "LIMITED",
+    "confidence": 93,
+    "repair": "REPAIR_RESEAL_OIL_PAN",
+    "cost": "COST_OIL_PAN_GASKET",
+    "symptoms": [
+      "SYM_ENGINE_OIL_LEAK"
+    ],
+    "possible_causes": [
+      "CAUSE_NORMAL_WEAR"
+    ],
+    "inspection_methods": [
+      "VISUAL",
+      "VISION_AI"
+    ],
+    "observable_signs": [
+      "oil pan wet"
+    ],
+    "estimated_repair_time": "2-4 HOURS",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "FAULT_OIL_PAN_CRACK",
+    "component": "COMP_ENGINE_BLOCK",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "severity": "DANGER",
+    "driveability": "STOP",
+    "confidence": 97,
+    "repair": "REPAIR_REPLACE_OIL_PAN",
+    "cost": "COST_OIL_PAN",
+    "symptoms": [
+      "SYM_ENGINE_OIL_LEAK"
+    ],
+    "possible_causes": [
+      "CAUSE_COLLISION"
+    ],
+    "inspection_methods": [
+      "VISUAL",
+      "VISION_AI"
+    ],
+    "observable_signs": [
+      "cracked oil pan"
+    ],
+    "estimated_repair_time": "4 HOURS",
+    "difficulty": "MEDIUM"
+  },
+    {
+    "id":"FAULT_OIL_COOLER_LEAK",
+    "component":"COMP_OIL_COOLER",
+    "vehicle":["CAR"],
     "system":"ENGINE",
-
     "severity":"WARNING",
-
     "driveability":"LIMITED",
-
-    "repair":"REPAIR_REPLACE_OIL_SEAL",
-
-    "cost":"COST_REPLACE_OIL_SEAL",
-
+    "confidence":94,
+    "repair":"REPAIR_REPLACE_OIL_COOLER",
+    "cost":"COST_OIL_COOLER",
     "symptoms":[
-        "SYM_OIL_LEAK",
-        "SYM_ENGINE_DIRTY"
-    ]
-}
-,
+        "SYM_ENGINE_OIL_LEAK",
+        "SYM_LOW_ENGINE_OIL"
+    ],
+    "possible_causes":[
+        "CAUSE_CORROSION",
+        "CAUSE_HIGH_MILEAGE"
+    ],
+    "inspection_methods":[
+        "VISUAL",
+        "VISION_AI",
+        "MANUAL"
+    ],
+    "observable_signs":[
+        "oil around cooler",
+        "wet oil cooler"
+    ],
+    "estimated_repair_time":{
+        "min_hours":2,
+        "max_hours":4
+    },
+    "difficulty":"MEDIUM"
+},
+{
+    "id":"FAULT_OIL_COOLER_BLOCKED",
+    "component":"COMP_OIL_COOLER",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "severity":"HIGH",
+    "driveability":"LIMITED",
+    "confidence":91,
+    "repair":"REPAIR_CLEAN_OIL_COOLER",
+    "cost":"COST_OIL_COOLER_SERVICE",
+    "symptoms":[
+        "SYM_ENGINE_OVERHEAT",
+        "SYM_HIGH_OIL_TEMPERATURE"
+    ],
+    "possible_causes":[
+        "CAUSE_DIRTY_ENGINE_OIL"
+    ],
+    "inspection_methods":[
+        "MANUAL"
+    ],
+    "observable_signs":[
+        "oil cooler clogged"
+    ],
+    "estimated_repair_time":{
+        "min_hours":2,
+        "max_hours":3
+    },
+    "difficulty":"MEDIUM"
+},
+{
+    "id":"FAULT_OIL_PRESSURE_SWITCH_FAILURE",
+    "component":"COMP_OIL_PRESSURE_SWITCH",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "severity":"LOW",
+    "driveability":"SAFE",
+    "confidence":88,
+    "repair":"REPAIR_REPLACE_OIL_PRESSURE_SWITCH",
+    "cost":"COST_OIL_PRESSURE_SWITCH",
+    "symptoms":[
+        "SYM_OIL_WARNING_LIGHT"
+    ],
+    "possible_causes":[
+        "CAUSE_NORMAL_WEAR"
+    ],
+    "inspection_methods":[
+        "TEXT",
+        "OBD",
+        "MANUAL"
+    ],
+    "observable_signs":[
+        "oil warning light"
+    ],
+    "estimated_repair_time":{
+        "min_hours":1,
+        "max_hours":1
+    },
+    "difficulty":"EASY"
+},
+{
+    "id":"FAULT_FRONT_CRANK_SEAL_LEAK",
+    "component":"COMP_FRONT_CRANK_SEAL",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "severity":"WARNING",
+    "driveability":"LIMITED",
+    "confidence":95,
+    "repair":"REPAIR_REPLACE_FRONT_CRANK_SEAL",
+    "cost":"COST_FRONT_CRANK_SEAL",
+    "symptoms":[
+        "SYM_ENGINE_OIL_LEAK"
+    ],
+    "possible_causes":[
+        "CAUSE_HIGH_MILEAGE",
+        "CAUSE_NORMAL_WEAR"
+    ],
+    "inspection_methods":[
+        "VISUAL",
+        "VISION_AI"
+    ],
+    "observable_signs":[
+        "front oil leak"
+    ],
+    "estimated_repair_time":{
+        "min_hours":3,
+        "max_hours":5
+    },
+    "difficulty":"HARD"
+},
 {
     "id":"FAULT_REAR_MAIN_SEAL_LEAK",
-
-    "component":"COMP_CRANKSHAFT",
-
+    "component":"COMP_REAR_MAIN_SEAL",
     "vehicle":["CAR"],
-
     "system":"ENGINE",
-
     "severity":"WARNING",
-
     "driveability":"LIMITED",
-
+    "confidence":96,
     "repair":"REPAIR_REPLACE_REAR_MAIN_SEAL",
-
     "cost":"COST_REAR_MAIN_SEAL",
-
     "symptoms":[
         "SYM_ENGINE_OIL_LEAK",
         "SYM_ENGINE_UNDERSIDE_OILY"
-    ]
-}
-,
+    ],
+    "possible_causes":[
+        "CAUSE_HIGH_MILEAGE",
+        "CAUSE_NORMAL_WEAR"
+    ],
+    "inspection_methods":[
+        "VISUAL",
+        "VISION_AI",
+        "MANUAL"
+    ],
+    "observable_signs":[
+        "rear oil leak"
+    ],
+    "estimated_repair_time":{
+        "min_hours":6,
+        "max_hours":8
+    },
+    "difficulty":"EXPERT"
+},
 {
-    "id":"FAULT_OIL_FILTER_LEAK",
-
-    "component":"COMP_OIL_FILTER",
-
+    "id":"FAULT_CAMSHAFT_SEAL_LEAK",
+    "component":"COMP_CAMSHAFT_SEAL",
     "vehicle":["CAR","MOTORCYCLE"],
-
     "system":"ENGINE",
-
     "severity":"WARNING",
-
     "driveability":"LIMITED",
-
-    "repair":"REPAIR_REPLACE_OIL_FILTER",
-
-    "cost":"COST_OIL_FILTER",
-
+    "confidence":94,
+    "repair":"REPAIR_REPLACE_CAMSHAFT_SEAL",
+    "cost":"COST_CAMSHAFT_SEAL",
     "symptoms":[
         "SYM_ENGINE_OIL_LEAK"
-    ]
-}
-,
+    ],
+    "possible_causes":[
+        "CAUSE_NORMAL_WEAR"
+    ],
+    "inspection_methods":[
+        "VISUAL",
+        "VISION_AI"
+    ],
+    "observable_signs":[
+        "oil near timing cover"
+    ],
+    "estimated_repair_time":{
+        "min_hours":3,
+        "max_hours":5
+    },
+    "difficulty":"HARD"
+},
 {
-    "id":"FAULT_OIL_PUMP_FAILURE",
-
-    "component":"COMP_OIL_PUMP",
-
+    "id":"FAULT_VALVE_COVER_GASKET_LEAK",
+    "component":"COMP_VALVE_COVER_GASKET",
     "vehicle":["CAR","MOTORCYCLE"],
-
     "system":"ENGINE",
-
-    "severity":"DANGER",
-
-    "driveability":"STOP",
-
-    "repair":"REPAIR_REPLACE_OIL_PUMP",
-
-    "cost":"COST_OIL_PUMP",
-
+    "severity":"LOW",
+    "driveability":"SAFE",
+    "confidence":97,
+    "repair":"REPAIR_REPLACE_VALVE_COVER_GASKET",
+    "cost":"COST_VALVE_COVER_GASKET",
     "symptoms":[
-        "SYM_LOW_OIL_PRESSURE",
+        "SYM_ENGINE_OIL_LEAK",
+        "SYM_BURNING_OIL_SMELL"
+    ],
+    "possible_causes":[
+        "CAUSE_HIGH_MILEAGE",
+        "CAUSE_NORMAL_WEAR"
+    ],
+    "inspection_methods":[
+        "VISUAL",
+        "VISION_AI"
+    ],
+    "observable_signs":[
+        "oil on valve cover"
+    ],
+    "estimated_repair_time":{
+        "min_hours":1,
+        "max_hours":2
+    },
+    "difficulty":"EASY"
+},
+{
+    "id":"FAULT_OIL_DILUTION",
+    "component":"COMP_ENGINE_OIL",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "severity":"HIGH",
+    "driveability":"LIMITED",
+    "confidence":89,
+    "repair":"REPAIR_CHANGE_ENGINE_OIL_AND_DIAGNOSE",
+    "cost":"COST_ENGINE_OIL_SERVICE",
+    "symptoms":[
+        "SYM_LOW_OIL_VISCOSITY",
         "SYM_ENGINE_NOISE"
-    ]
-}
-,
+    ],
+    "possible_causes":[
+        "CAUSE_DIRTY_FUEL",
+        "CAUSE_POOR_MAINTENANCE"
+    ],
+    "inspection_methods":[
+        "MANUAL",
+        "TEXT"
+    ],
+    "observable_signs":[
+        "thin engine oil",
+        "fuel smell in oil"
+    ],
+    "estimated_repair_time":{
+        "min_hours":1,
+        "max_hours":2
+    },
+    "difficulty":"MEDIUM"
+},
 {
-    "id":"FAULT_TIMING_CHAIN_STRETCHED",
-
-    "component":"COMP_TIMING_CHAIN",
-
+    "id":"FAULT_ENGINE_SLUDGE",
+    "component":"COMP_ENGINE_OIL",
     "vehicle":["CAR","MOTORCYCLE"],
-
     "system":"ENGINE",
-
-    "severity":"WARNING",
-
+    "severity":"HIGH",
     "driveability":"LIMITED",
-
-    "repair":"REPAIR_REPLACE_TIMING_CHAIN",
-
-    "cost":"COST_TIMING_CHAIN",
-
-    "symptoms":[
-        "SYM_ENGINE_RATTLE",
-        "SYM_ENGINE_NOISE"
-    ]
-}
-,
-{
-    "id":"FAULT_PISTON_RING_WORN",
-
-    "component":"COMP_PISTON_RING",
-
-    "vehicle":["CAR","MOTORCYCLE"],
-
-    "system":"ENGINE",
-
-    "severity":"WARNING",
-
-    "driveability":"LIMITED",
-
-    "repair":"REPAIR_ENGINE_OVERHAUL",
-
-    "cost":"COST_ENGINE_OVERHAUL",
-
-    "symptoms":[
-        "SYM_BLUE_SMOKE",
-        "SYM_HIGH_OIL_CONSUMPTION",
-        "SYM_LOW_COMPRESSION"
-    ]
-}
-,
-{
-    "id":"FAULT_CONNECTING_ROD_BEARING_WORN",
-
-    "component":"COMP_ROD_BEARING",
-
-    "vehicle":["CAR","MOTORCYCLE"],
-
-    "system":"ENGINE",
-
-    "severity":"DANGER",
-
-    "driveability":"STOP",
-
-    "repair":"REPAIR_ENGINE_OVERHAUL",
-
-    "cost":"COST_ENGINE_OVERHAUL",
-
-    "symptoms":[
-        "SYM_ENGINE_KNOCK",
-        "SYM_METAL_SOUND",
-        "SYM_LOW_OIL_PRESSURE"
-    ]
-}
-,
-{
-    "id":"FAULT_HEAD_GASKET_LEAK",
-
-    "component":"COMP_CYLINDER_HEAD",
-
-    "vehicle":["CAR","MOTORCYCLE"],
-
-    "system":"ENGINE",
-
-    "severity":"DANGER",
-
-    "driveability":"STOP",
-
-    "repair":"REPAIR_REPLACE_HEAD_GASKET",
-
-    "cost":"COST_HEAD_GASKET",
-
-    "symptoms":[
-        "SYM_OVERHEAT",
-        "SYM_WHITE_SMOKE",
-        "SYM_COOLANT_LOSS"
-    ]
-}
-,
-{
-    "id":"FAULT_CAMSHAFT_WORN",
-
-    "component":"COMP_CAMSHAFT",
-
-    "vehicle":["CAR","MOTORCYCLE"],
-
-    "system":"ENGINE",
-
-    "severity":"WARNING",
-
-    "driveability":"LIMITED",
-
-    "repair":"REPAIR_REPLACE_CAMSHAFT",
-
-    "cost":"COST_CAMSHAFT",
-
+    "confidence":95,
+    "repair":"REPAIR_ENGINE_FLUSH",
+    "cost":"COST_ENGINE_FLUSH",
     "symptoms":[
         "SYM_ENGINE_NOISE",
-        "SYM_POWER_LOSS"
-    ]
-}
-,
-{
-    "id":"FAULT_ENGINE_MOUNT_BROKEN",
+        "SYM_LOW_OIL_PRESSURE"
+    ],
+    "possible_causes":[
+        "CAUSE_DIRTY_ENGINE_OIL",
+        "CAUSE_POOR_MAINTENANCE"
+    ],
+    "inspection_methods":[
+        "VISUAL",
+        "MANUAL"
+    ],
+    "observable_signs":[
+        "black sludge",
+        "thick deposits"
+    ],
+    "estimated_repair_time":{
+        "min_hours":2,
+        "max_hours":3
+    },
+    "difficulty":"MEDIUM"
+},
 
-    "component":"COMP_ENGINE_MOUNT",
 
-    "vehicle":["CAR"],
-
-    "system":"ENGINE",
-
-    "severity":"WARNING",
-
-    "driveability":"LIMITED",
-
-    "repair":"REPAIR_REPLACE_ENGINE_MOUNT",
-
-    "cost":"COST_ENGINE_MOUNT",
-
-    "symptoms":[
-        "SYM_ENGINE_VIBRATION",
-        "SYM_ENGINE_SHAKE"
-    ]
-}
-,
-{
-    "id":"FAULT_VALVE_SEAL_WORN",
-
-    "component":"COMP_VALVE",
-
-    "vehicle":["CAR","MOTORCYCLE"],
-
-    "system":"ENGINE",
-
-    "severity":"WARNING",
-
-    "driveability":"NORMAL",
-
-    "repair":"REPAIR_REPLACE_VALVE_SEAL",
-
-    "cost":"COST_VALVE_SEAL",
-
-    "symptoms":[
-        "SYM_BLUE_SMOKE",
-        "SYM_HIGH_OIL_CONSUMPTION"
-    ]
-}
+    
+]
