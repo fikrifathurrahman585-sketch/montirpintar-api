@@ -1,0 +1,181 @@
+[
+    {
+        "id":"COMP_PRIMARY_PULLEY",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"Pulley Depan",
+        "name_en":"Primary Pulley",
+        "aliases":[
+            "pulley depan",
+            "primary pulley",
+            "drive pulley"
+        ]
+    },
+
+    {
+        "id":"COMP_SECONDARY_PULLEY",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"Pulley Belakang",
+        "name_en":"Secondary Pulley",
+        "aliases":[
+            "pulley belakang",
+            "secondary pulley",
+            "driven pulley"
+        ]
+    },
+
+    {
+        "id":"COMP_VBELT",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"V-Belt",
+        "name_en":"V-Belt",
+        "aliases":[
+            "vbelt",
+            "v-belt",
+            "belt cvt"
+        ]
+    },
+
+    {
+        "id":"COMP_ROLLER",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"Roller",
+        "name_en":"Roller",
+        "aliases":[
+            "roller",
+            "roller cvt"
+        ]
+    },
+
+    {
+        "id":"COMP_SLIDER",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"Slider",
+        "name_en":"Slider",
+        "aliases":[
+            "slider",
+            "slider cvt"
+        ]
+    },
+
+    {
+        "id":"COMP_RAMP_PLATE",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"Ramp Plate",
+        "name_en":"Ramp Plate",
+        "aliases":[
+            "ramp plate"
+        ]
+    },
+
+    {
+        "id":"COMP_CLUTCH_SHOE",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"Kampas Ganda",
+        "name_en":"Clutch Shoe",
+        "aliases":[
+            "kampas ganda",
+            "clutch shoe"
+        ]
+    },
+
+    {
+        "id":"COMP_CLUTCH_BELL",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"Mangkok Kopling",
+        "name_en":"Clutch Bell",
+        "aliases":[
+            "mangkok cvt",
+            "mangkok kopling",
+            "clutch bell"
+        ]
+    },
+
+    {
+        "id":"COMP_CENTER_SPRING",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"Per CVT",
+        "name_en":"Center Spring",
+        "aliases":[
+            "per cvt",
+            "center spring"
+        ]
+    },
+
+    {
+        "id":"COMP_CLUTCH_SPRING",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"Per Kampas Ganda",
+        "name_en":"Clutch Spring",
+        "aliases":[
+            "per kampas",
+            "clutch spring"
+        ]
+    },
+
+    {
+        "id":"COMP_TORQUE_DRIVER",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"Torque Driver",
+        "name_en":"Torque Driver",
+        "aliases":[
+            "torque driver"
+        ]
+    },
+
+    {
+        "id":"COMP_CVT_BEARING",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"Bearing CVT",
+        "name_en":"CVT Bearing",
+        "aliases":[
+            "bearing cvt"
+        ]
+    },
+
+    {
+        "id":"COMP_CVT_SEAL",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"Seal CVT",
+        "name_en":"CVT Oil Seal",
+        "aliases":[
+            "seal cvt"
+        ]
+    },
+
+    {
+        "id":"COMP_FINAL_GEAR",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"Final Gear",
+        "name_en":"Final Gear",
+        "aliases":[
+            "gear belakang",
+            "gear final"
+        ]
+    },
+
+    {
+        "id":"COMP_GEAR_OIL",
+        "vehicle":["MOTORCYCLE"],
+        "system":"CVT",
+        "name_id":"Oli Gardan",
+        "name_en":"Final Gear Oil",
+        "aliases":[
+            "oli gardan",
+            "gear oil"
+        ]
+    }
+]
