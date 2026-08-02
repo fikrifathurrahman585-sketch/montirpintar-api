@@ -1,0 +1,25 @@
+{
+    "id":"FAULT_ENGINE_OIL_LEAK",
+
+    "component":"COMP_OIL_SEAL",
+
+    "vehicle":[
+        "CAR",
+        "MOTORCYCLE"
+    ],
+
+    "system":"ENGINE",
+
+    "severity":"WARNING",
+
+    "driveability":"LIMITED",
+
+    "repair":"REPAIR_REPLACE_OIL_SEAL",
+
+    "cost":"COST_REPLACE_OIL_SEAL",
+
+    "symptoms":[
+        "SYM_OIL_LEAK",
+        "SYM_ENGINE_DIRTY"
+    ]
+}
