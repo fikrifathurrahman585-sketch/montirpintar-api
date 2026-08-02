@@ -1,0 +1,61 @@
+[
+    {
+        "id":"CAUSE_NORMAL_WEAR",
+        "name_id":"Keausan normal",
+        "name_en":"Normal Wear"
+    },
+
+    {
+        "id":"CAUSE_POOR_MAINTENANCE",
+        "name_id":"Kurang perawatan",
+        "name_en":"Poor Maintenance"
+    },
+
+    {
+        "id":"CAUSE_LOW_ENGINE_OIL",
+        "name_id":"Oli mesin kurang",
+        "name_en":"Low Engine Oil"
+    },
+
+    {
+        "id":"CAUSE_DIRTY_ENGINE_OIL",
+        "name_id":"Oli mesin kotor",
+        "name_en":"Dirty Engine Oil"
+    },
+
+    {
+        "id":"CAUSE_OVERHEAT",
+        "name_id":"Mesin overheat",
+        "name_en":"Engine Overheat"
+    },
+
+    {
+        "id":"CAUSE_HIGH_MILEAGE",
+        "name_id":"Usia kendaraan tinggi",
+        "name_en":"High Mileage"
+    },
+
+    {
+        "id":"CAUSE_COLLISION",
+        "name_id":"Benturan",
+        "name_en":"Collision"
+    },
+
+    {
+        "id":"CAUSE_CORROSION",
+        "name_id":"Korosi",
+        "name_en":"Corrosion"
+    },
+
+    {
+        "id":"CAUSE_DIRTY_FUEL",
+        "name_id":"Bahan bakar kotor",
+        "name_en":"Dirty Fuel"
+    },
+
+    {
+        "id":"CAUSE_WATER_CONTAMINATION",
+        "name_id":"Air masuk sistem",
+        "name_en":"Water Contamination"
+    }
+]
