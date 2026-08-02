@@ -1,0 +1,1658 @@
+[
+  {
+    "id": "COMP_ENGINE_BLOCK",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Blok Mesin",
+    "name_en": "Engine Block",
+    "aliases": [
+      "blok mesin",
+      "engine block"
+    ]
+  },
+  {
+    "id": "COMP_CYLINDER_HEAD",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Kepala Silinder",
+    "name_en": "Cylinder Head",
+    "aliases": [
+      "head",
+      "head silinder",
+      "cylinder head"
+    ]
+  },
+  {
+    "id": "COMP_PISTON",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Piston",
+    "name_en": "Piston",
+    "aliases": [
+      "piston",
+      "seher"
+    ]
+  },
+  {
+    "id": "COMP_PISTON_RING",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Ring Piston",
+    "name_en": "Piston Ring",
+    "aliases": [
+      "ring piston",
+      "ring seher"
+    ]
+  },
+  {
+    "id": "COMP_CONNECTING_ROD",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Connecting Rod",
+    "name_en": "Connecting Rod",
+    "aliases": [
+      "stang piston",
+      "connecting rod"
+    ]
+  },
+  {
+    "id": "COMP_CRANKSHAFT",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Kruk As",
+    "name_en": "Crankshaft",
+    "aliases": [
+      "kruk as",
+      "crankshaft"
+    ]
+  },
+  {
+    "id": "COMP_MAIN_BEARING",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Metal Duduk",
+    "name_en": "Main Bearing",
+    "aliases": [
+      "metal duduk",
+      "main bearing"
+    ]
+  },
+  {
+    "id": "COMP_ROD_BEARING",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Metal Jalan",
+    "name_en": "Rod Bearing",
+    "aliases": [
+      "metal jalan",
+      "rod bearing"
+    ]
+  },
+  {
+    "id": "COMP_CAMSHAFT",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Noken As",
+    "name_en": "Camshaft",
+    "aliases": [
+      "noken",
+      "camshaft"
+    ]
+  },
+  {
+    "id": "COMP_VALVE",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Klep",
+    "name_en": "Valve",
+    "aliases": [
+      "klep",
+      "valve"
+    ]
+  },
+  {
+    "id": "COMP_TIMING_CHAIN",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Rantai Timing",
+    "name_en": "Timing Chain",
+    "aliases": [
+      "rantai keteng",
+      "timing chain"
+    ]
+  },
+  {
+    "id": "COMP_TIMING_BELT",
+    "vehicle": ["CAR"],
+    "system": "ENGINE",
+    "name_id": "Timing Belt",
+    "name_en": "Timing Belt",
+    "aliases": [
+      "timing belt"
+    ]
+  },
+  {
+    "id": "COMP_ENGINE_MOUNT",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Engine Mounting",
+    "name_en": "Engine Mount",
+    "aliases": [
+      "engine mounting",
+      "dudukan mesin"
+    ]
+  },
+  {
+    "id": "COMP_OIL_PUMP",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Pompa Oli",
+    "name_en": "Oil Pump",
+    "aliases": [
+      "pompa oli",
+      "oil pump"
+    ]
+  },
+  {
+    "id": "COMP_OIL_FILTER",
+    "vehicle": ["CAR", "MOTORCYCLE"],
+    "system": "ENGINE",
+    "name_id": "Filter Oli",
+    "name_en": "Oil Filter",
+    "aliases": [
+      "filter oli",
+      "oil filter"
+    ]
+  },
+  
+{
+    "id":"COMP_ENGINE_OIL",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Lubrication",
+    "name_id":"Oli Mesin",
+    "name_en":"Engine Oil",
+    "aliases":[
+        "oli mesin",
+        "engine oil"
+    ],
+    "common_symptoms":[
+        "oli cepat habis",
+        "oli hitam",
+        "tekanan oli rendah"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_OIL_PAN",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Lubrication",
+    "name_id":"Bak Oli",
+    "name_en":"Oil Pan",
+    "aliases":[
+        "carter",
+        "oil pan",
+        "bak oli"
+    ],
+    "common_symptoms":[
+        "oli bocor"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_OIL_PAN_GASKET",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Lubrication",
+    "name_id":"Packing Bak Oli",
+    "name_en":"Oil Pan Gasket",
+    "aliases":[
+        "packing carter",
+        "packing bak oli"
+    ],
+    "common_symptoms":[
+        "rembes oli"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_OIL_PICKUP",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Lubrication",
+    "name_id":"Oil Pickup",
+    "name_en":"Oil Pickup",
+    "aliases":[
+        "oil pickup",
+        "saringan oli bawah"
+    ],
+    "common_symptoms":[
+        "tekanan oli rendah"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_OIL_STRAINER",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Lubrication",
+    "name_id":"Saringan Oli",
+    "name_en":"Oil Strainer",
+    "aliases":[
+        "oil strainer"
+    ],
+    "common_symptoms":[
+        "tekanan oli rendah"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_OIL_COOLER",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Lubrication",
+    "name_id":"Oil Cooler",
+    "name_en":"Oil Cooler",
+    "aliases":[
+        "oil cooler"
+    ],
+    "common_symptoms":[
+        "oli bocor",
+        "oli panas"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_OIL_PRESSURE_SWITCH",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Lubrication",
+    "name_id":"Switch Tekanan Oli",
+    "name_en":"Oil Pressure Switch",
+    "aliases":[
+        "oil pressure switch",
+        "switch oli"
+    ],
+    "common_symptoms":[
+        "lampu oli menyala"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_OIL_PRESSURE_SENSOR",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Lubrication",
+    "name_id":"Sensor Tekanan Oli",
+    "name_en":"Oil Pressure Sensor",
+    "aliases":[
+        "sensor tekanan oli"
+    ],
+    "common_symptoms":[
+        "indikator oli error"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_FRONT_CRANK_SEAL",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Seal",
+    "name_id":"Seal Kruk As Depan",
+    "name_en":"Front Crankshaft Seal",
+    "aliases":[
+        "front crank seal",
+        "seal kruk depan"
+    ],
+    "common_symptoms":[
+        "oli bocor depan mesin"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_REAR_MAIN_SEAL",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Seal",
+    "name_id":"Rear Main Seal",
+    "name_en":"Rear Main Seal",
+    "aliases":[
+        "rear main seal",
+        "seal kruk belakang"
+    ],
+    "common_symptoms":[
+        "oli bocor antara mesin dan transmisi"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_CAMSHAFT_SEAL",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Seal",
+    "name_id":"Seal Camshaft",
+    "name_en":"Camshaft Seal",
+    "aliases":[
+        "seal camshaft",
+        "seal noken"
+    ],
+    "common_symptoms":[
+        "oli bocor timing"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_VALVE_COVER",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Cylinder Head",
+    "name_id":"Tutup Klep",
+    "name_en":"Valve Cover",
+    "aliases":[
+        "valve cover",
+        "tutup klep"
+    ],
+    "common_symptoms":[
+        "oli rembes"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_VALVE_COVER_GASKET",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Cylinder Head",
+    "name_id":"Packing Tutup Klep",
+    "name_en":"Valve Cover Gasket",
+    "aliases":[
+        "packing tutup klep",
+        "valve cover gasket"
+    ],
+    "common_symptoms":[
+        "oli rembes"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+
+{
+    "id":"COMP_CYLINDER",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Internal Engine",
+    "name_id":"Silinder",
+    "name_en":"Cylinder",
+    "aliases":[
+        "silinder",
+        "cylinder"
+    ],
+    "common_symptoms":[
+        "kompresi rendah",
+        "baret silinder"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_CYLINDER_SLEEVE",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Internal Engine",
+    "name_id":"Liner Silinder",
+    "name_en":"Cylinder Sleeve",
+    "aliases":[
+        "liner silinder",
+        "cylinder sleeve"
+    ],
+    "common_symptoms":[
+        "kompresi bocor",
+        "oli masuk ruang bakar"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_PISTON_PIN",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Internal Engine",
+    "name_id":"Pen Piston",
+    "name_en":"Piston Pin",
+    "aliases":[
+        "pen piston",
+        "gudgeon pin",
+        "piston pin"
+    ],
+    "common_symptoms":[
+        "bunyi ketukan piston"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_FLYWHEEL",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Internal Engine",
+    "name_id":"Flywheel",
+    "name_en":"Flywheel",
+    "aliases":[
+        "flywheel",
+        "roda gila"
+    ],
+    "common_symptoms":[
+        "getaran mesin",
+        "starter kasar"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_FLEXPLATE",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Internal Engine",
+    "name_id":"Flexplate",
+    "name_en":"Flexplate",
+    "aliases":[
+        "flexplate"
+    ],
+    "common_symptoms":[
+        "bunyi saat starter",
+        "retak flexplate"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_CRANKSHAFT_PULLEY",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Internal Engine",
+    "name_id":"Pulley Kruk As",
+    "name_en":"Crankshaft Pulley",
+    "aliases":[
+        "pulley kruk as",
+        "crank pulley"
+    ],
+    "common_symptoms":[
+        "bunyi belt",
+        "getaran pulley"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_HARMONIC_BALANCER",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Internal Engine",
+    "name_id":"Harmonic Balancer",
+    "name_en":"Harmonic Balancer",
+    "aliases":[
+        "harmonic balancer",
+        "damper pulley"
+    ],
+    "common_symptoms":[
+        "getaran mesin",
+        "pulley oleng"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_BALANCE_SHAFT",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Internal Engine",
+    "name_id":"Balance Shaft",
+    "name_en":"Balance Shaft",
+    "aliases":[
+        "balance shaft"
+    ],
+    "common_symptoms":[
+        "vibrasi mesin"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_CRANKCASE",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Internal Engine",
+    "name_id":"Crankcase",
+    "name_en":"Crankcase",
+    "aliases":[
+        "crankcase",
+        "bak mesin"
+    ],
+    "common_symptoms":[
+        "retak blok",
+        "oli bocor"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":false,
+    "critical":true
+},
+{
+    "id":"COMP_MAIN_BEARING_CAP",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Internal Engine",
+    "name_id":"Main Bearing Cap",
+    "name_en":"Main Bearing Cap",
+    "aliases":[
+        "main cap",
+        "bearing cap"
+    ],
+    "common_symptoms":[
+        "bunyi metal"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+},
+{
+    "id":"COMP_DIPSTICK",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Lubrication",
+    "name_id":"Dipstick Oli",
+    "name_en":"Oil Dipstick",
+    "aliases":[
+        "dipstick",
+        "stick oli"
+    ],
+    "common_symptoms":[
+        "oli kurang"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_OIL_FILLER_CAP",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Lubrication",
+    "name_id":"Tutup Pengisian Oli",
+    "name_en":"Oil Filler Cap",
+    "aliases":[
+        "tutup oli",
+        "oil filler cap"
+    ],
+    "common_symptoms":[
+        "oli muncrat",
+        "tutup oli hilang"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_PCV_VALVE",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Emission",
+    "name_id":"Katup PCV",
+    "name_en":"PCV Valve",
+    "aliases":[
+        "pcv",
+        "pcv valve"
+    ],
+    "common_symptoms":[
+        "idle kasar",
+        "oli cepat habis",
+        "asap putih"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_ENGINE_BREATHER",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Emission",
+    "name_id":"Breather Mesin",
+    "name_en":"Engine Breather",
+    "aliases":[
+        "breather",
+        "selang breather"
+    ],
+    "common_symptoms":[
+        "oli keluar dari breather"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+
+{
+    "id":"COMP_HEAD_GASKET",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Cylinder Head",
+    "name_id":"Packing Kepala Silinder",
+    "name_en":"Cylinder Head Gasket",
+    "aliases":[
+        "head gasket",
+        "packing head",
+        "gasket head"
+    ],
+    "common_symptoms":[
+        "overheat",
+        "asap putih",
+        "coolant berkurang"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_HEAD_BOLT",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Cylinder Head",
+    "name_id":"Baut Kepala Silinder",
+    "name_en":"Cylinder Head Bolt",
+    "aliases":[
+        "head bolt",
+        "baut head"
+    ],
+    "common_symptoms":[
+        "kompresi bocor"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+},
+{
+    "id":"COMP_INTAKE_VALVE",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Valve Train",
+    "name_id":"Klep Masuk",
+    "name_en":"Intake Valve",
+    "aliases":[
+        "klep masuk",
+        "intake valve"
+    ],
+    "common_symptoms":[
+        "kompresi rendah",
+        "mesin pincang"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_EXHAUST_VALVE",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Valve Train",
+    "name_id":"Klep Buang",
+    "name_en":"Exhaust Valve",
+    "aliases":[
+        "klep buang",
+        "exhaust valve"
+    ],
+    "common_symptoms":[
+        "backfire",
+        "kompresi bocor"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_VALVE_GUIDE",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Valve Train",
+    "name_id":"Valve Guide",
+    "name_en":"Valve Guide",
+    "aliases":[
+        "guide klep",
+        "valve guide"
+    ],
+    "common_symptoms":[
+        "asap biru",
+        "oli masuk ruang bakar"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_VALVE_SEAT",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Valve Train",
+    "name_id":"Valve Seat",
+    "name_en":"Valve Seat",
+    "aliases":[
+        "dudukan klep",
+        "valve seat"
+    ],
+    "common_symptoms":[
+        "kompresi bocor"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_VALVE_SPRING",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Valve Train",
+    "name_id":"Per Klep",
+    "name_en":"Valve Spring",
+    "aliases":[
+        "per klep",
+        "valve spring"
+    ],
+    "common_symptoms":[
+        "rpm tinggi bermasalah"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_VALVE_RETAINER",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Valve Train",
+    "name_id":"Valve Retainer",
+    "name_en":"Valve Retainer",
+    "aliases":[
+        "retainer klep"
+    ],
+    "common_symptoms":[
+        "klep lepas"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+},
+{
+    "id":"COMP_VALVE_KEEPER",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Valve Train",
+    "name_id":"Pengunci Klep",
+    "name_en":"Valve Keeper",
+    "aliases":[
+        "keeper klep",
+        "collet valve"
+    ],
+    "common_symptoms":[
+        "klep jatuh"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+},
+{
+    "id":"COMP_ROCKER_ARM",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Valve Train",
+    "name_id":"Rocker Arm",
+    "name_en":"Rocker Arm",
+    "aliases":[
+        "rocker arm",
+        "pelatuk klep"
+    ],
+    "common_symptoms":[
+        "bunyi tik tik",
+        "klep tidak membuka"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_HYDRAULIC_LIFTER",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Valve Train",
+    "name_id":"Hydraulic Lifter",
+    "name_en":"Hydraulic Lifter",
+    "aliases":[
+        "hydraulic lifter",
+        "lifter"
+    ],
+    "common_symptoms":[
+        "bunyi tik tik"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_LASH_ADJUSTER",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Valve Train",
+    "name_id":"Penyetel Celah Klep",
+    "name_en":"Valve Lash Adjuster",
+    "aliases":[
+        "lash adjuster",
+        "stel klep"
+    ],
+    "common_symptoms":[
+        "celah klep tidak sesuai"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_CAM_CAP",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Valve Train",
+    "name_id":"Camshaft Cap",
+    "name_en":"Camshaft Cap",
+    "aliases":[
+        "cam cap"
+    ],
+    "common_symptoms":[
+        "camshaft longgar"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+},
+{
+    "id":"COMP_CAM_BEARING",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Valve Train",
+    "name_id":"Bearing Camshaft",
+    "name_en":"Camshaft Bearing",
+    "aliases":[
+        "cam bearing",
+        "bearing noken"
+    ],
+    "common_symptoms":[
+        "bunyi noken",
+        "tekanan oli turun"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+
+{
+    "id":"COMP_TIMING_CHAIN_GUIDE",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Timing System",
+    "name_id":"Guide Rantai Timing",
+    "name_en":"Timing Chain Guide",
+    "aliases":[
+        "guide rantai",
+        "chain guide",
+        "guide keteng"
+    ],
+    "common_symptoms":[
+        "bunyi rantai",
+        "keteng berisik"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_TIMING_CHAIN_TENSIONER",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Timing System",
+    "name_id":"Tensioner Rantai Timing",
+    "name_en":"Timing Chain Tensioner",
+    "aliases":[
+        "tensioner keteng",
+        "chain tensioner"
+    ],
+    "common_symptoms":[
+        "rantai kendor",
+        "bunyi saat start"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_TIMING_BELT_TENSIONER",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Timing System",
+    "name_id":"Tensioner Timing Belt",
+    "name_en":"Timing Belt Tensioner",
+    "aliases":[
+        "timing belt tensioner"
+    ],
+    "common_symptoms":[
+        "belt berisik",
+        "timing meleset"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_TIMING_IDLER",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Timing System",
+    "name_id":"Idler Timing",
+    "name_en":"Timing Idler Pulley",
+    "aliases":[
+        "idler timing",
+        "idler pulley"
+    ],
+    "common_symptoms":[
+        "bunyi dengung",
+        "belt berisik"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_TIMING_COVER",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Timing System",
+    "name_id":"Cover Timing",
+    "name_en":"Timing Cover",
+    "aliases":[
+        "cover timing",
+        "tutup timing"
+    ],
+    "common_symptoms":[
+        "oli bocor",
+        "cover retak"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_VVT_ACTUATOR",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Variable Valve Timing",
+    "name_id":"VVT Actuator",
+    "name_en":"VVT Actuator",
+    "aliases":[
+        "vvt",
+        "vvt actuator",
+        "cam phaser"
+    ],
+    "common_symptoms":[
+        "check engine",
+        "tenaga berkurang",
+        "idle kasar"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_VVT_SOLENOID",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Variable Valve Timing",
+    "name_id":"Solenoid VVT",
+    "name_en":"VVT Solenoid",
+    "aliases":[
+        "vvt solenoid",
+        "oil control valve",
+        "ocv"
+    ],
+    "common_symptoms":[
+        "check engine",
+        "rpm tidak stabil",
+        "tarikan berat"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_CAM_PHASER",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Variable Valve Timing",
+    "name_id":"Cam Phaser",
+    "name_en":"Cam Phaser",
+    "aliases":[
+        "cam phaser"
+    ],
+    "common_symptoms":[
+        "bunyi mesin",
+        "tenaga hilang"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+},
+{
+    "id":"COMP_CRANKSHAFT_GEAR",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Timing System",
+    "name_id":"Gear Kruk As",
+    "name_en":"Crankshaft Timing Gear",
+    "aliases":[
+        "gear kruk as",
+        "timing gear"
+    ],
+    "common_symptoms":[
+        "timing meleset"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+},
+{
+    "id":"COMP_CAMSHAFT_GEAR",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Timing System",
+    "name_id":"Gear Camshaft",
+    "name_en":"Camshaft Gear",
+    "aliases":[
+        "gear noken",
+        "cam gear"
+    ],
+    "common_symptoms":[
+        "timing tidak presisi",
+        "bunyi gear"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+},
+
+{
+    "id":"COMP_INTAKE_MANIFOLD",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Air Intake",
+    "name_id":"Manifold Masuk",
+    "name_en":"Intake Manifold",
+    "aliases":[
+        "intake manifold",
+        "manifold masuk"
+    ],
+    "common_symptoms":[
+        "vacuum bocor",
+        "idle kasar",
+        "tenaga hilang"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_INTAKE_MANIFOLD_GASKET",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Air Intake",
+    "name_id":"Packing Intake Manifold",
+    "name_en":"Intake Manifold Gasket",
+    "aliases":[
+        "packing intake",
+        "intake gasket"
+    ],
+    "common_symptoms":[
+        "vacuum leak",
+        "idle tinggi"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_THROTTLE_BODY",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Air Intake",
+    "name_id":"Throttle Body",
+    "name_en":"Throttle Body",
+    "aliases":[
+        "throttle body",
+        "tb"
+    ],
+    "common_symptoms":[
+        "rpm naik turun",
+        "idle kasar",
+        "mesin brebet"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_THROTTLE_PLATE",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Air Intake",
+    "name_id":"Katup Throttle",
+    "name_en":"Throttle Plate",
+    "aliases":[
+        "katup throttle",
+        "throttle plate"
+    ],
+    "common_symptoms":[
+        "gas seret",
+        "idle tidak stabil"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_THROTTLE_POSITION_SENSOR",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Sensor",
+    "name_id":"Sensor TPS",
+    "name_en":"Throttle Position Sensor",
+    "aliases":[
+        "tps",
+        "sensor tps",
+        "throttle position sensor"
+    ],
+    "common_symptoms":[
+        "tarikan berat",
+        "rpm naik turun",
+        "check engine"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_IDLE_AIR_CONTROL_VALVE",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Air Intake",
+    "name_id":"Katup Idle",
+    "name_en":"Idle Air Control Valve",
+    "aliases":[
+        "iac",
+        "idle air control"
+    ],
+    "common_symptoms":[
+        "idle tinggi",
+        "idle rendah",
+        "mesin mati saat langsam"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_AIR_FILTER",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Air Intake",
+    "name_id":"Filter Udara",
+    "name_en":"Air Filter",
+    "aliases":[
+        "filter udara",
+        "air filter"
+    ],
+    "common_symptoms":[
+        "tarikan berat",
+        "boros bensin"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_AIR_FILTER_BOX",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Air Intake",
+    "name_id":"Box Filter Udara",
+    "name_en":"Air Filter Housing",
+    "aliases":[
+        "air box",
+        "box filter"
+    ],
+    "common_symptoms":[
+        "udara masuk kotor"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_INTAKE_HOSE",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Air Intake",
+    "name_id":"Selang Intake",
+    "name_en":"Air Intake Hose",
+    "aliases":[
+        "selang intake",
+        "intake hose"
+    ],
+    "common_symptoms":[
+        "vacuum leak",
+        "rpm naik turun"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_PCV_HOSE",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Emission",
+    "name_id":"Selang PCV",
+    "name_en":"PCV Hose",
+    "aliases":[
+        "pcv hose",
+        "selang pcv"
+    ],
+    "common_symptoms":[
+        "idle kasar",
+        "vacuum bocor"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+
+{
+    "id":"COMP_CKP_SENSOR",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Sensor",
+    "name_id":"Sensor Posisi Kruk As",
+    "name_en":"Crankshaft Position Sensor",
+    "aliases":[
+        "ckp",
+        "sensor kruk as"
+    ],
+    "common_symptoms":[
+        "mesin mati mendadak",
+        "starter tidak hidup"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+},
+{
+    "id":"COMP_CMP_SENSOR",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Sensor",
+    "name_id":"Sensor Posisi Camshaft",
+    "name_en":"Camshaft Position Sensor",
+    "aliases":[
+        "cmp",
+        "sensor camshaft"
+    ],
+    "common_symptoms":[
+        "check engine",
+        "sulit starter"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+},
+{
+    "id":"COMP_KNOCK_SENSOR",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Sensor",
+    "name_id":"Knock Sensor",
+    "name_en":"Knock Sensor",
+    "aliases":[
+        "knock sensor"
+    ],
+    "common_symptoms":[
+        "check engine",
+        "tenaga turun",
+        "ngelitik"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+},
+{
+    "id":"COMP_ENGINE_COOLANT_TEMPERATURE_SENSOR",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Sensor",
+    "name_id":"Sensor Suhu Coolant",
+    "name_en":"Engine Coolant Temperature Sensor",
+    "aliases":[
+        "ect",
+        "sensor suhu coolant"
+    ],
+    "common_symptoms":[
+        "kipas tidak menyala",
+        "check engine",
+        "boros bensin"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+},
+{
+    "id":"COMP_ENGINE_OIL_TEMPERATURE_SENSOR",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Sensor",
+    "name_id":"Sensor Suhu Oli",
+    "name_en":"Oil Temperature Sensor",
+    "aliases":[
+        "oil temp sensor"
+    ],
+    "common_symptoms":[
+        "indikator suhu oli error"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":false
+},
+{
+    "id":"COMP_MAP_SENSOR",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Sensor",
+    "name_id":"MAP Sensor",
+    "name_en":"Manifold Absolute Pressure Sensor",
+    "aliases":[
+        "map sensor"
+    ],
+    "common_symptoms":[
+        "ngempos",
+        "boros",
+        "check engine"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_MAF_SENSOR",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Sensor",
+    "name_id":"MAF Sensor",
+    "name_en":"Mass Air Flow Sensor",
+    "aliases":[
+        "maf sensor"
+    ],
+    "common_symptoms":[
+        "tarikan berat",
+        "idle kasar",
+        "boros bensin"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_IAT_SENSOR",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Sensor",
+    "name_id":"Sensor Suhu Udara Masuk",
+    "name_en":"Intake Air Temperature Sensor",
+    "aliases":[
+        "iat sensor"
+    ],
+    "common_symptoms":[
+        "check engine",
+        "campuran udara tidak akurat"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":false
+}
+,
+{
+    "id":"COMP_ENGINE_MOUNT_LEFT",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Engine Mounting",
+    "name_id":"Engine Mount Kiri",
+    "name_en":"Left Engine Mount",
+    "aliases":[
+        "mount kiri",
+        "engine mount kiri"
+    ],
+    "common_symptoms":[
+        "getaran mesin",
+        "bunyi saat akselerasi"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_ENGINE_MOUNT_RIGHT",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Engine Mounting",
+    "name_id":"Engine Mount Kanan",
+    "name_en":"Right Engine Mount",
+    "aliases":[
+        "mount kanan",
+        "engine mount kanan"
+    ],
+    "common_symptoms":[
+        "getaran mesin"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_ENGINE_MOUNT_REAR",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Engine Mounting",
+    "name_id":"Engine Mount Belakang",
+    "name_en":"Rear Engine Mount",
+    "aliases":[
+        "mount belakang"
+    ],
+    "common_symptoms":[
+        "mesin bergeser",
+        "bunyi saat pindah gigi"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_ENGINE_MOUNT_FRONT",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Engine Mounting",
+    "name_id":"Engine Mount Depan",
+    "name_en":"Front Engine Mount",
+    "aliases":[
+        "mount depan"
+    ],
+    "common_symptoms":[
+        "getaran saat idle"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_ENGINE_SUPPORT_BRACKET",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Engine Mounting",
+    "name_id":"Bracket Mesin",
+    "name_en":"Engine Support Bracket",
+    "aliases":[
+        "bracket mesin"
+    ],
+    "common_symptoms":[
+        "dudukan retak"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":false,
+    "critical":false
+},
+{
+    "id":"COMP_DIPSTICK_TUBE",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Misc",
+    "name_id":"Pipa Dipstick",
+    "name_en":"Dipstick Tube",
+    "aliases":[
+        "tabung dipstick"
+    ],
+    "common_symptoms":[
+        "oli rembes"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_ENGINE_DRAIN_PLUG",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Misc",
+    "name_id":"Baut Pembuangan Oli",
+    "name_en":"Engine Oil Drain Plug",
+    "aliases":[
+        "drain plug",
+        "baut oli"
+    ],
+    "common_symptoms":[
+        "oli menetes"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_DRAIN_PLUG_GASKET",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Misc",
+    "name_id":"Ring Baut Oli",
+    "name_en":"Drain Plug Washer",
+    "aliases":[
+        "ring baut oli",
+        "washer drain plug"
+    ],
+    "common_symptoms":[
+        "rembes oli"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_ENGINE_HEAT_SHIELD",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Misc",
+    "name_id":"Pelindung Panas Mesin",
+    "name_en":"Engine Heat Shield",
+    "aliases":[
+        "heat shield"
+    ],
+    "common_symptoms":[
+        "bunyi getar"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_ENGINE_LIFTING_BRACKET",
+    "vehicle":["CAR"],
+    "system":"ENGINE",
+    "category":"Misc",
+    "name_id":"Bracket Pengangkat Mesin",
+    "name_en":"Engine Lifting Bracket",
+    "aliases":[
+        "lifting bracket"
+    ],
+    "common_symptoms":[
+        "bracket retak"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":false,
+    "critical":false
+},
+{
+    "id":"COMP_ENGINE_SERIAL_PLATE",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ENGINE",
+    "category":"Identification",
+    "name_id":"Plat Nomor Mesin",
+    "name_en":"Engine Serial Plate",
+    "aliases":[
+        "nomor mesin",
+        "engine serial"
+    ],
+    "common_symptoms":[
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":false,
+    "critical":false
+}
+
+]
