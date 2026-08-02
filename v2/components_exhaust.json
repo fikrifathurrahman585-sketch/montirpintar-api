@@ -1,0 +1,120 @@
+[
+    {
+        "id":"COMP_EXHAUST_MANIFOLD",
+        "vehicle":["CAR"],
+        "system":"EXHAUST",
+        "category":"Exhaust",
+        "name_id":"Manifold Knalpot",
+        "name_en":"Exhaust Manifold",
+        "aliases":[
+            "manifold",
+            "manifold knalpot"
+        ],
+        "common_symptoms":[
+            "suara bocor",
+            "bau gas buang"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":false,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_HEADER_PIPE",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"EXHAUST",
+        "category":"Exhaust",
+        "name_id":"Pipa Header",
+        "name_en":"Header Pipe",
+        "aliases":[
+            "header",
+            "header pipe"
+        ],
+        "common_symptoms":[
+            "knalpot bocor"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_CATALYTIC_CONVERTER",
+        "vehicle":["CAR"],
+        "system":"EXHAUST",
+        "category":"Emission",
+        "name_id":"Catalytic Converter",
+        "name_en":"Catalytic Converter",
+        "aliases":[
+            "catalytic",
+            "catcon"
+        ],
+        "common_symptoms":[
+            "tenaga hilang",
+            "check engine"
+        ],
+        "inspectable_by_vision":false,
+        "serviceable":false,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_MUFFLER",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"EXHAUST",
+        "category":"Exhaust",
+        "name_id":"Silencer",
+        "name_en":"Muffler",
+        "aliases":[
+            "knalpot",
+            "silencer",
+            "muffler"
+        ],
+        "common_symptoms":[
+            "suara keras",
+            "knalpot bocor"
+        ],
+        "inspectable_by_vision":true,
+        "serviceable":true,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_EXHAUST_GASKET",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"EXHAUST",
+        "category":"Exhaust",
+        "name_id":"Packing Knalpot",
+        "name_en":"Exhaust Gasket",
+        "aliases":[
+            "packing knalpot",
+            "gasket knalpot"
+        ],
+        "common_symptoms":[
+            "suara bocor"
+        ],
+        "inspectable_by_vision":false,
+        "serviceable":true,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_OXYGEN_SENSOR_EXHAUST",
+        "vehicle":["CAR"],
+        "system":"EXHAUST",
+        "category":"Emission",
+        "name_id":"Sensor Oksigen Knalpot",
+        "name_en":"Exhaust Oxygen Sensor",
+        "aliases":[
+            "sensor oksigen",
+            "o2 sensor"
+        ],
+        "common_symptoms":[
+            "check engine",
+            "boros"
+        ],
+        "inspectable_by_vision":false,
+        "serviceable":true,
+        "critical":false
+    }
+]
