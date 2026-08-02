@@ -1,0 +1,173 @@
+[
+    {
+        "id":"COMP_CLUTCH_DISC",
+        "vehicle":["CAR"],
+        "system":"TRANSMISSION",
+        "name_id":"Kampas Kopling",
+        "name_en":"Clutch Disc",
+        "aliases":[
+            "kampas kopling",
+            "clutch disc"
+        ]
+    },
+
+    {
+        "id":"COMP_PRESSURE_PLATE",
+        "vehicle":["CAR"],
+        "system":"TRANSMISSION",
+        "name_id":"Pressure Plate",
+        "name_en":"Pressure Plate",
+        "aliases":[
+            "pressure plate"
+        ]
+    },
+
+    {
+        "id":"COMP_RELEASE_BEARING",
+        "vehicle":["CAR"],
+        "system":"TRANSMISSION",
+        "name_id":"Release Bearing",
+        "name_en":"Release Bearing",
+        "aliases":[
+            "release bearing",
+            "laher kopling"
+        ]
+    },
+
+    {
+        "id":"COMP_FLYWHEEL",
+        "vehicle":["CAR"],
+        "system":"TRANSMISSION",
+        "name_id":"Flywheel",
+        "name_en":"Flywheel",
+        "aliases":[
+            "flywheel",
+            "roda gila"
+        ]
+    },
+
+    {
+        "id":"COMP_INPUT_SHAFT",
+        "vehicle":["CAR"],
+        "system":"TRANSMISSION",
+        "name_id":"Poros Input",
+        "name_en":"Input Shaft",
+        "aliases":[
+            "input shaft"
+        ]
+    },
+
+    {
+        "id":"COMP_OUTPUT_SHAFT",
+        "vehicle":["CAR"],
+        "system":"TRANSMISSION",
+        "name_id":"Poros Output",
+        "name_en":"Output Shaft",
+        "aliases":[
+            "output shaft"
+        ]
+    },
+
+    {
+        "id":"COMP_SYNCHROMESH",
+        "vehicle":["CAR"],
+        "system":"TRANSMISSION",
+        "name_id":"Synchromesh",
+        "name_en":"Synchromesh",
+        "aliases":[
+            "synchromesh"
+        ]
+    },
+
+    {
+        "id":"COMP_SHIFT_FORK",
+        "vehicle":["CAR"],
+        "system":"TRANSMISSION",
+        "name_id":"Garpu Pemindah Gigi",
+        "name_en":"Shift Fork",
+        "aliases":[
+            "garpu gigi",
+            "shift fork"
+        ]
+    },
+
+    {
+        "id":"COMP_GEAR_SET",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"TRANSMISSION",
+        "name_id":"Gear Set",
+        "name_en":"Gear Set",
+        "aliases":[
+            "gear",
+            "gear set"
+        ]
+    },
+
+    {
+        "id":"COMP_GEARBOX",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"TRANSMISSION",
+        "name_id":"Gearbox",
+        "name_en":"Gearbox",
+        "aliases":[
+            "gearbox"
+        ]
+    },
+
+    {
+        "id":"COMP_SHIFT_DRUM",
+        "vehicle":["MOTORCYCLE"],
+        "system":"TRANSMISSION",
+        "name_id":"Shift Drum",
+        "name_en":"Shift Drum",
+        "aliases":[
+            "shift drum"
+        ]
+    },
+
+    {
+        "id":"COMP_SHIFT_SHAFT",
+        "vehicle":["MOTORCYCLE"],
+        "system":"TRANSMISSION",
+        "name_id":"Shift Shaft",
+        "name_en":"Shift Shaft",
+        "aliases":[
+            "shift shaft"
+        ]
+    },
+
+    {
+        "id":"COMP_COUNTER_SHAFT",
+        "vehicle":["MOTORCYCLE"],
+        "system":"TRANSMISSION",
+        "name_id":"Counter Shaft",
+        "name_en":"Counter Shaft",
+        "aliases":[
+            "counter shaft"
+        ]
+    },
+
+    {
+        "id":"COMP_TRANSMISSION_BEARING",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"TRANSMISSION",
+        "name_id":"Bearing Transmisi",
+        "name_en":"Transmission Bearing",
+        "aliases":[
+            "bearing transmisi",
+            "bearing gearbox"
+        ]
+    },
+
+    {
+        "id":"COMP_TRANSMISSION_SEAL",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"TRANSMISSION",
+        "name_id":"Seal Transmisi",
+        "name_en":"Transmission Oil Seal",
+        "aliases":[
+            "seal transmisi",
+            "oil seal gearbox"
+        ]
+    }
+]
