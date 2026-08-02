@@ -79,4 +79,220 @@
         "serviceable":true,
         "critical":true
     }
+
+
+
+    ,
+{
+    "id":"COMP_IGNITION_COIL",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ELECTRICAL",
+    "category":"Ignition",
+    "name_id":"Koil",
+    "name_en":"Ignition Coil",
+    "aliases":[
+        "coil",
+        "koil"
+    ],
+    "common_symptoms":[
+        "brebet",
+        "misfire",
+        "mesin pincang"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_SPARK_PLUG",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ELECTRICAL",
+    "category":"Ignition",
+    "name_id":"Busi",
+    "name_en":"Spark Plug",
+    "aliases":[
+        "busi",
+        "spark plug"
+    ],
+    "common_symptoms":[
+        "brebet",
+        "sulit hidup",
+        "mesin pincang"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_CDI",
+    "vehicle":["MOTORCYCLE"],
+    "system":"ELECTRICAL",
+    "category":"Ignition",
+    "name_id":"CDI",
+    "name_en":"CDI Unit",
+    "aliases":[
+        "cdi"
+    ],
+    "common_symptoms":[
+        "motor mati",
+        "tidak ada api"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+},
+{
+    "id":"COMP_ECU",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ELECTRICAL",
+    "category":"Control",
+    "name_id":"ECU",
+    "name_en":"Engine Control Unit",
+    "aliases":[
+        "ecu"
+    ],
+    "common_symptoms":[
+        "check engine",
+        "mesin mati mendadak"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+}
+
+
+    ,
+{
+    "id":"COMP_MAF_SENSOR",
+    "vehicle":["CAR"],
+    "system":"ELECTRICAL",
+    "category":"Sensor",
+    "name_id":"Sensor MAF",
+    "name_en":"Mass Air Flow Sensor",
+    "aliases":[
+        "maf",
+        "maf sensor"
+    ],
+    "common_symptoms":[
+        "brebet",
+        "boros bbm"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_MAP_SENSOR",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ELECTRICAL",
+    "category":"Sensor",
+    "name_id":"Sensor MAP",
+    "name_en":"MAP Sensor",
+    "aliases":[
+        "map sensor"
+    ],
+    "common_symptoms":[
+        "rpm tidak stabil",
+        "tarikan berat"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_OXYGEN_SENSOR",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ELECTRICAL",
+    "category":"Sensor",
+    "name_id":"Sensor Oksigen",
+    "name_en":"Oxygen Sensor",
+    "aliases":[
+        "sensor oksigen",
+        "o2 sensor"
+    ],
+    "common_symptoms":[
+        "boros",
+        "check engine"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_CKP_SENSOR",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ELECTRICAL",
+    "category":"Sensor",
+    "name_id":"Sensor Crankshaft",
+    "name_en":"Crankshaft Position Sensor",
+    "aliases":[
+        "ckp",
+        "sensor kruk as"
+    ],
+    "common_symptoms":[
+        "mesin mati",
+        "tidak bisa hidup"
+    ],
+    "inspectable_by_vision":false,
+    "serviceable":false,
+    "critical":true
+}
+
+
+
+    ,
+{
+    "id":"COMP_MAIN_FUSE",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ELECTRICAL",
+    "category":"Protection",
+    "name_id":"Sekring Utama",
+    "name_en":"Main Fuse",
+    "aliases":[
+        "sekring",
+        "fuse"
+    ],
+    "common_symptoms":[
+        "mati total"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":true
+},
+{
+    "id":"COMP_RELAY",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ELECTRICAL",
+    "category":"Protection",
+    "name_id":"Relay",
+    "name_en":"Relay",
+    "aliases":[
+        "relay"
+    ],
+    "common_symptoms":[
+        "starter tidak bekerja"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":false
+},
+{
+    "id":"COMP_WIRING_HARNESS",
+    "vehicle":["CAR","MOTORCYCLE"],
+    "system":"ELECTRICAL",
+    "category":"Electrical",
+    "name_id":"Kabel Utama",
+    "name_en":"Wiring Harness",
+    "aliases":[
+        "wiring",
+        "kabel body"
+    ],
+    "common_symptoms":[
+        "korsleting",
+        "kelistrikan mati"
+    ],
+    "inspectable_by_vision":true,
+    "serviceable":true,
+    "critical":true
+}
 ]
