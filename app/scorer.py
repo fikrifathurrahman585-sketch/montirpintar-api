@@ -1,102 +1,142 @@
-import re
+from app.rules import (
+    detect_vehicle,
+    detect_system,
+    extract_keywords
+)
 
-# =====================================================
-# BONUS SCORE
-# =====================================================
+# ==========================================================
+# BOBOT SKOR
+# ==========================================================
 
-KEYWORD_SCORE = {
-
-    "cvt": {
-        "cvt": 60,
-        "roller": 40,
-        "v belt": 35,
-        "vbelt": 35,
-        "kampas": 25,
-        "mangkok": 25,
-        "gredek": 25,
-        "klotok": 20,
-        "dengung": 15,
-        "bearing": 15
-    },
-
-    "engine": {
-        "mesin": 50,
-        "klep": 45,
-        "kruk as": 45,
-        "krukas": 45,
-        "piston": 40,
-        "ring": 35,
-        "ngebul": 30,
-        "oli mesin": 25,
-        "knocking": 25
-    },
-
-    "cooling": {
-        "radiator": 60,
-        "coolant": 55,
-        "overheat": 50,
-        "kipas": 25,
-        "waterpump": 30
-    },
-
-    "brakes": {
-        "rem": 60,
-        "cakram": 35,
-        "kampas": 30,
-        "pedal": 25,
-        "kaliper": 30,
-        "master rem": 40,
-        "minyak rem": 40
-    },
-
-    "transmission": {
-        "matic": 45,
-        "transmisi": 45,
-        "gearbox": 40,
-        "persneling": 35,
-        "gigi": 30,
-        "jedug": 35,
-        "slip": 30
-    },
-
-    "electrical": {
-        "aki": 50,
-        "starter": 45,
-        "alternator": 40,
-        "dinamo": 35,
-        "lampu": 20
-    },
-
-    "suspension": {
-        "shock": 45,
-        "tie rod": 40,
-        "rack steer": 40,
-        "bearing": 30,
-        "cv joint": 40,
-        "ball joint": 30
-    }
-
+KEYWORD_WEIGHT = 8
+SYSTEM_WEIGHT = 20
+VEHICLE_WEIGHT = 15
+SEVERITY_WEIGHT = {
+    "INFO": 0,
+    "WARNING": 5,
+    "DANGER": 10
 }
 
+# ==========================================================
+# HITUNG SKOR KEYWORD
+# ==========================================================
 
-# =====================================================
-# SCORE
-# =====================================================
+def score_keywords(user_input: str, item: dict):
 
-def score_keywords(text: str, system: str):
+    score = 0
 
-    text = text.lower()
+    keywords = extract_keywords(user_input)
+
+    dataset_keywords = item.get("keywords", [])
+
+    aliases = item.get("aliases", [])
+
+    all_keywords = set()
+
+    for k in dataset_keywords:
+        all_keywords.add(k.lower())
+
+    for k in aliases:
+        all_keywords.add(k.lower())
+
+    for word in keywords:
+        if word in all_keywords:
+            score += KEYWORD_WEIGHT
+
+    return score
+
+
+# ==========================================================
+# SKOR SISTEM
+# ==========================================================
+
+def score_system(user_input: str, item: dict):
+
+    detected = detect_system(user_input)
+
+    if not detected:
+        return 0
+
+    dataset_system = item.get("system", "").lower()
+
+    if detected == dataset_system:
+        return SYSTEM_WEIGHT
+
+    return 0
+
+
+# ==========================================================
+# SKOR VEHICLE
+# ==========================================================
+
+def score_vehicle(user_input: str, item: dict):
+
+    detected = detect_vehicle(user_input)
+
+    if not detected:
+        return 0
+
+    vehicle = item.get("vehicle", "").lower()
+
+    if detected == vehicle:
+        return VEHICLE_WEIGHT
+
+    return 0
+
+
+# ==========================================================
+# SKOR PRIORITAS
+# ==========================================================
+
+def score_priority(item: dict):
+
+    priority = item.get("priority", 0)
+
+    return priority * 3
+
+
+# ==========================================================
+# SKOR SEVERITY
+# ==========================================================
+
+def score_severity(item: dict):
+
+    severity = item.get(
+        "severity",
+        "INFO"
+    )
+
+    return SEVERITY_WEIGHT.get(
+        severity,
+        0
+    )
+
+
+# ==========================================================
+# TOTAL BONUS
+# ==========================================================
+
+def score_bonus(user_input: str, item: dict):
 
     total = 0
 
-    if system not in KEYWORD_SCORE:
-        return 0
+    total += score_keywords(
+        user_input,
+        item
+    )
 
-    rules = KEYWORD_SCORE[system]
+    total += score_system(
+        user_input,
+        item
+    )
 
-    for keyword, score in rules.items():
+    total += score_vehicle(
+        user_input,
+        item
+    )
 
-        if keyword in text:
-            total += score
+    total += score_priority(item)
+
+    total += score_severity(item)
 
     return total
