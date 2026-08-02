@@ -1,0 +1,258 @@
+[
+    {
+        "id":"COMP_STEERING_WHEEL",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Setir",
+        "name_en":"Steering Wheel",
+        "aliases":[
+            "setir",
+            "steering wheel"
+        ]
+    },
+
+    {
+        "id":"COMP_STEERING_COLUMN",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Kolom Setir",
+        "name_en":"Steering Column",
+        "aliases":[
+            "kolom setir",
+            "steering column"
+        ]
+    },
+
+    {
+        "id":"COMP_STEERING_SHAFT",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Poros Setir",
+        "name_en":"Steering Shaft",
+        "aliases":[
+            "steering shaft",
+            "poros setir"
+        ]
+    },
+
+    {
+        "id":"COMP_UNIVERSAL_JOINT",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Universal Joint",
+        "name_en":"Universal Joint",
+        "aliases":[
+            "joint setir",
+            "u joint"
+        ]
+    },
+
+    {
+        "id":"COMP_RACK_STEERING",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Rack Steer",
+        "name_en":"Rack and Pinion",
+        "aliases":[
+            "rack steer",
+            "rack steering",
+            "rack and pinion"
+        ]
+    },
+
+    {
+        "id":"COMP_PINION_GEAR",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Pinion Gear",
+        "name_en":"Pinion Gear",
+        "aliases":[
+            "pinion"
+        ]
+    },
+
+    {
+        "id":"COMP_INNER_TIE_ROD",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Inner Tie Rod",
+        "name_en":"Inner Tie Rod",
+        "aliases":[
+            "inner tie rod"
+        ]
+    },
+
+    {
+        "id":"COMP_OUTER_TIE_ROD",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Outer Tie Rod",
+        "name_en":"Outer Tie Rod",
+        "aliases":[
+            "tie rod",
+            "outer tie rod"
+        ]
+    },
+
+    {
+        "id":"COMP_DRAG_LINK",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Drag Link",
+        "name_en":"Drag Link",
+        "aliases":[
+            "drag link"
+        ]
+    },
+
+    {
+        "id":"COMP_CENTER_LINK",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Center Link",
+        "name_en":"Center Link",
+        "aliases":[
+            "center link"
+        ]
+    },
+
+    {
+        "id":"COMP_IDLER_ARM",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Idler Arm",
+        "name_en":"Idler Arm",
+        "aliases":[
+            "idler arm"
+        ]
+    },
+
+    {
+        "id":"COMP_PITMAN_ARM",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Pitman Arm",
+        "name_en":"Pitman Arm",
+        "aliases":[
+            "pitman arm"
+        ]
+    },
+
+    {
+        "id":"COMP_STEERING_KNUCKLE",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"STEERING",
+        "name_id":"Steering Knuckle",
+        "name_en":"Steering Knuckle",
+        "aliases":[
+            "knuckle",
+            "knuckle roda"
+        ]
+    },
+
+    {
+        "id":"COMP_POWER_STEERING_PUMP",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Pompa Power Steering",
+        "name_en":"Power Steering Pump",
+        "aliases":[
+            "power steering pump",
+            "pompa power steering"
+        ]
+    },
+
+    {
+        "id":"COMP_POWER_STEERING_HOSE",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Selang Power Steering",
+        "name_en":"Power Steering Hose",
+        "aliases":[
+            "selang power steering"
+        ]
+    },
+
+    {
+        "id":"COMP_POWER_STEERING_FLUID",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Oli Power Steering",
+        "name_en":"Power Steering Fluid",
+        "aliases":[
+            "oli power steering",
+            "power steering fluid"
+        ]
+    },
+
+    {
+        "id":"COMP_EPS_MOTOR",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Motor EPS",
+        "name_en":"EPS Motor",
+        "aliases":[
+            "eps",
+            "eps motor"
+        ]
+    },
+
+    {
+        "id":"COMP_EPS_MODULE",
+        "vehicle":["CAR"],
+        "system":"STEERING",
+        "name_id":"Modul EPS",
+        "name_en":"EPS Control Module",
+        "aliases":[
+            "eps module",
+            "ecu eps"
+        ]
+    },
+
+    {
+        "id":"COMP_HANDLEBAR",
+        "vehicle":["MOTORCYCLE"],
+        "system":"STEERING",
+        "name_id":"Stang",
+        "name_en":"Handlebar",
+        "aliases":[
+            "stang",
+            "handlebar"
+        ]
+    },
+
+    {
+        "id":"COMP_STEERING_BEARING",
+        "vehicle":["MOTORCYCLE"],
+        "system":"STEERING",
+        "name_id":"Komstir",
+        "name_en":"Steering Bearing",
+        "aliases":[
+            "komstir",
+            "laher komstir",
+            "steering bearing"
+        ]
+    },
+
+    {
+        "id":"COMP_TOP_TRIPLE_CLAMP",
+        "vehicle":["MOTORCYCLE"],
+        "system":"STEERING",
+        "name_id":"Segitiga Atas",
+        "name_en":"Top Triple Clamp",
+        "aliases":[
+            "segitiga atas"
+        ]
+    },
+
+    {
+        "id":"COMP_BOTTOM_TRIPLE_CLAMP",
+        "vehicle":["MOTORCYCLE"],
+        "system":"STEERING",
+        "name_id":"Segitiga Bawah",
+        "name_en":"Bottom Triple Clamp",
+        "aliases":[
+            "segitiga bawah"
+        ]
+    }
+]
