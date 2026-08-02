@@ -1,0 +1,183 @@
+[
+    {
+        "id":"COMP_RADIATOR",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"COOLING",
+        "category":"Cooling",
+        "name_id":"Radiator",
+        "name_en":"Radiator",
+        "aliases":["radiator"],
+        "serviceable":true,
+        "inspectable_by_vision":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_RADIATOR_CAP",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"COOLING",
+        "category":"Cooling",
+        "name_id":"Tutup Radiator",
+        "name_en":"Radiator Cap",
+        "aliases":["tutup radiator","radiator cap"],
+        "serviceable":true,
+        "inspectable_by_vision":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_RESERVOIR_TANK",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"COOLING",
+        "category":"Cooling",
+        "name_id":"Tabung Reservoir",
+        "name_en":"Coolant Reservoir",
+        "aliases":["tabung reservoir","reservoir coolant"],
+        "serviceable":true,
+        "inspectable_by_vision":true,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_COOLANT",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"COOLING",
+        "category":"Cooling",
+        "name_id":"Coolant",
+        "name_en":"Coolant",
+        "aliases":["coolant","air radiator"],
+        "serviceable":true,
+        "inspectable_by_vision":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_UPPER_RADIATOR_HOSE",
+        "vehicle":["CAR"],
+        "system":"COOLING",
+        "category":"Cooling",
+        "name_id":"Selang Radiator Atas",
+        "name_en":"Upper Radiator Hose",
+        "aliases":["selang radiator atas"],
+        "serviceable":true,
+        "inspectable_by_vision":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_LOWER_RADIATOR_HOSE",
+        "vehicle":["CAR"],
+        "system":"COOLING",
+        "category":"Cooling",
+        "name_id":"Selang Radiator Bawah",
+        "name_en":"Lower Radiator Hose",
+        "aliases":["selang radiator bawah"],
+        "serviceable":true,
+        "inspectable_by_vision":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_HEATER_HOSE",
+        "vehicle":["CAR"],
+        "system":"COOLING",
+        "category":"Cooling",
+        "name_id":"Selang Heater",
+        "name_en":"Heater Hose",
+        "aliases":["heater hose"],
+        "serviceable":true,
+        "inspectable_by_vision":false,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_WATER_PUMP",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"COOLING",
+        "category":"Cooling",
+        "name_id":"Water Pump",
+        "name_en":"Water Pump",
+        "aliases":["water pump","pompa air"],
+        "serviceable":true,
+        "inspectable_by_vision":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_THERMOSTAT",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"COOLING",
+        "category":"Cooling",
+        "name_id":"Thermostat",
+        "name_en":"Thermostat",
+        "aliases":["thermostat"],
+        "serviceable":true,
+        "inspectable_by_vision":false,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_COOLING_FAN",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"COOLING",
+        "category":"Cooling",
+        "name_id":"Kipas Radiator",
+        "name_en":"Cooling Fan",
+        "aliases":["kipas radiator","cooling fan"],
+        "serviceable":true,
+        "inspectable_by_vision":true,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_FAN_MOTOR",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"COOLING",
+        "category":"Cooling",
+        "name_id":"Motor Kipas",
+        "name_en":"Cooling Fan Motor",
+        "aliases":["motor kipas"],
+        "serviceable":true,
+        "inspectable_by_vision":false,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_FAN_RELAY",
+        "vehicle":["CAR"],
+        "system":"COOLING",
+        "category":"Cooling",
+        "name_id":"Relay Kipas",
+        "name_en":"Cooling Fan Relay",
+        "aliases":["relay kipas"],
+        "serviceable":true,
+        "inspectable_by_vision":false,
+        "critical":false
+    },
+
+    {
+        "id":"COMP_TEMPERATURE_SENSOR",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"COOLING",
+        "category":"Cooling",
+        "name_id":"Sensor Temperatur",
+        "name_en":"Coolant Temperature Sensor",
+        "aliases":["sensor temperatur","sensor suhu mesin"],
+        "serviceable":true,
+        "inspectable_by_vision":false,
+        "critical":true
+    },
+
+    {
+        "id":"COMP_RADIATOR_DRAIN_PLUG",
+        "vehicle":["CAR"],
+        "system":"COOLING",
+        "category":"Cooling",
+        "name_id":"Baut Pembuangan Radiator",
+        "name_en":"Radiator Drain Plug",
+        "aliases":["drain plug radiator"],
+        "serviceable":true,
+        "inspectable_by_vision":true,
+        "critical":false
+    }
+]
