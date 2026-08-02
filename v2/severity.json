@@ -1,0 +1,17 @@
+[
+    {
+        "id":"INFO",
+        "priority":1,
+        "color":"#4CAF50"
+    },
+    {
+        "id":"WARNING",
+        "priority":2,
+        "color":"#FFC107"
+    },
+    {
+        "id":"DANGER",
+        "priority":3,
+        "color":"#F44336"
+    }
+]
