@@ -1,106 +1,84 @@
-# ==========================================================
-# KNOWLEDGE ENGINE V4
-# ==========================================================
+import json
+import os
 
-COMPONENT_GROUPS = {
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-    "engine": [
-        "mesin",
-        "klep",
-        "camshaft",
-        "kruk",
-        "noken",
-        "bearing",
-        "connecting rod",
-        "piston",
-        "ring piston",
-        "head"
-    ],
+V2_DIR = os.path.join(BASE_DIR, "v2")
 
-    "cvt": [
-        "roller",
-        "v belt",
-        "vbelt",
-        "kampas ganda",
-        "clutch",
-        "torque driver",
-        "bearing cvt"
-    ],
 
-    "transmission": [
-        "transmisi",
-        "gear",
-        "kopling",
-        "synchromesh",
-        "input shaft",
-        "output shaft"
-    ],
+class KnowledgeBase:
 
-    "brake": [
-        "cakram",
-        "kampas rem",
-        "kaliper",
-        "master rem",
-        "selang rem"
-    ],
+    def __init__(self):
 
-    "suspension": [
-        "shock",
-        "tie rod",
-        "rack steer",
-        "ball joint",
-        "bushing"
-    ],
+        self.components = []
+        self.faults = []
+        self.symptoms = []
+        self.repairs = []
+        self.costs = []
+        self.aliases = []
 
-    "cooling": [
-        "radiator",
-        "waterpump",
-        "thermostat",
-        "coolant",
-        "kipas"
-    ]
+    def load_json(self, filename):
 
-}
+        path = os.path.join(V2_DIR, filename)
 
-# ==========================================================
-# DETEKSI KOMPONEN
-# ==========================================================
+        if not os.path.exists(path):
+            return []
 
-def detect_component(text):
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
 
-    text = text.lower()
+    def load(self):
 
-    result = []
+        self.components = self.load_json("components.json")
+        self.faults = self.load_json("faults.json")
+        self.symptoms = self.load_json("symptoms.json")
+        self.repairs = self.load_json("repairs.json")
+        self.costs = self.load_json("costs.json")
+        self.aliases = self.load_json("aliases.json")
 
-    for system, components in COMPONENT_GROUPS.items():
+    def get_component(self, code):
 
-        for component in components:
+        for item in self.components:
+            if item["code"] == code:
+                return item
 
-            if component in text:
+        return None
 
-                result.append(component)
+    def get_fault(self, code):
 
-    return result
+        for item in self.faults:
+            if item["code"] == code:
+                return item
 
-# ==========================================================
-# SKOR KOMPONEN
-# ==========================================================
+        return None
 
-def component_score(user_input, item):
+    def get_repair(self, fault):
 
-    score = 0
+        for item in self.repairs:
+            if item["fault"] == fault:
+                return item
 
-    components = detect_component(user_input)
+        return None
 
-    dataset_components = item.get(
-        "components",
-        []
-    )
+    def get_cost(self, fault):
 
-    for component in components:
+        for item in self.costs:
+            if item["fault"] == fault:
+                return item
 
-        if component in dataset_components:
+        return None
 
-            score += 20
+    def search_alias(self, keyword):
 
-    return score
+        keyword = keyword.lower()
+
+        for item in self.aliases:
+
+            if item["keyword"].lower() == keyword:
+                return item
+
+        return None
+
+
+knowledge = KnowledgeBase()
+knowledge.load()
