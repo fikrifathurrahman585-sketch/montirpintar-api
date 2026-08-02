@@ -3,6 +3,8 @@ from app.rules import (
     detect_system,
     extract_keywords
 )
+from app.knowledge import component_score
+
 
 # ==========================================================
 # BOBOT SKOR
@@ -116,7 +118,7 @@ def score_severity(item: dict):
 # TOTAL BONUS
 # ==========================================================
 
-def score_bonus(user_input: str, item: dict):
+def score_bonus(user_input, item):
 
     total = 0
 
@@ -131,6 +133,11 @@ def score_bonus(user_input: str, item: dict):
     )
 
     total += score_vehicle(
+        user_input,
+        item
+    )
+
+    total += component_score(
         user_input,
         item
     )
