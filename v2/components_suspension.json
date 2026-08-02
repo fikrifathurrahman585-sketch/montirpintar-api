@@ -1,0 +1,212 @@
+[
+    {
+        "id":"COMP_FRONT_SHOCK",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"SUSPENSION",
+        "name_id":"Shockbreaker Depan",
+        "name_en":"Front Shock Absorber",
+        "aliases":[
+            "shock depan",
+            "shockbreaker depan",
+            "front shock"
+        ]
+    },
+
+    {
+        "id":"COMP_REAR_SHOCK",
+        "vehicle":["CAR","MOTORCYCLE"],
+        "system":"SUSPENSION",
+        "name_id":"Shockbreaker Belakang",
+        "name_en":"Rear Shock Absorber",
+        "aliases":[
+            "shock belakang",
+            "rear shock"
+        ]
+    },
+
+    {
+        "id":"COMP_SHOCK_MOUNT",
+        "vehicle":["CAR"],
+        "system":"SUSPENSION",
+        "name_id":"Dudukan Shock",
+        "name_en":"Shock Mount",
+        "aliases":[
+            "shock mounting",
+            "top mount"
+        ]
+    },
+
+    {
+        "id":"COMP_COIL_SPRING",
+        "vehicle":["CAR"],
+        "system":"SUSPENSION",
+        "name_id":"Per Keong",
+        "name_en":"Coil Spring",
+        "aliases":[
+            "per",
+            "coil spring"
+        ]
+    },
+
+    {
+        "id":"COMP_LEAF_SPRING",
+        "vehicle":["CAR"],
+        "system":"SUSPENSION",
+        "name_id":"Per Daun",
+        "name_en":"Leaf Spring",
+        "aliases":[
+            "per daun",
+            "leaf spring"
+        ]
+    },
+
+    {
+        "id":"COMP_LOWER_ARM",
+        "vehicle":["CAR"],
+        "system":"SUSPENSION",
+        "name_id":"Lower Arm",
+        "name_en":"Lower Control Arm",
+        "aliases":[
+            "lower arm",
+            "control arm bawah"
+        ]
+    },
+
+    {
+        "id":"COMP_UPPER_ARM",
+        "vehicle":["CAR"],
+        "system":"SUSPENSION",
+        "name_id":"Upper Arm",
+        "name_en":"Upper Control Arm",
+        "aliases":[
+            "upper arm",
+            "control arm atas"
+        ]
+    },
+
+    {
+        "id":"COMP_BUSHING_ARM",
+        "vehicle":["CAR"],
+        "system":"SUSPENSION",
+        "name_id":"Bushing Arm",
+        "name_en":"Control Arm Bushing",
+        "aliases":[
+            "bushing arm",
+            "arm bushing"
+        ]
+    },
+
+    {
+        "id":"COMP_BALL_JOINT",
+        "vehicle":["CAR"],
+        "system":"SUSPENSION",
+        "name_id":"Ball Joint",
+        "name_en":"Ball Joint",
+        "aliases":[
+            "ball joint"
+        ]
+    },
+
+    {
+        "id":"COMP_STABILIZER_LINK",
+        "vehicle":["CAR"],
+        "system":"SUSPENSION",
+        "name_id":"Link Stabilizer",
+        "name_en":"Stabilizer Link",
+        "aliases":[
+            "link stabilizer",
+            "stabilizer link"
+        ]
+    },
+
+    {
+        "id":"COMP_STABILIZER_BUSH",
+        "vehicle":["CAR"],
+        "system":"SUSPENSION",
+        "name_id":"Bushing Stabilizer",
+        "name_en":"Stabilizer Bushing",
+        "aliases":[
+            "karet stabilizer",
+            "bushing stabilizer"
+        ]
+    },
+
+    {
+        "id":"COMP_TRAILING_ARM",
+        "vehicle":["CAR"],
+        "system":"SUSPENSION",
+        "name_id":"Trailing Arm",
+        "name_en":"Trailing Arm",
+        "aliases":[
+            "trailing arm"
+        ]
+    },
+
+    {
+        "id":"COMP_TORSION_BAR",
+        "vehicle":["CAR"],
+        "system":"SUSPENSION",
+        "name_id":"Torsion Bar",
+        "name_en":"Torsion Bar",
+        "aliases":[
+            "torsion bar"
+        ]
+    },
+
+    {
+        "id":"COMP_STRUT",
+        "vehicle":["CAR"],
+        "system":"SUSPENSION",
+        "name_id":"MacPherson Strut",
+        "name_en":"MacPherson Strut",
+        "aliases":[
+            "strut",
+            "macpherson"
+        ]
+    },
+
+    {
+        "id":"COMP_SWING_ARM",
+        "vehicle":["MOTORCYCLE"],
+        "system":"SUSPENSION",
+        "name_id":"Swing Arm",
+        "name_en":"Swing Arm",
+        "aliases":[
+            "swing arm",
+            "lengan ayun"
+        ]
+    },
+
+    {
+        "id":"COMP_SWING_ARM_BUSH",
+        "vehicle":["MOTORCYCLE"],
+        "system":"SUSPENSION",
+        "name_id":"Bushing Swing Arm",
+        "name_en":"Swing Arm Bushing",
+        "aliases":[
+            "bushing swing arm"
+        ]
+    },
+
+    {
+        "id":"COMP_CENTER_STAND",
+        "vehicle":["MOTORCYCLE"],
+        "system":"SUSPENSION",
+        "name_id":"Standar Tengah",
+        "name_en":"Center Stand",
+        "aliases":[
+            "standar tengah"
+        ]
+    },
+
+    {
+        "id":"COMP_SIDE_STAND",
+        "vehicle":["MOTORCYCLE"],
+        "system":"SUSPENSION",
+        "name_id":"Standar Samping",
+        "name_en":"Side Stand",
+        "aliases":[
+            "standar samping"
+        ]
+    }
+]
