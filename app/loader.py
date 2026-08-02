@@ -1,40 +1,67 @@
 import json
-from app.config import *
+from pathlib import Path
 
-def load_json(path):
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+CACHE = {}
+
+
+def _load_json(path: Path):
+
+    if not path.exists():
+        return []
+
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-_CARS = None
-_MOTOR = None
 
-def load_cars():
-    global _CARS
-    if _CARS is None:
-        _CARS = load_json(CARS_FILE)
-    return _CARS
+def load():
 
-# 🚀 INI ADALAH FUNGSI YANG HILANG DAN MENYEBABKAN CRASH
-def load_motorcycles():
-    global _MOTOR
-    if _MOTOR is None:
-        _MOTOR = load_json(MOTORCYCLES_FILE)
-    return _MOTOR
-    
-def load_slang():
-    return load_json(SLANG_FILE)
+    global CACHE
 
-def load_systems():
-    return load_json(SYSTEMS_FILE)
+    if CACHE:
+        return CACHE
 
-def load_severity():
-    return load_json(SEVERITY_FILE)
+    CACHE = {
 
-def load_driveability():
-    return load_json(DRIVEABILITY_FILE)
+        "cars":
+            _load_json(BASE_DIR / "dataset" / "cars.json"),
 
-def load_validation():
-    return load_json(VALIDATION_FILE)
+        "motorcycles":
+            _load_json(BASE_DIR / "dataset" / "motorcycles.json"),
 
-def load_taxonomy():
-    return load_json(TAXONOMY_FILE)
+        "slang":
+            _load_json(BASE_DIR / "dataset" / "slang.json"),
+
+        "symptoms":
+            _load_json(BASE_DIR / "v2" / "symptoms.json"),
+
+        "faults":
+            _load_json(BASE_DIR / "v2" / "faults.json"),
+
+        "components":
+            _load_json(BASE_DIR / "v2" / "components.json"),
+
+        "repairs":
+            _load_json(BASE_DIR / "v2" / "repairs.json"),
+
+        "costs":
+            _load_json(BASE_DIR / "v2" / "costs.json"),
+
+        "aliases":
+            _load_json(BASE_DIR / "v2" / "aliases.json"),
+
+        "translation_id":
+            _load_json(BASE_DIR / "translations" / "id.json"),
+
+        "translation_en":
+            _load_json(BASE_DIR / "translations" / "en.json"),
+    }
+
+    return CACHE
+
+
+def reload():
+    global CACHE
+    CACHE = {}
+    return load()
