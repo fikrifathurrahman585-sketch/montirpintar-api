@@ -55,7 +55,7 @@ def match_symptoms(text):
 
     for symptom in db["symptoms"]:
 
-        keywords = symptom.get("keywords", [])
+        keywords = item["language"][lang]["symptoms"]
 
         score = 0
 
