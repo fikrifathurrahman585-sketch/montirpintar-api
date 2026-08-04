@@ -1,5 +1,10 @@
 import re
 from typing import List, Dict, Set
+from app.rules import (
+    detect_vehicle,
+    detect_system,
+    extract_keywords
+)
 
 # ==========================================================
 # VERSION
