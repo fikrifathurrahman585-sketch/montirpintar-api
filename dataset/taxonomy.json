@@ -1,0 +1,258 @@
+{
+    "version": 1,
+
+    "systems": [
+
+        {
+            "id": "engine",
+            "name": {
+                "id": "Mesin",
+                "en": "Engine"
+            },
+            "description": {
+                "id": "Sistem pembangkit tenaga utama kendaraan.",
+                "en": "Primary power generation system."
+            }
+        },
+
+        {
+            "id": "fuel",
+            "name": {
+                "id": "Sistem Bahan Bakar",
+                "en": "Fuel System"
+            },
+            "description": {
+                "id": "Sistem penyimpanan dan penyaluran bahan bakar.",
+                "en": "Fuel storage and delivery system."
+            }
+        },
+
+        {
+            "id": "air_intake",
+            "name": {
+                "id": "Sistem Udara Masuk",
+                "en": "Air Intake System"
+            },
+            "description": {
+                "id": "Sistem pemasukan udara ke mesin.",
+                "en": "Engine air intake system."
+            }
+        },
+
+        {
+            "id": "exhaust",
+            "name": {
+                "id": "Sistem Pembuangan",
+                "en": "Exhaust System"
+            },
+            "description": {
+                "id": "Sistem pembuangan gas hasil pembakaran.",
+                "en": "Engine exhaust system."
+            }
+        },
+
+        {
+            "id": "cooling",
+            "name": {
+                "id": "Sistem Pendingin",
+                "en": "Cooling System"
+            },
+            "description": {
+                "id": "Sistem menjaga suhu kerja mesin.",
+                "en": "Engine cooling system."
+            }
+        },
+
+        {
+            "id": "lubrication",
+            "name": {
+                "id": "Sistem Pelumasan",
+                "en": "Lubrication System"
+            },
+            "description": {
+                "id": "Sistem sirkulasi oli mesin.",
+                "en": "Engine lubrication system."
+            }
+        },
+
+        {
+            "id": "electrical",
+            "name": {
+                "id": "Kelistrikan",
+                "en": "Electrical System"
+            },
+            "description": {
+                "id": "Sistem kelistrikan kendaraan.",
+                "en": "Vehicle electrical system."
+            }
+        },
+
+        {
+            "id": "starting",
+            "name": {
+                "id": "Sistem Starter",
+                "en": "Starting System"
+            },
+            "description": {
+                "id": "Sistem untuk menghidupkan mesin.",
+                "en": "Engine starting system."
+            }
+        },
+
+        {
+            "id": "charging",
+            "name": {
+                "id": "Sistem Pengisian",
+                "en": "Charging System"
+            },
+            "description": {
+                "id": "Sistem pengisian aki.",
+                "en": "Battery charging system."
+            }
+        },
+
+        {
+            "id": "transmission",
+            "name": {
+                "id": "Transmisi",
+                "en": "Transmission"
+            },
+            "description": {
+                "id": "Sistem pemindah tenaga.",
+                "en": "Power transmission system."
+            }
+        },
+
+        {
+            "id": "cvt",
+            "name": {
+                "id": "CVT",
+                "en": "CVT"
+            },
+            "description": {
+                "id": "Continuously Variable Transmission.",
+                "en": "Continuously Variable Transmission."
+            }
+        },
+
+        {
+            "id": "clutch",
+            "name": {
+                "id": "Kopling",
+                "en": "Clutch"
+            },
+            "description": {
+                "id": "Sistem kopling kendaraan.",
+                "en": "Vehicle clutch system."
+            }
+        },
+
+        {
+            "id": "drivetrain",
+            "name": {
+                "id": "Pemindah Tenaga",
+                "en": "Drivetrain"
+            },
+            "description": {
+                "id": "Sistem penyalur tenaga ke roda.",
+                "en": "Power delivery to wheels."
+            }
+        },
+
+        {
+            "id": "brake",
+            "name": {
+                "id": "Rem",
+                "en": "Brake System"
+            },
+            "description": {
+                "id": "Sistem pengereman kendaraan.",
+                "en": "Vehicle braking system."
+            }
+        },
+
+        {
+            "id": "steering",
+            "name": {
+                "id": "Kemudi",
+                "en": "Steering System"
+            },
+            "description": {
+                "id": "Sistem pengendalian arah kendaraan.",
+                "en": "Vehicle steering system."
+            }
+        },
+
+        {
+            "id": "suspension",
+            "name": {
+                "id": "Suspensi",
+                "en": "Suspension"
+            },
+            "description": {
+                "id": "Sistem peredam getaran.",
+                "en": "Vehicle suspension system."
+            }
+        },
+
+        {
+            "id": "wheel",
+            "name": {
+                "id": "Roda",
+                "en": "Wheel System"
+            },
+            "description": {
+                "id": "Sistem roda kendaraan.",
+                "en": "Wheel system."
+            }
+        },
+
+        {
+            "id": "tire",
+            "name": {
+                "id": "Ban",
+                "en": "Tire System"
+            },
+            "description": {
+                "id": "Komponen ban kendaraan.",
+                "en": "Vehicle tire system."
+            }
+        },
+
+        {
+            "id": "body",
+            "name": {
+                "id": "Bodi",
+                "en": "Body"
+            },
+            "description": {
+                "id": "Komponen bodi kendaraan.",
+                "en": "Vehicle body."
+            }
+        },
+
+        {
+            "id": "air_conditioning",
+            "name": {
+                "id": "AC",
+                "en": "Air Conditioning"
+            },
+            "description": {
+                "id": "Sistem pendingin kabin.",
+                "en": "Cabin air conditioning."
+            }
+        },
+
+        {
+            "id": "safety",
+            "name": {
+                "id": "Keselamatan",
+                "en": "Safety System"
+            },
+            "description": {
+                "id": "Sistem keselamatan aktif dan pasif.",
+                "en": "Vehicle safety system."
+            }
+        }
+    ]
+}
