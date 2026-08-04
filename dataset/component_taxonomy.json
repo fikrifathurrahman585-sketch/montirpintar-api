@@ -1,0 +1,2828 @@
+{
+  "version": 1,
+
+  "categories": [
+
+    {
+      "id": "engine",
+
+      "name": {
+        "id": "Mesin",
+        "en": "Engine"
+      },
+
+      "description": {
+        "id": "Sistem utama pembangkit tenaga kendaraan.",
+        "en": "Primary vehicle power generation system."
+      },
+
+      "children": [
+
+        {
+          "id": "engine_block",
+
+          "name": {
+            "id": "Blok Mesin",
+            "en": "Engine Block"
+          },
+
+          "children": [
+
+            {
+              "id": "cylinder_block",
+
+              "name": {
+                "id": "Blok Silinder",
+                "en": "Cylinder Block"
+              }
+            },
+
+            {
+              "id": "cylinder_liner",
+
+              "name": {
+                "id": "Cylinder Liner",
+                "en": "Cylinder Liner"
+              }
+            },
+
+            {
+              "id": "core_plug",
+
+              "name": {
+                "id": "Core Plug",
+                "en": "Core Plug"
+              }
+            }
+
+          ]
+        },
+
+        {
+          "id": "cylinder_head",
+
+          "name": {
+            "id": "Kepala Silinder",
+            "en": "Cylinder Head"
+          },
+
+          "children": [
+
+            {
+              "id": "combustion_chamber",
+
+              "name": {
+                "id": "Ruang Bakar",
+                "en": "Combustion Chamber"
+              }
+            },
+
+            {
+              "id": "valve_train",
+
+              "name": {
+                "id": "Valve Train",
+                "en": "Valve Train"
+              },
+
+              "children": [
+
+                {
+                  "id": "intake_valve",
+
+                  "name": {
+                    "id": "Katup Masuk",
+                    "en": "Intake Valve"
+                  }
+                },
+
+                {
+                  "id": "exhaust_valve",
+
+                  "name": {
+                    "id": "Katup Buang",
+                    "en": "Exhaust Valve"
+                  }
+                },
+
+                {
+                  "id": "valve_spring",
+
+                  "name": {
+                    "id": "Per Katup",
+                    "en": "Valve Spring"
+                  }
+                },
+
+                {
+                  "id": "valve_seal",
+
+                  "name": {
+                    "id": "Seal Katup",
+                    "en": "Valve Seal"
+                  }
+                },
+
+                {
+                  "id": "valve_guide",
+
+                  "name": {
+                    "id": "Valve Guide",
+                    "en": "Valve Guide"
+                  }
+                },
+
+                {
+                  "id": "rocker_arm",
+
+                  "name": {
+                    "id": "Rocker Arm",
+                    "en": "Rocker Arm"
+                  }
+                },
+
+                {
+                  "id": "camshaft",
+
+                  "name": {
+                    "id": "Noken As",
+                    "en": "Camshaft"
+                  }
+                },
+
+                {
+                  "id": "camshaft_bearing",
+
+                  "name": {
+                    "id": "Bearing Camshaft",
+                    "en": "Camshaft Bearing"
+                  }
+                }
+
+              ]
+            }
+
+          ]
+        },
+
+        {
+          "id": "crank_mechanism",
+
+          "name": {
+            "id": "Mekanisme Poros Engkol",
+            "en": "Crank Mechanism"
+          },
+
+          "children": [
+
+            {
+              "id": "crankshaft",
+
+              "name": {
+                "id": "Kruk As",
+                "en": "Crankshaft"
+              }
+            },
+
+            {
+              "id": "connecting_rod",
+
+              "name": {
+                "id": "Connecting Rod",
+                "en": "Connecting Rod"
+              }
+            },
+
+            {
+              "id": "connecting_rod_bearing",
+
+              "name": {
+                "id": "Metal Jalan",
+                "en": "Connecting Rod Bearing"
+              }
+            },
+
+            {
+              "id": "main_bearing",
+
+              "name": {
+                "id": "Metal Duduk",
+                "en": "Main Bearing"
+              }
+            },
+
+            {
+              "id": "piston",
+
+              "name": {
+                "id": "Piston",
+                "en": "Piston"
+              }
+            },
+
+            {
+              "id": "piston_ring",
+
+              "name": {
+                "id": "Ring Piston",
+                "en": "Piston Ring"
+              }
+            },
+
+            {
+              "id": "piston_pin",
+
+              "name": {
+                "id": "Pen Piston",
+                "en": "Piston Pin"
+              }
+            }
+
+          ]
+        },
+
+        {
+          "id": "timing_system",
+
+          "name": {
+            "id": "Sistem Timing",
+            "en": "Timing System"
+          },
+
+          "children": [
+
+            {
+              "id": "timing_chain",
+
+              "name": {
+                "id": "Timing Chain",
+                "en": "Timing Chain"
+              }
+            },
+
+            {
+              "id": "timing_belt",
+
+              "name": {
+                "id": "Timing Belt",
+                "en": "Timing Belt"
+              }
+            },
+
+            {
+              "id": "chain_tensioner",
+
+              "name": {
+                "id": "Tensioner Rantai",
+                "en": "Chain Tensioner"
+              }
+            },
+
+            {
+              "id": "belt_tensioner",
+
+              "name": {
+                "id": "Tensioner Belt",
+                "en": "Belt Tensioner"
+              }
+            },
+
+            {
+              "id": "timing_gear",
+
+              "name": {
+                "id": "Timing Gear",
+                "en": "Timing Gear"
+              }
+            }
+
+          ]
+        },
+
+        {
+          "id": "engine_mount",
+
+          "name": {
+            "id": "Dudukan Mesin",
+            "en": "Engine Mount"
+          },
+
+          "children": [
+
+            {
+              "id": "front_engine_mount",
+
+              "name": {
+                "id": "Engine Mount Depan",
+                "en": "Front Engine Mount"
+              }
+            },
+
+            {
+              "id": "rear_engine_mount",
+
+              "name": {
+                "id": "Engine Mount Belakang",
+                "en": "Rear Engine Mount"
+              }
+            },
+
+            {
+              "id": "side_engine_mount",
+
+              "name": {
+                "id": "Engine Mount Samping",
+                "en": "Side Engine Mount"
+              }
+            }
+
+          ]
+        }
+
+      ]
+    }
+
+    ,
+{
+  "id": "flywheel_system",
+
+  "name": {
+    "id": "Sistem Flywheel",
+    "en": "Flywheel System"
+  },
+
+  "children": [
+
+    {
+      "id": "flywheel",
+
+      "name": {
+        "id": "Flywheel",
+        "en": "Flywheel"
+      }
+    },
+
+    {
+      "id": "flexplate",
+
+      "name": {
+        "id": "Flex Plate",
+        "en": "Flex Plate"
+      }
+    },
+
+    {
+      "id": "ring_gear",
+
+      "name": {
+        "id": "Ring Gear",
+        "en": "Ring Gear"
+      }
+    }
+
+  ]
+},
+
+{
+  "id": "engine_sealing",
+
+  "name": {
+    "id": "Seal dan Gasket Mesin",
+    "en": "Engine Seals and Gaskets"
+  },
+
+  "children": [
+
+    {
+      "id": "cylinder_head_gasket",
+
+      "name": {
+        "id": "Gasket Kepala Silinder",
+        "en": "Cylinder Head Gasket"
+      }
+    },
+
+    {
+      "id": "valve_cover_gasket",
+
+      "name": {
+        "id": "Gasket Tutup Klep",
+        "en": "Valve Cover Gasket"
+      }
+    },
+
+    {
+      "id": "oil_pan_gasket",
+
+      "name": {
+        "id": "Gasket Bak Oli",
+        "en": "Oil Pan Gasket"
+      }
+    },
+
+    {
+      "id": "front_crankshaft_seal",
+
+      "name": {
+        "id": "Seal Kruk As Depan",
+        "en": "Front Crankshaft Seal"
+      }
+    },
+
+    {
+      "id": "rear_crankshaft_seal",
+
+      "name": {
+        "id": "Seal Kruk As Belakang",
+        "en": "Rear Crankshaft Seal"
+      }
+    }
+
+  ]
+},
+
+{
+  "id": "pulley_drive",
+
+  "name": {
+    "id": "Pulley dan Belt",
+    "en": "Pulley and Belt Drive"
+  },
+
+  "children": [
+
+    {
+      "id": "crankshaft_pulley",
+
+      "name": {
+        "id": "Pulley Kruk As",
+        "en": "Crankshaft Pulley"
+      }
+    },
+
+    {
+      "id": "harmonic_balancer",
+
+      "name": {
+        "id": "Harmonic Balancer",
+        "en": "Harmonic Balancer"
+      }
+    },
+
+    {
+      "id": "idler_pulley",
+
+      "name": {
+        "id": "Idler Pulley",
+        "en": "Idler Pulley"
+      }
+    }
+
+  ]
+},
+
+{
+  "id": "engine_breather",
+
+  "name": {
+    "id": "Sistem Breather",
+    "en": "Engine Breather"
+  },
+
+  "children": [
+
+    {
+      "id": "pcv_valve",
+
+      "name": {
+        "id": "Katup PCV",
+        "en": "PCV Valve"
+      }
+    },
+
+    {
+      "id": "breather_hose",
+
+      "name": {
+        "id": "Selang Breather",
+        "en": "Breather Hose"
+      }
+    }
+
+  ]
+},
+
+{
+  "id": "engine_sensor",
+
+  "name": {
+    "id": "Sensor Mesin",
+    "en": "Engine Sensors"
+  },
+
+  "children": [
+
+    {
+      "id": "crankshaft_position_sensor",
+
+      "name": {
+        "id": "Sensor Posisi Kruk As",
+        "en": "Crankshaft Position Sensor"
+      }
+    },
+
+    {
+      "id": "camshaft_position_sensor",
+
+      "name": {
+        "id": "Sensor Posisi Camshaft",
+        "en": "Camshaft Position Sensor"
+      }
+    },
+
+    {
+      "id": "knock_sensor",
+
+      "name": {
+        "id": "Knock Sensor",
+        "en": "Knock Sensor"
+      }
+    },
+
+    {
+      "id": "oil_pressure_sensor",
+
+      "name": {
+        "id": "Sensor Tekanan Oli",
+        "en": "Oil Pressure Sensor"
+      }
+    },
+
+    {
+      "id": "oil_level_sensor",
+
+      "name": {
+        "id": "Sensor Level Oli",
+        "en": "Oil Level Sensor"
+      }
+    }
+
+  ]
+},
+
+{
+  "id": "engine_cover",
+
+  "name": {
+    "id": "Penutup Mesin",
+    "en": "Engine Cover"
+  },
+
+  "children": [
+
+    {
+      "id": "engine_cover_upper",
+
+      "name": {
+        "id": "Cover Mesin Atas",
+        "en": "Upper Engine Cover"
+      }
+    },
+
+    {
+      "id": "timing_cover",
+
+      "name": {
+        "id": "Timing Cover",
+        "en": "Timing Cover"
+      }
+    }
+
+  ]
+},
+    ,
+{
+  "id": "cooling",
+
+  "name": {
+    "id": "Sistem Pendingin",
+    "en": "Cooling System"
+  },
+
+  "description": {
+    "id": "Sistem yang menjaga suhu kerja mesin tetap normal.",
+    "en": "System that maintains normal engine operating temperature."
+  },
+
+  "children": [
+
+    {
+      "id": "radiator",
+
+      "name": {
+        "id": "Radiator",
+        "en": "Radiator"
+      },
+
+      "children": [
+
+        {
+          "id": "radiator_core",
+
+          "name": {
+            "id": "Core Radiator",
+            "en": "Radiator Core"
+          }
+        },
+
+        {
+          "id": "radiator_tank_upper",
+
+          "name": {
+            "id": "Tangki Radiator Atas",
+            "en": "Upper Radiator Tank"
+          }
+        },
+
+        {
+          "id": "radiator_tank_lower",
+
+          "name": {
+            "id": "Tangki Radiator Bawah",
+            "en": "Lower Radiator Tank"
+          }
+        },
+
+        {
+          "id": "radiator_cap",
+
+          "name": {
+            "id": "Tutup Radiator",
+            "en": "Radiator Cap"
+          }
+        },
+
+        {
+          "id": "radiator_drain_plug",
+
+          "name": {
+            "id": "Baut Pembuangan Radiator",
+            "en": "Radiator Drain Plug"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "coolant",
+
+      "name": {
+        "id": "Coolant",
+        "en": "Coolant"
+      },
+
+      "children": [
+
+        {
+          "id": "coolant_fluid",
+
+          "name": {
+            "id": "Cairan Pendingin",
+            "en": "Coolant Fluid"
+          }
+        },
+
+        {
+          "id": "coolant_reservoir",
+
+          "name": {
+            "id": "Reservoir Coolant",
+            "en": "Coolant Reservoir"
+          }
+        },
+
+        {
+          "id": "reservoir_cap",
+
+          "name": {
+            "id": "Tutup Reservoir",
+            "en": "Reservoir Cap"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "water_pump",
+
+      "name": {
+        "id": "Water Pump",
+        "en": "Water Pump"
+      },
+
+      "children": [
+
+        {
+          "id": "pump_housing",
+
+          "name": {
+            "id": "Rumah Water Pump",
+            "en": "Water Pump Housing"
+          }
+        },
+
+        {
+          "id": "pump_impeller",
+
+          "name": {
+            "id": "Impeller",
+            "en": "Impeller"
+          }
+        },
+
+        {
+          "id": "pump_bearing",
+
+          "name": {
+            "id": "Bearing Water Pump",
+            "en": "Water Pump Bearing"
+          }
+        },
+
+        {
+          "id": "pump_seal",
+
+          "name": {
+            "id": "Seal Water Pump",
+            "en": "Water Pump Seal"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "thermostat",
+
+      "name": {
+        "id": "Thermostat",
+        "en": "Thermostat"
+      },
+
+      "children": [
+
+        {
+          "id": "thermostat_valve",
+
+          "name": {
+            "id": "Katup Thermostat",
+            "en": "Thermostat Valve"
+          }
+        },
+
+        {
+          "id": "thermostat_housing",
+
+          "name": {
+            "id": "Rumah Thermostat",
+            "en": "Thermostat Housing"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "cooling_fan",
+
+      "name": {
+        "id": "Kipas Pendingin",
+        "en": "Cooling Fan"
+      },
+
+      "children": [
+
+        {
+          "id": "fan_blade",
+
+          "name": {
+            "id": "Baling-Baling Kipas",
+            "en": "Fan Blade"
+          }
+        },
+
+        {
+          "id": "fan_motor",
+
+          "name": {
+            "id": "Motor Kipas",
+            "en": "Fan Motor"
+          }
+        },
+
+        {
+          "id": "fan_shroud",
+
+          "name": {
+            "id": "Fan Shroud",
+            "en": "Fan Shroud"
+          }
+        },
+
+        {
+          "id": "fan_relay",
+
+          "name": {
+            "id": "Relay Kipas",
+            "en": "Cooling Fan Relay"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "cooling_hose",
+
+      "name": {
+        "id": "Selang Pendingin",
+        "en": "Cooling Hose"
+      },
+
+      "children": [
+
+        {
+          "id": "upper_radiator_hose",
+
+          "name": {
+            "id": "Selang Radiator Atas",
+            "en": "Upper Radiator Hose"
+          }
+        },
+
+        {
+          "id": "lower_radiator_hose",
+
+          "name": {
+            "id": "Selang Radiator Bawah",
+            "en": "Lower Radiator Hose"
+          }
+        },
+
+        {
+          "id": "heater_hose",
+
+          "name": {
+            "id": "Selang Heater",
+            "en": "Heater Hose"
+          }
+        },
+
+        {
+          "id": "bypass_hose",
+
+          "name": {
+            "id": "Selang Bypass",
+            "en": "Bypass Hose"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "temperature_sensor",
+
+      "name": {
+        "id": "Sensor Suhu",
+        "en": "Temperature Sensor"
+      },
+
+      "children": [
+
+        {
+          "id": "engine_coolant_temperature_sensor",
+
+          "name": {
+            "id": "Sensor Suhu Coolant",
+            "en": "Engine Coolant Temperature Sensor"
+          }
+        },
+
+        {
+          "id": "radiator_temperature_switch",
+
+          "name": {
+            "id": "Thermo Switch Radiator",
+            "en": "Radiator Thermo Switch"
+          }
+        }
+
+      ]
+    }
+
+  ]
+}
+
+
+    ,
+{
+  "id": "fuel",
+
+  "name": {
+    "id": "Sistem Bahan Bakar",
+    "en": "Fuel System"
+  },
+
+  "description": {
+    "id": "Sistem penyimpanan, penyaringan, penyaluran, dan penyemprotan bahan bakar ke mesin.",
+    "en": "System for storing, filtering, delivering, and injecting fuel into the engine."
+  },
+
+  "children": [
+
+    {
+      "id": "fuel_tank",
+
+      "name": {
+        "id": "Tangki Bahan Bakar",
+        "en": "Fuel Tank"
+      },
+
+      "children": [
+
+        {
+          "id": "fuel_tank_body",
+
+          "name": {
+            "id": "Tangki",
+            "en": "Fuel Tank Body"
+          }
+        },
+
+        {
+          "id": "fuel_tank_cap",
+
+          "name": {
+            "id": "Tutup Tangki",
+            "en": "Fuel Cap"
+          }
+        },
+
+        {
+          "id": "fuel_level_sender",
+
+          "name": {
+            "id": "Pelampung BBM",
+            "en": "Fuel Level Sender"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "fuel_pump",
+
+      "name": {
+        "id": "Pompa Bahan Bakar",
+        "en": "Fuel Pump"
+      },
+
+      "children": [
+
+        {
+          "id": "electric_fuel_pump",
+
+          "name": {
+            "id": "Pompa BBM Elektrik",
+            "en": "Electric Fuel Pump"
+          }
+        },
+
+        {
+          "id": "fuel_pump_motor",
+
+          "name": {
+            "id": "Motor Pompa BBM",
+            "en": "Fuel Pump Motor"
+          }
+        },
+
+        {
+          "id": "fuel_pump_filter",
+
+          "name": {
+            "id": "Filter Pompa BBM",
+            "en": "Fuel Pump Filter"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "fuel_filter",
+
+      "name": {
+        "id": "Filter Bahan Bakar",
+        "en": "Fuel Filter"
+      },
+
+      "children": [
+
+        {
+          "id": "inline_fuel_filter",
+
+          "name": {
+            "id": "Filter Inline",
+            "en": "Inline Fuel Filter"
+          }
+        },
+
+        {
+          "id": "fuel_strainer",
+
+          "name": {
+            "id": "Fuel Strainer",
+            "en": "Fuel Strainer"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "fuel_line",
+
+      "name": {
+        "id": "Saluran Bahan Bakar",
+        "en": "Fuel Line"
+      },
+
+      "children": [
+
+        {
+          "id": "fuel_hose",
+
+          "name": {
+            "id": "Selang BBM",
+            "en": "Fuel Hose"
+          }
+        },
+
+        {
+          "id": "fuel_pipe",
+
+          "name": {
+            "id": "Pipa BBM",
+            "en": "Fuel Pipe"
+          }
+        },
+
+        {
+          "id": "fuel_connector",
+
+          "name": {
+            "id": "Konektor BBM",
+            "en": "Fuel Connector"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "fuel_injection",
+
+      "name": {
+        "id": "Sistem Injeksi",
+        "en": "Fuel Injection"
+      },
+
+      "children": [
+
+        {
+          "id": "fuel_injector",
+
+          "name": {
+            "id": "Injector",
+            "en": "Fuel Injector"
+          }
+        },
+
+        {
+          "id": "fuel_rail",
+
+          "name": {
+            "id": "Fuel Rail",
+            "en": "Fuel Rail"
+          }
+        },
+
+        {
+          "id": "fuel_pressure_regulator",
+
+          "name": {
+            "id": "Regulator Tekanan BBM",
+            "en": "Fuel Pressure Regulator"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "throttle_body",
+
+      "name": {
+        "id": "Throttle Body",
+        "en": "Throttle Body"
+      },
+
+      "children": [
+
+        {
+          "id": "throttle_valve",
+
+          "name": {
+            "id": "Katup Throttle",
+            "en": "Throttle Valve"
+          }
+        },
+
+        {
+          "id": "throttle_position_sensor",
+
+          "name": {
+            "id": "Sensor TPS",
+            "en": "Throttle Position Sensor"
+          }
+        },
+
+        {
+          "id": "idle_air_control",
+
+          "name": {
+            "id": "Idle Air Control",
+            "en": "Idle Air Control Valve"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "fuel_sensor",
+
+      "name": {
+        "id": "Sensor Sistem BBM",
+        "en": "Fuel System Sensors"
+      },
+
+      "children": [
+
+        {
+          "id": "fuel_pressure_sensor",
+
+          "name": {
+            "id": "Sensor Tekanan BBM",
+            "en": "Fuel Pressure Sensor"
+          }
+        },
+
+        {
+          "id": "fuel_temperature_sensor",
+
+          "name": {
+            "id": "Sensor Suhu BBM",
+            "en": "Fuel Temperature Sensor"
+          }
+        }
+
+      ]
+    }
+
+  ]
+}
+
+
+
+    ,
+{
+  "id": "air_intake",
+
+  "name": {
+    "id": "Sistem Udara Masuk",
+    "en": "Air Intake System"
+  },
+
+  "description": {
+    "id": "Sistem yang mengatur udara masuk ke dalam mesin.",
+    "en": "System that controls incoming air to the engine."
+  },
+
+  "children": [
+
+    {
+      "id": "air_filter_system",
+
+      "name": {
+        "id": "Filter Udara",
+        "en": "Air Filter System"
+      },
+
+      "children": [
+
+        {
+          "id": "air_filter",
+
+          "name": {
+            "id": "Filter Udara",
+            "en": "Air Filter"
+          }
+        },
+
+        {
+          "id": "air_filter_box",
+
+          "name": {
+            "id": "Rumah Filter Udara",
+            "en": "Air Filter Box"
+          }
+        },
+
+        {
+          "id": "air_intake_duct",
+
+          "name": {
+            "id": "Pipa Intake",
+            "en": "Air Intake Duct"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "intake_manifold",
+
+      "name": {
+        "id": "Intake Manifold",
+        "en": "Intake Manifold"
+      },
+
+      "children": [
+
+        {
+          "id": "intake_runner",
+
+          "name": {
+            "id": "Runner Intake",
+            "en": "Intake Runner"
+          }
+        },
+
+        {
+          "id": "intake_gasket",
+
+          "name": {
+            "id": "Gasket Intake",
+            "en": "Intake Manifold Gasket"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "throttle_control",
+
+      "name": {
+        "id": "Kontrol Throttle",
+        "en": "Throttle Control"
+      },
+
+      "children": [
+
+        {
+          "id": "electronic_throttle_body",
+
+          "name": {
+            "id": "Electronic Throttle Body",
+            "en": "Electronic Throttle Body"
+          }
+        },
+
+        {
+          "id": "throttle_motor",
+
+          "name": {
+            "id": "Motor Throttle",
+            "en": "Throttle Motor"
+          }
+        },
+
+        {
+          "id": "throttle_gear",
+
+          "name": {
+            "id": "Gear Throttle",
+            "en": "Throttle Gear"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "air_flow_sensor",
+
+      "name": {
+        "id": "Sensor Aliran Udara",
+        "en": "Air Flow Sensor"
+      },
+
+      "children": [
+
+        {
+          "id": "maf_sensor",
+
+          "name": {
+            "id": "MAF Sensor",
+            "en": "Mass Air Flow Sensor"
+          }
+        },
+
+        {
+          "id": "map_sensor",
+
+          "name": {
+            "id": "MAP Sensor",
+            "en": "Manifold Absolute Pressure Sensor"
+          }
+        },
+
+        {
+          "id": "iat_sensor",
+
+          "name": {
+            "id": "Sensor Suhu Udara Masuk",
+            "en": "Intake Air Temperature Sensor"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "idle_control",
+
+      "name": {
+        "id": "Kontrol Idle",
+        "en": "Idle Control"
+      },
+
+      "children": [
+
+        {
+          "id": "idle_air_control_valve",
+
+          "name": {
+            "id": "Idle Air Control Valve",
+            "en": "Idle Air Control Valve"
+          }
+        },
+
+        {
+          "id": "idle_bypass",
+
+          "name": {
+            "id": "Saluran Idle",
+            "en": "Idle Bypass Passage"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "turbocharger_system",
+
+      "name": {
+        "id": "Turbocharger",
+        "en": "Turbocharger System"
+      },
+
+      "children": [
+
+        {
+          "id": "turbocharger",
+
+          "name": {
+            "id": "Turbocharger",
+            "en": "Turbocharger"
+          }
+        },
+
+        {
+          "id": "wastegate",
+
+          "name": {
+            "id": "Wastegate",
+            "en": "Wastegate"
+          }
+        },
+
+        {
+          "id": "boost_actuator",
+
+          "name": {
+            "id": "Boost Actuator",
+            "en": "Boost Actuator"
+          }
+        },
+
+        {
+          "id": "intercooler",
+
+          "name": {
+            "id": "Intercooler",
+            "en": "Intercooler"
+          }
+        },
+
+        {
+          "id": "boost_pipe",
+
+          "name": {
+            "id": "Pipa Boost",
+            "en": "Boost Pipe"
+          }
+        }
+
+      ]
+    }
+
+  ]
+}
+
+
+    ,
+{
+  "id": "exhaust",
+
+  "name": {
+    "id": "Sistem Pembuangan",
+    "en": "Exhaust System"
+  },
+
+  "description": {
+    "id": "Sistem yang mengalirkan gas buang hasil pembakaran keluar dari mesin sekaligus mengurangi emisi dan kebisingan.",
+    "en": "System that removes combustion gases while reducing emissions and noise."
+  },
+
+  "children": [
+
+    {
+      "id": "exhaust_manifold",
+
+      "name": {
+        "id": "Manifold Buang",
+        "en": "Exhaust Manifold"
+      },
+
+      "children": [
+
+        {
+          "id": "manifold_body",
+
+          "name": {
+            "id": "Body Manifold",
+            "en": "Manifold Body"
+          }
+        },
+
+        {
+          "id": "manifold_gasket",
+
+          "name": {
+            "id": "Gasket Manifold",
+            "en": "Exhaust Manifold Gasket"
+          }
+        },
+
+        {
+          "id": "manifold_heat_shield",
+
+          "name": {
+            "id": "Pelindung Panas",
+            "en": "Heat Shield"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "catalytic_converter",
+
+      "name": {
+        "id": "Catalytic Converter",
+        "en": "Catalytic Converter"
+      },
+
+      "children": [
+
+        {
+          "id": "catalyst",
+
+          "name": {
+            "id": "Catalyst",
+            "en": "Catalyst"
+          }
+        },
+
+        {
+          "id": "converter_shell",
+
+          "name": {
+            "id": "Rumah Catalytic Converter",
+            "en": "Catalytic Converter Housing"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "oxygen_sensor",
+
+      "name": {
+        "id": "Sensor Oksigen",
+        "en": "Oxygen Sensor"
+      },
+
+      "children": [
+
+        {
+          "id": "upstream_o2_sensor",
+
+          "name": {
+            "id": "Sensor Oksigen Sebelum Catalytic",
+            "en": "Upstream Oxygen Sensor"
+          }
+        },
+
+        {
+          "id": "downstream_o2_sensor",
+
+          "name": {
+            "id": "Sensor Oksigen Setelah Catalytic",
+            "en": "Downstream Oxygen Sensor"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "exhaust_pipe",
+
+      "name": {
+        "id": "Pipa Knalpot",
+        "en": "Exhaust Pipe"
+      },
+
+      "children": [
+
+        {
+          "id": "front_pipe",
+
+          "name": {
+            "id": "Pipa Depan",
+            "en": "Front Pipe"
+          }
+        },
+
+        {
+          "id": "center_pipe",
+
+          "name": {
+            "id": "Pipa Tengah",
+            "en": "Center Pipe"
+          }
+        },
+
+        {
+          "id": "rear_pipe",
+
+          "name": {
+            "id": "Pipa Belakang",
+            "en": "Rear Pipe"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "muffler",
+
+      "name": {
+        "id": "Peredam Suara",
+        "en": "Muffler"
+      },
+
+      "children": [
+
+        {
+          "id": "main_muffler",
+
+          "name": {
+            "id": "Muffler Utama",
+            "en": "Main Muffler"
+          }
+        },
+
+        {
+          "id": "resonator",
+
+          "name": {
+            "id": "Resonator",
+            "en": "Resonator"
+          }
+        },
+
+        {
+          "id": "tail_pipe",
+
+          "name": {
+            "id": "Ujung Knalpot",
+            "en": "Tail Pipe"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "exhaust_mount",
+
+      "name": {
+        "id": "Dudukan Knalpot",
+        "en": "Exhaust Mount"
+      },
+
+      "children": [
+
+        {
+          "id": "rubber_hanger",
+
+          "name": {
+            "id": "Karet Gantungan Knalpot",
+            "en": "Rubber Exhaust Hanger"
+          }
+        },
+
+        {
+          "id": "mount_bracket",
+
+          "name": {
+            "id": "Bracket Knalpot",
+            "en": "Exhaust Bracket"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "emission_control",
+
+      "name": {
+        "id": "Pengendalian Emisi",
+        "en": "Emission Control"
+      },
+
+      "children": [
+
+        {
+          "id": "egr_valve",
+
+          "name": {
+            "id": "Katup EGR",
+            "en": "EGR Valve"
+          }
+        },
+
+        {
+          "id": "egr_cooler",
+
+          "name": {
+            "id": "Pendingin EGR",
+            "en": "EGR Cooler"
+          }
+        },
+
+        {
+          "id": "secondary_air_system",
+
+          "name": {
+            "id": "Secondary Air Injection",
+            "en": "Secondary Air Injection"
+          }
+        }
+
+      ]
+    }
+
+  ]
+}
+
+    ,
+{
+  "id": "lubrication",
+
+  "name": {
+    "id": "Sistem Pelumasan",
+    "en": "Lubrication System"
+  },
+
+  "description": {
+    "id": "Sistem yang mensirkulasikan oli untuk melumasi, mendinginkan, dan melindungi komponen mesin.",
+    "en": "System that circulates engine oil to lubricate, cool, and protect engine components."
+  },
+
+  "children": [
+
+    {
+      "id": "engine_oil",
+
+      "name": {
+        "id": "Oli Mesin",
+        "en": "Engine Oil"
+      },
+
+      "children": [
+
+        {
+          "id": "engine_oil_fluid",
+
+          "name": {
+            "id": "Oli Mesin",
+            "en": "Engine Oil"
+          }
+        },
+
+        {
+          "id": "oil_additive",
+
+          "name": {
+            "id": "Aditif Oli",
+            "en": "Oil Additive"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "oil_pump",
+
+      "name": {
+        "id": "Pompa Oli",
+        "en": "Oil Pump"
+      },
+
+      "children": [
+
+        {
+          "id": "oil_pump_body",
+
+          "name": {
+            "id": "Body Pompa Oli",
+            "en": "Oil Pump Body"
+          }
+        },
+
+        {
+          "id": "oil_pump_gear",
+
+          "name": {
+            "id": "Gear Pompa Oli",
+            "en": "Oil Pump Gear"
+          }
+        },
+
+        {
+          "id": "oil_pressure_relief_valve",
+
+          "name": {
+            "id": "Relief Valve Oli",
+            "en": "Oil Pressure Relief Valve"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "oil_filter",
+
+      "name": {
+        "id": "Filter Oli",
+        "en": "Oil Filter"
+      },
+
+      "children": [
+
+        {
+          "id": "oil_filter_element",
+
+          "name": {
+            "id": "Elemen Filter Oli",
+            "en": "Oil Filter Element"
+          }
+        },
+
+        {
+          "id": "oil_filter_housing",
+
+          "name": {
+            "id": "Rumah Filter Oli",
+            "en": "Oil Filter Housing"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "oil_pan",
+
+      "name": {
+        "id": "Bak Oli",
+        "en": "Oil Pan"
+      },
+
+      "children": [
+
+        {
+          "id": "oil_pan_body",
+
+          "name": {
+            "id": "Bak Oli",
+            "en": "Oil Pan"
+          }
+        },
+
+        {
+          "id": "oil_drain_bolt",
+
+          "name": {
+            "id": "Baut Pembuangan Oli",
+            "en": "Oil Drain Bolt"
+          }
+        },
+
+        {
+          "id": "oil_drain_gasket",
+
+          "name": {
+            "id": "Ring Baut Oli",
+            "en": "Oil Drain Washer"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "oil_gallery",
+
+      "name": {
+        "id": "Saluran Oli",
+        "en": "Oil Gallery"
+      },
+
+      "children": [
+
+        {
+          "id": "main_oil_gallery",
+
+          "name": {
+            "id": "Saluran Oli Utama",
+            "en": "Main Oil Gallery"
+          }
+        },
+
+        {
+          "id": "oil_jet",
+
+          "name": {
+            "id": "Oil Jet",
+            "en": "Oil Jet"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "oil_cooler",
+
+      "name": {
+        "id": "Pendingin Oli",
+        "en": "Oil Cooler"
+      },
+
+      "children": [
+
+        {
+          "id": "oil_cooler_core",
+
+          "name": {
+            "id": "Core Oil Cooler",
+            "en": "Oil Cooler Core"
+          }
+        },
+
+        {
+          "id": "oil_cooler_hose",
+
+          "name": {
+            "id": "Selang Oil Cooler",
+            "en": "Oil Cooler Hose"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "oil_sensor",
+
+      "name": {
+        "id": "Sensor Oli",
+        "en": "Oil Sensors"
+      },
+
+      "children": [
+
+        {
+          "id": "oil_pressure_switch",
+
+          "name": {
+            "id": "Switch Tekanan Oli",
+            "en": "Oil Pressure Switch"
+          }
+        },
+
+        {
+          "id": "oil_temperature_sensor",
+
+          "name": {
+            "id": "Sensor Suhu Oli",
+            "en": "Oil Temperature Sensor"
+          }
+        },
+
+        {
+          "id": "oil_level_sensor",
+
+          "name": {
+            "id": "Sensor Level Oli",
+            "en": "Oil Level Sensor"
+          }
+        }
+
+      ]
+    }
+
+  ]
+}
+
+
+    ,
+{
+  "id": "electrical",
+
+  "name": {
+    "id": "Sistem Kelistrikan",
+    "en": "Electrical System"
+  },
+
+  "description": {
+    "id": "Sistem distribusi tenaga listrik kendaraan.",
+    "en": "Vehicle electrical power distribution system."
+  },
+
+  "children": [
+
+    {
+      "id": "battery",
+
+      "name": {
+        "id": "Aki",
+        "en": "Battery"
+      },
+
+      "children": [
+
+        {
+          "id": "battery_body",
+
+          "name": {
+            "id": "Baterai",
+            "en": "Battery"
+          }
+        },
+
+        {
+          "id": "positive_terminal",
+
+          "name": {
+            "id": "Terminal Positif",
+            "en": "Positive Terminal"
+          }
+        },
+
+        {
+          "id": "negative_terminal",
+
+          "name": {
+            "id": "Terminal Negatif",
+            "en": "Negative Terminal"
+          }
+        },
+
+        {
+          "id": "battery_clamp",
+
+          "name": {
+            "id": "Pengikat Aki",
+            "en": "Battery Clamp"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "fuse_system",
+
+      "name": {
+        "id": "Sistem Sekring",
+        "en": "Fuse System"
+      },
+
+      "children": [
+
+        {
+          "id": "main_fuse",
+
+          "name": {
+            "id": "Sekring Utama",
+            "en": "Main Fuse"
+          }
+        },
+
+        {
+          "id": "blade_fuse",
+
+          "name": {
+            "id": "Sekring Blade",
+            "en": "Blade Fuse"
+          }
+        },
+
+        {
+          "id": "fusible_link",
+
+          "name": {
+            "id": "Fusible Link",
+            "en": "Fusible Link"
+          }
+        },
+
+        {
+          "id": "fuse_box",
+
+          "name": {
+            "id": "Kotak Sekring",
+            "en": "Fuse Box"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "relay_system",
+
+      "name": {
+        "id": "Relay",
+        "en": "Relay System"
+      },
+
+      "children": [
+
+        {
+          "id": "main_relay",
+
+          "name": {
+            "id": "Relay Utama",
+            "en": "Main Relay"
+          }
+        },
+
+        {
+          "id": "starter_relay",
+
+          "name": {
+            "id": "Relay Starter",
+            "en": "Starter Relay"
+          }
+        },
+
+        {
+          "id": "fuel_pump_relay",
+
+          "name": {
+            "id": "Relay Fuel Pump",
+            "en": "Fuel Pump Relay"
+          }
+        },
+
+        {
+          "id": "cooling_fan_relay",
+
+          "name": {
+            "id": "Relay Kipas",
+            "en": "Cooling Fan Relay"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "wiring_system",
+
+      "name": {
+        "id": "Harness Kabel",
+        "en": "Wiring Harness"
+      },
+
+      "children": [
+
+        {
+          "id": "engine_harness",
+
+          "name": {
+            "id": "Harness Mesin",
+            "en": "Engine Harness"
+          }
+        },
+
+        {
+          "id": "body_harness",
+
+          "name": {
+            "id": "Harness Bodi",
+            "en": "Body Harness"
+          }
+        },
+
+        {
+          "id": "dashboard_harness",
+
+          "name": {
+            "id": "Harness Dashboard",
+            "en": "Dashboard Harness"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "connector_system",
+
+      "name": {
+        "id": "Konektor",
+        "en": "Electrical Connector"
+      },
+
+      "children": [
+
+        {
+          "id": "connector",
+
+          "name": {
+            "id": "Konektor",
+            "en": "Connector"
+          }
+        },
+
+        {
+          "id": "terminal_pin",
+
+          "name": {
+            "id": "Terminal Pin",
+            "en": "Terminal Pin"
+          }
+        },
+
+        {
+          "id": "socket",
+
+          "name": {
+            "id": "Socket",
+            "en": "Socket"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "ground_system",
+
+      "name": {
+        "id": "Ground",
+        "en": "Ground System"
+      },
+
+      "children": [
+
+        {
+          "id": "engine_ground",
+
+          "name": {
+            "id": "Ground Mesin",
+            "en": "Engine Ground"
+          }
+        },
+
+        {
+          "id": "body_ground",
+
+          "name": {
+            "id": "Ground Bodi",
+            "en": "Body Ground"
+          }
+        },
+
+        {
+          "id": "battery_ground",
+
+          "name": {
+            "id": "Ground Aki",
+            "en": "Battery Ground"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "power_distribution",
+
+      "name": {
+        "id": "Distribusi Daya",
+        "en": "Power Distribution"
+      },
+
+      "children": [
+
+        {
+          "id": "junction_box",
+
+          "name": {
+            "id": "Junction Box",
+            "en": "Junction Box"
+          }
+        },
+
+        {
+          "id": "distribution_block",
+
+          "name": {
+            "id": "Distribution Block",
+            "en": "Distribution Block"
+          }
+        }
+
+      ]
+    }
+
+  ]
+}
+
+
+    ,
+{
+  "id": "starting",
+
+  "name": {
+    "id": "Sistem Starter",
+    "en": "Starting System"
+  },
+
+  "description": {
+    "id": "Sistem yang berfungsi memutar mesin saat proses menghidupkan kendaraan.",
+    "en": "System responsible for cranking the engine during startup."
+  },
+
+  "children": [
+
+    {
+      "id": "starter_motor",
+
+      "name": {
+        "id": "Motor Starter",
+        "en": "Starter Motor"
+      },
+
+      "children": [
+
+        {
+          "id": "starter_armature",
+
+          "name": {
+            "id": "Armature",
+            "en": "Starter Armature"
+          }
+        },
+
+        {
+          "id": "starter_field_coil",
+
+          "name": {
+            "id": "Field Coil",
+            "en": "Field Coil"
+          }
+        },
+
+        {
+          "id": "starter_brush",
+
+          "name": {
+            "id": "Brush Starter",
+            "en": "Starter Brush"
+          }
+        },
+
+        {
+          "id": "starter_commutator",
+
+          "name": {
+            "id": "Komutator",
+            "en": "Commutator"
+          }
+        },
+
+        {
+          "id": "starter_bearing",
+
+          "name": {
+            "id": "Bearing Starter",
+            "en": "Starter Bearing"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "starter_drive",
+
+      "name": {
+        "id": "Starter Drive",
+        "en": "Starter Drive"
+      },
+
+      "children": [
+
+        {
+          "id": "starter_pinion",
+
+          "name": {
+            "id": "Pinion Gear",
+            "en": "Starter Pinion Gear"
+          }
+        },
+
+        {
+          "id": "starter_overrunning_clutch",
+
+          "name": {
+            "id": "One Way Clutch",
+            "en": "Overrunning Clutch"
+          }
+        },
+
+        {
+          "id": "starter_shift_fork",
+
+          "name": {
+            "id": "Shift Fork",
+            "en": "Shift Fork"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "starter_solenoid",
+
+      "name": {
+        "id": "Solenoid Starter",
+        "en": "Starter Solenoid"
+      },
+
+      "children": [
+
+        {
+          "id": "solenoid_coil",
+
+          "name": {
+            "id": "Coil Solenoid",
+            "en": "Solenoid Coil"
+          }
+        },
+
+        {
+          "id": "solenoid_plunger",
+
+          "name": {
+            "id": "Plunger",
+            "en": "Plunger"
+          }
+        },
+
+        {
+          "id": "solenoid_contact",
+
+          "name": {
+            "id": "Kontak Solenoid",
+            "en": "Solenoid Contact"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "starter_control",
+
+      "name": {
+        "id": "Kontrol Starter",
+        "en": "Starter Control"
+      },
+
+      "children": [
+
+        {
+          "id": "starter_switch",
+
+          "name": {
+            "id": "Starter Switch",
+            "en": "Starter Switch"
+          }
+        },
+
+        {
+          "id": "start_button",
+
+          "name": {
+            "id": "Tombol Starter",
+            "en": "Start Button"
+          }
+        },
+
+        {
+          "id": "ignition_switch",
+
+          "name": {
+            "id": "Kunci Kontak",
+            "en": "Ignition Switch"
+          }
+        },
+
+        {
+          "id": "starter_relay_control",
+
+          "name": {
+            "id": "Relay Starter",
+            "en": "Starter Relay"
+          }
+        }
+
+      ]
+    }
+
+  ]
+}
+
+
+    ,
+{
+  "id": "charging",
+
+  "name": {
+    "id": "Sistem Pengisian",
+    "en": "Charging System"
+  },
+
+  "description": {
+    "id": "Sistem yang menghasilkan energi listrik untuk mengisi aki dan menyuplai kebutuhan listrik kendaraan saat mesin hidup.",
+    "en": "System that generates electrical power to charge the battery and supply vehicle electrical loads while the engine is running."
+  },
+
+  "children": [
+
+    {
+      "id": "alternator",
+
+      "name": {
+        "id": "Alternator",
+        "en": "Alternator"
+      },
+
+      "children": [
+
+        {
+          "id": "alternator_housing",
+
+          "name": {
+            "id": "Rumah Alternator",
+            "en": "Alternator Housing"
+          }
+        },
+
+        {
+          "id": "alternator_rotor",
+
+          "name": {
+            "id": "Rotor",
+            "en": "Rotor"
+          }
+        },
+
+        {
+          "id": "alternator_stator",
+
+          "name": {
+            "id": "Stator",
+            "en": "Stator"
+          }
+        },
+
+        {
+          "id": "alternator_shaft",
+
+          "name": {
+            "id": "Poros Alternator",
+            "en": "Alternator Shaft"
+          }
+        },
+
+        {
+          "id": "alternator_bearing",
+
+          "name": {
+            "id": "Bearing Alternator",
+            "en": "Alternator Bearing"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "voltage_regulator",
+
+      "name": {
+        "id": "Regulator Tegangan",
+        "en": "Voltage Regulator"
+      },
+
+      "children": [
+
+        {
+          "id": "internal_regulator",
+
+          "name": {
+            "id": "Regulator Internal",
+            "en": "Internal Voltage Regulator"
+          }
+        },
+
+        {
+          "id": "external_regulator",
+
+          "name": {
+            "id": "Regulator Eksternal",
+            "en": "External Voltage Regulator"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "rectifier",
+
+      "name": {
+        "id": "Rectifier",
+        "en": "Rectifier"
+      },
+
+      "children": [
+
+        {
+          "id": "diode_plate",
+
+          "name": {
+            "id": "Diode Plate",
+            "en": "Diode Plate"
+          }
+        },
+
+        {
+          "id": "rectifier_bridge",
+
+          "name": {
+            "id": "Bridge Rectifier",
+            "en": "Bridge Rectifier"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "alternator_brush",
+
+      "name": {
+        "id": "Brush Alternator",
+        "en": "Alternator Brush"
+      },
+
+      "children": [
+
+        {
+          "id": "brush_holder",
+
+          "name": {
+            "id": "Brush Holder",
+            "en": "Brush Holder"
+          }
+        },
+
+        {
+          "id": "carbon_brush",
+
+          "name": {
+            "id": "Carbon Brush",
+            "en": "Carbon Brush"
+          }
+        },
+
+        {
+          "id": "slip_ring",
+
+          "name": {
+            "id": "Slip Ring",
+            "en": "Slip Ring"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "charging_drive",
+
+      "name": {
+        "id": "Penggerak Alternator",
+        "en": "Charging Drive"
+      },
+
+      "children": [
+
+        {
+          "id": "alternator_pulley",
+
+          "name": {
+            "id": "Pulley Alternator",
+            "en": "Alternator Pulley"
+          }
+        },
+
+        {
+          "id": "drive_belt",
+
+          "name": {
+            "id": "Drive Belt",
+            "en": "Drive Belt"
+          }
+        },
+
+        {
+          "id": "belt_tensioner",
+
+          "name": {
+            "id": "Belt Tensioner",
+            "en": "Belt Tensioner"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "charging_sensor",
+
+      "name": {
+        "id": "Sensor Pengisian",
+        "en": "Charging Sensors"
+      },
+
+      "children": [
+
+        {
+          "id": "battery_current_sensor",
+
+          "name": {
+            "id": "Sensor Arus Aki",
+            "en": "Battery Current Sensor"
+          }
+        },
+
+        {
+          "id": "battery_voltage_sensor",
+
+          "name": {
+            "id": "Sensor Tegangan Aki",
+            "en": "Battery Voltage Sensor"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "charging_wiring",
+
+      "name": {
+        "id": "Kelistrikan Pengisian",
+        "en": "Charging Wiring"
+      },
+
+      "children": [
+
+        {
+          "id": "alternator_connector",
+
+          "name": {
+            "id": "Konektor Alternator",
+            "en": "Alternator Connector"
+          }
+        },
+
+        {
+          "id": "charging_cable",
+
+          "name": {
+            "id": "Kabel Pengisian",
+            "en": "Charging Cable"
+          }
+        },
+
+        {
+          "id": "ground_cable",
+
+          "name": {
+            "id": "Kabel Ground",
+            "en": "Ground Cable"
+          }
+        }
+
+      ]
+    }
+
+  ]
+}
+    
+
+    
+
+  ]
+}
