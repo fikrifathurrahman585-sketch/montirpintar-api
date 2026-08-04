@@ -1,10 +1,6 @@
 import re
 from typing import List, Dict, Set
-from app.rules import (
-    detect_vehicle,
-    detect_system,
-    extract_keywords
-)
+
 
 # ==========================================================
 # VERSION
@@ -411,3 +407,21 @@ def partial_match_bonus(
         return 2
 
     return 0
+
+# ==========================================================
+# DETECT SYSTEM
+# ==========================================================
+
+def detect_system(text: str):
+
+    """
+    Placeholder.
+
+    Untuk saat ini system akan ditentukan oleh dataset
+    melalui proses matching.
+
+    Fungsi ini dipertahankan agar scorer.py tetap
+    kompatibel dan tidak terjadi ImportError.
+    """
+
+    return None
