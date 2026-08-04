@@ -1,1 +1,50 @@
+[
+    {
+        "id": "cooling_water_pump",
 
+        "name": {
+            "id": "Pompa Air",
+            "en": "Water Pump"
+        },
+
+        "system": "cooling",
+
+        "category": "pump",
+
+        "vehicle": [
+            "car",
+            "motorcycle"
+        ],
+
+        "aliases": [
+            "waterpump",
+            "water pump",
+            "pompa air",
+            "pompa radiator"
+        ],
+
+        "description": {
+            "id": "Pompa yang mengalirkan coolant ke seluruh sistem pendingin mesin.",
+            "en": "Pump that circulates coolant through the engine cooling system."
+        },
+
+        "inspection": {
+            "method": "visual",
+            "difficulty": "medium"
+        },
+
+        "repairable": false,
+
+        "maintenance": {
+            "replace_interval_km": null,
+            "replace_interval_year": null
+        },
+
+        "metadata": {
+            "version": 1,
+            "source": "MontirPintar",
+            "created_by": "MontirPintar AI",
+            "updated_at": null
+        }
+    }
+]
