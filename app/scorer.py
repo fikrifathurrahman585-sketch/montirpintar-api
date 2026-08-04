@@ -7,71 +7,30 @@ from app.rules import (
 from app.knowledge import component_score
 
 # ==========================================================
-# WEIGHT CONFIG
+# WEIGHT CONFIG V2
 # ==========================================================
 
-KEYWORD_WEIGHT = 10
-ALIAS_WEIGHT = 8
-SYSTEM_WEIGHT = 20
+KEYWORD_WEIGHT = 0
+
+ALIAS_WEIGHT = 5
+
+SYSTEM_WEIGHT = 10
+
 VEHICLE_WEIGHT = 15
-COMPONENT_WEIGHT = 12
-PRIORITY_WEIGHT = 3
+
+COMPONENT_WEIGHT = 20
+
+PRIORITY_WEIGHT = 4
 
 SEVERITY_WEIGHT = {
+
     "INFO": 0,
+
     "WARNING": 5,
+
     "DANGER": 10
+
 }
-
-# ==========================================================
-# GET DATASET KEYWORDS
-# ==========================================================
-
-def dataset_keywords(item):
-
-    keywords = set()
-
-    # ---------- Legacy ----------
-    for k in item.get("keywords", []):
-        keywords.add(k.lower())
-
-    for k in item.get("aliases", []):
-        keywords.add(k.lower())
-
-    # ---------- Modern ----------
-    language = item.get("language", {})
-
-    for lang in ("id", "en"):
-
-        if lang not in language:
-            continue
-
-        for symptom in language[lang].get("symptoms", []):
-
-            keywords.add(symptom.lower())
-
-    return keywords
-
-
-# ==========================================================
-# KEYWORD SCORE
-# ==========================================================
-
-def score_keywords(user_input, item):
-
-    score = 0
-
-    keywords = extract_keywords(user_input)
-
-    dataset = dataset_keywords(item)
-
-    for word in keywords:
-
-        if word in dataset:
-            score += KEYWORD_WEIGHT
-
-    return score
-
 
 # ==========================================================
 # ALIAS SCORE
@@ -176,15 +135,9 @@ def score_component(user_input, item):
 # ==========================================================
 # TOTAL SCORE
 # ==========================================================
-
 def score_bonus(user_input, item):
 
     total = 0
-
-    total += score_keywords(
-        user_input,
-        item
-    )
 
     total += score_alias(
         user_input,
@@ -215,8 +168,6 @@ def score_bonus(user_input, item):
     )
 
     return total
-
-
 # ==========================================================
 # CONFIDENCE ENGINE
 # ==========================================================
