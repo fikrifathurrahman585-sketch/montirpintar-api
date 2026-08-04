@@ -3,16 +3,20 @@ from app.rules import (
     detect_system,
     extract_keywords
 )
+
 from app.knowledge import component_score
 
-
 # ==========================================================
-# BOBOT SKOR
+# WEIGHT CONFIG
 # ==========================================================
 
-KEYWORD_WEIGHT = 8
+KEYWORD_WEIGHT = 10
+ALIAS_WEIGHT = 8
 SYSTEM_WEIGHT = 20
 VEHICLE_WEIGHT = 15
+COMPONENT_WEIGHT = 12
+PRIORITY_WEIGHT = 3
+
 SEVERITY_WEIGHT = {
     "INFO": 0,
     "WARNING": 5,
@@ -20,58 +24,100 @@ SEVERITY_WEIGHT = {
 }
 
 # ==========================================================
-# HITUNG SKOR KEYWORD
+# GET DATASET KEYWORDS
 # ==========================================================
 
-def score_keywords(user_input: str, item: dict):
+def dataset_keywords(item):
+
+    keywords = set()
+
+    # ---------- Legacy ----------
+    for k in item.get("keywords", []):
+        keywords.add(k.lower())
+
+    for k in item.get("aliases", []):
+        keywords.add(k.lower())
+
+    # ---------- Modern ----------
+    language = item.get("language", {})
+
+    for lang in ("id", "en"):
+
+        if lang not in language:
+            continue
+
+        for symptom in language[lang].get("symptoms", []):
+
+            keywords.add(symptom.lower())
+
+    return keywords
+
+
+# ==========================================================
+# KEYWORD SCORE
+# ==========================================================
+
+def score_keywords(user_input, item):
 
     score = 0
 
     keywords = extract_keywords(user_input)
 
-    dataset_keywords = item.get("keywords", [])
-
-    aliases = item.get("aliases", [])
-
-    all_keywords = set()
-
-    for k in dataset_keywords:
-        all_keywords.add(k.lower())
-
-    for k in aliases:
-        all_keywords.add(k.lower())
+    dataset = dataset_keywords(item)
 
     for word in keywords:
-        if word in all_keywords:
+
+        if word in dataset:
             score += KEYWORD_WEIGHT
 
     return score
 
 
 # ==========================================================
-# SKOR SISTEM
+# ALIAS SCORE
 # ==========================================================
 
-def score_system(user_input: str, item: dict):
+def score_alias(user_input, item):
+
+    score = 0
+
+    aliases = item.get("aliases", [])
+
+    text = user_input.lower()
+
+    for alias in aliases:
+
+        if alias.lower() in text:
+
+            score += ALIAS_WEIGHT
+
+    return score
+
+
+# ==========================================================
+# SYSTEM SCORE
+# ==========================================================
+
+def score_system(user_input, item):
 
     detected = detect_system(user_input)
 
     if not detected:
         return 0
 
-    dataset_system = item.get("system", "").lower()
+    system = item.get("system", "").lower()
 
-    if detected == dataset_system:
+    if detected == system:
         return SYSTEM_WEIGHT
 
     return 0
 
 
 # ==========================================================
-# SKOR VEHICLE
+# VEHICLE SCORE
 # ==========================================================
 
-def score_vehicle(user_input: str, item: dict):
+def score_vehicle(user_input, item):
 
     detected = detect_vehicle(user_input)
 
@@ -87,21 +133,19 @@ def score_vehicle(user_input: str, item: dict):
 
 
 # ==========================================================
-# SKOR PRIORITAS
+# PRIORITY SCORE
 # ==========================================================
 
-def score_priority(item: dict):
+def score_priority(item):
 
-    priority = item.get("priority", 0)
-
-    return priority * 3
+    return item.get("priority", 0) * PRIORITY_WEIGHT
 
 
 # ==========================================================
-# SKOR SEVERITY
+# SEVERITY SCORE
 # ==========================================================
 
-def score_severity(item: dict):
+def score_severity(item):
 
     severity = item.get(
         "severity",
@@ -115,7 +159,22 @@ def score_severity(item: dict):
 
 
 # ==========================================================
-# TOTAL BONUS
+# COMPONENT SCORE
+# ==========================================================
+
+def score_component(user_input, item):
+
+    try:
+        return component_score(
+            user_input,
+            item
+        )
+    except Exception:
+        return 0
+
+
+# ==========================================================
+# TOTAL SCORE
 # ==========================================================
 
 def score_bonus(user_input, item):
@@ -123,6 +182,11 @@ def score_bonus(user_input, item):
     total = 0
 
     total += score_keywords(
+        user_input,
+        item
+    )
+
+    total += score_alias(
         user_input,
         item
     )
@@ -137,27 +201,49 @@ def score_bonus(user_input, item):
         item
     )
 
-    total += component_score(
+    total += score_component(
         user_input,
         item
     )
 
-    total += score_priority(item)
+    total += score_priority(
+        item
+    )
 
-    total += score_severity(item)
+    total += score_severity(
+        item
+    )
 
     return total
 
 
+# ==========================================================
+# CONFIDENCE ENGINE
+# ==========================================================
 
-def calculate_confidence(score: int):
+def calculate_confidence(score):
 
     if score <= 0:
         return 0
 
-    confidence = score * 12
+    if score >= 100:
+        return 99
 
-    if confidence > 98:
-        confidence = 98
+    confidence = int(score)
+
+    if confidence < 35:
+        confidence = 35
+
+    if confidence > 99:
+        confidence = 99
 
     return confidence
+
+
+# ==========================================================
+# BACKWARD COMPATIBILITY
+# ==========================================================
+
+def confidence(score):
+
+    return calculate_confidence(score)
