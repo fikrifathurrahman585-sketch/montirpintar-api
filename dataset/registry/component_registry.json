@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "last_updated": "2026-08-05",
+  "components": {
+
+  }
+}
+
+{
+  "version": 1,
+  "last_updated": "2026-08-05",
+
+  "components": {
+
+    "engine_camshaft": {
+
+      "id": "engine_camshaft",
+
+      "name": {
+        "id": "Noken As",
+        "en": "Camshaft"
+      },
+
+      "system": "engine",
+
+      "category": "cylinder_head",
+
+      "subcategory": "valve_train",
+
+      "taxonomy_path": [
+
+        "engine",
+        "cylinder_head",
+        "valve_train",
+        "engine_camshaft"
+
+      ],
+
+      "vehicle": [
+
+        "car",
+        "motorcycle"
+
+      ],
+
+      "aliases": [
+
+        "camshaft",
+        "cam shaft",
+        "cam",
+        "noken",
+        "noken as"
+
+      ],
+
+      "keywords": [
+
+        "klep",
+        "timing",
+        "cam",
+        "katup"
+
+      ],
+
+      "status": "active",
+
+      "search_priority": 100
+
+    }
+
+  }
+
+}
+
+
+
+"cooling_water_pump": {
+
+  "id": "cooling_water_pump",
+
+  "name": {
+
+    "id": "Pompa Air",
+
+    "en": "Water Pump"
+
+  },
+
+  "system":"cooling",
+
+  "category":"water_pump",
+
+  "subcategory":"pump",
+
+  "taxonomy_path":[
+
+      "cooling",
+
+      "water_pump",
+
+      "pump",
+
+      "cooling_water_pump"
+
+  ],
+
+  "vehicle":[
+
+      "car",
+
+      "motorcycle"
+
+  ],
+
+  "aliases":[
+
+      "waterpump",
+
+      "water pump",
+
+      "pompa air"
+
+  ],
+
+  "keywords":[
+
+      "coolant",
+
+      "bocor",
+
+      "overheat"
+
+  ],
+
+  "status":"active",
+
+  "search_priority":95
+
+}
+
+
+
+    {
+  "id": "engine_camshaft",
+
+  "name": {
+    "id": "Noken As",
+    "en": "Camshaft"
+  },
+
+  "system": "engine",
+
+  "category": "cylinder_head",
+
+  "subcategory": "valve_train",
+
+  "taxonomy_path": [
+
+    "engine",
+    "cylinder_head",
+    "valve_train",
+    "engine_camshaft"
+
+  ],
+
+  "vehicle": [
+
+    "car",
+    "motorcycle"
+
+  ],
+
+  "aliases": [
+
+    "camshaft",
+    "cam",
+    "noken",
+    "noken as"
+
+  ],
+
+  "keywords": [
+
+    "klep",
+    "cam",
+    "timing"
+
+  ],
+
+  "related_components": [
+
+    "engine_valve",
+    "engine_valve_spring",
+    "engine_timing_chain"
+
+  ],
+
+  "common_faults": [
+
+    "camshaft_worn",
+    "camshaft_bent"
+
+  ],
+
+  "maintenance": [
+
+    "check_engine_oil",
+    "replace_engine_oil"
+
+  ],
+
+  "status": "active",
+
+  "search_priority": 100
+}
