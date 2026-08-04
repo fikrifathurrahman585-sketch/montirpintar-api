@@ -2,6 +2,50 @@ from app.loader import load
 
 db = load()
 
+# ==========================================================
+# BUILD CACHE
+# ==========================================================
+
+_COMPONENTS = {
+    item["id"]: item
+    for item in db.get("components", [])
+    if "id" in item
+}
+
+_FAULTS = {
+    item["id"]: item
+    for item in db.get("faults", [])
+    if "id" in item
+}
+
+_REPAIRS = {
+    item["component"]: item
+    for item in db.get("repairs", [])
+    if "component" in item
+}
+
+_COSTS = {
+    item["component"]: item
+    for item in db.get("costs", [])
+    if "component" in item
+}
+
+_SYMPTOMS = {
+    item["id"]: item
+    for item in db.get("symptoms", [])
+    if "id" in item
+}
+
+_ALIASES = {}
+
+for item in db.get("aliases", []):
+
+    word = item.get("word", "").lower().strip()
+
+    replace = item.get("replace", "").lower().strip()
+
+    if word:
+        _ALIASES[word] = replace
 
 # ==========================================================
 # COMPONENT
@@ -9,12 +53,7 @@ db = load()
 
 def get_component(component_id: str):
 
-    for item in db["components"]:
-        if item.get("id") == component_id:
-            return item
-
-    return None
-
+    return _COMPONENTS.get(component_id)
 
 # ==========================================================
 # FAULT
@@ -22,12 +61,7 @@ def get_component(component_id: str):
 
 def get_fault(fault_id: str):
 
-    for item in db["faults"]:
-        if item.get("id") == fault_id:
-            return item
-
-    return None
-
+    return _FAULTS.get(fault_id)
 
 # ==========================================================
 # REPAIR
@@ -35,12 +69,7 @@ def get_fault(fault_id: str):
 
 def get_repair(component_id: str):
 
-    for item in db["repairs"]:
-        if item.get("component") == component_id:
-            return item
-
-    return None
-
+    return _REPAIRS.get(component_id)
 
 # ==========================================================
 # COST
@@ -48,12 +77,7 @@ def get_repair(component_id: str):
 
 def get_cost(component_id: str):
 
-    for item in db["costs"]:
-        if item.get("component") == component_id:
-            return item
-
-    return None
-
+    return _COSTS.get(component_id)
 
 # ==========================================================
 # SYMPTOM
@@ -61,12 +85,7 @@ def get_cost(component_id: str):
 
 def get_symptom(symptom_id: str):
 
-    for item in db["symptoms"]:
-        if item.get("id") == symptom_id:
-            return item
-
-    return None
-
+    return _SYMPTOMS.get(symptom_id)
 
 # ==========================================================
 # ALIAS
@@ -74,12 +93,48 @@ def get_symptom(symptom_id: str):
 
 def get_alias(word: str):
 
-    word = word.lower()
+    if not word:
+        return ""
 
-    for item in db["aliases"]:
+    word = word.lower().strip()
 
-        if word == item.get("word", "").lower():
+    return _ALIASES.get(
+        word,
+        word
+    )
 
-            return item.get("replace")
+# ==========================================================
+# COMPONENT SCORE
+# ==========================================================
 
-    return word
+def component_score(user_input: str, item: dict):
+
+    score = 0
+
+    text = user_input.lower()
+
+    component = item.get("component")
+
+    if not component:
+        return 0
+
+    component_data = get_component(component)
+
+    if not component_data:
+        return 0
+
+    names = []
+
+    if "name" in component_data:
+        names.append(component_data["name"])
+
+    if "aliases" in component_data:
+        names.extend(component_data["aliases"])
+
+    for name in names:
+
+        if name.lower() in text:
+
+            score += 12
+
+    return score
