@@ -2820,6 +2820,1335 @@
 
   ]
 }
+
+
+    ,
+{
+  "id": "electronics",
+
+  "name": {
+    "id": "Elektronik Kendaraan",
+    "en": "Vehicle Electronics"
+  },
+
+  "description": {
+    "id": "Sistem elektronik yang mengendalikan fungsi kendaraan menggunakan ECU, modul kontrol, sensor, aktuator dan jaringan komunikasi.",
+    "en": "Electronic system that controls vehicle functions using ECUs, control modules, sensors, actuators and communication networks."
+  },
+
+  "children": [
+
+    {
+      "id": "engine_control",
+
+      "name": {
+        "id": "Kontrol Mesin",
+        "en": "Engine Control"
+      },
+
+      "children": [
+
+        {
+          "id": "ecu",
+
+          "name": {
+            "id": "Engine Control Unit",
+            "en": "Engine Control Unit"
+          }
+        },
+
+        {
+          "id": "pcm",
+
+          "name": {
+            "id": "Powertrain Control Module",
+            "en": "Powertrain Control Module"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "body_control",
+
+      "name": {
+        "id": "Body Control",
+        "en": "Body Control"
+      },
+
+      "children": [
+
+        {
+          "id": "bcm",
+
+          "name": {
+            "id": "Body Control Module",
+            "en": "Body Control Module"
+          }
+        },
+
+        {
+          "id": "gateway_module",
+
+          "name": {
+            "id": "Gateway Module",
+            "en": "Gateway Module"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "transmission_control",
+
+      "name": {
+        "id": "Kontrol Transmisi",
+        "en": "Transmission Control"
+      },
+
+      "children": [
+
+        {
+          "id": "tcm",
+
+          "name": {
+            "id": "Transmission Control Module",
+            "en": "Transmission Control Module"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "safety_module",
+
+      "name": {
+        "id": "Modul Keselamatan",
+        "en": "Safety Modules"
+      },
+
+      "children": [
+
+        {
+          "id": "abs_module",
+
+          "name": {
+            "id": "ABS Module",
+            "en": "ABS Module"
+          }
+        },
+
+        {
+          "id": "esp_module",
+
+          "name": {
+            "id": "ESP Module",
+            "en": "ESP Module"
+          }
+        },
+
+        {
+          "id": "airbag_module",
+
+          "name": {
+            "id": "Airbag Control Module",
+            "en": "Airbag Control Module"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "immobilizer_system",
+
+      "name": {
+        "id": "Immobilizer",
+        "en": "Immobilizer"
+      },
+
+      "children": [
+
+        {
+          "id": "immobilizer_ecu",
+
+          "name": {
+            "id": "Immobilizer ECU",
+            "en": "Immobilizer ECU"
+          }
+        },
+
+        {
+          "id": "transponder",
+
+          "name": {
+            "id": "Transponder",
+            "en": "Key Transponder"
+          }
+        },
+
+        {
+          "id": "immobilizer_antenna",
+
+          "name": {
+            "id": "Antena Immobilizer",
+            "en": "Immobilizer Antenna"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "communication_network",
+
+      "name": {
+        "id": "Jaringan Komunikasi",
+        "en": "Communication Network"
+      },
+
+      "children": [
+
+        {
+          "id": "can_bus",
+
+          "name": {
+            "id": "CAN Bus",
+            "en": "CAN Bus"
+          }
+        },
+
+        {
+          "id": "lin_bus",
+
+          "name": {
+            "id": "LIN Bus",
+            "en": "LIN Bus"
+          }
+        },
+
+        {
+          "id": "flexray",
+
+          "name": {
+            "id": "FlexRay",
+            "en": "FlexRay"
+          }
+        },
+
+        {
+          "id": "ethernet",
+
+          "name": {
+            "id": "Automotive Ethernet",
+            "en": "Automotive Ethernet"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "vehicle_sensor",
+
+      "name": {
+        "id": "Sensor Kendaraan",
+        "en": "Vehicle Sensors"
+      },
+
+      "children": [
+
+        {
+          "id": "engine_sensor",
+
+          "name": {
+            "id": "Sensor Mesin",
+            "en": "Engine Sensors"
+          }
+        },
+
+        {
+          "id": "body_sensor",
+
+          "name": {
+            "id": "Sensor Bodi",
+            "en": "Body Sensors"
+          }
+        },
+
+        {
+          "id": "chassis_sensor",
+
+          "name": {
+            "id": "Sensor Chassis",
+            "en": "Chassis Sensors"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "vehicle_actuator",
+
+      "name": {
+        "id": "Aktuator",
+        "en": "Vehicle Actuators"
+      },
+
+      "children": [
+
+        {
+          "id": "electronic_actuator",
+
+          "name": {
+            "id": "Aktuator Elektronik",
+            "en": "Electronic Actuator"
+          }
+        },
+
+        {
+          "id": "stepper_motor",
+
+          "name": {
+            "id": "Stepper Motor",
+            "en": "Stepper Motor"
+          }
+        },
+
+        {
+          "id": "servo_motor",
+
+          "name": {
+            "id": "Servo Motor",
+            "en": "Servo Motor"
+          }
+        }
+
+      ]
+    }
+
+  ]
+}
+
+
+    ,
+{
+  "id": "transmission",
+
+  "name": {
+    "id": "Transmisi",
+    "en": "Transmission"
+  },
+
+  "description": {
+    "id": "Sistem yang mengubah rasio gigi dan menyalurkan tenaga mesin ke sistem penggerak.",
+    "en": "System that changes gear ratios and transfers engine power to the drivetrain."
+  },
+
+  "children": [
+
+    {
+      "id": "gearbox",
+
+      "name": {
+        "id": "Gearbox",
+        "en": "Gearbox"
+      },
+
+      "children": [
+
+        {
+          "id": "transmission_case",
+
+          "name": {
+            "id": "Rumah Transmisi",
+            "en": "Transmission Case"
+          }
+        },
+
+        {
+          "id": "input_shaft",
+
+          "name": {
+            "id": "Input Shaft",
+            "en": "Input Shaft"
+          }
+        },
+
+        {
+          "id": "output_shaft",
+
+          "name": {
+            "id": "Output Shaft",
+            "en": "Output Shaft"
+          }
+        },
+
+        {
+          "id": "counter_shaft",
+
+          "name": {
+            "id": "Counter Shaft",
+            "en": "Counter Shaft"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "gear_set",
+
+      "name": {
+        "id": "Gear Set",
+        "en": "Gear Set"
+      },
+
+      "children": [
+
+        {
+          "id": "first_gear",
+
+          "name": {
+            "id": "Gigi 1",
+            "en": "First Gear"
+          }
+        },
+
+        {
+          "id": "second_gear",
+
+          "name": {
+            "id": "Gigi 2",
+            "en": "Second Gear"
+          }
+        },
+
+        {
+          "id": "third_gear",
+
+          "name": {
+            "id": "Gigi 3",
+            "en": "Third Gear"
+          }
+        },
+
+        {
+          "id": "fourth_gear",
+
+          "name": {
+            "id": "Gigi 4",
+            "en": "Fourth Gear"
+          }
+        },
+
+        {
+          "id": "fifth_gear",
+
+          "name": {
+            "id": "Gigi 5",
+            "en": "Fifth Gear"
+          }
+        },
+
+        {
+          "id": "reverse_gear",
+
+          "name": {
+            "id": "Gigi Mundur",
+            "en": "Reverse Gear"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "synchronizer",
+
+      "name": {
+        "id": "Synchronizer",
+        "en": "Synchronizer"
+      },
+
+      "children": [
+
+        {
+          "id": "synchronizer_hub",
+
+          "name": {
+            "id": "Hub Synchronizer",
+            "en": "Synchronizer Hub"
+          }
+        },
+
+        {
+          "id": "synchronizer_ring",
+
+          "name": {
+            "id": "Synchronizer Ring",
+            "en": "Synchronizer Ring"
+          }
+        },
+
+        {
+          "id": "sleeve",
+
+          "name": {
+            "id": "Sleeve",
+            "en": "Sleeve"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "shift_system",
+
+      "name": {
+        "id": "Pemindah Gigi",
+        "en": "Gear Shift System"
+      },
+
+      "children": [
+
+        {
+          "id": "shift_fork",
+
+          "name": {
+            "id": "Shift Fork",
+            "en": "Shift Fork"
+          }
+        },
+
+        {
+          "id": "shift_rail",
+
+          "name": {
+            "id": "Shift Rail",
+            "en": "Shift Rail"
+          }
+        },
+
+        {
+          "id": "shift_lever",
+
+          "name": {
+            "id": "Tuas Persneling",
+            "en": "Gear Lever"
+          }
+        },
+
+        {
+          "id": "shift_linkage",
+
+          "name": {
+            "id": "Shift Linkage",
+            "en": "Shift Linkage"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "transmission_bearing",
+
+      "name": {
+        "id": "Bearing Transmisi",
+        "en": "Transmission Bearing"
+      },
+
+      "children": [
+
+        {
+          "id": "input_bearing",
+
+          "name": {
+            "id": "Bearing Input",
+            "en": "Input Bearing"
+          }
+        },
+
+        {
+          "id": "output_bearing",
+
+          "name": {
+            "id": "Bearing Output",
+            "en": "Output Bearing"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "transmission_seal",
+
+      "name": {
+        "id": "Seal Transmisi",
+        "en": "Transmission Seal"
+      },
+
+      "children": [
+
+        {
+          "id": "input_seal",
+
+          "name": {
+            "id": "Seal Input",
+            "en": "Input Shaft Seal"
+          }
+        },
+
+        {
+          "id": "output_seal",
+
+          "name": {
+            "id": "Seal Output",
+            "en": "Output Shaft Seal"
+          }
+        }
+
+      ]
+    }
+
+  ]
+}
+
+
+    ,
+{
+  "id": "cvt",
+
+  "name": {
+    "id": "CVT",
+    "en": "Continuously Variable Transmission"
+  },
+
+  "description": {
+    "id": "Sistem transmisi otomatis menggunakan pulley dan belt.",
+    "en": "Automatic transmission system using pulleys and a drive belt."
+  },
+
+  "children": [
+
+    {
+      "id": "primary_pulley",
+
+      "name": {
+        "id": "Pulley Depan",
+        "en": "Primary Pulley"
+      },
+
+      "children": [
+
+        {
+          "id": "fixed_sheave",
+
+          "name": {
+            "id": "Fixed Sheave",
+            "en": "Fixed Sheave"
+          }
+        },
+
+        {
+          "id": "movable_sheave",
+
+          "name": {
+            "id": "Movable Sheave",
+            "en": "Movable Sheave"
+          }
+        },
+
+        {
+          "id": "roller",
+
+          "name": {
+            "id": "Roller",
+            "en": "Roller"
+          }
+        },
+
+        {
+          "id": "ramp_plate",
+
+          "name": {
+            "id": "Ramp Plate",
+            "en": "Ramp Plate"
+          }
+        },
+
+        {
+          "id": "slider_piece",
+
+          "name": {
+            "id": "Slider Piece",
+            "en": "Slider Piece"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "drive_belt_system",
+
+      "name": {
+        "id": "V-Belt",
+        "en": "Drive Belt"
+      },
+
+      "children": [
+
+        {
+          "id": "v_belt",
+
+          "name": {
+            "id": "V-Belt",
+            "en": "V-Belt"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "secondary_pulley",
+
+      "name": {
+        "id": "Pulley Belakang",
+        "en": "Secondary Pulley"
+      },
+
+      "children": [
+
+        {
+          "id": "torque_driver",
+
+          "name": {
+            "id": "Torque Driver",
+            "en": "Torque Driver"
+          }
+        },
+
+        {
+          "id": "contra_spring",
+
+          "name": {
+            "id": "Per CVT",
+            "en": "Contra Spring"
+          }
+        },
+
+        {
+          "id": "secondary_fixed_sheave",
+
+          "name": {
+            "id": "Fixed Sheave Belakang",
+            "en": "Secondary Fixed Sheave"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "centrifugal_clutch",
+
+      "name": {
+        "id": "Kopling Sentrifugal",
+        "en": "Centrifugal Clutch"
+      },
+
+      "children": [
+
+        {
+          "id": "clutch_shoe",
+
+          "name": {
+            "id": "Kampas Ganda",
+            "en": "Clutch Shoe"
+          }
+        },
+
+        {
+          "id": "clutch_spring",
+
+          "name": {
+            "id": "Per Kampas Ganda",
+            "en": "Clutch Spring"
+          }
+        },
+
+        {
+          "id": "clutch_outer",
+
+          "name": {
+            "id": "Mangkok Kampas Ganda",
+            "en": "Clutch Outer"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "kick_starter",
+
+      "name": {
+        "id": "Kick Starter",
+        "en": "Kick Starter"
+      },
+
+      "children": [
+
+        {
+          "id": "kick_idle_gear",
+
+          "name": {
+            "id": "Idle Gear",
+            "en": "Idle Gear"
+          }
+        },
+
+        {
+          "id": "kick_shaft",
+
+          "name": {
+            "id": "Poros Kick Starter",
+            "en": "Kick Starter Shaft"
+          }
+        },
+
+        {
+          "id": "kick_return_spring",
+
+          "name": {
+            "id": "Per Kick Starter",
+            "en": "Kick Starter Return Spring"
+          }
+        }
+
+      ]
+    },
+
+    {
+      "id": "cvt_cover",
+
+      "name": {
+        "id": "Cover CVT",
+        "en": "CVT Cover"
+      },
+
+      "children": [
+
+        {
+          "id": "cvt_case",
+
+          "name": {
+            "id": "Rumah CVT",
+            "en": "CVT Case"
+          }
+        },
+
+        {
+          "id": "cvt_filter",
+
+          "name": {
+            "id": "Filter CVT",
+            "en": "CVT Air Filter"
+          }
+        },
+
+        {
+          "id": "cvt_gasket",
+
+          "name": {
+            "id": "Gasket CVT",
+            "en": "CVT Gasket"
+          }
+        }
+
+      ]
+    }
+
+  ]
+}
+
+
+
+    ,
+{
+  "id": "clutch",
+
+  "name": {
+    "id": "Sistem Kopling",
+    "en": "Clutch System"
+  },
+
+  "description": {
+    "id": "Sistem pemutus dan penghubung tenaga mesin menuju transmisi.",
+    "en": "System that connects and disconnects engine power from the transmission."
+  },
+
+  "children": [
+
+    {
+
+      "id":"clutch_disc",
+
+      "name":{
+
+        "id":"Kampas Kopling",
+
+        "en":"Clutch Disc"
+
+      }
+
+    },
+
+    {
+
+      "id":"pressure_plate",
+
+      "name":{
+
+        "id":"Pressure Plate",
+
+        "en":"Pressure Plate"
+
+      }
+
+    },
+
+    {
+
+      "id":"flywheel_contact",
+
+      "name":{
+
+        "id":"Permukaan Flywheel",
+
+        "en":"Flywheel Contact Surface"
+
+      }
+
+    },
+
+    {
+
+      "id":"release_bearing",
+
+      "name":{
+
+        "id":"Release Bearing",
+
+        "en":"Release Bearing"
+
+      }
+
+    },
+
+    {
+
+      "id":"release_fork",
+
+      "name":{
+
+        "id":"Release Fork",
+
+        "en":"Release Fork"
+
+      }
+
+    },
+
+    {
+
+      "id":"pilot_bearing",
+
+      "name":{
+
+        "id":"Pilot Bearing",
+
+        "en":"Pilot Bearing"
+
+      }
+
+    },
+
+    {
+
+      "id":"master_cylinder",
+
+      "name":{
+
+        "id":"Master Kopling",
+
+        "en":"Clutch Master Cylinder"
+
+      }
+
+    },
+
+    {
+
+      "id":"slave_cylinder",
+
+      "name":{
+
+        "id":"Slave Kopling",
+
+        "en":"Clutch Slave Cylinder"
+
+      }
+
+    },
+
+    {
+
+      "id":"clutch_hose",
+
+      "name":{
+
+        "id":"Selang Kopling",
+
+        "en":"Clutch Hose"
+
+      }
+
+    },
+
+    {
+
+      "id":"clutch_pedal",
+
+      "name":{
+
+        "id":"Pedal Kopling",
+
+        "en":"Clutch Pedal"
+
+      }
+
+    }
+
+  ]
+}
+
+
+    ,
+{
+  "id":"differential",
+
+  "name":{
+
+    "id":"Differential",
+
+    "en":"Differential"
+
+  },
+
+  "children":[
+
+    {
+
+      "id":"ring_gear",
+
+      "name":{
+
+        "id":"Ring Gear",
+
+        "en":"Ring Gear"
+
+      }
+
+    },
+
+    {
+
+      "id":"pinion_gear",
+
+      "name":{
+
+        "id":"Pinion Gear",
+
+        "en":"Pinion Gear"
+
+      }
+
+    },
+
+    {
+
+      "id":"side_gear",
+
+      "name":{
+
+        "id":"Side Gear",
+
+        "en":"Side Gear"
+
+      }
+
+    },
+
+    {
+
+      "id":"spider_gear",
+
+      "name":{
+
+        "id":"Spider Gear",
+
+        "en":"Spider Gear"
+
+      }
+
+    },
+
+    {
+
+      "id":"carrier",
+
+      "name":{
+
+        "id":"Carrier",
+
+        "en":"Differential Carrier"
+
+      }
+
+    },
+
+    {
+
+      "id":"pinion_bearing",
+
+      "name":{
+
+        "id":"Bearing Pinion",
+
+        "en":"Pinion Bearing"
+
+      }
+
+    }
+
+  ]
+}
+
+    ,
+{
+  "id":"driveshaft",
+
+  "name":{
+
+    "id":"Driveshaft",
+
+    "en":"Driveshaft"
+
+  },
+
+  "children":[
+
+    {
+
+      "id":"propeller_shaft",
+
+      "name":{
+
+        "id":"Propeller Shaft",
+
+        "en":"Propeller Shaft"
+
+      }
+
+    },
+
+    {
+
+      "id":"universal_joint",
+
+      "name":{
+
+        "id":"Universal Joint",
+
+        "en":"Universal Joint"
+
+      }
+
+    },
+
+    {
+
+      "id":"center_bearing",
+
+      "name":{
+
+        "id":"Center Bearing",
+
+        "en":"Center Bearing"
+
+      }
+
+    },
+
+    {
+
+      "id":"slip_yoke",
+
+      "name":{
+
+        "id":"Slip Yoke",
+
+        "en":"Slip Yoke"
+
+      }
+
+    }
+
+  ]
+}
+
+    ,
+{
+  "id":"axle",
+
+  "name":{
+
+    "id":"Axle",
+
+    "en":"Axle"
+
+  },
+
+  "children":[
+
+    {
+
+      "id":"front_axle",
+
+      "name":{
+
+        "id":"As Depan",
+
+        "en":"Front Axle"
+
+      }
+
+    },
+
+    {
+
+      "id":"rear_axle",
+
+      "name":{
+
+        "id":"As Belakang",
+
+        "en":"Rear Axle"
+
+      }
+
+    },
+
+    {
+
+      "id":"axle_shaft",
+
+      "name":{
+
+        "id":"Poros Axle",
+
+        "en":"Axle Shaft"
+
+      }
+
+    }
+
+  ]
+}
+
+
+    ,
+{
+  "id":"final_drive",
+
+  "name":{
+
+    "id":"Final Drive",
+
+    "en":"Final Drive"
+
+  },
+
+  "children":[
+
+    {
+
+      "id":"final_drive_gear",
+
+      "name":{
+
+        "id":"Final Gear",
+
+        "en":"Final Drive Gear"
+
+      }
+
+    },
+
+    {
+
+      "id":"drive_sprocket",
+
+      "name":{
+
+        "id":"Drive Sprocket",
+
+        "en":"Drive Sprocket"
+
+      }
+
+    },
+
+    {
+
+      "id":"driven_sprocket",
+
+      "name":{
+
+        "id":"Driven Sprocket",
+
+        "en":"Driven Sprocket"
+
+      }
+
+    },
+
+    {
+
+      "id":"drive_chain",
+
+      "name":{
+
+        "id":"Rantai",
+
+        "en":"Drive Chain"
+
+      }
+
+    }
+
+  ]
+}
     
 
     
