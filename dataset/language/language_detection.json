@@ -1,0 +1,28 @@
+{
+  "id": [
+    "mobil",
+    "motor",
+    "mesin",
+    "rem",
+    "oli",
+    "radiator",
+    "aki",
+    "starter",
+    "kopling",
+    "gredek",
+    "brebet",
+    "ngempos"
+  ],
+  "en": [
+    "car",
+    "motorcycle",
+    "engine",
+    "brake",
+    "oil",
+    "radiator",
+    "battery",
+    "starter",
+    "clutch",
+    "transmission"
+  ]
+}
