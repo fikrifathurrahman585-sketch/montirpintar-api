@@ -4,6 +4,10 @@ from app.knowledge import get_alias
 db = load()
 
 
+# ==========================================================
+# NORMALIZE
+# ==========================================================
+
 def normalize(text):
 
     text = text.lower()
@@ -17,7 +21,9 @@ def normalize(text):
         "(",
         ")",
         ":",
-        ";"
+        ";",
+        "?",
+        "!"
     ]
 
     for c in chars:
@@ -29,65 +35,161 @@ def normalize(text):
     return text.strip()
 
 
-def tokenize(text):
+# ==========================================================
+# TOKENIZE
+# ==========================================================
 
+def tokenize(text):
     return normalize(text).split()
 
+
+# ==========================================================
+# EXPAND ALIAS
+# ==========================================================
 
 def expand_alias(tokens):
 
     output = []
 
     for token in tokens:
-
         output.append(get_alias(token))
 
     return output
 
 
-def match_symptoms(text):
+# ==========================================================
+# SCORE
+# ==========================================================
 
-    normalized = normalize(text)
+def score_keywords(normalized, tokens, keywords):
 
-    tokens = expand_alias(tokenize(normalized))
+    score = 0
+    matched = []
+
+    for keyword in keywords:
+
+        keyword = normalize(keyword)
+
+        if keyword in tokens:
+
+            score += 3
+            matched.append(keyword)
+
+        elif keyword in normalized:
+
+            score += 2
+            matched.append(keyword)
+
+    return score, matched
+
+
+# ==========================================================
+# MATCH MODERN DATASET
+# ==========================================================
+
+def match_modern_dataset(normalized, tokens):
 
     ranking = []
 
-    for symptom in db["symptoms"]:
+    datasets = []
 
-        keywords = item["language"][lang]["symptoms"]
+    datasets.extend(db.get("motorcycle", []))
+    datasets.extend(db.get("car", []))
 
-        score = 0
+    for item in datasets:
 
-        matched = []
+        language = item.get("language", {})
 
-        for keyword in keywords:
+        for lang in ("id", "en"):
 
-            keyword = normalize(keyword)
+            if lang not in language:
+                continue
 
-            if keyword in tokens:
+            keywords = language[lang].get("symptoms", [])
 
-                score += 3
+            score, matched = score_keywords(
+                normalized,
+                tokens,
+                keywords
+            )
 
-                matched.append(keyword)
-
-            elif keyword in normalized:
-
-                score += 2
-
-                matched.append(keyword)
-
-        if score > 0:
+            if score == 0:
+                continue
 
             ranking.append({
 
-                "symptom": symptom,
+                "symptom": item,
 
                 "score": score,
 
                 "matched_keywords": matched
 
             })
+
+    return ranking
+
+
+# ==========================================================
+# MATCH LEGACY DATASET
+# ==========================================================
+
+def match_legacy_dataset(normalized, tokens):
+
+    ranking = []
+
+    for symptom in db.get("symptoms", []):
+
+        keywords = symptom.get("keywords", [])
+
+        score, matched = score_keywords(
+            normalized,
+            tokens,
+            keywords
+        )
+
+        if score == 0:
+            continue
+
+        ranking.append({
+
+            "symptom": symptom,
+
+            "score": score,
+
+            "matched_keywords": matched
+
+        })
+
+    return ranking
+
+
+# ==========================================================
+# MAIN MATCHER
+# ==========================================================
+
+def match_symptoms(text):
+
+    normalized = normalize(text)
+
+    tokens = expand_alias(
+        tokenize(normalized)
+    )
+
+    ranking = []
+
+    ranking.extend(
+        match_modern_dataset(
+            normalized,
+            tokens
+        )
+    )
+
+    ranking.extend(
+        match_legacy_dataset(
+            normalized,
+            tokens
+        )
+    )
 
     ranking.sort(
 
