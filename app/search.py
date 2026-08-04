@@ -3,7 +3,7 @@ from app.scorer import score_bonus, confidence
 
 
 # ==========================================================
-# SEMANTIC SEARCH V3
+# SEMANTIC SEARCH V4
 # ==========================================================
 
 def semantic_search(
@@ -11,45 +11,81 @@ def semantic_search(
     database=None,
     lang="id"
 ):
+    """
+    database:
+        Dipertahankan untuk backward compatibility.
+    """
+
     matches = match_symptoms(user_input)
 
     if not matches:
         return None, 0
 
-    ranking = []
+    best_item = None
+
+    best_score = -1
+
+    best_match_count = -1
 
     for candidate in matches:
 
         item = candidate["symptom"]
 
-        base_score = candidate.get("score", 0)
+        base_score = candidate.get(
+            "score",
+            0
+        )
+
+        matched_keywords = candidate.get(
+            "matched_keywords",
+            []
+        )
 
         bonus_score = score_bonus(
             user_input,
             item
         )
 
-        total_score = base_score + bonus_score
+        final_score = (
+            base_score
+            +
+            bonus_score
+        )
 
-        ranking.append({
-            "symptom": item,
-            "score": total_score,
-            "base_score": base_score,
-            "bonus_score": bonus_score
-        })
+        matched_count = len(
+            matched_keywords
+        )
 
-    ranking.sort(
-        key=lambda x: x["score"],
-        reverse=True
-    )
+        if (
 
-    best = ranking[0]
+            final_score > best_score
 
-    final_score = confidence(
-        best["score"]
-    )
+            or
+
+            (
+                final_score == best_score
+                and
+                matched_count > best_match_count
+            )
+
+        ):
+
+            best_item = item
+
+            best_score = final_score
+
+            best_match_count = matched_count
+
+    if best_item is None:
+
+        return None, 0
 
     return (
-        best["symptom"],
-        final_score
+
+        best_item,
+
+        confidence(
+            best_score
+        )
+
     )
